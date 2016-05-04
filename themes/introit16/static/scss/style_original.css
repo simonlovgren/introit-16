@@ -1,0 +1,333 @@
+
+/**
+ * General elements
+ */
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+
+/**
+ * Text formatting
+ */
+ h1 {
+   font-size: 3em;
+   margin-top: 1.5em;
+   border-bottom: 1px solid #ddd;
+ }
+ h2 {
+   font-size: 1.8em;
+   margin-top: 1.5em;
+   border-bottom: 1px solid #ddd;
+}
+
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #943759;
+  border-radius: 3px;
+}
+
+
+ /**
+  * Specific structures
+  */
+
+/* Top flag */
+.top-flag {
+  background-color: #943759;
+  background-image: url(../images/topflag.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.top-flag .top-container {
+  background: rgba(0, 0, 0, 0.7);
+
+  padding: 100px 0 100px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.top-flag h1 {
+  font-size: 5em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: none;
+}
+
+.top-flag h2 {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 3em;
+  max-width: 90%;
+  padding: 0;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Menu bar */
+header {
+box-shadow: 0px 3px 0px rgba(0,0,0,0.1);
+}
+
+header nav {
+  background-color: #24B0B2;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline-flex;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 3px;
+
+  -webkit-transition: background-color 150ms linear;
+  -moz-transition: background-color 150ms linear;
+  -o-transition: background-color 150ms linear;
+  -ms-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.active a {
+  background: #2B9192;
+}
+
+
+/* Content */
+.center {
+    margin: 2em auto;
+    max-width: 960px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px rgba(0,0,0,0.1);
+}
+
+#content {
+  padding: 2em 3em;
+}
+
+/* -- Heading */
+.heading {
+  border-bottom: 4px solid #64908A;
+  padding: 0;
+}
+
+.heading h1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #24B0B2;
+    float: left;
+}
+
+.heading .section-icon {
+  float: right;
+  width: 4em;
+  height: 4em;
+
+  background-repeat: no-repeat;
+  background-size: contain;;
+  background-position: right;
+}
+
+/* Footer */
+footer {
+  min-height: 4em;
+  background: #D6C9B6;
+  border-top: 5px solid #B1A086;
+  margin: 0;
+}
+
+footer small {
+    text-align: center;
+    display: block;
+    padding: 2em 0;
+    color: #A9977D;
+    text-shadow: 0px 1px #ECDDC1;
+}
+
+/**
+ * Subsection-specific styles
+ */
+
+ /* ------------------------------------- */
+ /** Studentservice **/
+ /* -- Text formatting */
+ .studentservice kbd {
+
+ }
+
+ /* -- Elements */
+ .studentservice .heading {
+
+ }
+ .studentservice .heading h1 {
+
+ }
+ .studentservice .heading .section-icon {
+     background-image: url(../images/icons/studentservice.png);
+ }
+
+ /* ------------------------------------- */
+ /** LaTeX **/
+ /* -- Text formatting */
+ .latex kbd {
+
+ }
+
+ /* -- Elements */
+ .latex .heading {
+
+ }
+ .latex .heading h1 {
+
+ }
+ .latex .heading .section-icon {
+     background-image: url(../images/icons/latex.png);
+ }
+
+ /* ------------------------------------- */
+ /** Linux **/
+ /* -- Text formatting */
+ .linux kbd {
+
+ }
+
+ /* -- Elements */
+ .linux .heading {
+
+ }
+ .linux .heading h1 {
+
+ }
+ .linux .heading .section-icon {
+     background-image: url(../images/icons/linux.png);
+ }
+
+ /* ------------------------------------- */
+ /** Linux PLUS **/
+ /* -- Text formatting */
+ .linux-plus kbd {
+
+ }
+
+ /* -- Elements */
+ .linux-plus .heading {
+
+ }
+ .linux-plus .heading h1 {
+
+ }
+ .linux-plus .heading .section-icon {
+     background-image: url(../images/icons/linuxplus.png);
+ }
+
+ /* ------------------------------------- */
+ /** Excel **/
+ /* -- Text formatting */
+ .excel kbd {
+
+ }
+
+ /* -- Elements */
+ .excel .heading {
+
+ }
+ .excel .heading h1 {
+
+ }
+ .excel .heading .section-icon {
+     background-image: url(../images/icons/excel.png);
+ }
+
+ /* ------------------------------------- */
+ /** MATLAB **/
+ /* -- Text formatting */
+ .matlab kbd {
+
+ }
+
+ /* -- Elements */
+ .matlab .heading {
+
+ }
+ .matlab .heading h1 {
+
+ }
+ .matlab .heading .section-icon {
+     background-image: url(../images/icons/matlab.png);
+ }
+
+ /* ------------------------------------- */
+ /** Linux PLUS **/
+ /* -- Text formatting */
+ .ssh kbd {
+
+ }
+
+ /* -- Elements */
+ .ssh .heading {
+
+ }
+ .ssh .heading h1 {
+
+ }
+ .ssh .heading .section-icon {
+     background-image: url(../images/icons/ssh.png);
+ }
+
+ /* ------------------------------------- */
+ /** GIT **/
+ /* -- Text formatting */
+ .git kbd {
+   background-color: #2B9192;
+ }
+
+ /* -- Elements */
+ .git .heading {
+   border-bottom-color: #2B9192;
+ }
+ .git .heading h1 {
+   color: #2B9192;
+ }
+ .git .heading .section-icon {
+     background-image: url(../images/icons/git.png);
+ }
+
+/**
+ * Fixes
+ */
+.clr {
+   float: none;
+   clear: both;
+   height: 0;
+}

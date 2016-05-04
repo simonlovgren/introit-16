@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+
+<div id="content">
+    <!-- Page heading -->
+    <div role="heading" class="heading">
+		  <h1>{{ .Title }}</h1>
+      <div class="section-icon"></div>
+      <div class="clr"></div>
+	  </div>
+    <!-- Actual content -->
+    <section>
+      {{ .Content }}
+    </section>
+  </div>
+
+{{ partial "footer.html" .}}

@@ -1,0 +1,17 @@
+name = "IntroIT 2016"
+license = ""
+licenselink = ""
+description = "UU IntroIT 2016"
+homepage = ""
+tags = ["info"]
+features = []
+min_version=0.1
+
+[author]
+  name = "Simon Lövgren"
+  homepage = ""
+
+[original]
+  name = "IntroIT 2016"
+  homepage = "https://github.com/simonlovgren/introit-2016"
+  repo = "https://github.com/simonlovgren/introit-2016"

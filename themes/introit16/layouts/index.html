@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+
+<!-- Actual content -->
+<section>
+    {{ range $section, $pages := .Site.Sections }}
+      <!-- Exclude root section -->
+      {{if $section }}
+        <div class="card {{ lower (title $section) }}">
+          <div class="top"></div>
+          <div class="logo"></div>
+          <div class="content">
+            <div class="title">
+              <h2>{{title $section}}</h2>
+            </div>
+            <div class="tagline">
+              <p>
+                How to get this tagline here???
+              </p>
+            </div>
+            <div class="buttons">
+              <a href="{{ $section }}" class="btn">Infosidor</a>
+              <a href="{{ $section }}/uppgifter" class="btn">Uppgifter</a>
+            </div>
+          </div>
+        </div>
+      {{ end}}
+    {{ end }}
+    <div class="clr"></div>
+</section>
+
+{{ partial "footer.html" .}}

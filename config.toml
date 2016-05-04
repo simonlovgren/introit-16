@@ -1,0 +1,16 @@
+baseurl = "http://localhost:8888/introit16/public"
+languageCode = "sv-se"
+title = "IntroIT 2016"
+theme="introit16"
+
+# Build settings
+builddrafts = false
+canonifyurls = true
+disablerss = true
+
+# Parameters
+[Params]
+quote = "Någon smörig enradare om UU:s datasystem"
+email = "intro@it.uu.se"
+banner = "images/banner.jpg"
+logo = "images/logo.jpg"

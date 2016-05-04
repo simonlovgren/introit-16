@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="se">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> {{ .Title }} | {{ .Site.Title }} </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Icons -->
+        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,100,100italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/reset.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+    </head>
+    <!-- Class of body will determine color-scheme and icon -->
+    <!-- studentservice | linux | linux-plus | latex | matlab | excel | ssh | git -->
+    <body {{if .Params.module}}class="{{.Params.module}}"{{end}}>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="top-flag">
+            <div class="top-container">
+              <h1>{{ .Site.Title }}</h1>
+              <h2>Lorem Ipsum</h2>
+            </div>
+        </div>
+
+        <header>
+        	<!-- main menu -->
+        	<nav id="main-menu">
+              <ul class="nav-menu">
+                  <li class="menu-item active"><a href="#">Home</a></li>
+                  <li class="menu-item"><a href="#">Stuff</a></li>
+                  <li class="menu-item"><a href="#">More stuff</a></li>
+              </ul>
+            </nav>
+        </header>
+        <div class="center">
