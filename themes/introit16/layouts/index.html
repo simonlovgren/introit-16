@@ -10,11 +10,11 @@
           <div class="logo"></div>
           <div class="content">
             <div class="title">
-              <h2>{{title $section}}</h2>
+              <h2>{{ (index $.Site.Data.modules $section).title }}</h2>
             </div>
             <div class="tagline">
               <p>
-                How to get this tagline here???
+                {{ (index $.Site.Data.modules $section).tagline }}
               </p>
             </div>
             <div class="buttons">

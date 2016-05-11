@@ -17,10 +17,10 @@ $footer_shadow: #ecddc1;
 
 // SECTION SETTINGS
 // section is list of (name, main_color, dark_color)
-$sections:  ("studenttjanster", #ec5f5f, #000),
+$sections:  ("studenttjanster", #ec5f5f, #d04040),
             ("excel", #62a964, #000),
             ("linux", #ea774f, #000),
-            ("linux-plus", #faa540, #000),
+            ("linux-plus", #faa540, #f9833d),
             ("latex", #ab85bd, #000),
             ("matlab", #5b8cbd, #000),
             ("git", #24b0b2, #2b9192),
@@ -73,6 +73,7 @@ code {
 }
 /* -- Links */
 a {
+  text-decoration: none;
   color: $default_dark;
 }
 a.btn {
@@ -197,6 +198,14 @@ header nav ul li.active a {
   font-family: "Roboto";
   font-weight: 100;
   font-style: italic;
+}
+.card .buttons {
+  margin: 1em 0 0 0;
+  line-height: 2.8em;
+}
+.card a.btn {
+    font-size: 1.1em;
+    font-weight: 100;
 }
 
 /* Content */
