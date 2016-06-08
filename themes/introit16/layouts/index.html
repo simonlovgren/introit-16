@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
 <!-- Actual content -->
-<section>
+<section id="cards">
     {{ range $section, $pages := .Site.Sections }}
       <!-- Exclude root section -->
       {{if $section }}

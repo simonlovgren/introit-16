@@ -83,9 +83,52 @@ a.btn {
 	background-color: $default_dark;
 	@include border-radius(3px);
 }
+/* -- Images */
+#content img {
+  max-width: 100%;
+  height: auto;
+}
 /**
 * Specific structures
 */
+/* Notifications */
+#notifications {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.notification {
+    background: #CAF3FF;
+    color: #155192;
+    padding: 1.5em 5em;
+    font-size: 13px;
+    border-bottom: 1px solid #155192;
+    text-align: center;
+    position: relative;
+}
+.notification .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #155192;
+    color: #fff;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 0.5em;
+    cursor: pointer;
+}
+.notification.important {
+    background: #FFBBBB;
+    color: #921515;
+    border-color: #921515;
+}
+.notification.important .close {
+    background: #921515;
+    color: #fff;
+}
+
 /* Top flag */
 .top-flag {
   background-color: $default_dark;
@@ -152,10 +195,16 @@ header nav ul li.active a {
   background: $default_dark;
 }
 /* Module cards */
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
 .card {
   width: 45%;
-  max-width: 380px;
-  margin: 0 2.5% 5% 0;
+  width: 380px;
+  margin: 0 1.5% 5% 1.5%;
   float: left;
   position: relative;
   color: #aaa;
