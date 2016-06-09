@@ -417,3 +417,10 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+/* ======= ADDITIONS ======*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

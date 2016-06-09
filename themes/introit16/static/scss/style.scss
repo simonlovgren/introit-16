@@ -5,6 +5,12 @@
 $text_color: #444;
 $background_color: #f5f5f5;
 
+$table_color_even: #f8f8f8;
+$table_color_odd: #fff;
+$table_color_border: #ddd;
+
+$codeblock_bg: #f7f7f7;
+
 // -- Sections
 $default_main: #a95e7a;
 $default_dark: #943759;
@@ -69,7 +75,16 @@ code {
   font-size: 90%;
   color: #fff;
   background-color: $default_dark;
-  border-radius: 3px;
+  @include border-radius(3px);
+}
+pre code,
+code.hljs {
+  padding: 1em;
+  font-size: 100%;
+  display: block;
+  overflow-x: auto;
+  color: inherit;
+  background-color: $codeblock_bg;
 }
 /* -- Links */
 a {
@@ -83,6 +98,55 @@ a.btn {
 	background-color: $default_dark;
 	@include border-radius(3px);
 }
+/* -- Tables */
+table {
+	margin: 2em 0;
+	width: auto;
+	min-width: 50%;
+	//font-size: 14px;
+	/*.box-shadow(0 2px 2px darken(@colorBrightGray, 5%));*/
+}
+table.center {
+	margin: 2em auto;
+}
+table.full {
+	width: 100%;
+}
+table caption {
+	padding: 2.5% 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0px 1px #fff;
+	color: $default_main;
+	//text-align: left;
+}
+table tr {
+	background: $table_color_odd;
+	border-top: 1px solid $table_color_border;
+	border-right: 1px solid $table_color_border;
+	text-align: left;
+}
+thead tr {
+	background: $table_color_even;
+	//color: $default_dark;
+	font-weight: bold;
+	border-bottom: 1px solid $table_color_border;
+}
+table tbody {
+	//font-size: 12px;
+}
+table tbody tr:nth-child(2n) {
+	background: $table_color_even;
+}
+table td, table th {
+	padding: 0.5em;
+	border-left: 1px solid $table_color_border;
+	vertical-align: middle;
+}
+table tbody tr:last-child {
+	border-bottom: 1px solid $table_color_border;
+}
+
 /* -- Images */
 #content img {
   max-width: 100%;
@@ -328,6 +392,9 @@ footer small {
   .#{$selector} kbd,
   .#{$selector} code {
     background-color: nth($section, 3);
+  }
+  .#{$selector} pre code {
+    background-color: $codeblock_bg;
   }
   /* -- Heading */
   .#{$selector} header nav {

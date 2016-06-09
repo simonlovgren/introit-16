@@ -66,5 +66,5 @@
   }
 
   // Autotrigger stuff
-  loadNotifications();
+  //loadNotifications();
 })();

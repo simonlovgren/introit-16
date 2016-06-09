@@ -116,12 +116,12 @@ För debuggning av OS:et krävs dessvärre en custom-byggd GDB, då GDB ej klara
 Patchen som löser detta problem är väldigt liten och *Philipp Oppermann* har skapat ett git-repo med den patchade GDB:n. Denna finns tillgänglig på [phil-opp/binutils-gdb](https://github.com/phil-opp/binutils-gdb).
 
 För att kompilera & "installera" den patchade versionen av GDB krävs först visa dependencies:
-```
+```bash
 apt-get install texinfo flex bison python-dev ncurses-dev
 ```
 
 Därefter kan GDB hämtas- och kompileras för `x86_64-pc-linux-gnu` genom:
-```
+```bash
 curl -sf https://raw.githubusercontent.com/phil-opp/binutils-gdb/rust-os/build-rust-os-gdb.sh | sh
 ```
 
@@ -187,11 +187,11 @@ print my_varname
 
 Man kan även skriva ut innehåll i register eller exempelvis programräknaren genom att använda deras namn (ex. `$eax` för *eax*-registret och `$pc` för programräknaren:
 
-```text
+```
 (gdb) print $pc
 ```
 
-```text
+```
 (gdb) print $eax
 ```
 
