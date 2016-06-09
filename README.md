@@ -168,7 +168,7 @@ All statisk data för temat/mallen finns i denna mapp.
 
 ##### static/css
 Här sparas all genererad CSS.
-** Ändra ingen CSS i denna mapp, alla stiländringar skall ske i `SCSS/style.scss`.**
+**Ändra ingen CSS i denna mapp, alla stiländringar skall ske i `SCSS/style.scss`.**
 
 ##### static/images
 Här finns alla grundläggande bilder för temat/mallen.
