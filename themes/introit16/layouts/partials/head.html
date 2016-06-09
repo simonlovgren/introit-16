@@ -28,13 +28,14 @@
         <div id="notifications">
         </div>
 
-        <!-- Add your site or application content here -->
+        {{if .IsHome}}
         <div class="top-flag">
             <div class="top-container">
               <h1>{{ .Site.Title }}</h1>
               <h2>Lorem Ipsum</h2>
             </div>
         </div>
+        {{end}}
 
         <header>
         	<!-- main menu -->
@@ -46,4 +47,5 @@
               </ul>
             </nav>
         </header>
-        <div class="center">
+        <div class="middle">
+          <div class="center">

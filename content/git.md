@@ -64,6 +64,8 @@ De namn som anges i GDB vid dum av samtliga register stämmer ej fullt överens 
 - [Oracle Registerinfo](https://docs.oracle.com/cd/E19205-01/819-5257/blaos/index.html)
 - [OsDev Wiki FPU](http://wiki.osdev.org/FPU)
 
+{{< figure src="images/example.jpg" title="Exempelfigur med caption" >}}
+
 
 ## Projektresurser
 - [Projektplans presentation](https://docs.google.com/presentation/d/1IFmvzj9U_PQuYP2voOFIKbXf-4Sou9005qxdg65yVhQ/edit#slide=id.p) från google-drive.

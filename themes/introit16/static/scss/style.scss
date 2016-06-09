@@ -3,7 +3,8 @@
 // Variables
 // GENERAL SETTINGS
 $text_color: #444;
-$background_color: #f5f5f5;
+$background_color: #d6c9b6; // Technically only visible at footer
+$middle_color: #f5f5f5; // Backround of middle section of page
 
 $table_color_even: #f8f8f8;
 $table_color_odd: #fff;
@@ -16,7 +17,6 @@ $default_main: #a95e7a;
 $default_dark: #943759;
 
 // -- Footer
-$footer_background: #d6c9b6;
 $footer_border: #b1a086;
 $footer_color: #a9977d;
 $footer_shadow: #ecddc1;
@@ -147,11 +147,34 @@ table tbody tr:last-child {
 	border-bottom: 1px solid $table_color_border;
 }
 
-/* -- Images */
-#content img {
+/* -- Figures */
+figure {
+  margin: 1em 0;
+  text-align: center;
+}
+figure img {
   max-width: 100%;
   height: auto;
+  margin: 0;
 }
+figcaption {
+  text-align: center;
+	color: $default_main;
+	font-style: italic;
+	margin-top: 1em;
+}
+figcaption h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+/* -- Pseudo elements */
+::selection {
+    color: #fff;
+    background: $default_dark;
+}
+
 /**
 * Specific structures
 */
@@ -322,8 +345,12 @@ header nav ul li.active a {
 }
 
 /* Content */
+.middle{
+  padding: 2em 0;
+  background: $middle_color;
+}
 .center {
-  margin: 2em auto;
+  margin: 0 auto;
   max-width: 960px;
 }
 #content {
@@ -355,7 +382,6 @@ header nav ul li.active a {
 /* Footer */
 footer {
   min-height: 4em;
-  background: $footer_background;
   border-top: 5px solid $footer_border;
   margin: 0;
 }
@@ -395,6 +421,31 @@ footer small {
   }
   .#{$selector} pre code {
     background-color: $codeblock_bg;
+  }
+  /* -- Links */
+  .#{$selector} #content a:link,
+  .#{$selector} #content a:visited,  {
+    color: nth($section, 3);
+  }
+  .#{$selector} #content a:hover,
+  .#{$selector} #content a:active,  {
+    color: nth($section, 2);
+  }
+  .#{$selector} a.btn:link,
+  .#{$selector} a.btn:visited,  {
+    background-color: nth($section, 3);
+  }
+  .#{$selector} a.btn:hover,
+  .#{$selector} a.btn:active,  {
+    background-color: nth($section, 2);
+  }
+  /* -- Figures */
+  .#{$selector} figcaption {
+    color: nth($section, 3);
+  }
+  /* -- Pseudo elements */
+  .#{$selector} ::selection {
+      background: nth($section,3);
   }
   /* -- Heading */
   .#{$selector} header nav {
