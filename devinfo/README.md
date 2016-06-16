@@ -103,13 +103,32 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
 ## 3. Datafilen
+Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet.
+
+**Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
+
+Datafilen innehåller två fält:
+| Fält           | Beskrivning                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| **title**      | Titel på modulen (som visas på modulkortet).                        |
+| **tagline**    | "Underrubriken" som visas på modulkortet.                           |
+
+För dessa inställningar i `exempel.toml`:
 ![Redigerad datafil][datafile]
+
+får vi:
+
+![Modulkort Exempel-modul][module_card]
+
 
 ## 4. Infosidan
 ![Redigerad infosida][content_file]
+![Infosida][content_page]
 
 ## 5. Uppgiftssidan
 ![Redigerad uppgiftssida][task_file]
+
+![Uppgiftssida][task_page]
 
 ## 6. Bygg- och kontrollera sidan
 ![Bygger sidan och startar testserver][server]
@@ -130,6 +149,9 @@ Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till L
 [server]: start_server.png
 [ui_content]: ui_copy_content.png
 [ui_data]: ui_copy_data.png
+[module_card]: module_card.png
+[info_page]: info_page.png
+[task_page]: task_page.png
 
 <!-- file references -->
 [icon_psd]: icon-template.psd
