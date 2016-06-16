@@ -123,7 +123,7 @@ får vi:
 
 ## 4. Infosidan
 ![Redigerad infosida][content_file]
-![Infosida][content_page]
+![Infosida][info_page]
 
 ## 5. Uppgiftssidan
 ![Redigerad uppgiftssida][task_file]
