@@ -34,5 +34,5 @@ fi
 echo -n "$TEXT_BOLD"
 echo "This file is for module data (title, tagline, etc.)"
 echo -n "$TEXT_GREEN"
-echo "Don't forget to add icon in image folder and section colors in SCSS"
+echo "Don't forget to add icon in './static/images/icon/<sectionname>.png' and section colors in SCSS"
 echo "$TEXT_RESET"
