@@ -58,7 +58,7 @@ Här kopierades filen `studenttjanster.toml` och döptes om till *exempel.toml*.
 ## 2. Färgschema & Ikon
 Grafiska inställningar för modulen består av en ikon-bild och två komplementfärger/färgschema för modulen.
 
-## 2.a Ikon-bild
+### 2.a Ikon-bild
 Ikonen för modulen skall ha **exakt** samma namn som angivits vid skapande av modul-filerna, annars kommer den inte hittas av systemet. Denna skall sedan placeras i mappen `projektmapp/static/images/icons/`. Försök välja färg- och form som inte redan används av-  eller är snarlik existerande moduler.
 
 **Viktigt är att bilden är:**
@@ -68,7 +68,7 @@ Ikonen för modulen skall ha **exakt** samma namn som angivits vid skapande av m
 
 Det finns en [ikon-mall i PSD-format][icon_psd] som kan användas för att skapa en ny ikon, alternativt kan en av de originala ikonerna som finns i mappen `projektmapp/themes/introit16/images/icons/` vilka är i PNG-format.
 
-## 2.b Komplementfärger/Färgschema
+### 2.b Komplementfärger/Färgschema
 **Om modulen redan finns definierad i style.scss behöver du inte göra några ändringar!**
 
 Komplementfärgerna till modulen består av en huvudfärg (`main_color`), vilken är densamma som ikonens färg, samt en mörkare variant av huvudfärgern (`dark_color`). Dessa läggs till i en lista över modulfärger i temats SCSS-fil. SCSS-filen heter `style.scss` och ligger i mappen `projektmapp/themes/introit16/static/scss/`. **Använd inte samma färg till båda, det kommer bl.a. orsaka läsbarhetsproblem.** 
