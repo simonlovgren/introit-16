@@ -11,7 +11,7 @@ Det finns tre sätt att gå tillväga för att skapa en ny modul. Antingen skapa
 
 **Alternativen listas bäst först.**
 
-### make section (*UNIX/LINUX*)
+### 1.a make section (*UNIX/LINUX*)
 Kommandot `make section` startar ett shell-script som guidar dig genom skapandet av en modul/sektion och reducerar (minst) tre individuella kommandon till ett. Det går även starta denna process genom att köra shell-scriptet direkt genom `./createsection.sh`.
 
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
@@ -27,7 +27,7 @@ Om kommandot/scriptet inte kan köras beror det troligtvis på att den ej har ex
 sudo chmod +x createsection.sh
 ```
 
-### Manuellt (Terminal/CMD)
+### 1.b Manuellt (Terminal/CMD)
 För att manuellt skapa de filer som krävs använder du först *hugo*s inbyggda `new`-kommando för att skapa innehållsfilerna (info- och uppgiftssidan i mappen contetn).
 
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
@@ -41,7 +41,7 @@ För att göra detta skriver du följande i din terminal:
 - Det andra kommandot skapar uppgiftssidan.
 - Det tredje raden skapar datafilen som används för modulkortet.
 
-### Kopiera- och Klistra in
+### 1.c Kopiera- och Klistra in
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
 *Namnet som visas utåt på själva hemsidan ställs in på annat ställe, detta namn är för att byggsystemet skall kunna skilja på de olika modulerna.*
 
