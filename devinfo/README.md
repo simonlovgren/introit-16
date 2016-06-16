@@ -108,6 +108,7 @@ Datafilen innehåller information som skall visas på modulkortet på starsidan.
 **Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
 
 Datafilen innehåller två fält:
+
 | Fält           | Beskrivning                                                         |
 | -------------- | ------------------------------------------------------------------- |
 | **title**      | Titel på modulen (som visas på modulkortet).                        |
