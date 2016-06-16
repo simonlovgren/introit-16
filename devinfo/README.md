@@ -1,7 +1,7 @@
 # Skapa & skriva en ny modul
 Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-för-steg guide kommer vi skapa modulen "exempel". **Denna modul finns med i källkoden och om du bygger sidan kan du använda dess infosida som referens över hur du kan skriva innehållet i modulen. Den innehåller exempel på alla tillgängliga element och hur dessa används i .md-filerna (markdown).**
 
-**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [6. Bygg- och kontrollera sidan](6. Bygg- och kontrollera sidan) och navigera till modulen EXEMPEL.**
+**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [6. Bygg- och kontrollera sidan](#6-bygg--och-kontrollera-sidan) och navigera till modulen EXEMPEL.**
 
 ## 1. Skapa en ny modul
 Det finns två sätt att gå tillväga för att skapa en ny modul. Antingen skapar man modulen mha. *make-kommandot* ´make section´ eller *manuellt*. Make-kommandot är att föredra.
