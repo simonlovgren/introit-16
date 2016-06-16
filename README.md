@@ -42,7 +42,7 @@ make html
 Bygger webbsidan till mappen `public`.
 
 ## Skapa en ny modul (sektion)
-Information kommer snart.
+För hur man skapar en ny moful (sektion), **[SE HÄR](devinfo)**.
 
 ## Fil- och Mappstruktur
 Nedan följer fil- och mappstrukturen för hugo-projektet.
