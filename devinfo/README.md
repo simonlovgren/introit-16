@@ -7,7 +7,7 @@ Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-
 Innan du forstätter med denna guide, installera de dependencies som är listade [här i huvud-README](/#dependencies). Information om hur du installerar vardera dependency finns på deras sida (skall vara länkade från README).
 
 ## 1. Skapa en ny modul
-Det finns tre sätt att gå tillväga för att skapa en ny modul. Antingen skapar man modulen mha. *make-kommandot* ´make section´, *manuellt* via terminal eller *kopiera* filer för en existarande modul och modifiera dessa. Make-kommandot är dock att föredra. Använd helst inte manuella metoder för att skapa filer, då existerande filer kan råka skrivas över.
+Det finns tre sätt att gå tillväga för att skapa en ny modul. Antingen skapar man modulen mha. *make-kommandot* `make section`, *manuellt* via terminal eller *kopiera* filer för en existarande modul och modifiera dessa. Make-kommandot är dock att föredra. Använd helst inte manuella metoder för att skapa filer, då existerande filer kan råka skrivas över.
 
 **Alternativen listas bäst först.**
 
@@ -19,7 +19,7 @@ Kommandot `make section` startar ett shell-script som guidar dig genom skapandet
 
 ![make section][create_section]
 
-Detta script skapar automatiskt de tre filer- och de mappar som krävs för att modulen skall fungera korrekt. Samtliga av dessa filer har en egen sektion i denna guide, i vilken platsen för vardera kommer nämnas.
+Detta script skapar automatiskt de tre filer- och de mappar som krävs för att modulen skall fungera korrekt. Scriptet skriver ut var varje fil skapats **och om filen redan existerar varnar det för detta**. Det påminner även om att skapa en ikon för modulen. Samtliga av dessa filer har en egen sektion i denna guide.
 
 #### Om du inte kan köra scriptet
 Om kommandot/scriptet inte kan köras beror det troligtvis på att den ej har exekveringsrätt på ditt system. För att tillåta att det exekverar, ställ dig i rotmappen för projektet och skriv:
@@ -37,23 +37,70 @@ För att göra detta skriver du följande i din terminal:
 
 ![make section][manual_section]
 
-- Det första kommandot skapar informationssidan.
-- Det andra kommandot skapar uppgiftssidan.
-- Det tredje raden skapar datafilen som används för modulkortet.
+- Det första kommandot skapar informationssidan.  
+  `hugo new <modulnamn>.md`
+- Det andra kommandot skapar uppgiftssidan.  
+  `hugo new <modulnamn>/uppgifter.md`
+- Det tredje raden skapar datafilen som används för modulkortet.  
+  `cp themes/introit16/archtypes/default.toml data/modules/<modulnamn>.toml`  
+**Detta kommando kan skriva över existerande filer, så var försiktig med filnamn.**
 
 ### 1.c Kopiera- och Klistra in
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
 *Namnet som visas utåt på själva hemsidan ställs in på annat ställe, detta namn är för att byggsystemet skall kunna skilja på de olika modulerna.*
 
-Här kopierades filen `studenttjanster.md` och mappen `studenttjanster`, vilka döptes om till *exempel*. Dessa ligger under *projektmapp/content/*.
+Här kopierades filen `studenttjanster.md` och mappen `studenttjanster`, vilka döptes om till *exempel*. Dessa ligger under `projektmapp/content/`.
 ![Kopierade- och döpte om studenttjanster][ui_content]
 
-Här kopierades filen `studenttjanster.toml` och döptes om till *exempel.toml*. Dennaligger under *projektmapp/data/modules*.
+Här kopierades filen `studenttjanster.toml` och döptes om till *exempel.toml*. Dennaligger under `projektmapp/data/modules`.
 ![Kopierade- och döpte om studenttjanster][ui_data]
 
 ## 2. Färgschema & Ikon
+Grafiska inställningar för modulen består av en ikon-bild och två komplementfärger/färgschema för modulen.
+
+## 2.a Ikon-bild
+Ikonen för modulen skall ha **exakt** samma namn som angivits vid skapande av modul-filerna, annars kommer den inte hittas av systemet. Denna skall sedan placeras i mappen `projektmapp/static/images/icons/`. Försök välja färg- och form som inte redan används av-  eller är snarlik existerande moduler.
+
+**Viktigt är att bilden är:**
+- 512 x 512 px
+- PNG-format
+- Transparent bakgrund
+
+Det finns en [ikon-mall i PSD-format][icon_psd] som kan användas för att skapa en ny ikon, alternativt kan en av de originala ikonerna som finns i mappen `projektmapp/themes/introit16/images/icons/` vilka är i PNG-format.
+
+## 2.b Komplementfärger/Färgschema
 **Om modulen redan finns definierad i style.scss behöver du inte göra några ändringar!**
+
+Komplementfärgerna till modulen består av en huvudfärg (`main_color`), vilken är densamma som ikonens färg, samt en mörkare variant av huvudfärgern (`dark_color`). Dessa läggs till i en lista över modulfärger i temats SCSS-fil. SCSS-filen heter `style.scss` och ligger i mappen `projektmapp/themes/introit16/static/scss/`. **Använd inte samma färg till båda, det kommer bl.a. orsaka läsbarhetsproblem.** 
+Listan över modulfärger ligger nästan högst upp i filen och innehåller redan originalmodulernas färgscheman. För att lägga till färgerna för din modul lägger du helt enkelt till en ny post i denna **kommaseparerade** lista. Posterna består av en s.k. tre-tupel på formen:
+```scss
+(modulnamn, main_color, dark_color)
+```
+| Fält           | Exempelvärde   | Beskrivning                                                         |
+| -------------- | -------------- | ------------------------------------------------------------------- |
+| **modulnamn**  | `"latex"`      | Systemnamn på modulen, **exakt** samma som vid skapande av filerna Måste omslutas av citattecken (`"`). |
+| **main_color** | `#ec5f5f`      | Huvudfärg för modulen, angivet i hexadecimal.                       |
+| **dark_color** | `#d04040`      | Mörk version av huvudfärgen för modulen, angivet i hexadecimal.     |
+
+Listan är som sagt kommaseparerad och måste avslutas med semikolon:
+```scss
+// SECTION SETTINGS
+// section is list of (name, main_color, dark_color)
+$sections:  ("studenttjanster", #ec5f5f, #d04040),
+            ("excel", #62a964, #000),
+            ("linux", #ea774f, #000),
+            ("linux-plus", #faa540, #f9833d),
+            ("latex", #ab85bd, #000),
+            ("matlab", #5b8cbd, #000),
+            ("git", #24b0b2, #2b9192),
+            ("ssh", #f18fc6, #000);
+````
+
+**Exempel på tillagd post för modulen "exempel" till listan ovan:**
+
 ![Tillagt färgschema][add_style]
+
+*Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
 ## 3. Datafilen
 ![Redigerad datafil][datafile]
@@ -83,3 +130,6 @@ Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till L
 [server]: start_server.png
 [ui_content]: ui_copy_content.png
 [ui_data]: ui_copy_data.png
+
+<!-- file references -->
+[icon_psd]: icon-template.psd
