@@ -1,7 +1,7 @@
 # Skapa & skriva en ny modul
 Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-för-steg guide kommer vi skapa modulen "exempel". **Denna modul finns med i källkoden och om du bygger sidan kan du använda dess infosida som referens över hur du kan skriva innehållet i modulen. Den innehåller exempel på alla tillgängliga element och hur dessa används i .md-filerna (markdown).**
 
-**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [6. Bygg- och kontrollera sidan](#6-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
+**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [6. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
 
 ## 0. Installera dependencies
 Innan du forstätter med denna guide, installera de dependencies som är listade [här i huvud-README](/#dependencies). Information om hur du installerar vardera dependency finns på deras sida (skall vara länkade från README).
@@ -102,7 +102,18 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
-## 3. Datafilen
+## 3. Media & filer
+Media- och filer tillhörande modulen skall placeras i en ny mapp under `projektmapp/static/images/modulnamn`. Till media hör exempelvis:
+
+- Bilder som används i artikeln
+- Filer för nedladdning (ex. .tex, .m, .xslx, m.m.)
+- Ljudklipp
+- Videoklipp
+- etc.
+
+**Placera dessa filer i en mapp specifikt för modulen, under `projektmapp/static/images/modulnamn`!**
+
+## 4. Datafilen
 Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
 
 **Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
@@ -122,19 +133,19 @@ får vi:
 ![Modulkort Exempel-modul][module_card]
 
 
-## 4. Infosidan
+## 5. Infosidan
 ![Redigerad infosida][content_file]
 ![Infosida][info_page]
 
-## 5. Uppgiftssidan
+## 6. Uppgiftssidan
 ![Redigerad uppgiftssida][task_file]
 
 ![Uppgiftssida][task_page]
 
-## 6. Bygg- och kontrollera sidan
+## 7. Bygg- och kontrollera sidan
 ![Bygger sidan och startar testserver][server]
 
-## 7. Bygg sidan för produktion/LIVE
+## 8. Bygg sidan för produktion/LIVE
 Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till LIVE-URL:en. Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om detta. 
 
 ![Byggande av sidan][make]
