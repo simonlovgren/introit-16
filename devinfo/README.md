@@ -103,7 +103,7 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
 ## 3. Datafilen
-Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet.
+Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
 
 **Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
 
@@ -112,7 +112,7 @@ Datafilen innehåller två fält:
 | Fält           | Beskrivning                                                         |
 | -------------- | ------------------------------------------------------------------- |
 | **title**      | Titel på modulen (som visas på modulkortet).                        |
-| **tagline**    | "Underrubriken" som visas på modulkortet.                           |
+| **tagline**    | "Underrubriken" som visas på modulkortet. **MAX 40 tecken!**        |
 
 För dessa inställningar i `exempel.toml`:
 ![Redigerad datafil][datafile]
