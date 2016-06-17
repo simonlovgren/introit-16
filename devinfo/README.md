@@ -126,17 +126,24 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
 ## 3. Media & filer
-Media- och filer tillhörande modulen skall placeras i en ny mapp under `./static/images/modulnamn`. Till media hör exempelvis:
+Media- och övriga filer tillhörande modulen **skall placeras i specifika mappar döpta efter modulen**.
 
-- Bilder som används i artikeln
+**Bilder** som används i modulen skall läggas under:
+```text
+./static/images/modulnamn
+```
+
+**Övriga filer** skall läggas under:
+```text
+./static/res/modulnamn
+```
+Till övrigt hör exempelvis:
 - Filer för nedladdning (ex. .tex, .m, .xslx, m.m.)
 - Ljudklipp
 - Videoklipp
 - etc.
 
-**Placera dessa filer i en mapp specifikt för modulen, under `./static/images/modulnamn`!**
-
-Sökvägen till dessa blir, när de läggs in i dokumenten, `images/modulnamn/myfile.ext`.
+Sökvägen till dessa blir, när de läggs in i dokumenten, `images/modulnamn/myfile.ext` samt `res/modulnamn/myfile.ext`.
 
 ## 4. Datafilen
 Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
