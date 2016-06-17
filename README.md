@@ -31,6 +31,16 @@ Initierar shell-scriptet `createsection.sh`, vilken guidar dig genom skapandet a
 Namn på sektion måste vara lowercase alphanumeric och samtliga ord skall bindas med dash (-). T.ex. `linux-plus`.
 
 ```bash
+make server
+```
+Startar en hugo-server (**obs! utan att rendera/bygga drafts**). Se [DevInfo/Bygg och kontrollera sidan](devinfo#7-bygg--och-kontrollera-sidan) för mer info.
+
+```bash
+make draft_server
+```
+Startar en hugo-server som även bygger/renderar drafts. Se [DevInfo/Bygg och kontrollera sidan](devinfo#7-bygg--och-kontrollera-sidan) för mer info.
+
+```bash
 make css
 ```
 Bygger CSS-filen från SASS och lägger denna under `/themes/introit/css/style.css`.  
