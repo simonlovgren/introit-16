@@ -73,7 +73,7 @@ Detta är konfigurationsfilen för webbsidan. Den innehåller bl.a. basurl, sidt
 
 Filen ser ut som följer:
 ```toml
-baseurl = "http://localhost:8888/introit16/public"
+baseurl = "http://www.it.uu.se/education/course/homepage/introdat/ht16/"
 languageCode = "sv-se"
 title = "IntroIT 2016"
 theme="introit16"
