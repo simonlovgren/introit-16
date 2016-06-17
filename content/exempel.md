@@ -3,6 +3,7 @@ date = "2016-06-16T15:45:10+02:00"
 menu = "exempel"
 module = "exempel"
 title = "Exempelmodul"
+draft = true
 
 +++
 
