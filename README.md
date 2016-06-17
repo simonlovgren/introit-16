@@ -100,9 +100,9 @@ Denna mapp innehåller samtliga markdown-filer vilka utgör innehållssidorna so
 Strukturen för markdown-filerna för introduktion till datorer 2016 för en *modul* är:
 ```
 content
- |-- modulnamn.md            // <-- http://site.com/modulnamn.html
- |-- modulnamn 
-     |-- uppgifter.md        // <-- http://site.com/modulnamn/uppgifter.html
+├── modulnamn.md            // <-- http://site.com/modulnamn.html
+└── modulnamn 
+    └── uppgifter.md        // <-- http://site.com/modulnamn/uppgifter.html
 ```
 
 **Se sektionen "skapa ny modul" nedan för hur du enkelt kan skapa samtliga filer som krävs.**
@@ -117,8 +117,8 @@ Mappar skapade under `content` tolkas som sektioner under vilka man kan lägga y
 Mappen `data` tillåter att man skapar datafiler som kan användas vid generering av hemsidan. Denna webbsida använder datafiler för att spara metadata om modulerna för när de skall visas på startsidan. Metadata för en modul sparas under:
 ```
 data
- |-- modules 
-     |-- modulnamn.toml
+└── modules 
+    └── modulnamn.toml
 ```
 
 Dessa innehåller `titel` och `tagline` för modulen, vilket korresponderar mot titel- och undertitel i modulkortet som visas på startsidan. Exempel på en sådan datafil är:
@@ -140,9 +140,9 @@ Här läggs statisk data för hemsidan som inte är direkt kopplad till temat/ma
 
 ```
 static
- |-- images           // Bilder till moduler/artiklar
-      |-- icons       // Ikoner till modulerna (ex. linux-plus.png) kan läggas till/overridas
- |-- res              // Resurser till moduler (ex. zip-filer och annat nedladdningsbart)
+├── images           // Bilder till moduler/artiklar
+|   └── icons       // Ikoner till modulerna (ex. linux-plus.png) kan läggas till/overridas
+└── res              // Resurser till moduler (ex. zip-filer och annat nedladdningsbart)
 ```
 
 För bilder kommer då sökvägen bli `http://site.com/images/myimage.jpg` och resurser `http://site.com/res/myarchive.zip`.
