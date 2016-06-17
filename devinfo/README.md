@@ -16,6 +16,8 @@ Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-
 - [3. Media & filer](#3-media--filer)
 - [4. Datafilen](#4-datafilen)
 - [5. Infosidan](#5-infosidan)
+   + [Metadata-sektion](#metadata-sektion)
+   + [Innehålls-sektion](#innehålls-sektion)
 - [6. Uppgiftssidan](#6-uppgiftssidan)
 - [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan)
 - [8. Bygg sidan för produktion/LIVE](#8-bygg-sidan-för-produktionlive)
