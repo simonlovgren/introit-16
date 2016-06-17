@@ -69,29 +69,29 @@ För att göra detta skriver du följande i din terminal:
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
 *Namnet som visas utåt på själva hemsidan ställs in på annat ställe, detta namn är för att byggsystemet skall kunna skilja på de olika modulerna.*
 
-Här kopierades filen `studenttjanster.md` och mappen `studenttjanster`, vilka döptes om till *exempel*. Dessa ligger under `projektmapp/content/`.
+Här kopierades filen `studenttjanster.md` och mappen `studenttjanster`, vilka döptes om till *exempel*. Dessa ligger under `./content/`.
 ![Kopierade- och döpte om studenttjanster][ui_content]
 
-Här kopierades filen `studenttjanster.toml` och döptes om till *exempel.toml*. Dennaligger under `projektmapp/data/modules`.
+Här kopierades filen `studenttjanster.toml` och döptes om till *exempel.toml*. Dennaligger under `./data/modules`.
 ![Kopierade- och döpte om studenttjanster][ui_data]
 
 ## 2. Färgschema & Ikon
 Grafiska inställningar för modulen består av en ikon-bild och två komplementfärger/färgschema för modulen.
 
 ### 2.a Ikon-bild
-Ikonen för modulen skall ha **exakt** samma namn som angivits vid skapande av modul-filerna, annars kommer den inte hittas av systemet. Denna skall sedan placeras i mappen `projektmapp/static/images/icons/`. Försök välja färg- och form som inte redan används av-  eller är snarlik existerande moduler.
+Ikonen för modulen skall ha **exakt** samma namn som angivits vid skapande av modul-filerna, annars kommer den inte hittas av systemet. Denna skall sedan placeras i mappen `./static/images/icons/`. Försök välja färg- och form som inte redan används av-  eller är snarlik existerande moduler.
 
 **Viktigt är att bilden är:**
 - 512 x 512 px
 - PNG-format
 - Transparent bakgrund
 
-Det finns en [ikon-mall i PSD-format][icon_psd] som kan användas för att skapa en ny ikon, alternativt kan en av de originala ikonerna som finns i mappen `projektmapp/themes/introit16/images/icons/` vilka är i PNG-format.
+Det finns en [ikon-mall i PSD-format][icon_psd] som kan användas för att skapa en ny ikon, alternativt kan en av de originala ikonerna som finns i mappen `./themes/introit16/images/icons/` vilka är i PNG-format.
 
 ### 2.b Komplementfärger/Färgschema
 **Om modulen redan finns definierad i style.scss behöver du inte göra några ändringar!**
 
-Komplementfärgerna till modulen består av en huvudfärg (`main_color`), vilken är densamma som ikonens färg, samt en mörkare variant av huvudfärgern (`dark_color`). Dessa läggs till i en lista över modulfärger i temats SCSS-fil. SCSS-filen heter `style.scss` och ligger i mappen `projektmapp/themes/introit16/static/scss/`. **Använd inte samma färg till båda, det kommer bl.a. orsaka läsbarhetsproblem.** 
+Komplementfärgerna till modulen består av en huvudfärg (`main_color`), vilken är densamma som ikonens färg, samt en mörkare variant av huvudfärgern (`dark_color`). Dessa läggs till i en lista över modulfärger i temats SCSS-fil. SCSS-filen heter `style.scss` och ligger i mappen `./themes/introit16/static/scss/`. **Använd inte samma färg till båda, det kommer bl.a. orsaka läsbarhetsproblem.** 
 Listan över modulfärger ligger nästan högst upp i filen och innehåller redan originalmodulernas färgscheman. För att lägga till färgerna för din modul lägger du helt enkelt till en ny post i denna **kommaseparerade** lista. Posterna består av en s.k. tre-tupel på formen:
 ```scss
 (modulnamn, main_color, dark_color)
@@ -123,7 +123,7 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
 ## 3. Media & filer
-Media- och filer tillhörande modulen skall placeras i en ny mapp under `projektmapp/static/images/modulnamn`. Till media hör exempelvis:
+Media- och filer tillhörande modulen skall placeras i en ny mapp under `./static/images/modulnamn`. Till media hör exempelvis:
 
 - Bilder som används i artikeln
 - Filer för nedladdning (ex. .tex, .m, .xslx, m.m.)
@@ -131,14 +131,14 @@ Media- och filer tillhörande modulen skall placeras i en ny mapp under `projekt
 - Videoklipp
 - etc.
 
-**Placera dessa filer i en mapp specifikt för modulen, under `projektmapp/static/images/modulnamn`!**
+**Placera dessa filer i en mapp specifikt för modulen, under `./static/images/modulnamn`!**
 
 Sökvägen till dessa blir, när de läggs in i dokumenten, `images/modulnamn/myfile.ext`.
 
 ## 4. Datafilen
 Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
 
-**Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
+**Denna fil ligger under** `./data/modules/modulnamn.toml`.
 
 Datafilen innehåller två fält:
 
@@ -156,7 +156,7 @@ får vi:
 
 
 ## 5. Infosidan
-Filen för infosidan hittar du under `projektmapp/content/modulnamn.md`.
+Filen för infosidan hittar du under `./content/modulnamn.md`.
 
 Alla filer under mappen `content` är s.k. innehållsfiler och dessa har två sektioner: metadata och innehåll.
 
@@ -204,7 +204,7 @@ Renderad version av exempelmodulens sida:
 ![Infosida][info_page]
 
 ## 6. Uppgiftssidan
-Filen för infosidan hittar du under `projektmapp/content/modulnamn/uppgifter.md`.
+Filen för infosidan hittar du under `./content/modulnamn/uppgifter.md`.
 
 **Denna fil följer exakt samma redigering som [5. Infosidan](#5-infosidan) med ett undantag:**  
 Titeln på sidan skall vara `Modulnamn/Uppgifter`.
@@ -216,32 +216,90 @@ Renderad version av exempelmodulens uppgiftssida:
 ![Uppgiftssida][task_page]
 
 ## 7. Bygg- och kontrollera sidan
-För att bygga- och kontrollera sidan finns det, i hugo, en inbyggd server. För att bygga sidan och starta utvecklingsservern, starta ett nytt terminalfönstar och navigera till projektmappen. Skriv därefter:
-```bash
-hugo server
-```
+För att bygga- och kontrollera sidan finns det, i hugo, en inbyggd server. För att bygga sidan och starta utvecklingsservern, starta ett nytt terminalfönstar och navigera till projektmappen. Det finns två sätt att starta servern, antingen via `make` eller *manuellt*. Dessa beskrivs längre ned i sektionen.
 
 Hugo bygger då hemsidan, vilken läggs i mappen *public*, och startar sedan en webbserver på `http://localhost:1313`. Därefter kan hemsidan nås via valfri webbläsare, genom att gå till den adress som hugo skriver ut i terminalen. I bilden nedan var adressen `http://localhost:1313/introit16/public/`.
 
 **Notera att hugo även väntar på förändringar i filerna och automatiskt uppdaterar den byggda hemsidan om någon fil ändras. I och med detta kan du lämna servern igång och direkt se dina ändringar i webbläsaren (Du kan ev. behöva uppdatera sidan manuellt i webbläsaren).**
 
-För att stänga servern, klicka i terminalfönstret och tryck `ctrl + c`.
+För att sedan stänga servern, klicka i terminalfönstret och tryck `ctrl + c`.
 
+#### make
+Skriv helt enkelt:
+```bash
+make server
+```
+![Bygger sidan och startar testserver via make][make_server]
+
+#### manuellt
+Bygg först CSS-filen (detta måste göras varje gång du vill se en förändring i CSS:en):
+```bash
+scss -t compressed themes/introit16/static/scss/style.scss themes/introit16/static/css/style.css
+```
+följt av:
+```bash
+hugo server
+```
 ![Bygger sidan och startar testserver][server]
 
 ### Bygga Exempelmodulen
-Exempelmodulen är flaggad som *draft*, vilket innebär att den inte kommer byggas med de vanliga sidorna. För att exempelmodulen skall synas måste ett argument skickas med när hugo startar servern. Gör som står ovan, men skriv istället följande i terminalen:
+Exempelmodulen är flaggad som *draft*, vilket innebär att den inte kommer byggas med de vanliga sidorna. För att exempelmodulen skall synas måste ett argument skickas med när hugo startar servern.
+
+*Detta kan ev. även vara användbart om man börjat skriva en modul, men inte vill att den skall byggas till LIVE-sidan.*
+
+Även här finns ett `make`-kommando och en manuell väg:
+
+#### make
+Skriv helt enkelt:
+```bash
+make draft_server
+```
+
+![Server som byggt exempelmodulen (drafts), make][make_exempelmodul]
+
+#### manuellt
+Bygg först CSS-filen (detta måste göras varje gång du vill se en förändring i CSS:en):
+```bash
+scss -t compressed themes/introit16/static/scss/style.scss themes/introit16/static/css/style.css
+```
+följt av:
 ```bash
 hugo server --buildDrafts
 ```
-*Detta kan ev. även vara användbart om man börjat skriva en modul, men inte vill att den skall byggas till LIVE-sidan.*
 
-![Server som byggt exempelmodulen (drafts)][bygg_exempelmodul]
+![Server som byggt exempelmodulen (drafts), manuellt][bygg_exempelmodul]
 
 ## 8. Bygg sidan för produktion/LIVE
-Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till LIVE-URL:en. Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om detta.
+När sidan skall byggas och läggas ut LIVE sker detta i tre steg:
 
-![Byggande av sidan][make]
+### 8.a Sätt korrekt basURL
+Börja med att kontrollera/justera basURL:en i sidans konfigurationsfil (`./config.toml`) till LIVE-URL:en. Detta är så enkelt som att öppna konfigurationsfilen och justera fältet `baseurl`. T.ex. skall det för 2016-års kurs sättas till:
+```toml
+baseurl="http://www.it.uu.se/education/course/homepage/introdat/ht16/"
+```
+*Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om konfigurationsfilen och dess innehåll.*
+
+### 8.b Bygg hemsidan
+Bygg ny hemsidan till sin slutliga HTML-version. Detta går göra med hjälp av `make` eller *manuellt*. Navigera först till projektmappen i terminalen.
+#### make
+Skriv helt enkelt `make` för att bygga hemsidan.
+![Byggande av sidan med make][make]
+
+#### manuellt
+Om du inte kan använda `make` går det bygga sidan manuellt, men då måste CSS-filen först byggas manuellt. Detta kan göras genom:
+```bash
+scss -t compressed themes/introit16/static/scss/style.scss themes/introit16/static/css/style.css
+```
+följt av ett anrop till `hugo`:
+```bash
+hugo
+```
+![Byggande av sidan med hugo][hugo_build]
+
+Den färdiga sidan hamnar i mappen `./public`.
+
+### 8.c Ladda upp filerna till servern
+Kopiera sedan samtliga filer i mappen `./public` till den mapp på servern som är roten för LIVE-hemsidan.
 
 <!-- Image references -->
 [add_style]: add_style.png
@@ -251,7 +309,10 @@ Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till L
 [create_section]: create_section.png
 [manual_section]: new_manual.png
 [make]: make.png
+[hugo_build]: hugo_build.png
+[make_server]: make_server.png
 [server]: start_server.png
+[make_exempelmodul]: make_exempelmodul.png
 [bygg_exempelmodul]: bygg_exempelmodul.png
 [ui_content]: ui_copy_content.png
 [ui_data]: ui_copy_data.png
