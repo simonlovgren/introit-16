@@ -1,7 +1,7 @@
 # Skapa & skriva en ny modul
 Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-för-steg guide kommer vi skapa modulen "exempel". **Denna modul finns med i källkoden och om du bygger sidan kan du använda dess infosida som referens över hur du kan skriva innehållet i modulen. Den innehåller exempel på alla tillgängliga element och hur dessa används i .md-filerna (markdown).**
 
-**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
+**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [Bygga Exempelmodulen](#bygga-exempelmodulen) och navigera till infosidan för modulen EXEMPEL.**
 
 ## Innehåll
 - [0. Installera dependencies](#0-installera-dependencies)
@@ -20,6 +20,7 @@ Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-
    + [Innehålls-sektion](#innehålls-sektion)
 - [6. Uppgiftssidan](#6-uppgiftssidan)
 - [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan)
+   + [Bygga Exempelmodulen](#bygga-exempelmodulen)
 - [8. Bygg sidan för produktion/LIVE](#8-bygg-sidan-för-produktionlive)
 
 ## 0. Installera dependencies
@@ -194,7 +195,7 @@ title = "Exempelmodul"
 ### Innehålls-sektion
 Innehållet på sidan läggs in efter den avslutande `+++`-raden för medatadasektionen, då det är denna som indikerar var innehållssektionen startar. Innehållet skrivs huvudsakligen i formatet *markdown*, men med vissa tillägg samt utbytta delar. De utbytta delarna innefattar bl.a. hur man lägger in bilder, vilket istället görs via [hugo shortcodes](https://gohugo.io/extras/shortcodes/).
 
-**Samtlig tillgänglig fungerande markdown- och shortcode syntax för denna hemsida finns beskriven i modulen _exempel_, både i både renderad version och kodsnuttar. Bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera, via webbläsaren, till infosidan för modulen EXEMPEL.**
+**Samtlig tillgänglig fungerande markdown- och shortcode syntax för denna hemsida finns beskriven i modulen _exempel_, både i både renderad version och kodsnuttar. Bygg sidan enligt [Bygga Exempelmodulen](#bygga-exempelmodulen) och navigera, via webbläsaren, till infosidan för modulen EXEMPEL.**
 
 Exempel på innehåll skrivet i exempelmodulens infosida:
 ![Redigerad infosida][content_file]
@@ -205,7 +206,8 @@ Renderad version av exempelmodulens sida:
 ## 6. Uppgiftssidan
 Filen för infosidan hittar du under `projektmapp/content/modulnamn/uppgifter.md`.
 
-**Denna fil följer exakt samma redigering som [5. Infosidan](#5-infosidan) med ett undantag:** Titeln på sidan skall vara `Modulnamn/Uppgifter`.
+**Denna fil följer exakt samma redigering som [5. Infosidan](#5-infosidan) med ett undantag:**  
+Titeln på sidan skall vara `Modulnamn/Uppgifter`.
 
 Exempel på innehåll skrivet i exempelmodulens uppgiftssida:
 ![Redigerad uppgiftssida][task_file]
@@ -214,10 +216,30 @@ Renderad version av exempelmodulens uppgiftssida:
 ![Uppgiftssida][task_page]
 
 ## 7. Bygg- och kontrollera sidan
+För att bygga- och kontrollera sidan finns det, i hugo, en inbyggd server. För att bygga sidan och starta utvecklingsservern, starta ett nytt terminalfönstar och navigera till projektmappen. Skriv därefter:
+```bash
+hugo server
+```
+
+Hugo bygger då hemsidan, vilken läggs i mappen *public*, och startar sedan en webbserver på `http://localhost:1313`. Därefter kan hemsidan nås via valfri webbläsare, genom att gå till den adress som hugo skriver ut i terminalen. I bilden nedan var adressen `http://localhost:1313/introit16/public/`.
+
+**Notera att hugo även väntar på förändringar i filerna och automatiskt uppdaterar den byggda hemsidan om någon fil ändras. I och med detta kan du lämna servern igång och direkt se dina ändringar i webbläsaren (Du kan ev. behöva uppdatera sidan manuellt i webbläsaren).**
+
+För att stänga servern, klicka i terminalfönstret och tryck `ctrl + c`.
+
 ![Bygger sidan och startar testserver][server]
 
+### Bygga Exempelmodulen
+Exempelmodulen är flaggad som *draft*, vilket innebär att den inte kommer byggas med de vanliga sidorna. För att exempelmodulen skall synas måste ett argument skickas med när hugo startar servern. Gör som står ovan, men skriv istället följande i terminalen:
+```bash
+hugo server --buildDrafts
+```
+*Detta kan ev. även vara användbart om man börjat skriva en modul, men inte vill att den skall byggas till LIVE-sidan.*
+
+![Server som byggt exempelmodulen (drafts)][bygg_exempelmodul]
+
 ## 8. Bygg sidan för produktion/LIVE
-Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till LIVE-URL:en. Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om detta. 
+Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till LIVE-URL:en. Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om detta.
 
 ![Byggande av sidan][make]
 
@@ -230,6 +252,7 @@ Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till L
 [manual_section]: new_manual.png
 [make]: make.png
 [server]: start_server.png
+[bygg_exempelmodul]: bygg_exempelmodul.png
 [ui_content]: ui_copy_content.png
 [ui_data]: ui_copy_data.png
 [module_card]: module_card.png
