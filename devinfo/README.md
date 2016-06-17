@@ -1,7 +1,8 @@
 # Skapa & skriva en ny modul
 Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-för-steg guide kommer vi skapa modulen "exempel". **Denna modul finns med i källkoden och om du bygger sidan kan du använda dess infosida som referens över hur du kan skriva innehållet i modulen. Den innehåller exempel på alla tillgängliga element och hur dessa används i .md-filerna (markdown).**
 
-**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [Bygga Exempelmodulen](#bygga-exempelmodulen) och navigera till infosidan för modulen EXEMPEL.**
+#### Referens över syntax för modulsidorna
+För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [Bygga Exempelmodulen](#bygga-exempelmodulen) och navigera till infosidan för modulen EXEMPEL.
 
 ## Innehåll
 - [0. Installera dependencies](#0-installera-dependencies)
