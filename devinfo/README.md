@@ -153,12 +153,62 @@ får vi:
 
 
 ## 5. Infosidan
+Filen för infosidan hittar du under `projektmapp/content/modulnamn.md`.
+
+Alla filer under mappen `content` är s.k. innehållsfiler och dessa har två sektioner: metadata och innehåll.
+
+### Metadata-sektion
+Varje innehållsfil har en sektion innehållande metadata allra överst. Denna sektion börjar- och slutar med en rad endast innehållande tre plustecken (`+++`). Några av metadatafälten skapas endast när man använder `make section` eller kommandot `hugo new`.
+
+| Fält           | Beskrivning                                                                        |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **date**       | Automatiskt ifyllt skapandedatum. Lämna som det är.                                |
+| **menu**       | Menytillhörighet. **Skall döpas till exakt samma som när modulen skapades.**       |
+| **module**     | Modultillhörighet. **Skall döpas till exakt samma som när modulen skapades.**      |
+| **title**      | Titel på sidan. Denna blir sidans titel när den genereras/byggs.                   |
+
+Metadata-sektionen, när filen är skapad, ser ut som följer:
+```text
++++
+date = "2016-06-16T15:45:10+02:00"
+menu = "studenttjänster"
+module = "studenttjanster"
+title = "exempel"
+
++++
+```
+Fälten `menu` och `module` måste döpas om till exakt samma namn som när modulen skapades. `title` är sidans titel när den byggs.  
+**För exempelmodulen används:**
+```text
++++
+date = "2016-06-16T15:45:10+02:00"
+menu = "exempel"
+module = "exempel"
+title = "Exempelmodul"
+
++++
+```
+
+### Innehålls-sektion
+Innehållet på sidan läggs in efter den avslutande `+++`-raden för medatadasektionen, då det är denna som indikerar var innehållssektionen startar. Innehållet skrivs huvudsakligen i formatet *markdown*, men med vissa tillägg samt utbytta delar. De utbytta delarna innefattar bl.a. hur man lägger in bilder, vilket istället görs via [hugo shortcodes](https://gohugo.io/extras/shortcodes/).
+
+**Samtlig tillgänglig fungerande markdown- och shortcode syntax för denna hemsida finns beskriven i modulen _exempel_, både i både renderad version och kodsnuttar. Bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera, via webbläsaren, till infosidan för modulen EXEMPEL.**
+
+Exempel på innehåll skrivet i exempelmodulens infosida:
 ![Redigerad infosida][content_file]
+
+Renderad version av exempelmodulens sida:
 ![Infosida][info_page]
 
 ## 6. Uppgiftssidan
+Filen för infosidan hittar du under `projektmapp/content/modulnamn/uppgifter.md`.
+
+**Denna fil följer exakt samma redigering som [5. Infosidan](#5-infosidan) med ett undantag:** Titeln på sidan skall vara `Modulnamn/Uppgifter`.
+
+Exempel på innehåll skrivet i exempelmodulens uppgiftssida:
 ![Redigerad uppgiftssida][task_file]
 
+Renderad version av exempelmodulens uppgiftssida:
 ![Uppgiftssida][task_page]
 
 ## 7. Bygg- och kontrollera sidan
