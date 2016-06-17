@@ -216,7 +216,7 @@ Renderad version av exempelmodulens uppgiftssida:
 ![Uppgiftssida][task_page]
 
 ## 7. Bygg- och kontrollera sidan
-För att bygga- och kontrollera sidan finns det, i hugo, en inbyggd server. För att bygga sidan och starta utvecklingsservern, starta ett nytt terminalfönstar och navigera till projektmappen. Det finns två sätt att starta servern, antingen via `make` eller *manuellt*. Dessa beskrivs längre ned i sektionen.
+För att bygga- och kontrollera sidan finns det, i hugo, en inbyggd server. För att bygga sidan och starta utvecklingsservern, starta ett nytt terminalfönstar och navigera till projektmappen. Det finns två sätt att starta servern, antingen via [make](#make) eller [manuellt](#manuellt). Dessa beskrivs längre ned i sektionen.
 
 Hugo bygger då hemsidan, vilken läggs i mappen *public*, och startar sedan en webbserver på `http://localhost:1313`. Därefter kan hemsidan nås via valfri webbläsare, genom att gå till den adress som hugo skriver ut i terminalen. I bilden nedan var adressen `http://localhost:1313/introit16/public/`.
 
