@@ -1,7 +1,26 @@
 # Skapa & skriva en ny modul
 Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-för-steg guide kommer vi skapa modulen "exempel". **Denna modul finns med i källkoden och om du bygger sidan kan du använda dess infosida som referens över hur du kan skriva innehållet i modulen. Den innehåller exempel på alla tillgängliga element och hur dessa används i .md-filerna (markdown).**
 
-**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [6. Bygg- och kontrollera sidan](#6-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
+**För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
+
+## Innehåll
+- [0. Installera dependencies](#0-installera-dependencies)
+- [1. Skapa en ny modul](#1-skapa-en-ny-modul)
+   + [1.a make section (UNIX/LINUX)](#1a-make-section-unixlinux)
+     * [Om du inte kan köra scriptet](#om-du-inte-kan-köra-scriptet)
+   + [1.b Manuellt (Terminal/CMD)](#1b-manuellt-terminalcmd)
+   + [1.c Kopiera- och Klistra in](#1c-kopiera--och-klistra-in)
+- [2. Färgschema & Ikon](#2-färgschema--ikon)
+   + [2.a Ikon-bild](#2a-ikon-bild)
+   + [2.b Komplementfärger/Färgschema](#2b-komplementfärgerfärgschema)
+- [3. Media & filer](#3-media--filer)
+- [4. Datafilen](#4-datafilen)
+- [5. Infosidan](#5-infosidan)
+   + [Metadata-sektion](#metadata-sektion)
+   + [Innehålls-sektion](#innehålls-sektion)
+- [6. Uppgiftssidan](#6-uppgiftssidan)
+- [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan)
+- [8. Bygg sidan för produktion/LIVE](#8-bygg-sidan-för-produktionlive)
 
 ## 0. Installera dependencies
 Innan du forstätter med denna guide, installera de dependencies som är listade [här i huvud-README](/#dependencies). Information om hur du installerar vardera dependency finns på deras sida (skall vara länkade från README).
@@ -11,7 +30,7 @@ Det finns tre sätt att gå tillväga för att skapa en ny modul. Antingen skapa
 
 **Alternativen listas bäst först.**
 
-### 1.a make section (*UNIX/LINUX*)
+### 1.a make section (UNIX/LINUX)
 Kommandot `make section` startar ett shell-script som guidar dig genom skapandet av en modul/sektion och reducerar (minst) tre individuella kommandon till ett. Det går även starta denna process genom att köra shell-scriptet direkt genom `./createsection.sh`.
 
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
@@ -102,7 +121,20 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
 
 *Notera att det lagts till ett kommatecken (,) efter raden för "ssh" och semikolon har lagts på slutet av den nya (sista) posten.*
 
-## 3. Datafilen
+## 3. Media & filer
+Media- och filer tillhörande modulen skall placeras i en ny mapp under `projektmapp/static/images/modulnamn`. Till media hör exempelvis:
+
+- Bilder som används i artikeln
+- Filer för nedladdning (ex. .tex, .m, .xslx, m.m.)
+- Ljudklipp
+- Videoklipp
+- etc.
+
+**Placera dessa filer i en mapp specifikt för modulen, under `projektmapp/static/images/modulnamn`!**
+
+Sökvägen till dessa blir, när de läggs in i dokumenten, `images/modulnamn/myfile.ext`.
+
+## 4. Datafilen
 Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
 
 **Denna fil ligger under** `projektmapp/data/modules/modulnamn.toml`.
@@ -122,19 +154,69 @@ får vi:
 ![Modulkort Exempel-modul][module_card]
 
 
-## 4. Infosidan
+## 5. Infosidan
+Filen för infosidan hittar du under `projektmapp/content/modulnamn.md`.
+
+Alla filer under mappen `content` är s.k. innehållsfiler och dessa har två sektioner: metadata och innehåll.
+
+### Metadata-sektion
+Varje innehållsfil har en sektion innehållande metadata allra överst. Denna sektion börjar- och slutar med en rad endast innehållande tre plustecken (`+++`). Några av metadatafälten skapas endast när man använder `make section` eller kommandot `hugo new`.
+
+| Fält           | Beskrivning                                                                        |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **date**       | Automatiskt ifyllt skapandedatum. Lämna som det är.                                |
+| **menu**       | Menytillhörighet. **Skall döpas till exakt samma som när modulen skapades.**       |
+| **module**     | Modultillhörighet. **Skall döpas till exakt samma som när modulen skapades.**      |
+| **title**      | Titel på sidan. Denna blir sidans titel när den genereras/byggs.                   |
+
+Metadata-sektionen, när filen är skapad, ser ut som följer:
+```text
++++
+date = "2016-06-16T15:45:10+02:00"
+menu = "studenttjänster"
+module = "studenttjanster"
+title = "exempel"
+
++++
+```
+Fälten `menu` och `module` måste döpas om till exakt samma namn som när modulen skapades. `title` är sidans titel när den byggs.  
+**För exempelmodulen används:**
+```text
++++
+date = "2016-06-16T15:45:10+02:00"
+menu = "exempel"
+module = "exempel"
+title = "Exempelmodul"
+
++++
+```
+
+### Innehålls-sektion
+Innehållet på sidan läggs in efter den avslutande `+++`-raden för medatadasektionen, då det är denna som indikerar var innehållssektionen startar. Innehållet skrivs huvudsakligen i formatet *markdown*, men med vissa tillägg samt utbytta delar. De utbytta delarna innefattar bl.a. hur man lägger in bilder, vilket istället görs via [hugo shortcodes](https://gohugo.io/extras/shortcodes/).
+
+**Samtlig tillgänglig fungerande markdown- och shortcode syntax för denna hemsida finns beskriven i modulen _exempel_, både i både renderad version och kodsnuttar. Bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera, via webbläsaren, till infosidan för modulen EXEMPEL.**
+
+Exempel på innehåll skrivet i exempelmodulens infosida:
 ![Redigerad infosida][content_file]
+
+Renderad version av exempelmodulens sida:
 ![Infosida][info_page]
 
-## 5. Uppgiftssidan
+## 6. Uppgiftssidan
+Filen för infosidan hittar du under `projektmapp/content/modulnamn/uppgifter.md`.
+
+**Denna fil följer exakt samma redigering som [5. Infosidan](#5-infosidan) med ett undantag:** Titeln på sidan skall vara `Modulnamn/Uppgifter`.
+
+Exempel på innehåll skrivet i exempelmodulens uppgiftssida:
 ![Redigerad uppgiftssida][task_file]
 
+Renderad version av exempelmodulens uppgiftssida:
 ![Uppgiftssida][task_page]
 
-## 6. Bygg- och kontrollera sidan
+## 7. Bygg- och kontrollera sidan
 ![Bygger sidan och startar testserver][server]
 
-## 7. Bygg sidan för produktion/LIVE
+## 8. Bygg sidan för produktion/LIVE
 Börja med att justera basURL:en i sidans konfigurationsfil (config.toml) till LIVE-URL:en. Se sektionen [config.toml](/#configtoml) i huvud-README för mer information om detta. 
 
 ![Byggande av sidan][make]
