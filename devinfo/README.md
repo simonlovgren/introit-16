@@ -22,6 +22,9 @@ Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-
 - [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan)
    + [Bygga Exempelmodulen](#bygga-exempelmodulen)
 - [8. Bygg sidan för produktion/LIVE](#8-bygg-sidan-för-produktionlive)
+   + [8.a Sätt korrekt basURL](#8a-sätt-korrekt-basurl)
+   + [8.b Bygg hemsidan](#8b-bygg-hemsidan)
+   + [8.c Ladda upp filerna till servern](#8c-ladda-upp-filerna-till-servern)
 
 ## 0. Installera dependencies
 Innan du forstätter med denna guide, installera de dependencies som är listade [här i huvud-README](/#dependencies). Information om hur du installerar vardera dependency finns på deras sida (skall vara länkade från README).
