@@ -3,6 +3,23 @@ Denna sida beskriver hur du skapar, redigerar och testar en modul. I denna steg-
 
 **För fullständig referens mellan markdown/hugo-markdown, bygg sidan enligt [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan) och navigera till infosidan för modulen EXEMPEL.**
 
+## Innehåll
+- [0. Installera dependencies](#0-installera-dependencies)
+- [1. Skapa en ny modul](#1-skapa-en-ny-modul)
+   + [1.a make section (UNIX/LINUX)](#1a-make-section-unixlinux)
+     * [Om du inte kan köra scriptet](#om-du-inte-kan-köra-scriptet)
+   + [1.b Manuellt (Terminal/CMD)](#1b-manuellt-terminalcmd)
+   + [1.c Kopiera- och Klistra in](#1c-kopiera--och-klistra-in)
+- [2. Färgschema & Ikon](#2-färgschema--ikon)
+   + [2.a Ikon-bild](#2a-ikon-bild)
+   + [2.b Komplementfärger/Färgschema](#2b-komplementfärgerfärgschema)
+- [3. Media & filer](#3-media--filer)
+- [4. Datafilen](#4-datafilen)
+- [5. Infosidan](#5-infosidan)
+- [6. Uppgiftssidan](#6-uppgiftssidan)
+- [7. Bygg- och kontrollera sidan](#7-bygg--och-kontrollera-sidan)
+- [8. Bygg sidan för produktion/LIVE](#8-bygg-sidan-för-produktionlive)
+
 ## 0. Installera dependencies
 Innan du forstätter med denna guide, installera de dependencies som är listade [här i huvud-README](/#dependencies). Information om hur du installerar vardera dependency finns på deras sida (skall vara länkade från README).
 
@@ -11,7 +28,7 @@ Det finns tre sätt att gå tillväga för att skapa en ny modul. Antingen skapa
 
 **Alternativen listas bäst först.**
 
-### 1.a make section (*UNIX/LINUX*)
+### 1.a make section (UNIX/LINUX)
 Kommandot `make section` startar ett shell-script som guidar dig genom skapandet av en modul/sektion och reducerar (minst) tre individuella kommandon till ett. Det går även starta denna process genom att köra shell-scriptet direkt genom `./createsection.sh`.
 
 **Notera att modulnamnet endast får ha `gemener a-z`, `bindesstreck` och `siffror`. INGA MELLANSLAG!**  
@@ -112,6 +129,8 @@ Media- och filer tillhörande modulen skall placeras i en ny mapp under `projekt
 - etc.
 
 **Placera dessa filer i en mapp specifikt för modulen, under `projektmapp/static/images/modulnamn`!**
+
+Sökvägen till dessa blir, när de läggs in i dokumenten, `images/modulnamn/myfile.ext`.
 
 ## 4. Datafilen
 Datafilen innehåller information som skall visas på modulkortet på starsidan. Denna fil behövs då modulkorten genereras dynamiskt beroende på vilka moduler som lagts till i systemet. Ändra denna så modulens faktiska namn och en passande underrubrik (som får plats på en rad på kortet).
