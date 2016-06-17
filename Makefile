@@ -1,6 +1,6 @@
 .PHONY: all, html, css, clean, section 
 
-all: css html
+all: css html server draft_server
 
 html:
 	hugo
@@ -10,6 +10,12 @@ css:
 
 section:
 	@./createsection.sh
+
+server: css
+	hugo server
+
+draft_server: css
+	hugo server --buildDrafts
 
 clean:
 	@rm -r public
