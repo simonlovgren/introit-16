@@ -1,4 +1,4 @@
-baseurl = "http://localhost:8888/introit16/public"
+baseurl = "http://www.it.uu.se/education/course/homepage/introdat/ht16/"
 languageCode = "sv-se"
 title = "IntroIT 2016"
 theme="introit16"
