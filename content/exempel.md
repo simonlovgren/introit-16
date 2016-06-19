@@ -11,6 +11,8 @@ Större delen av [GitHubs Markdown-tutorial](https://guides.github.com/features/
 
 ***
 
+### Innehåll
+
 - [Titlar](#titlar-headings)
 - [Paragrafer, radbrytningar och citatblock](#paragrafer-radbrytningar-och-citatblock)
 - [HR - Horisontell linje (horizontal rule)](#hr-horisontell-linje-horizontal-rule)
