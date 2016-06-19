@@ -87,6 +87,17 @@ code.hljs {
   color: inherit;
   background-color: $codeblock_bg;
 }
+blockquote {
+  padding: 0 15px;
+  color: #444;
+  border-left: 4px solid #ddd;
+  margin: 0;
+}
+hr {
+  background: $default_main;
+  height: 3px;
+  border: none;
+}
 /* -- Links */
 a {
   text-decoration: none;
@@ -422,6 +433,9 @@ footer small {
   }
   .#{$selector} pre code {
     background-color: $codeblock_bg;
+  }
+  .#{$selector} hr {
+    background: nth($section, 2);
   }
   /* -- Links */
   .#{$selector} #content a:link,
