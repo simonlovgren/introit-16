@@ -1,8 +1,8 @@
 +++
-date = "2016-05-04T09:37:09+02:00"
-menu = "studenttjänster"
-module = "studenttjanster"
-title = "Studenttjänster/Uppgifter"
+date = "2016-07-25T10:45:37+02:00"
+menu = "excel"
+module = "excel"
+title = "Excel/Uppgifter"
 
 +++
 

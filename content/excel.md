@@ -1,8 +1,8 @@
 +++
-date = "2016-07-25T10:45:37+0200"
+date = "2016-07-25T10:45:37+02:00"
 menu = "excel"
 module = "excel"
-title = "excel"
+title = "Excel/Infosidor"
 
 +++
 
@@ -21,7 +21,7 @@ Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto h
 
 ### Innehåll
 
-- [Studentportalen](#studentportalen)
+- [Komma igång](#komma-igång)
 
 
 
