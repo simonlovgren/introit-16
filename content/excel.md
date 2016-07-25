@@ -1,0 +1,117 @@
++++
+date = "2016-07-25T10:45:37+0200"
+menu = "excel"
+module = "excel"
+title = "excel"
+
++++
+
+*Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
+De mest kända programmen för detta är:
+
++ [OpenOffice.org](https://www.openoffice.org) Öppen källkod, fungerar på de flesta plattformar
++ [Google Sheets](https://docs.google.com/spreadsheets/) Gratis, kräver Google-konto, fungerar via de flesta webbläsare
++ [Microsoft Excel](https://products.office.com/en-us/excel)
+    + Gratis online-version via Dropbox eller Office 365, kräver konto i dessa, fungerar via de flesta webbläsare
+    + Betalversion med löpande månadskostnad eller engångskostnad. Fungerar endast för Microsoft Windows och Mac OS X.
+
+Det mest etablerade av dessa är Microsoft Excel, vilket kommer diskuteras på denna sida.
+Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto hos Microsoft Live.
+
+
+### Innehåll
+
+- [Studentportalen](#studentportalen)
+
+
+
+## Komma igång
+
+Öppna [denna länk](https://office.live.com/start/Excel.aspx) och logga in med ett Microsoft Live-konto.
+
+Välj *blank page* för att bemötas av följande sida:
+{{< figure src="/images/excel/excel-start.png" title="Excel vid start" >}}
+
+Du kan nu börja skriva in siffror! Spara genom att klicka på *File*, längst upp till vänster.
+
+
+
+## Inmatning
+
+Excel har många *smarta funktioner* för att mata in siffror effektivt.
+Du kan testa detta genom att skriva några tal ( *Enter* tar dig till nästa rad), markera dessa samt
+klicka och dra musen neråt från det nedre högra hörnet.
+
+{{< figure src="/images/excel/excel-quicknum.gif" title="Snabb inmatning" >}}
+
+
+
+## Funktioner
+
+Excel har stöd för många funktioner av varierande komplexitet.
+
+### Beräkna summa via manuell inmatning
+
+För att visa manuell inmatning använder vi `SUM`,
+Klicka på rutan du vill ha summan i, skriv därefter (i denna eller rutan strax över arket)
+
+```
+=SUM(A1:B11)
+```
+Där `A1:B11` innebär att omfånget är A1 till och med A11. Dessa värden representerar kolonn respektive rad.
+
+Om du har siffror under att annat omfång är det bara att ändra dessa. Summan uppdateras automatiskt om du ändrar en siffra i omfånget.
+
+{{< figure src="/images/excel/excel-sum.png" title="Beräkna summa" >}}
+
+
+### Beräkna standardavvikelse via grafiskt gränssnitt
+
+En enklare metod, som kräver en någorlunda modern version av Excel, går till genom att välja *cell*,
+klicka på *Insert* -> *Function*, välja funktion, därefter markera omfånget som funktionen beräknas och slutligen
+trycka på *enter*.
+
+{{< figure src="/images/excel/excel-stddev.gif" title="Standardavvikelse" >}}
+
+Även i detta fall ligger siffrorna kvar.
+
+
+### Komplicerade funktioner
+
+Du kan även skriva in mer komplicerade funktioner och formler.
+
++ Aritmetik görs med samma symboler som de flesta datorprogram, dvs `+ - * / ^` där `^` används för potenser.
++ Parenteser gäller enligt vanlig matematik.
++ Funktioner (som SUM, vilken beskrevs ovan) kan läggas in fritt.
++ Du kan använda celler som variabler, enligt syntaxen ovan.
+
+{{< figure src="/images/excel/excel-advfunc.png" title="Komplicerade funktioner" >}}
+
+I bilden har vi skrivit in `=SUM(B1:B11) + A11 * 3 + LOG(16,2)`.
+
+Vi lägger alltså ihop summan av cellerna B1 till B11, värdet i A11 multiplicerat med 3 och
+logaritmen av 16 i bas 2.
+
+Därmed får vi resultatet av 11 + 11*3 + 4 vilket mycket riktigt blir 48.
+
+
+
+## Grafer
+
+En av de viktigaste användningsområdena för kalkylark är att generera grafer.
+Genom att skriva in ett antal värden (siffrorna genererade med [random.org](https://www.random.org)) kan vi markera dessa och välja 
+vilken presentation vi vill ha.
+
+{{< figure src="/images/excel/excel-chart.gif" title="Enklare graf" >}}
+
+
+### Redigering
+
+Klicka på grafen och välj *Chart*, högst upp. Du kan nu byta typ av graf och ställa in
+exempelvis titel och hur etiketter representeras.
+
+
+### Trendlinjer och regressionsanalys
+
+Trendlinjer går, i dagsläget, inte att skriva in direkt i *Excel Online*. För detta krävs den nedladdade versionen.
+
