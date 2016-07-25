@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ARCHTYPES="themes/introit16/archetypes"
 
