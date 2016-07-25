@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Endast för handledare"
+AuthUserFile /path/to/final/handledareinfo/.htpasswd
+require valid-user
