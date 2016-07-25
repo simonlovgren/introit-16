@@ -24,6 +24,7 @@ Större delen av [GitHubs Markdown-tutorial](https://guides.github.com/features/
     - [Kodblock](#kodblock)
 - [Tabeller](#tabeller)
 - [Bilder/Figurer](#bilder-figurer)
+- [Mathjax](#mathjax)
 
 
 ## Titlar/Headings
@@ -343,3 +344,19 @@ Tabeller är relativt enkla att lägga till i markdown. Denna tabbel, till exemp
 
 
 För mer info om shortcode *figure*, se [hugos dokumentation](https://gohugo.io/extras/shortcodes/#figure)
+
+
+## Mathjax
+Mathjax finns att tillgå i sidinformationen. För att lägga till matematiska formler används TEX-notation för matematik.
+
+**T.ex.:**
+
+``` tex
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+```
+
+**blir**
+
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
