@@ -12,8 +12,9 @@ De mest kända programmen för detta är:
 + [OpenOffice.org](https://www.openoffice.org) Öppen källkod, fungerar på de flesta plattformar
 + [Google Sheets](https://docs.google.com/spreadsheets/) Gratis, kräver Google-konto, fungerar via de flesta webbläsare
 + [Microsoft Excel](https://products.office.com/en-us/excel)
-    + Gratis online-version via Dropbox eller Office 365, kräver konto i dessa, fungerar via de flesta webbläsare
-    + Betalversion med löpande månadskostnad eller engångskostnad. Fungerar endast för Microsoft Windows och Mac OS X.
+    + Gratis online-version via Dropbox eller Office 365, kräver konto i dessa, fungerar via de flesta webbläsare *(har ej stöd för trendlinjer)*
+    + Betalversion med löpande månadskostnad eller engångskostnad. Fungerar endast för Microsoft Windows och Mac OS X. En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i Windows-datasalarna.
+    + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universit, men detta är för närvarande inte möjligt för studerande i Uppsala Universitet.
 
 Det mest etablerade av dessa är Microsoft Excel, vilket kommer diskuteras på denna sida.
 Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto hos Microsoft Live.
@@ -22,6 +23,14 @@ Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto h
 ### Innehåll
 
 - [Komma igång](#komma-igång)
+- [Inmatning](#inmatning)
+- [Funktioner](#funktioner)
+    + [Manuell inmatning](#manuell-inmatning)
+    + [Grafisk inmatning](#grafisk-inmatning)
+    + [Avancerade funktioner](#avancerade-funktioner)
+- [Grafer](#grafer)
+    + [Redigering](#redigering)
+    + [Trendlinjer](#trendlinjer)
 
 
 
@@ -50,7 +59,7 @@ klicka och dra musen neråt från det nedre högra hörnet.
 
 Excel har stöd för många funktioner av varierande komplexitet.
 
-### Beräkna summa via manuell inmatning
+### Manuell inmatning
 
 För att visa manuell inmatning använder vi `SUM`,
 Klicka på rutan du vill ha summan i, skriv därefter (i denna eller rutan strax över arket)
@@ -65,7 +74,7 @@ Om du har siffror under att annat omfång är det bara att ändra dessa. Summan 
 {{< figure src="/images/excel/excel-sum.png" title="Beräkna summa" >}}
 
 
-### Beräkna standardavvikelse via grafiskt gränssnitt
+### Grafisk inmatning
 
 En enklare metod, som kräver en någorlunda modern version av Excel, går till genom att välja *cell*,
 klicka på *Insert* -> *Function*, välja funktion, därefter markera omfånget som funktionen beräknas och slutligen
@@ -76,7 +85,7 @@ trycka på *enter*.
 Även i detta fall ligger siffrorna kvar.
 
 
-### Komplicerade funktioner
+### Avancerade funktioner
 
 Du kan även skriva in mer komplicerade funktioner och formler.
 
@@ -111,7 +120,28 @@ Klicka på grafen och välj *Chart*, högst upp. Du kan nu byta typ av graf och 
 exempelvis titel och hur etiketter representeras.
 
 
-### Trendlinjer och regressionsanalys
+### Trendlinjer
 
-Trendlinjer går, i dagsläget, inte att skriva in direkt i *Excel Online*. För detta krävs den nedladdade versionen.
+*Trendlinjer går, i dagsläget, inte att skriva in direkt i *Excel Online*. För detta krävs den nedladdade versionen.*
 
+När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka på dem, följt av *layout* för att nå alternativet *trendlines*.
+
+{{< figure src="/images/excel/excel-trendline-1.PNG" title="Menyalternativet trendlinje syns längst upp till vänster" >}}
+
+Valet *more options* låter dig ställa in avancerade alternativ för trendlinjer.
+Det låter dig exempelvis ställa in hur den ska beräknas, visa  R-kvadratvärdet, byta format, etc.
+
+Du kan även nå detta fönster genom att högerklicka på redan befintliga trendlinjer och välja *options* **(verifiera detta!)**.
+
+{{< figure src="/images/excel/excel-trendline-2.PNG" title="Inställningar för trendlinjer" >}}
+
+Tänk på att det viktigaste med grafer är att göra de som tydliga som möjligt!
+Genom att använda färger och andra inställningar kan du förtydliga linjerna och deras förhållande till datan de representerar.
+
+{{< figure src="/images/excel/excel-trendline-3.PNG" title="Exempel på formatering" >}}
+
+Trendlinjer går även att skapa med andra typer av grafer.
+
+{{< figure src="/images/excel/excel-chart-alt.PNG" title="Exempel på formatering" >}}
+
+Ett R-kvadratvärde som är nära 1 visar dess trovärdighet. Eftersom exempelfiguren använder slumpmässiga tal är det låga värdet rimligt.
