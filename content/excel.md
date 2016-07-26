@@ -9,15 +9,27 @@ title = "Excel"
 *Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
 De mest kända programmen för detta är:
 
-+ [OpenOffice.org](https://www.openoffice.org) Öppen källkod, fungerar på de flesta plattformar
-+ [Google Sheets](https://docs.google.com/spreadsheets/) Gratis, kräver Google-konto, fungerar via de flesta webbläsare
++ [OpenOffice.org](https://www.openoffice.org)
+    - Öppen källkod
+    - Fungerar på de flesta plattformar
++ [Google Sheets](https://docs.google.com/spreadsheets/)
+    - Gratis
+    - Kräver Google-konto   
+    - Fungerar via de flesta webbläsare
 + [Microsoft Excel](https://products.office.com/en-us/excel)
-    + Gratis online-version via Dropbox eller Office 365, kräver konto i dessa, fungerar via de flesta webbläsare *(har ej stöd för trendlinjer)*
-    + Betalversion med löpande månadskostnad eller engångskostnad. Fungerar endast för Microsoft Windows och Mac OS X. En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i Windows-datasalarna.
-    + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universit, men detta är för närvarande inte möjligt för studerande i Uppsala Universitet.
+    - Online-version via Dropbox eller Office 365
+        + Gratis
+        + Kräver konto hos *Microsoft Live*
+        + Fungerar via de flesta webbläsare
+        + **Har ej stöd för trendlinjer**
+    - Nedladdad version
+        + Betalversion med löpande månadskostnad eller engångskostnad
+        + Fungerar endast för Microsoft Windows och Mac OS X
+        + En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i Windows-datasalarna.
+        + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universitet, men detta är för närvarande inte möjligt för studerande i Uppsala Universitet.
 
-Det mest etablerade av dessa är Microsoft Excel, vilket kommer diskuteras på denna sida.
-Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto hos Microsoft Live.
+Det mest etablerade av dessa är *Microsoft Excel*, vilket kommer diskuteras på denna sida.
+Du kan använda någon av [Windows-datasalarna](http://www.it.uu.se/datordrift/programvara/mswin) om du inte vill skaffa ett konto hos *Microsoft Live*.
 
 
 ### Innehåll
@@ -61,7 +73,7 @@ Excel har stöd för många funktioner av varierande komplexitet.
 
 ### Manuell inmatning
 
-För att visa manuell inmatning använder vi `SUM`,
+För att visa manuell inmatning använder vi funktionen `SUM`,
 Klicka på rutan du vill ha summan i, skriv därefter (i denna eller rutan strax över arket)
 
 ```
@@ -77,7 +89,7 @@ Om du har siffror under att annat omfång är det bara att ändra dessa. Summan 
 ### Grafisk inmatning
 
 En enklare metod, som kräver en någorlunda modern version av Excel, går till genom att välja *cell*,
-klicka på *Insert* -> *Function*, välja funktion, därefter markera omfånget som funktionen beräknas och slutligen
+klicka på *Insert* -> *Function*, välja funktion, därefter markera omfånget som funktionen appliceras på och slutligen
 trycka på *enter*.
 
 {{< figure src="/images/excel/excel-stddev.gif" title="Standardavvikelse" >}}
@@ -89,12 +101,12 @@ trycka på *enter*.
 
 Du kan även skriva in mer komplicerade funktioner och formler.
 
-+ Aritmetik görs med samma symboler som de flesta datorprogram, dvs `+ - * / ^` där `^` används för potenser.
++ Aritmetik görs med samma symboler som de flesta datorprogram, dvs `+ - * / ^`, där `^` används för potenser.
 + Parenteser gäller enligt vanlig matematik.
 + Funktioner (som SUM, vilken beskrevs ovan) kan läggas in fritt.
 + Du kan använda celler som variabler, enligt syntaxen ovan.
 
-{{< figure src="/images/excel/excel-advfunc.png" title="Komplicerade funktioner" >}}
+{{< figure src="/images/excel/excel-advfunc.png" title="Notera att formeln syns i rutan över kalkylbladet" >}}
 
 I bilden har vi skrivit in `=SUM(B1:B11) + A11 * 3 + LOG(16,2)`.
 
@@ -122,25 +134,24 @@ exempelvis titel och hur etiketter representeras.
 
 ### Trendlinjer och regressionsanalys
 
-*Trendlinjer går, i dagsläget, inte att skriva in direkt i *Excel Online*. För detta krävs den nedladdade versionen.*
+*Trendlinjer går, i dagsläget, inte att skriva in direkt i online-versionen av Excel. För detta krävs den nedladdade versionen.*
 
 Målet med regressionsanalys är att, utifrån observerade data, skapa en funktion som beskriver den. Ett sätt att illustrera detta med är att använda *trendlinjer*.
 
-När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka på dem, följt av *layout* för att nå alternativet *trendlines*.
+När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka *layout* för att nå alternativet *trendline*.
 
-{{< figure src="/images/excel/excel-trendline-1.PNG" title="Menyalternativet trendlinje syns längst upp till vänster" >}}
+{{< figure src="/images/excel/excel-trendline-1.PNG" title="Menyalternativet trendlinje syns längst upp till höger" >}}
 
 Valet *more options* låter dig ställa in avancerade alternativ för trendlinjer.
 Det låter dig exempelvis ställa in hur den ska beräknas, visa  R-kvadratvärdet, byta format, etc.
-
-Du kan även nå detta fönster genom att högerklicka på redan befintliga trendlinjer och välja *options* **(verifiera detta!)**.
+Du kan även nå detta fönster genom att högerklicka på redan befintliga trendlinjer och välja *format trendline* **(verifiera detta!)**.
 
 {{< figure src="/images/excel/excel-trendline-2.PNG" title="Inställningar för trendlinjer" >}}
 
 Tänk på att det viktigaste med grafer är att göra de som tydliga som möjligt!
 Genom att använda färger och andra inställningar kan du förtydliga linjerna och deras förhållande till datan de representerar.
 
-{{< figure src="/images/excel/excel-trendline-3.PNG" title="Exempel på formatering" >}}
+{{< figure src="/images/excel/excel-trendline-3.PNG" title="Exempel på trendlinjer" >}}
 
 Trendlinjer går även att skapa med andra typer av grafer.
 
