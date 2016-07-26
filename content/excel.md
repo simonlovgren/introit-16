@@ -30,7 +30,7 @@ Du kan använda någon av Windows-datasalarna om du inte vill skaffa ett konto h
     + [Avancerade funktioner](#avancerade-funktioner)
 - [Grafer](#grafer)
     + [Redigering](#redigering)
-    + [Trendlinjer](#trendlinjer)
+    + [Trendlinjer och regressionsanalys](#trendlinjer-och-regressionsanalys)
 
 
 
@@ -120,9 +120,11 @@ Klicka på grafen och välj *Chart*, högst upp. Du kan nu byta typ av graf och 
 exempelvis titel och hur etiketter representeras.
 
 
-### Trendlinjer
+### Trendlinjer och regressionsanalys
 
 *Trendlinjer går, i dagsläget, inte att skriva in direkt i *Excel Online*. För detta krävs den nedladdade versionen.*
+
+Målet med regressionsanalys är att, utifrån observerade data, skapa en funktion som beskriver den. Ett sätt att illustrera detta med är att använda *trendlinjer*.
 
 När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka på dem, följt av *layout* för att nå alternativet *trendlines*.
 
