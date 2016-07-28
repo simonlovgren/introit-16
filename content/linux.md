@@ -13,6 +13,24 @@ Linux bygger på *öppen källkod*, vilket innebär att vem som helst kan (lagli
 
 ## Innehåll
 
++ [Universitets Linux-datorer](#universitets-linux-datorer)
+	- [Ditt konto](#ditt-konto)
+		+ [Inloggning](#inloggning)
+		+ [Hemkatalogen](#hemkatalogen)
+	- [Filhantering](#filhantering)
+	- [Starta program](#starta-program)
+	- [Kända problem](#kända-problem)
++ [Terminalen](#terminalen)
+	- [Vad *är* det?](#vad-är-det)
+	- [Fördelar med UNIX-terminalen](#fördelar-med-unix-terminalen)
+	- [Grundläggande användning](#grundläggande-användning)
+		+ [Öppna en terminalemulator](#öppna-en-terminalemulator)
+		+ [Vanliga kommandon](#vanliga-kommandon)
+		+ [Övriga tips](#övriga-tips)
+	- [Filsystemet](#filsystemet)
+		+ [Absolut sökväg](#absolut-sökväg)
+		+ [Relativ sökväg](#relativ-sökväg)
+
 
 ## Universitets Linux-datorer
 
