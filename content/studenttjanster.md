@@ -52,13 +52,13 @@ Eftersom Uppsala Universitet använder dessa uppgifter för att skicka ut inform
 till dig, är det viktigt att de stämmer. Verifiera detta och ändra om så
 behövs.
 
-{{< figure src="/images/studenttjanster/min-profil-val.png" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/min-profil-val.png" >}}
 
 #### E-Post
 Du har även en alldeles egen e-post-address! För att ta emot meddelanden från
 den går du in på "Vidaresändning av e-post", som ligger i menyn på höger sida,
 förutsatt att du redan klickat på "Min profil".
-{{< figure src="/images/studenttjanster/e-post.png" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/e-post.png" >}}
 
 Universitets anställda kommer använda denna för att skicka information till
 dig. Dessutom kan du använda denna address för att verifiera att du är student.
@@ -92,11 +92,11 @@ Du kan även hitta en länk för att prenumerera på schemat, eller ladda ner de
 som fil. Vidare kan du också ställa in hur den ser ut, om du föredrar en viss
 formatering.
 
-{{< figure src="/images/studenttjanster/schema.gif" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/schema.gif" >}}
 
 Det är inte helt uppenbart hur man prenumererar via Google Calendar: du når
 alternativet genom att klicka på "Other Calendars", följt av "Add by URL".
-{{< figure src="/images/studenttjanster/gcal.gif" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/gcal.gif" >}}
 
 Teknats mobila hemsida kan också visa schema och fungerar ofta när
 studentportalen inte gör det.
@@ -124,7 +124,7 @@ Du anmäler dig till tentamen genom att gå in på **Mina studier**, följt av
 tentamensanmälningar i sidomenyn. Startsidan för studentportalen brukar också
 ha en länk till tentamensanmälningar.
 
-{{< figure src="/images/studenttjanster/tenta.png" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/tenta.png" >}}
 
 Notera att anmälan *måste* ske senast 12 dagar innan tentamen, annars riskerar
 du att förlora din plats. Eftersom du även kan ångra din anmälan, senast 12
@@ -155,7 +155,7 @@ Gränssnittet är lite klurigt:
 6. Välj **99998** som kundnummer.
 7. Fyll i information om vad rummet ska användas till och klicka på boka.
 
-{{< figure src="/images/studenttjanster/bokning.gif" title="You can do it!" >}}
+{{< figure src="/images/studenttjanster/bokning.gif" >}}
 
 
 ## Utskrift
