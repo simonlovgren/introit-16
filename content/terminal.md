@@ -65,16 +65,16 @@ På Ubuntu-versionen som används i universitets datorer kan du trycka `<Ctrl>+<
 Terminalen öppnas med hem-mappen aktiv.
 
 Du använder den helt enkelt genom att skriva ett kommando och trycka `<Enter>`.
-Det finns ett stort antal kommandon som fungerar på många olika sätt.
+Det finns ett stort antal kommandon där de flesta fungerar enligt syntaxen `<kommando> --<flagga> <argument>`.
 
 Kommandot `ls` är ett bra, icke-destruktivt exempel:
 
-1. Testa att skriva in `ls` och trycka <Enter>. Programmet kommer nu lista alla filer som finns i den öppna katalogen.
+1. Testa att skriva in `ls` och trycka `<Enter>`. Programmet kommer nu lista alla filer som finns i den öppna katalogen.
 2. Prova kommandot `ls --all`. Bindesstreck används för att signalera *flaggor*. `--all` ber programmet att visa alla filer, även dolda.
-3. Prova kommandot `ls -a`. Enkla bindesstreck används (ofta) som genvägar för längre ord, så att *ett* tecken står för en flagg. `-a` är synonymt med `--all`.
-4. Prova kommandot `ls -lha`. Detta är egentligen *tre olika* alternativ, där de två nya är:
-    + `-l`, dvs "long list format"
-    + `-h`, som visar filstorlekar i "human-readable"
+3. Prova kommandot `ls -a`. Enkla bindesstreck används (ofta) som genvägar för längre ord, så att *ett* tecken står för en flagga. `-a` är synonymt med `--all`.
+4. Prova kommandot `ls -lha`. Detta är egentligen *tre olika* flaggor, där de två nya är:
+    + `-l`, som står för "long list format"
+    + `-h`, som visar filstorlekar i "human-readable" format (dvs i form av Kilobytes och liknande)
 5. Prova kommandot `ls Desktop`. `Desktop`, dvs din skrivbordsmapp, är ett *argument*, vilket `ls` tolkar som mappen den ska skriva ut.
 6. Prova kommandot `ls --help`. Detta visar en lista på alla tillgängliga alternativ för `ls`.
 
@@ -116,6 +116,11 @@ En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existera
     - I Mac OS X motsvaras denna av `/Users/<användarnamn>`
 
 
+### Komprimerade mappar
+
+I Linux används ofta `tar`för komprimering av mappar. Om du stöter på filer av typen `tar.bz2` och `tar.gz` kan du använda det för att extrahera dem.
+
+
 ### Historik
 
 För att upprepa tidigare kommandon finns två metoder:
@@ -148,9 +153,33 @@ En av de mest kraftfulla verkygen i terminalen är `ssh`.
 För att koppla upp dig till UU:s [Linuxservrar](http://www.it.uu.se/datordrift/maskinpark/linux) skriver du helt enkelt `ssh <användarnamn>@<servernamn>`, varefter den frågar efter *Lösenord A* -- på så sätt kan du arbeta på universitets datorer hemifrån.
 
 
-## Piping
+## In- och utdata
 
-*Piping* används för att "kedja" in- och utdata i program. 
+*Indata* är de värden som skickas in till program medan *utdata* är det som skickas ut. Exempelvis är utdatat från kommandot `ls` de filer som finns i den nuvarande mappen.
+
+### Piping
+
+*Piping* används för att "kedja" in- och utdata mellan program.
+
+Symbolen `|`, som skrivs med `<AltGr>+<` på svenska tangentbord, skrivs mellan kommandon för att utdatan från det föregående används som indata på det senare.
+
+Ett mycket användbart exempel är programmet `grep`, vilket filtrerar fram sitt argument ur indatan.
+Exempelvis kan du skriva `history | grep rm`. Utdatan från `history` skickas då vidare som indata till `grep`, vilket i sin tur skriver ut alla rader med texten `rm`.
+
+Du kan använda pipes i längre kedjor. För att räkna antalet processer som genereras av en webbläsare, exempelvis *Chromium* skriver vi `ps -A | grep chromium | wc -l`
+
+{{< figure src="/images/terminal/piping.gif" title="Piping kedjar in- och utdata" >}}
+
++ `ps -A` listar alla aktiva processer
++ `grep chromium` filtrerar fram alla rader med ordet "chromium"
++ Programmet `wc`, som används för att räkna exempelvis ord och tecken, med flaggan `-l`, räknar antalet utskrivna rader.
+
+
+### Använda filer
+
+Du kan även använda filer för in- och utdata med hjälp av symbolerna `<, >, >>`.
+
++ `<kommando> > <filnamn>` skriver utdata från kommando till filnamn.
 
 
 ## Övriga tips
@@ -160,8 +189,6 @@ För att koppla upp dig till UU:s [Linuxservrar](http://www.it.uu.se/datordrift/
 + Piltangenterna upp och ner scrollar historik
 + Du kan använda reguljära uttryck, dvs symboler som `*` för att matcha ord i argument
     - Exempelvis flyttar kommandot `mv ./*.jpg ~/Pictures` alla filer som slutar med `.jpg` i den aktiva mappen till mappen Pictures i din hemkatalog
-+ Suffixet `| grep <uttryck>` filtrerar fram alla rader som innehåller <uttryck>
-    - För att exempelvis visa alla gånger du har skrivit in `rm` kan du skriva `history | grep rm`
 + `<kommando> >> <textfil>` lägger till utskriften av `<kommando>` i slutet av filen `textfil`.
 
 
