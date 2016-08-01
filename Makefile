@@ -1,6 +1,6 @@
-.PHONY: all, html, css, clean, section 
+.PHONY: all, html, css, clean, section, server, draft_server
 
-all: css html server draft_server
+all: css html
 
 html:
 	hugo

@@ -228,6 +228,31 @@ figcaption h4 {
     color: #fff;
 }
 
+/* Logotype */
+.uu-logo {
+    background-color: #990000;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+}
+@media all and (min-width: 1024px) {
+    .uu-logo {
+        position: absolute;
+        top: 0;
+        left: 50px;
+        background-position: 50%;
+        background-size: 80%;
+        width: 80px;
+        height: 120px;
+    }
+}
+@media all and (max-width: 1023px) {
+    .uu-logo {
+        background-position: 50%;
+        background-size: auto 70%;
+        height: 80px;
+    }
+}
+
 /* Top flag */
 .top-flag {
   background-color: $default_dark;
