@@ -13,19 +13,27 @@ Med den kan du utan svårighet konfigurera en server på andra sidan jorden i di
 
 ## Innehåll
 
-- [Vad *är* det?](#vad-är-det)
-- [Fördelar med UNIX-terminalen](#fördelar-med-unix-terminalen)
-- [Grundläggande användning](#grundläggande-användning)
-    + [Öppna en terminalemulator](#öppna-en-terminalemulator)
-    + [Vanliga kommandon](#vanliga-kommandon)
-    + [Övriga tips](#övriga-tips)
-- [Filsystemet](#filsystemet)
-    + [Absolut sökväg](#absolut-sökväg)
-    + [Relativ sökväg](#relativ-sökväg)
++ [Vad *är* det?](#vad-är-det)
++ [Fördelar med UNIX-terminalen](#fördelar-med-unix-terminalen)
++ [Grundläggande användning](#grundläggande-användning)
+	- [Öppna en terminalemulator](#öppna-en-terminalemulator)
+	- [Användning av terminalen](#användning-av-terminalen)
++ [Vanliga kommandon](#vanliga-kommandon)
+	- [Grundläggande filhantering](#grundläggande-filhantering)
+		+ [Sökvägar](#sökvägar)
+	- [Komprimerade mappar](#komprimerade-mappar)
+	- [Historik](#historik)
+    - [Hitta filer](#hitta-filer)
+	- [Processhantering](#processhantering)
+	- [Fjärråtkomst via SSH](#fjärråtkomst-via-ssh)
++ [In- och utdata](#in-och-utdata)
+	- [Piping](#piping)
+	- [Använda filer](#använda-filer)
++ [Multitasking](#multitasking)
++ [Övriga tips](#övriga-tips)
 
 
 ## Vad *är* det?
-
 
 Kort sagt är terminalen ett textbaserat gränssnitt, dvs är ett sätt att använda datorn utan mus, fönster och ikoner.
 
@@ -34,6 +42,8 @@ Kort sagt är terminalen ett textbaserat gränssnitt, dvs är ett sätt att anv�
 Den kräver, i sig, mycket lite för att fungera men kan ändå användas till allt som inte måste visas med bilder.
 
 Terminalen används med hjälp av ett *shell*, där den vanligaste är *bash* (som står för Bourne Again SHell). Denna finns inbyggd i Mac OS X och numera även Windows 10, tack vare att den är så populär bland utvecklare.
+
+
 
 ## Fördelar med UNIX-terminalen
 
@@ -46,18 +56,25 @@ Vidare är det mycket lättare att skriva program som interagerar via terminalen
 
 Med grundläggande kunskaper kommer du ha tillgång till många fler verktyg, samt spara massor av tid och huvudvärk när du vill skapa egna. Större vana låter dig dessutom använda datorer mycket mer effektivt.
 
+
+
 ## Grundläggande användning
 
 Även vana datoranvändare kan känna sig obekväma med textbaserade gränssnitt. Målet i detta steg är att visa hur grunderna är mycket enkla att komma igång med.
 
 Med detta kommer du även kunna öppna och redigera textfiler på universitets datorer hemifrån!
 
+
 ### Öppna en terminalemulator
 
 På Ubuntu-versionen som används i universitets datorer kan du trycka `<Ctrl>+<Alt>+t` för att öppna en terminalemulator. Den kan även startas som ett vanligt program under *Applications -> Accessories -> Terminal*.
 
 + På Mac OS X öppnar du den enklast genom att söka efter `terminal` i Spotlight.
-+ Microsoft har tillsammans med Canonical (som ligger bakom Ubuntu) introducerat *bash* för Windows 10. En installationsguide finns här: https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
++ För Windows finns det i dagsläget ingen inbyggd UNIX-terminal:
+    - [PuTTY](http://www.putty.org/) låter dig ansluta till en UNIX-server via [SSH](#fjärråtkomst-via-ssh) -- du kan då helt enkelt logga in på en av universitets Linux-servrar med samma uppgifter som studentportalen.
+    - [Cygwin](https://www.cygwin.com/) låter dig installera ett stort antal program som ingår i de flesta Linux-installationer.
+    - Microsoft har tillsammans med Canonical (som ligger bakom Ubuntu) introducerat *bash* för Windows 10. En installationsguide finns här: https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
+    - Du kan även installera ett helt Linux-system med minimal ansträngning på en Windows-dator. Mer om detta står i Linux-modulen.
 
 
 ### Användning av terminalen
@@ -65,9 +82,9 @@ På Ubuntu-versionen som används i universitets datorer kan du trycka `<Ctrl>+<
 Terminalen öppnas med hem-mappen aktiv.
 
 Du använder den helt enkelt genom att skriva ett kommando och trycka `<Enter>`.
-Det finns ett stort antal kommandon där de flesta fungerar enligt syntaxen `<kommando> --<flagga> <argument>`.
+Det finns ett stort antal program där de flesta fungerar enligt syntaxen `<kommando> --<flagga> <argument>`.
 
-Kommandot `ls` är ett bra, icke-destruktivt exempel:
+Programmet `ls` är ett bra, icke-destruktivt exempel:
 
 1. Testa att skriva in `ls` och trycka `<Enter>`. Programmet kommer nu lista alla filer som finns i den öppna katalogen.
 2. Prova kommandot `ls --all`. Bindesstreck används för att signalera *flaggor*. `--all` ber programmet att visa alla filer, även dolda.
@@ -79,9 +96,11 @@ Kommandot `ls` är ett bra, icke-destruktivt exempel:
 6. Prova kommandot `ls --help`. Detta visar en lista på alla tillgängliga alternativ för `ls`.
 
 
+
 ## Vanliga kommandon
 
 Det finns ett stort antal kommandon inbyggda i de flesta terminaler.
+
 
 ### Grundläggande filhantering
 
@@ -112,7 +131,8 @@ En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existera
 
 + `./` syftar på den nuvarande mappen. För att exekvera `script.sh` som ligger i mappen du är i, kan du skriva `./script.sh`
 + `../` syftar på mappen över den aktiva. Om du befinner dig i `/mount/usb` är alltså `../` synonymt med `/mount/`
-+ `~/` (*tilde*) syftar på din hem-mapp, som kan ersättas av `/home/<användarnamn>`.
++ `~/` (*tilde*) syftar på din hem-mapp och är synonym med `/home/<användarnamn>`.
+    - Skrivbordsmappen för den aktiva användaren är därmed `~/Desktop`
     - I Mac OS X motsvaras denna av `/Users/<användarnamn>`
 
 
@@ -120,10 +140,34 @@ En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existera
 
 I Linux används ofta `tar`för komprimering av mappar. Om du stöter på filer av typen `tar.bz2` och `tar.gz` kan du använda det för att extrahera dem.
 
+Vanliga flaggor är:
+
++ `-x`, *extract*, packar upp ett arkiv.
++ `-c`, *compress*, komprimerar till ett arkiv.
++ `-v`, *verbose*, skriver ut samtliga filer som komprimeras eller extraheras.
++ `-f`, *file*, innebär att arkivet ska läsas eller skrivas från en fil.
++ `-j`, innebär att algoritmen *bzip2* ska användas.
++ `-z`, innebär att algoritmen *gzip* ska användas.
+    - Komprimering med *bzip2* erbjuder ofta mindre arkiv, medan *gzip* tenderar att vara mycket snabbare.
+
+Om du exempelvis har arkivet `archive.tar.gz` kan du extrahera den med kommandot `tar -xvzf archive.tar.gz`.
+
+
+### Hitta filer
+
+Kommandot `find` låter dig söka och hitta filer.
+Du använder det genom att skriva `find <mapp> -<sökalternativ> <term>`.
+
+För att hitta filen `dokument.txt` i din hemkatalog skriver du `find ~/ -name dokument.txt`.
+
+{{< figure src="/images/terminal/find.gif" title="Kommandot find låter dig hitta filer." >}}
+
+För att söka efter mappar lägger du till alternativet `-type d`. Om du exempelvis vill hitta alla mappar med namnet "Foo" i mappen `~/Documents` skriver du `find ~/Documents -type d -name Foo`.
+
 
 ### Historik
 
-För att upprepa tidigare kommandon finns två metoder:
+När du experimenterar med terminalen kommer det bli jobbigt att skriva samma kommandon flera gånger.
 
 + `history` skriver ut kommandohistorik.
     - För att göra om ett kommando i historiken skriver du `!<nummer>`.
@@ -134,23 +178,25 @@ För att upprepa tidigare kommandon finns två metoder:
 ### Processhantering
 
 I Linux startar program i *processer*, där de i sin tur kan starta flera. Vardera har ett eget id-nummer, kallat *PID*.
+När program kraschar eller tar för mycket resurser är det bra att hålla koll på hur man hanterar dem.
 
 + `top` och `htop` visar aktiva processer i realtid.
 + `ps`, med alternativ, visar en lista av processer.
 + `kill` följt av PID, dödar den processen.
-    - Detta motsvarar `Force Quit` i Mac OS X och att avsluta med aktivitetshanteraren i Windows
+    - Detta motsvarar *Force Quit* i Mac OS X och att avsluta med aktivitetshanteraren i Windows
     - Observera att du kan råka stänga av viktiga processer med detta kommando, vilket kan leda till förlorad data och/eller omstart av datorn
 + `<Ctrl>+C` skickar en kill-signal till ett aktivt program
     - Detta är praktiskt om ett aktivt program har kraschat!
 
 
-### Fjärråtkomst
+### Fjärråtkomst via SSH
 
 En av de mest kraftfulla verkygen i terminalen är `ssh`.
 
 `ssh`, *secure shell*, skapar en krypterad anslutning till en annan dator och låter dig använda den
 
 För att koppla upp dig till UU:s [Linuxservrar](http://www.it.uu.se/datordrift/maskinpark/linux) skriver du helt enkelt `ssh <användarnamn>@<servernamn>`, varefter den frågar efter *Lösenord A* -- på så sätt kan du arbeta på universitets datorer hemifrån.
+
 
 
 ## In- och utdata
@@ -180,16 +226,34 @@ Du kan använda pipes i längre kedjor. För att räkna antalet processer som ge
 Du kan även använda filer för in- och utdata med hjälp av symbolerna `<, >, >>`.
 
 + `<kommando> > <filnamn>` skriver utdata från kommando till filnamn.
+    - Befintlig data i filen raderas -- var försiktig!
+    - Detta är mycket smidigt med program som `lspci`, vilka skriver ut stora mängder data. Testa exempelvis kommandot `lspci > hardware.txt`.
++ `<kommando> >> <filnamn>` skriver utdata från kommando till filnamn.
+    - Utskriften läggs till i slutet av filen
++ `<kommando> < <filnamn>` använder filen som indata till kommandot.
+    - Kan med fördel användas för att testa program som styrs via terminalen
+
+
+
+## Multitasking
+
+I terminalen kan du ha flera program igång, enligt vad som kallas för *jobs*.
+
++ Starta ett program i bakgrunden med suffixet `&`.
+    - Du kan testa detta genom att skriva `nano &`.
++ Skicka ett program till bakgrunden och återgå till terminalen med kortkommandot `<Ctrl>-Z`
+    - Du kan prova detta genom att öppna editorn `vi` och trycka `<Ctrl>-Z`.
++ Visa aktiva program med kommandot `jobs`.
+    - Notera siffrorna längst till vänster!
++ Återgå till ett program med `fg`
+    - `fg %<siffra>` kommer öppna jobbet med motsvarande siffra i `jobs`.
+    - `fg` öppnar programmet som ligger "överst", dvs det som senast blev lagt i bakgrunden.
+
 
 
 ## Övriga tips
 
 + `tab` används för att avsluta ett ord
     {{< figure src="/images/terminal/tab.gif" title="Tab-användning" >}}
-+ Piltangenterna upp och ner scrollar historik
-+ Du kan använda reguljära uttryck, dvs symboler som `*` för att matcha ord i argument
++ Du kan använda *wildcards*, dvs symboler som `*` för att matcha ord i argument
     - Exempelvis flyttar kommandot `mv ./*.jpg ~/Pictures` alla filer som slutar med `.jpg` i den aktiva mappen till mappen Pictures i din hemkatalog
-+ `<kommando> >> <textfil>` lägger till utskriften av `<kommando>` i slutet av filen `textfil`.
-
-
-
