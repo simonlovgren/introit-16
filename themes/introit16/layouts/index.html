@@ -4,7 +4,8 @@
 <section id="cards">
     {{ range $section, $pages := .Site.Sections }}
       <!-- Exclude root section -->
-      {{if $section }}
+      {{ if $section }}
+      {{ if not (index $.Site.Data.modules $section).hidden }}
         <div class="card {{ lower (title $section) }}">
           <div class="top"></div>
           <div class="logo"></div>
@@ -23,7 +24,8 @@
             </div>
           </div>
         </div>
-      {{ end}}
+      {{ end }}
+      {{ end }}
     {{ end }}
     <div class="clr"></div>
 </section>
