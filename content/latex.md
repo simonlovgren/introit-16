@@ -160,13 +160,15 @@ Om du inte vill skriva detta själv finns ett kopierbart exempel i slutet av avs
 | Kommando  | Förklaring |
 | --------- | ---------- |
 | `\documentclass[12pt,a4paper]{article}` | Väljer dokumenttyp |
-| `\usepackage[swedish]{babel}` | Radbrytningar enligt svensk språkstandard |
+| `\usepackage[swedish]{babel}` | Ställa in dokumentets språk |
 | `\usepackage[T1]{fontenc}`    | Förbättrar rendering av tecken som `å ä ö` |
 | `\usepackage[utf8]{inputenc}` | Förbättrad tolkning av specialtecken |
 
 `\usepackage` importerar helt enkelt ett *paket* för användning i ditt dokument. De används även för att lägga till extra kommandon, som särskilda matematiska tecken.
 
 Om du skriver ett dokument på engelska kan du med fördel hoppa över `\usepackage[swedish]{babel}`, men det kan vara en god idé att behålla de andra paketen för exempelvis namn som "Björn".
+
+Språkvalet ställer in automatiskt genererade ord, som "Innehåll", samt radbrytningar.
 
 
 ### Dokumentmiljön
@@ -221,8 +223,9 @@ Därefter skriver du helt enkelt `\maketitle` där du vill ha titeln, förslagsv
 
 Ett exempel följer nedan. Notera att de irrelevanta delarna av preamblen är bortklippta.
 
+
 ```latex
-\title{Exempeltitel}
+\title{Titel}
 \author{Författare}
 
 \begin{document}
@@ -231,6 +234,8 @@ Ett exempel följer nedan. Notera att de irrelevanta delarna av preamblen är bo
 Dokumentets innehåll står här!
 \end{document}
 ```
+
+{{< figure src="/images/latex/titel.png" title="Enkel titel i LaTeX" >}}
 
 
 ### Generera en innehållsförteckning
@@ -241,6 +246,7 @@ Ibland krävs det att dokumentet genereras två gånger för att innehållsfört
 
 Tänk på att det kan vara lite överflödigt för kortare texter.
 
+{{< figure src="/images/latex/toc.png" title="Överflödig innehållsförteckning" >}}
 
 ### Listor
 
@@ -252,6 +258,8 @@ Den enklaste typen av lista gör du med miljön `itemize`, där varje inlägg p�
     \item En till grej
 \end{itemize}
 ```
+
+{{< figure src="/images/latex/itemize.png" title="Lista med itemize" >}}
 
 För att göra nästlade listor påbörjar du en ny miljö i den befintliga.
 
@@ -268,6 +276,8 @@ Du kan även göra numrerade listor med miljön `enumerate`.
 \end{enumerate}
 ```
 
+{{< figure src="/images/latex/enumerate.png" title="Nästlad lista med enumerate" >}}
+
 För att skriva ordboksliknande listor använder du enklast miljön `description`. Varje inlägg skrivs då `\item[Term]`
 
 ```latex
@@ -276,6 +286,8 @@ För att skriva ordboksliknande listor använder du enklast miljön `description
     \item[En till grej] En till förklaring
 \end{description}
 ```
+
+{{< figure src="/images/latex/description.png" title="Lista med description" >}}
 
 
 ### Tabeller
@@ -307,6 +319,8 @@ Väl i tabellen använder du `&` för att separera kolonner och `\\` för att av
                     & Två linjer till höger & Två linjer till vänster \\
 \end{tabular}
 ```
+
+{{< figure src="/images/latex/tabular.png" title="Du kan även göra fula tabeller i LaTeX" >}}
 
 Notera att mellanslag och radbrytningar i den råa texten inte spelar någon roll. Därför kan du anpassa detta för att göra det så läsligt som möjligt för dig själv.
 Lägg även märke till att inställningarna för tabellen skrivs inom måsvingar.
@@ -368,6 +382,7 @@ kan beräknas enligt följande
 \end{align*}
 ```
 
+{{< figure src="/images/latex/math.png" title="Uppställda ekvationer" >}}
 
 ### Grafik
 
@@ -401,6 +416,7 @@ Se figur \ref{fig:foto1}.
 + `\label` gör att du kan referera till bilden med kommandot `\ref`. LaTeX genererar då automatiskt olika index för varje figur, så du inte behöver ändra dessa själv om du exempelvis lägger till en ny bild tidigare i texten.
 
 
+{{< figure src="/images/latex/figure.png" title="Figur i TeX" >}}
 
 ### Referenser
 
