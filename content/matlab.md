@@ -6,17 +6,17 @@ title = "Matlab"
 
 +++
 
-MATLAB är ett datorprogram och programspråk som är skapat av företaget MathWorks.
-Programmet används framförallt till tekniska- och matematiska uträkningar och
-nyttjas flitigt som ett verktyg i matematikundervisning på universitet och
-högskolor.
+MATLAB är ett datorprogram och programspråk som är skapat av företaget MathWorks.
+Programmet används framförallt till tekniska- och matematiska uträkningar och
+nyttjas flitigt som ett verktyg i matematikundervisning på universitet och
+högskolor.
 
 **Det är rekommenderat att du startar MATLAB och testar de kommandon/exempel
 som ges i texten samtidigt som du läser.**
 
 ## Vad kan du göra i MATLAB?
 
-- Utföra beräkningar
+- Utföra beräkningar
 - Läsa eller spara till en fil
 - Skapa bilder, grafik och diagram
 - Skapa grafiska användargränssnitt
@@ -197,10 +197,24 @@ c = sqrt(a)   % blir 8
 Det är inte lätt att komma ihåg hur alla funktioner skall skrivas in. Som tur är
 finns ett hjälpsystem i MATLAB för just sådana tillfällen. För att ta reda på
 mer om hur en funktion skall skrivas- och fungerar kan du använda
-`help`-kommandot:
+`help`-kommandot. Skriv helt enkelt `help <funktionsnamn>` i kommandofönstret.
+**Ex. för funktionen sqrt**:
 
 ``` matlab
 help sqrt
+```
+
+vilket ger utskriften:
+
+``` matlab
+ sqrt   Square root.
+     sqrt(X) is the square root of the elements of X. Complex 
+     results are produced if X is not positive.
+
+     See also sqrtm, realsqrt, hypot.
+
+     Reference page for sqrt
+     Other functions named sqrt
 ```
 
 ### Grafer
@@ -253,11 +267,11 @@ ylabel('y-axel')
 
 ## Spara program
 
-## `Överkurs` Hur MATLAB kan användas
-Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer här förenklad matris-förklaring:
+## `Överkurs` Hur MATLAB kan användas
+Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer här förenklad matris-förklaring:
 
 ### Exempel 1
-En matris kan tolkas som en lista med koefficienter i linjara ekvationssystem.
+En matris kan tolkas som en lista med koefficienter i linjara ekvationssystem.
 
 $$2x\_1+3x\_2-4x\_3$$
 
@@ -272,6 +286,6 @@ $$2x\_1+3x\_2 = 10$$
 $$4x\_1+5x\_2 = 12$$
 $$\begin{bmatrix}2 & 3 \\\ 4 & 5 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \end{bmatrix} = \begin{bmatrix}10 \\\ 12 \end{bmatrix}$$
 
-MATLAB är ett utmärkt verktyg för att lösa sådana ekvationer men i den här kursen räcker det med att ni ser matriser som en lista med koefficienter. Blev ni däremot nyfikna och vill förbereda er ännu mer för kommande kurser kan ni kika lite på http://sv.wikipedia.org/wiki/Matris.
+MATLAB är ett utmärkt verktyg för att lösa sådana ekvationer men i den här kursen räcker det med att ni ser matriser som en lista med koefficienter. Blev ni däremot nyfikna och vill förbereda er ännu mer för kommande kurser kan ni kika lite på http://sv.wikipedia.org/wiki/Matris.
 
 ## `Överkurs` Symbolhantering i MATLAB
