@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Endast för handledare"
-AuthUserFile /path/to/final/handledareinfo/.htpasswd
+AuthUserFile /it/www/htdocs/it/education/course/homepage/introdat/ht16/handledarinfo/.htpasswd
 require valid-user
