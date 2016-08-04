@@ -564,7 +564,19 @@ innan vi försökte oss på en merge.
 
 ## GitHub
 
-- registrera sig (student pack)
+[GitHub](https://github.com) är en av de största tjänsterna på webben
+för att samarbeta över Git. Flera kurser på Uppsala universitet har
+också använt GitHub för att koordinera grupparbeten. Förutom att
+tillhandahålla remotes för git-repositories så har GitHub också ett
+antal egna funktioner. Att registrera sig är gratis, men för att få ha
+privata repositories (d.v.s. sådana som inte syns för allmänheten) måste
+man betala eller
+[registrera sig med ett studentkonto](https://education.github.com/pack). Tänk
+på att regler kring fusk och plagiat kan göra det _nödvändigt_ att
+använda privata repositories för grupparbeten! Om du är osäker -- fråga
+din lärare!
+
+
 - forkar
 - lägga till existerande repo
 - git push
@@ -584,16 +596,6 @@ innan vi försökte oss på en merge.
 - installera med homebrew
 - windows!??!
 - plug-ins för vanliga editorer
-
-## Vanliga uppgifter
-
-- lägg till ny fil
-- "vem sabbade min kod" -- git blame
-- hantera mergekonflikter
-- spola tillbaka
-- git reset --head
-- git stash
-- git ignore
 
 ## Avancerade funktioner att lära sig på egen hand
 
