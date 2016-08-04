@@ -15,6 +15,11 @@ högskolor.
 som ges i texten samtidigt som du läser.**
 
 ## Vad kan du göra i MATLAB?
+Du kan tänka på MATLAB som en avancerad grafräknare som kan programmeras att
+göra det du vill, på ditt sätt. Till exempel är det väldigt lätt att rita upp
+grafer och utföra beräkningar på stora ekvationssystem (till och med större än
+det är möjligt att lösa för hand). Ett kortare urval av enklare saker MATLAB
+kan användas till är:
 
 - Utföra beräkningar
 - Läsa eller spara till en fil
@@ -150,11 +155,10 @@ B = 42;
 ### Matematiska operationer/funktioner
 ***
 För att kunna utföra beräkningar behövs matematiska operationer/funktioner. Hur
-dessa fungerar skiljer sig lite om man vill utföra beräkningar på enkla tal
-eller listor.
+vissa av dessa fungerar skiljer sig lite om man vill utföra beräkningar på enkla
+tal eller listor.
 
 #### Enkla tal
-För enkla tal
 
 ``` matlab
 % Vi börjar med att skapa en variabel, a
@@ -192,6 +196,49 @@ b = sqrt(100) % blir 10
 c = sqrt(a)   % blir 8
 ```
 
+#### Listor
+För att snabbt utföra många beräkningar kan man använda listor. Många av
+exemplen från *enkla tal* går använa på samma sätt när det gäller listor,
+men i vissa fall måste en punkt (`.`) skrivas ut före den matematiska
+operanden (se kvadrering i exemplet nedan). Detta är då MATLAB arbetar
+med s.k. matrisberäkningar och i vissa fall förväntar sig två matriser
+och inte enkla tal.
+
+``` matlab
+% Vi börjar med att skapa en lista, a
+a = [1, 2, 3];
+
+% Addition
+b = a + 10  % blir [11, 12, 13]
+c = a + b   % blir [1+11, 2+12, 3+13] = [12, 14, 16]
+
+% Subtraktion
+d = c - 8   % blir [4, 6, 8]
+e = d - a   % blir [4-1, 6-2, 8-3] = [3, 4, 5]
+
+% Multiplikation - Notera .* för g
+f = a * 2   % blir [2, 4, 6]
+g = a .* a   % blir [1*1, 2*2, 3*3] = [1, 4, 9]
+
+% Division - Notera ./ för i
+h = g / 2   % blir [0.5000, 2.0000, 4.5000]
+i = a ./ a   % blir [1/1, 2/2, 3/3] = [1.000, 1.000, 1.0000]
+
+% Kvadrering - Notera .^ för både j och k
+j = a .^ 2   % blir [1, 4, 9]
+k = a .^ a   % blir [1^1, 2^2, 3^3]  = [1, 4, 27]
+```
+
+Vissa operationer/funktioner har inte kort notation som de ovan. Exempel på
+detta är kvadratroten, vilken anropas genom sitt funktionsnamn `sqrt`:
+
+``` matlab
+% Vi börjar med att skapa en lista, a
+a = [4, 16, 36];
+
+b = sqrt(a)   % blir [2, 4, 6]
+```
+
 ### Hjälp med funktioner
 ***
 Det är inte lätt att komma ihåg hur alla funktioner skall skrivas in. Som tur är
@@ -206,16 +253,7 @@ help sqrt
 
 vilket ger utskriften:
 
-``` matlab
- sqrt   Square root.
-     sqrt(X) is the square root of the elements of X. Complex 
-     results are produced if X is not positive.
-
-     See also sqrtm, realsqrt, hypot.
-
-     Reference page for sqrt
-     Other functions named sqrt
-```
+{{< figure src="/images/matlab/help_sqrt.png" class="small" >}}
 
 ### Grafer
 ***
@@ -265,17 +303,74 @@ ylabel('y-axel')
 
 {{< figure src="/images/matlab/x2plot_decorated.png" title="Dekorerad graf över $y=x^2$" >}}
 
+### Skriva ut text i kommandofönstret
+För att skriva ut text i kommandofönstret används funktionen `disp`. Notera att text
+som skall skrivas ut måste omslutas av `'`-tecken:
+
+``` matlab
+disp('Hallå från kommandofönstret!') % Skriver ut texten till kommandofönstret
+```
+
+### Rensa gamla variabler/historik
+Ibland kan man behöva rensa gamla variabler från minnet. Detta kan du göra via kommandot
+`clear`. För att rensa all historik skriver du:
+``` matlab
+clear all
+```
+
+För att rensa enskilda/specifika variabler skriver du variabelnamnet istället för *all*.
+Du kan även rensa flera variabler på samma gång:
+``` matlab
+% Vi skapar några variabler först
+a = 1
+b = 2
+c = 3
+
+% Sedan rensar vi a och c från minnet, men sparar b
+clear a c
+```
+
+
 ## Spara program
+Eftersom det är jobbigt att behöva skriva alla kommandon varje gång är det bra att kunna
+spara dem i en fil som ett MATLAB-program. Det är även bra om man har kod som fungerar
+bra och man vill spara för framtiden.
+
+Börja med att skapa en ny fil genom att klicka på *New Script* längst till vänster i
+menyraden. Detta öppnar en tom fil i tilredigeraren. Kopiera sedan koden nedan och
+klistra in i filen:
+
+``` matlab
+x = 2016;
+y = 1953; %  Ändra till året du föddes
+
+disp('Hej, jag heter Tintin!') % Ändra Tintin till dit namn
+disp('Min ålder är: ')
+disp(x-y)
+```
+
+Justera enligt kommentarer. Tryck därefter på diskett-ikonen (*save*) i menyraden och spara
+filen som **test.m** i din arbetsmapp (den är förvald som destination). Filen kommer nu
+synas i arbetsmapp-fönstret i MATLAB.
+
+Skriv nu namnet på filen (`test`) i kommandofönstret för att köra ditt program!
+
+{{< figure src="/images/matlab/savefile.gif" title="Spara en programfil i MATLAB" >}}
+
+
 
 ## `Överkurs` Hur MATLAB kan användas
-Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer här förenklad matris-förklaring:
+Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget
+vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt
+kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer
+här förenklad matris-förklaring:
 
 ### Exempel 1
-En matris kan tolkas som en lista med koefficienter i linjara ekvationssystem.
+En matris kan tolkas som en lista med koefficienter i linjära ekvationssystem. Tag till exempel:
 
 $$2x\_1+3x\_2-4x\_3$$
 
-Det översta uttrycket, med tre olika obekanta x, skrivs på matrisform:
+vilket på matrisform skulle se ut såhär:
 
 $$\begin{bmatrix}2 & 3 & -4 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \\\ x\_3 \end{bmatrix}$$
 
@@ -286,6 +381,8 @@ $$2x\_1+3x\_2 = 10$$
 $$4x\_1+5x\_2 = 12$$
 $$\begin{bmatrix}2 & 3 \\\ 4 & 5 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \end{bmatrix} = \begin{bmatrix}10 \\\ 12 \end{bmatrix}$$
 
-MATLAB är ett utmärkt verktyg för att lösa sådana ekvationer men i den här kursen räcker det med att ni ser matriser som en lista med koefficienter. Blev ni däremot nyfikna och vill förbereda er ännu mer för kommande kurser kan ni kika lite på http://sv.wikipedia.org/wiki/Matris.
+MATLAB är ett utmärkt verktyg för att lösa sådana ekvationer, men i den här kursen räcker det med
+att ni ser matriser som en lista med koefficienter. Blev ni däremot nyfikna och vill förbereda er
+ännu mer för kommande kurser kan ni kika lite på http://sv.wikipedia.org/wiki/Matris.
 
 ## `Överkurs` Symbolhantering i MATLAB
