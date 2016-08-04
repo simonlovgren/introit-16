@@ -8,7 +8,7 @@ title = "GIT"
 
 # Git
 
-## Vad är Git
+## Vad är Git?
 
 Git är ett revisionshanteringssystem, främst tänkt att användas för
 kod. Det innebär att det är ett verktyg för att samarbeta kring kod,
@@ -32,7 +32,7 @@ arbeta i under er utbildning.
 En "git-repository" är en samling av filer och mappar som Git håller
 koll på- och hanterar ändringar i. Varje git-repository har en egen
 mapp, som kan heta t.ex. `ospp-projekt-grupp-1` eller något liknande,
-egentligen vad som helst. Varje i en git-repository kan vara i ett av
+egentligen vad som helst. Varje fil i en git-repository kan vara i ett av
 tre tillstånd:
 
 1. Inte incheckad
@@ -108,7 +108,7 @@ Man börjar använda git på ett av två sätt. Antingen hämtar man hem kod
 som redan finns genom kommandot `git clone` ("clone" eftersom man
 "klonar" en kopia av koden och dess historik till sin dator):
 
-```sh
+```none
 $ git clone https://github.com/rg3/youtube-dl
 Cloning into 'youtube-dl'...
 remote: Counting objects: 70370, done.
@@ -130,15 +130,15 @@ Nu kan vi ställa oss i mappen som git skapade med `cd youtube-dl` som
 vanligt och börja köra kommandon. Om man t.ex. kör `git log` får man en
 historik över alla commits med nyast överst, liknande den här:
 
-```
+```none
 commit 1094074c045140e9a91b521b0a933f394a7bba91
-Author: Remita Amine <remitamine@gmail.com>
+Author: Remita Amine <MAILADRESS BORTTAGEN>
 Date:   Thu Aug 4 09:38:37 2016 +0100
 
     [kaltura] extract subtitles and reduce requests
 
 commit 217d5ae0137943829db23d13eee425e5fd7c08ae
-Author: Remita Amine <remitamine@gmail.com>
+Author: Remita Amine <MAILADRESS BORTTAGEN>
 Date:   Thu Aug 4 09:37:27 2016 +0100
 
     [vodplatform] Add new extractor
@@ -170,16 +170,397 @@ Avsluta igen med `q` och scrolla upp och ner med piltangenterna.
 
 #### Starta en egen repository med git init
 
+För att starta en tom git-repository kör man kommandot `git init` i
+mappen man vill ha den (typiskt mappen man har sin källkod i). Om du
+börjar helt från början måste du alltså först skapa en mapp att ha ditt
+projekt i. Om du tidigare stod i `youtube-dl`-repon som vi hämtade, tänk
+på att göra `cd ..` för att inte skapa din nya mapp inuti den gamla.
+
+Vi tänker oss nu att vi sätter upp en repository med textfiler för en
+fest vi ska planera:
+
+```none
+$ mkdir min-fest
+$ cd min-fest
+$ git init
+Initialized empty Git repository in /Users/albin/min-fest/.git/
+```
+
+Din sökväg blir förstås annorlunda beroende på vad din användare heter
+och var du gjorde den tomma mappen.
+
+
 #### Lägg till filer med git add
+
+Skapa filerna `gastlista.txt` och `matar.txt`, och lägg till några rader
+text i dem. Så här ser mina ut:
+```none
+$ cat matar.txt
+1. Sallad
+2. Grillad tofu med potatis
+3. Glass
+
+$ cat gastlista.txt
+- Oppfinnarjocke
+- Kalle Anka
+- Störiga mostern
+```
+
+Vi kan fråga Git vad den tycker om livet med `git status`:
+
+``` none
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	gastlista.txt
+	matar.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Här får vi massor av information. Den berättar att vi är på branchen
+master (som skapades automatiskt och just nu är den enda branchen vi
+har), att det inte finns någon tidigare historik loggad ("Initial
+commit"), och att det finns två oincheckade filer som git inte har koll
+på; `gastlista.txt` och `matar.txt`. Sist av allt får vi veta att det
+inte finns något stage:at för att committa.
+
+För att lägga till våra nya filer gör vi som Git föreslår:
+
+``` none
+$ git add gastlista.txt matar.txt
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   gastlista.txt
+	new file:   matar.txt
+```
+
+Nu förklarar Git för oss att det _finns_ ändringar som är stage:ade för
+att committas, och vilka ändringar som har gjorts (två nya filer har
+registrerats).
+
+Om vi bara skriver `git commit` så kommer git att öppna vår inställda editor för att skriva ett meddelande. Men eftersom den kan vara lite vad som helst på universitetets datorer föreslår vi att du skickar med ett meddelande direkt på kommandoraden istället:
+
+``` none
+$ git commit --message "Initial commit"
+[master (root-commit) 74c2b5b] Initial commit
+ 2 files changed, 6 insertions(+)
+ create mode 100644 gastlista.txt
+ create mode 100644 matar.txt
+
+```
+
+Git berättar för oss vilka ändringar den sparar. Om vi nu tittar i
+historiken och `git status` så ser vi att ändringarna är sparade:
+
+``` none
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+$ git log
+commit 74c2b5bedb58e818b6c550b646ff29d13bc5950c
+Author: Albin Stjerna <MAILADRESS BORTTAGEN>
+Date:   Thu Aug 4 14:00:28 2016 +0200
+
+    Initial commit
+
+```
 
 #### Registrera ändringar med git stage och git commit
 
-- git init
-- git add
-- git commit
-- git stage
-- git commit
-- git diff
+Låt oss säga att vi lägger till någon i gästlistan:
+
+``` none
+$ echo "- Joakim von Anka" >> gastlista.txt
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gastlista.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git diff
+diff --git a/gastlista.txt b/gastlista.txt
+index 4570554..84680c2 100644
+--- a/gastlista.txt
++++ b/gastlista.txt
+@@ -1,3 +1,4 @@
+ - Oppfinnarjocke
+ - Kalle Anka
+ - Störiga mostern
++- Joakim von Anka
+```
+
+Nu kan vi notera att `git diff` utan argument jämför de ändringar som
+för tillfället finns med de senaste registrerade och committade
+ändringarna. Här ser vi med andra ord att vi längst ner i filen
+`gastlista.txt` har lagt till en rad för Joakim von Anka.
+
+För att spara de nya ändringarna använder vi `git stage`:
+
+``` none
+$ git stage gastlista.txt
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gastlista.txt
+```
+
+Nu kan vi committa ändringarna precis som när vi lade till filer:
+
+``` none
+$ git commit --message "Lade till en besökare till"
+[master 57673a6] Lade till en besökare till
+ 1 file changed, 1 insertion(+)
+
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+$ git log
+commit 57673a6759f1bb395731d2778cab3b1024b083c7
+Author: Albin Stjerna <MAILADRESS BORTTAGEN>
+Date:   Thu Aug 4 14:15:22 2016 +0200
+
+    Lade till en besökare till
+
+commit 74c2b5bedb58e818b6c550b646ff29d13bc5950c
+Author: Albin Stjerna <MAILADRESS BORTTAGEN>
+Date:   Thu Aug 4 14:00:28 2016 +0200
+
+    Initial commit
+
+```
+
+#### Ångra sig med git reset
+
+Låt oss säga att vi råkade ta bort gästlistan av misstag:
+``` none
+$ rm gastlista.txt
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    gastlista.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Då kan vi återställa hela filträdet som det såg ut vid den senaste
+committen (alltså `HEAD`, om du minns från tidigare):
+
+``` none
+$ git reset --hard HEAD
+HEAD is now at 57673a6 Lade till en besökare till
+
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+$ cat gastlista.txt 
+- Oppfinnarjocke
+- Kalle Anka
+- Störiga mostern
+- Joakim von Anka
+```
+
+Det fungerar även om man har redigerat filer och vill återställa
+ändringarna, men det är också farligt eftersom det **kastar bort alla
+ocommitade ändringar**!
+
+#### Skapa- och byta mellan branches
+
+Vi kan visa vilken branch vi för tillfället är på med hjälp av `git
+branch`:
+
+``` none
+$ git branch
+* master
+```
+
+Kanske inte så spännande -- det finns en branch och den är vi på. Vi kan
+skapa en ny med hjälp av `git checkout`:
+
+``` none
+$ git checkout -b better-desserts
+Switched to a new branch 'better-desserts'
+
+$ git branch
+* better-desserts
+  master
+```
+
+Nu kan vi lägga till lite fler efterrätter (bara en är trots allt lite snålt!):
+
+``` none
+$ din-favorit-editor matar.txt
+$ git diff
+diff --git a/matar.txt b/matar.txt
+index 38e1bc6..3711a8a 100644
+--- a/matar.txt
++++ b/matar.txt
+@@ -1,3 +1,6 @@
+ 1. Sallad
+ 2. Grillad tofu med potatis
+ 3. Glass
++4. Crème brûlée
++5. Mer glass
++6. Kladdkaka
+
+$ git stage matar.txt
+$ git commit --message "Mer efterrätt!"
+[better-desserts 29e50b5] Mer efterrätt
+ 1 file changed, 3 insertions(+)
+```
+
+Låt oss säga att vi är klara med de här ändringarna nu och vill ha
+tillbaka dem till `master`. Då måste vi först byta tillbaka till
+`master` från `better-desserts` och göra en `merge` mellan dem:
+
+``` none
+$ git checkout master
+Switched to branch 'master'
+
+$ git merge better-desserts 
+Updating 57673a6..29e50b5
+Fast-forward
+ matar.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+$ git status
+On branch master
+nothing to commit, working directory clean
+```
+
+Eftersom skillnaden mellan brancharna var trivial kunde Git räkna ut hur
+de skulle slås ihop. Låt oss simulera en lite mer komplicerad
+interaktion som kan uppstå när man samarbetar på samma kod.
+
+``` none
+$ din-favorit-editor matar.txt
+$ git diff
+diff --git a/matar.txt b/matar.txt
+index 3711a8a..d6a2168 100644
+--- a/matar.txt
++++ b/matar.txt
+@@ -4,3 +4,4 @@
+ 4. Crème brûlée
+ 5. Mer glass
+ 6. Kladdkaka
++7. Sesamkakor
+
+$ git commit -a --message "Ännu mer efterrätt!"
+[master 6b5c412] Ännu mer efterrätt
+ 1 file changed, 1 insertion(+)
+ 
+$ git checkout better-desserts
+Switched to branch 'better-desserts'
+
+$ cat matar.txt
+1. Sallad
+2. Grillad tofu med potatis
+3. Glass
+4. Crème brûlée
+5. Mer glass
+6. Kladdkaka
+
+$ din-favorit-editor matar.txt
+$ git diff
+diff --git a/matar.txt b/matar.txt
+index 3711a8a..7d33dc4 100644
+--- a/matar.txt
++++ b/matar.txt
+@@ -4,3 +4,4 @@
+ 4. Crème brûlée
+ 5. Mer glass
+ 6. Kladdkaka
++7. Honungspudding
+
+$ git commit -a --message "OM NOM NOM"
+[better-desserts 039a4dc] OM NOM NOM
+ 1 file changed, 1 insertion(+)
+```
+
+Nu har vi alltså lagt till en ny rad på samma ställe i båda brancharna,
+oberoende av varandra. Det betyder att vi kommer att stöta på problem
+när vi ska slå ihop dem senare:
+
+``` none
+$ git checkout master
+Switched to branch 'master'
+
+$ git merge better-desserts 
+Auto-merging matar.txt
+CONFLICT (content): Merge conflict in matar.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+Git berättar för oss att ändringarna i `matar.txt` är inkompatibla och
+måste slås ihop för hand. Om vi öppnar den i valfri editor ser vi det
+här:
+
+``` none
+1. Sallad
+2. Grillad tofu med potatis
+3. Glass
+4. Crème brûlée
+5. Mer glass
+6. Kladdkaka
+<<<<<<< HEAD
+7. Sesamkakor
+=======
+7. Honungspudding
+>>>>>>> better-desserts
+```
+
+Vilket ska läsas som "på den här raden i HEAD finns "7. Sesamkakor"
+medan det i better-desserts finns "7. Honungspudding". Vi får helt
+enkelt öppna filen i vår editor och ändra de berörda raderna till något
+rimligt (och ta bort Gits tillägg). Sen gör vi som Git föreslår och
+committar den lagade versionen:
+``` none
+$ din-favorit-editor matar.txt
+$ git diff
+diff --cc matar.txt
+index d6a2168,7d33dc4..0000000
+--- a/matar.txt
++++ b/matar.txt
+@@@ -4,4 -4,4 +4,5 @@@
+  4. Crème brûlée
+  5. Mer glass
+  6. Kladdkaka
+ -7. Honungspudding
+ +7. Sesamkakor
+++8. Honungspudding
+
+$ git commit -a --message "Fix merge conflict"
+[master 0fc4b75] Fix merge conflict
+```
+
+Om allt blev jättjobbigt och vi ångrar oss finns alltid möjligheten att
+köra `git merge --abort` för att återställa tillståndet som det var
+innan vi försökte oss på en merge.
+
 
 ## GitHub
 
@@ -208,7 +589,6 @@ Avsluta igen med `q` och scrolla upp och ner med piltangenterna.
 
 - lägg till ny fil
 - "vem sabbade min kod" -- git blame
-- git log -- spåra ändringar
 - hantera mergekonflikter
 - spola tillbaka
 - git reset --head
