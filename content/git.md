@@ -98,17 +98,90 @@ kommer Git att göra sitt bästa för att pussla ihop projektet ändå åt er
 
 ### En kort kom-igång-guide
 
-- git clone
+Det normala arbetsflödet med git är helt kommandoradsbaserat och utgår
+från programmet `git`. Många editorer har dock stöd för att interagera
+med Git direkt.
+
+#### Hämta kod med git clone
+
+Man börjar använda git på ett av två sätt. Antingen hämtar man hem kod
+som redan finns genom kommandot `git clone` ("clone" eftersom man
+"klonar" en kopia av koden och dess historik till sin dator):
+
+```sh
+$ git clone https://github.com/rg3/youtube-dl
+Cloning into 'youtube-dl'...
+remote: Counting objects: 70370, done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 70370 (delta 8), reused 0 (delta 0), pack-reused 70349
+Receiving objects: 100% (70370/70370), 38.71 MiB | 3.28 MiB/s, done.
+Resolving deltas: 100% (51112/51112), done.
+Checking connectivity... done.
+```
+
+Här användes adressen till programmet `youtube-dl`:s källkod, men vilken
+adress som helst fungerar. Om man inte anger en mapp efter adressen
+kommer git att skapa en mapp där du står som heter samma sak som
+repositoryn (oftast slutet på adressen), i det här fallet `youtube-dl`.
+
+#### Visa historik med git log
+
+Nu kan vi ställa oss i mappen som git skapade med `cd youtube-dl` som
+vanligt och börja köra kommandon. Om man t.ex. kör `git log` får man en
+historik över alla commits med nyast överst, liknande den här:
+
+```
+commit 1094074c045140e9a91b521b0a933f394a7bba91
+Author: Remita Amine <remitamine@gmail.com>
+Date:   Thu Aug 4 09:38:37 2016 +0100
+
+    [kaltura] extract subtitles and reduce requests
+
+commit 217d5ae0137943829db23d13eee425e5fd7c08ae
+Author: Remita Amine <remitamine@gmail.com>
+Date:   Thu Aug 4 09:37:27 2016 +0100
+
+    [vodplatform] Add new extractor
+```
+
+Här kan vi alltså se två commits med sin unika nyckel
+(`1094074c045140e9a91b521b0a933f394a7bba91`), vem som checkat in den,
+när, och hur ändringarna beskrevs. Notera att båda ändringarna är
+sammanhängande funktioner som lagts till programmet.
+
+Avsluta med `q` och bläddra upp och ned med piltangenterna.
+
+#### Jämföra ändringar med git diff
+
+Om man vill veta vad som ändrades mellan de båda commitsen kan man
+använda `git diff` och deras namn. Om man inte orkar kopiera hela deras
+unika namn räcker det nästan alltid med de första tecknen i dem, så här:
+`git diff 217d5a 1094074`.
+
+{{< figure src="/images/git/git-diff.png" title="git diff mellan två commits" >}}
+
+
+Här ser vi alltså rader som tagits bort (minus) och lagts till
+(plus). På många system är också raderna färgade i rött och grönt som
+ovan. Notera att ordningen på argumenten spelar roll, eftersom det är
+skillnaden mellan att jämföra framåt och bakåt!
+
+Avsluta igen med `q` och scrolla upp och ner med piltangenterna.
+
+#### Starta en egen repository med git init
+
+#### Lägg till filer med git add
+
+#### Registrera ändringar med git stage och git commit
 
 - git init
 - git add
 - git commit
 - git stage
 - git commit
-- git log
 - git diff
 
-## Git och Github
+## GitHub
 
 - registrera sig (student pack)
 - forkar
