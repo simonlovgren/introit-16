@@ -607,27 +607,71 @@ vana att skaffa sig!
 
 ## Hur man brukar arbeta med Git i grupp
 
-- inga binärer i repon!
-- fetaure pull
-- branches requests och synkronisering med master
+Till att börja med så är ett viktigt råd att _bara versionshantera kod_!
+Genererad dokumentation, PDF:er, tillfälliga filer skapade av din
+editor, programfiler och så vidare ska _inte_ `git add`:as! Annars
+kommer kommer konstiga merge-konflikter att dyka upp när alla i gruppen
+har kompilerat varsitt lite olika program. En tumregel är: har en
+människa skrivit filen bör den versionshanteras, annars inte (undantag:
+bilder, eventuella uppgiftfiler ni kanske vill ha nära tillhands men
+inte ändra på).
+
+På små projekt med få personer och lite kod brukar det gå bra att bara
+utveckla direkt mot `master`-branchen och synkronisera mot samma
+repository på t.ex. GitHub. När projekten blir lite större (i antal
+personer speciellt) börjar lite mer avancerade metoder krävas.
+
+Ett vanligt arbetssätt i sådana situationer är feature-branches. Det
+innebär att bara mer eller mindre färdig kod som är testad och fungerar
+tillåts på `master`-branchen. All egentlig utveckling sker sedan i
+branches, som döps till något relaterat till vad de gör
+(exv. `feature/svt-play-support`). Tanken är att en enskild funktion i
+programmet man tillverkar utvecklas och mognar i en branch, och att
+denna branch hålls uppdaterad mot `master`, men inte andra parallellt
+utvecklade funktioner. På så sätt kan flera grupper inom projektet jobba
+på olika saker utan att hela tiden kliva varandra på tårna, och det
+finns alltid en senast fungerande version av programmet att jämföra med
+om något går sönder.
+
+När en funktion på en branch är klar skickas sedan en Pull Request
+(detta förutsätter förstås att GitHub används) mot `master` från
+branchen. Någon annan än den/de som utvecklat funktionen får då ansvaret
+att gå igenom alla ändringar (som dessutom går att se med hjälp av både
+GitHubs verktyg och `git diff` som vi tittade på tidigare) och försöka
+hitta brister i koden. Först när alla är nöjda och övertygade om att
+allt fungerar mergas branchen in i master. En ny branch skapas för nästa
+funktion -- och processen börjar om.
 
 ## Git på din egen dator
 
-Du kan ladda ner Git för macOS, Windows och GNU/Linux [på Gits nedladdningssida](https://git-scm.com/downloads). Där finns också närmare instruktioner. De flesta GNU/Linux-distributioner har också Git i sina pakethanterare. Om du har installerat XCode till macOS så får du också Git på köpet.
+Du kan ladda ner Git för macOS, Windows och GNU/Linux
+[på Gits nedladdningssida](https://git-scm.com/downloads). Där finns
+också närmare instruktioner. De flesta GNU/Linux-distributioner har
+också Git i sina pakethanterare. Om du har installerat XCode till macOS
+så får du också Git på köpet.
 
 ## Avancerade funktioner att lära sig på egen hand
 
-### Amend
+Nedan följer en lista på funktioner som kan vara värda att lära sig på
+egen hand, men som inte tas upp här:
 
-### Patch
-
-### Rebase
-
-### Cherry-pick
+- `amend` -- ändra och formulera om commits. Användbart om man råkat
+  skriva fel.
+- `patch` -- generera patchfiler från git-ändringar
+- `rebase` -- som `merge`, men skriver om historien. Gör det möjligt att
+  slå ihop commits, ta bort commits helt, och att flytta om t.ex. en
+  feature branch på en `master` som uppdaterats sedan den startade.
+- `cherry-pick` -- välj specifika commits från en branch och lägg dem på
+  en annan branch
 
 ### Travis och annan automatisering
 
-- studentkonton och open source
+[Travis](http://travis-ci.org) är en tjänst som erbjuder automatisering
+för projekt som också använder GitHub. Den är gratis att använda för
+personer med studentkonton på GitHub och för Open Source-projekt (i princip:
+alla med publika repositories). Bland annat kan den användas för att
+automatiskt köra tester mot nya ändringar på ett projekt -- och mot Pull
+Requests.
 
 ## Läs mer
 
