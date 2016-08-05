@@ -13,7 +13,7 @@ högskolor.
 **Det är rekommenderat att du startar MATLAB och testar de kommandon/exempel
 som ges i texten samtidigt som du läser.**
 
-### Innehåll
+## Innehåll
 
 - [Vad kan du göra i MATLAB?](#vad-kan-du-göra-i-matlab)
 - [Hur ser MATLAB ut?](#hur-ser-matlab-ut)
