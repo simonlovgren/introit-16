@@ -366,7 +366,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Då kan vi återställa hela filträdet som det såg ut vid den senaste
+Då kan vi återställa hela repositoryn som den såg ut vid den senaste
 committen (alltså `HEAD`, om du minns från tidigare):
 
 ``` none
@@ -576,11 +576,34 @@ på att regler kring fusk och plagiat kan göra det _nödvändigt_ att
 använda privata repositories för grupparbeten! Om du är osäker -- fråga
 din lärare!
 
+Förutom att GitHub låter dig husera din repository hos sig, visa
+historik och commits för en repository, och annat som redan finns i
+kommandoradsklienten så erbjuder de också två funktioner som saknas i
+kommandorads-Git: _forks_ och _pull requests_. Det finns också stöd för
+att hantera kommentarer, buggrapporter, med mera, men vi kommer inte att
+gå in på det här.
 
-- forkar
-- lägga till existerande repo
-- git push
-- git pull
+En fork är helt enkelt en fullständig kopia av en annan repository som
+hamnar under ditt konto. De används speciellt när man vill fortsätta på
+någon annans kod ostört, lite som en branch. Säg t.ex. att jag skulle
+vilja lägga till stöd för att spara ner video från SVT Play till
+`youtube-dl`, som vi laddade ner ovan. Då skulle jag kunna gå till
+`youtube-dl`:s sida på GitHub, klicka på "fork" och få en egen kopia
+under mitt egna konto som jag kan arbeta med.
+
+När jag är klar med SVT Play-ändringarna vill jag gärna ha ett sätt att
+få tillbaka dem till den officiella versionen av `youtube-dl`, och det
+är här pull requests kommer in. En pull request är helt enkelt ett
+standardiserat sätt att snällt be någon "vänligen gör en merge
+härifrån". Om en merge kan göras utan konflikter finns det dessutom en
+funktion i GitHub för att göra den direkt från webben.
+
+När man arbetar mot GitHub -- precis som vilken annan Git-server som
+helst -- så används kommandona `git pull` respektive `git push` för att
+hämta hem- respektive skicka upp sina commits till servern. Tänk på att
+det bara är committade ändringar som skickas! Att göra en `git pull`
+innan man börjar arbeta och en `git push` så fort man är klar är en bra
+vana att skaffa sig!
 
 ## Hur man brukar arbeta med Git i grupp
 
@@ -588,8 +611,6 @@ din lärare!
 - fetaure branches
 - merge-konflikter
 - pull requests och synkronisering med master
-
-## Git på IT-institutionens datorer
 
 ## Git på din egen dator
 
