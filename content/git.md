@@ -633,6 +633,9 @@ på olika saker utan att hela tiden kliva varandra på tårna, och det
 finns alltid en senast fungerande version av programmet att jämföra med
 om något går sönder.
 
+{{< figure src="/images/git/git-compare-and-pull-request.png" 
+title="GitHub är hjälpsam nog att föreslå att jag skickar en Pull Request från branchen jag precis push:ade till." >}}
+
 När en funktion på en branch är klar skickas sedan en Pull Request
 (detta förutsätter förstås att GitHub används) mot `master` från
 branchen. Någon annan än den/de som utvecklat funktionen får då ansvaret
@@ -641,6 +644,10 @@ GitHubs verktyg och `git diff` som vi tittade på tidigare) och försöka
 hitta brister i koden. Först när alla är nöjda och övertygade om att
 allt fungerar mergas branchen in i master. En ny branch skapas för nästa
 funktion -- och processen börjar om.
+
+{{< figure src="/images/git/git-create-new-pull-request.png" 
+title="Dialogruta på GitHub för att göra en Pull Request för att merga in den här guiden i resten av materialet." >}}
+
 
 ## Git på din egen dator
 
