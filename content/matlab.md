@@ -14,6 +14,8 @@ högskolor.
 **Det är rekommenderat att du startar MATLAB och testar de kommandon/exempel
 som ges i texten samtidigt som du läser.**
 
+{{< toc >}}
+
 ## Vad kan du göra i MATLAB?
 Du kan tänka på MATLAB som en avancerad grafräknare som kan programmeras att
 göra det du vill, på ditt sätt. Till exempel är det väldigt lätt att rita upp
@@ -127,14 +129,24 @@ C = [1, 2, 3, 4]
 D = [1 2 3 4]
 ```
 
-Denna typ av lista kan även kallas **radvektor**, då alla värden står på en rad.
+`Tips!` Det finns ett enkelt sätt att skapa listor utan att behöva skriva varje
+tal för hand:
+
+``` matlab
+% Skapa en lista med talen [1, 2, 3, 4, 5]
+E = [1:1:5]
+% Skapa en lista med talen [1, 3, 5, 7, 9]
+F = [1:2:10]
+```
+
+Denna typ av listor kan även kallas **radvektor**, då alla värden står på en rad.
 I MATLAB kan man även skapa listor som kallas **kolumnvektor**, där alla värden
 står i en kolumn. Detta används dock främst vid *matrisberäkningar*, och är lite
 överkurs:
 
 ``` matlab
 % Kolumnvektor, separera tal med ;
-E = [1; 2; 3; 4]
+G = [1; 2; 3; 4]
 ```
 
 **Testa själv i kommandofönstret för att se skillnaden.**
@@ -359,7 +371,7 @@ Skriv nu namnet på filen (`test`) i kommandofönstret för att köra ditt progr
 
 
 
-## `Överkurs` Hur MATLAB kan användas
+## `Överkurs` Matriser & matrisekvationer
 Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget
 vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt
 kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer
