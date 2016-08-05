@@ -608,15 +608,12 @@ vana att skaffa sig!
 ## Hur man brukar arbeta med Git i grupp
 
 - inga binärer i repon!
-- fetaure branches
-- merge-konflikter
-- pull requests och synkronisering med master
+- fetaure pull
+- branches requests och synkronisering med master
 
 ## Git på din egen dator
 
-- installera med homebrew
-- windows!??!
-- plug-ins för vanliga editorer
+Du kan ladda ner Git för macOS, Windows och GNU/Linux [på Gits nedladdningssida](https://git-scm.com/downloads). Där finns också närmare instruktioner. De flesta GNU/Linux-distributioner har också Git i sina pakethanterare. Om du har installerat XCode till macOS så får du också Git på köpet.
 
 ## Avancerade funktioner att lära sig på egen hand
 
@@ -634,6 +631,6 @@ vana att skaffa sig!
 
 ## Läs mer
 
-- Atalassians guide
-- officiella guiden
-- githubs manual
+- [Atalassians Git-guider](https://www.atlassian.com/git/)
+- [Den officiella Git-manualen](https://git-scm.com/book/en/v2)
+- [GitHubs officiella manual: Bootcamp (kom-igång-guider)](https://help.github.com/categories/bootcamp/)
