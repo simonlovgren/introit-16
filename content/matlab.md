@@ -5,7 +5,6 @@ module = "matlab"
 title = "Matlab"
 
 +++
-
 MATLAB är ett datorprogram och programspråk som är skapat av företaget MathWorks.
 Programmet används framförallt till tekniska- och matematiska uträkningar och
 nyttjas flitigt som ett verktyg i matematikundervisning på universitet och
@@ -14,7 +13,35 @@ högskolor.
 **Det är rekommenderat att du startar MATLAB och testar de kommandon/exempel
 som ges i texten samtidigt som du läser.**
 
-{{< toc >}}
+### Innehåll
+
+- [Vad kan du göra i MATLAB?](#vad-kan-du-göra-i-matlab)
+- [Hur ser MATLAB ut?](#hur-ser-matlab-ut)
+    + [Kommandofönstret](#kommandofönstret)
+    + [Arbetsmapp](#arbetsmapp)
+    + [Sökfältet / Sökväg till arbetsmappen](#sökfältet-sökväg-till-arbetsmappen)
+    + [Filredigerare](#filredigerare)
+    + [Variabelfönstret](#variabelfönstret)
+- [Lathund i MATLAB](#lathund-i-matlab)
+    + [Kommentarer](#kommentarer)
+    + [Tal och listor](#tal-och-listor)
+        - [Enkla tal](#enkla-tal)
+        - [Listor](#listor)
+    + [Dölja utskrift av variabler och uttryck](#dölja-utskrift-av-variabler-och-uttryck)
+    + [Matematiska operationer/funktioner](#matematiska-operationer-funktioner)
+        - [Enkla tal](#enkla-tal-1)
+        - [Listor](#listor-1)
+    + [Hjälp med funktioner/kommandon](#hjälp-med-funktioner-kommandon)
+    + [Grafer](#grafer)
+        - [Flera linjer i grafen](#flera-linjer-i-grafen)
+        - [Flera grafer i ett rutnät](#flera-grafer-i-ett-rutnät)
+    + [Skriva ut text i kommandofönstret](#skriva-ut-text-i-kommandofönstret)
+    + [Rensa gamla variabler/historik](#rensa-gamla-variabler-historik)
+- [Spara program](#spara-program)
+- [`Överkurs` Symbolhantering i MATLAB](#överkurs-symbolhantering-i-matlab)
+- [`Överkurs` Matriser & matrisekvationer](#överkurs-matriser-matrisekvationer)
+
+
 
 ## Vad kan du göra i MATLAB?
 Du kan tänka på MATLAB som en avancerad grafräknare som kan programmeras att
@@ -93,7 +120,6 @@ I denna sektion beskrivs grundläggande kommandon/funktioner i MATLAB. **Testa
 gärna dessa kommandon i kommandofönstret samtidigt som du läser.**
 
 ### Kommentarer
-***
 Kommentarer i MATLAB föregås av `%`. Kommentarer är ett bra sätt att notera vad
 olika delar av kod betyder/gör och underlättar när man senare försöker förstå
 sin kod.
@@ -102,7 +128,6 @@ sin kod.
 ```
 
 ### Tal och listor
-***
 Tal, listor och annan data sparas i så kallade *variabler*. Att använda
 variabler istället för statiska värden gör att man lätt kan ändra vad det är
 man räknar på.
@@ -151,8 +176,7 @@ G = [1; 2; 3; 4]
 
 **Testa själv i kommandofönstret för att se skillnaden.**
 
-### Dölja utskrift av variabler (m.m.)
-***
+### Dölja utskrift av variabler och uttryck
 Som du kanske märkt (om du testat kommandona själv) skrivs resultatet ut varje
 gång ett kommando, eller uttryck, körts. Detta går "stänga av" genom att avsluta
 uttrycket/kommandot med ett `;`-tecken. **Testa exempelvis följande:**
@@ -165,7 +189,6 @@ B = 42;
 ```
 
 ### Matematiska operationer/funktioner
-***
 För att kunna utföra beräkningar behövs matematiska operationer/funktioner. Hur
 vissa av dessa fungerar skiljer sig lite om man vill utföra beräkningar på enkla
 tal eller listor.
@@ -251,8 +274,7 @@ a = [4, 16, 36];
 b = sqrt(a)   % blir [2, 4, 6]
 ```
 
-### Hjälp med funktioner
-***
+### Hjälp med funktioner/kommandon
 Det är inte lätt att komma ihåg hur alla funktioner skall skrivas in. Som tur är
 finns ett hjälpsystem i MATLAB för just sådana tillfällen. För att ta reda på
 mer om hur en funktion skall skrivas- och fungerar kan du använda
@@ -268,7 +290,6 @@ vilket ger utskriften:
 {{< figure src="/images/matlab/help_sqrt.png" class="small" >}}
 
 ### Grafer
-***
 MATLAB gör det väldigt enkelt att snabbt rita upp en graf över en uppsättning
 tal. För att rita upp en enkel graf i MATLAB används den inbyggda *funktionen*
 `plot`:
@@ -314,6 +335,66 @@ ylabel('y-axel')
 ```
 
 {{< figure src="/images/matlab/x2plot_decorated.png" title="Dekorerad graf över $y=x^2$" >}}
+
+#### Flera linjer i grafen
+Det går även ha flera grafer i samma fönster. För att göra detta
+använder vi `hold`-kommandot. Vi skapar två grafer, en linjär och
+den kvadratiska från ovan:
+
+``` matlab
+x = [1 2 3 4 5]
+y1 = [1 2 3 4 5]
+y2 = [1 4 9 16 25]
+
+% Sätt hold till ON för att spara
+% alla grafer vi ritar ut
+hold on
+
+% Rita  grafen för y1 (linjär)
+plot(x,y1)
+
+% Rita grafen för y2 (kvadratisk)
+plot(x,y2)
+
+% Sätt titel på grafen
+title('Två linjer i en graf')
+
+% Sätt namn på x- och y-axel
+xlabel('x-axel')
+ylabel('y-axel')
+
+% Stäng av hold när vi är klara
+hold off
+```
+
+{{< figure src="/images/matlab/dual_line_plot.png" title="Graf över två funktioner" >}}
+
+#### Flera grafer i ett rutnät
+Utöver detta går det även placera flera grafer bredvid varandra i ett rutnät. För detta
+använder vi kommandot `subplot`. Subplot fungerar så att den tar in hur många rader och
+kolumner du vill använda samt positionen för nästkommande graf.
+
+``` matlab
+x = [1 2 3 4 5]
+y1 = [1 2 3 4 5]
+y2 = [1 4 9 16 25]
+
+% En rad, två kolumner. Nästa graf på första platsen:
+subplot(1,2,1)
+plot(x,y1) % Rita grafen på plats 1
+title('Första grafen') % Titel på första grafen
+
+% En rad, två kolumner. Nästa graf på andra platsen:
+subplot(1,2,2)
+plot(x,y2, 'r') % Rita grafen på plats 2 och gör linjen röd
+title('Andra grafen') % Titel på andra grafen
+
+% Sätt namn på x- och y-axel för andra grafen
+xlabel('x-axel')
+ylabel('y-axel')
+```
+
+{{< figure src="/images/matlab/subplot.png" title="Flera grafer med olika konfiguration" >}}
 
 ### Skriva ut text i kommandofönstret
 För att skriva ut text i kommandofönstret används funktionen `disp`. Notera att text
@@ -369,13 +450,43 @@ Skriv nu namnet på filen (`test`) i kommandofönstret för att köra ditt progr
 
 {{< figure src="/images/matlab/savefile.gif" title="Spara en programfil i MATLAB" >}}
 
+## `Överkurs` Symbolhantering i MATLAB
+Matlab kan även hantera s.k. symbolisk matematik. Det vill säga matematiska
+uttryck- och ekvationer som innehåller symboler och ej resulterar i en
+numerisk lösning. Via symbolhanteringen i MATLAB kan man exempelvis
+beräkna derivatan av en funktion som en formel.
 
+### Exempel
+Låt oss ta en enkel ekvation, $F(x) = 5x^2 - 2x$, och utnyttja MATLAB:s
+symbolhantering för att hitta dess derivata:
+
+``` matlab
+% Först säger vi att vi vill använda
+% x för symbolisk matematik
+syms x
+
+% Sedan sparar vi funktionen vi vill
+% derivera i en variabel, F
+F = 5*(x^2) - 2*x;
+
+% Därefter använder vi matlabs symbolhantering
+% för att derivera funktionen:
+
+diff(F,x) % Derivatan av funktionen F med avseende på x
+
+```
+
+{{< figure src="/images/matlab/symbolics.gif" title="Symbolisk derivata i matlab" >}}
+
+Om du är intresserad att lära dig mer om MATLAB:s symboliska hantering kallas den för
+*MATLAB Symbolic Math Toolbox* och mer information om denna, med exempelfiler, finns
+här: http://se.mathworks.com/help/symbolic/index.html
 
 ## `Överkurs` Matriser & matrisekvationer
 Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget
-vi kommer fokusera på i den här kursen. Eftersom det ar en av programmets huvudklasser samt
+vi kommer fokusera på i den här kursen. Eftersom det är en av programmets huvudklasser, samt
 kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer
-här förenklad matris-förklaring:
+här förenklad genomgång av matriser:
 
 ### Exempel 1
 En matris kan tolkas som en lista med koefficienter i linjära ekvationssystem. Tag till exempel:
@@ -387,14 +498,12 @@ vilket på matrisform skulle se ut såhär:
 $$\begin{bmatrix}2 & 3 & -4 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \\\ x\_3 \end{bmatrix}$$
 
 ### Exempel 2
-Det finns även större matriser som beskriver hela ekvationssystem.
+Det finns även större matriser som beskriver hela ekvationssystem:
 
 $$2x\_1+3x\_2 = 10$$
 $$4x\_1+5x\_2 = 12$$
 $$\begin{bmatrix}2 & 3 \\\ 4 & 5 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \end{bmatrix} = \begin{bmatrix}10 \\\ 12 \end{bmatrix}$$
 
-MATLAB är ett utmärkt verktyg för att lösa sådana ekvationer, men i den här kursen räcker det med
-att ni ser matriser som en lista med koefficienter. Blev ni däremot nyfikna och vill förbereda er
-ännu mer för kommande kurser kan ni kika lite på http://sv.wikipedia.org/wiki/Matris.
-
-## `Överkurs` Symbolhantering i MATLAB
+MATLAB är ett utmärkt verktyg för att lösa ekvationer av denna typ. Blev du däremot nyfikna
+och vill förbereda er ännu mer för kommande kurser kan du kika lite på
+http://sv.wikipedia.org/wiki/Matris.
