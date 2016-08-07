@@ -65,6 +65,8 @@ Arbetsordningen med Git är alltså:
 2. Stage:a ändringarna för att frysa dem i tiden
 3. Committa dem med ett meddelande som beskriver vad ändringarna gör
 
+{{< figure src="/images/git/git-workflow.gif" title="Snabb inmatning" >}}
+
 Git sparar alla ändringarna i en tidslinje som det går att spola framåt
 och bakåt i. Tillståndet som en repository för tillfället står på kallas
 för _HEAD_ (som i "läshuvud"). Men det går också att gå i sidled och ha
