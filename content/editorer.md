@@ -73,6 +73,8 @@ melodier gentemot ackord. Istället för att trycka på flera tangenter
 samtidigt gör du det sekventiellt. Därmed besparar du dig känslan av att skriva
 `<Ctrl>+<Alt>+<Shift>+T` med en hand.
 
+{{< figure src="/images/editorer/vim-sample.gif" title="Vim kan göra roliga saker" >}}
+
 Vidare är Vim den mest resurssnåla textredigeraren. Oavsett hur bra dator du
 har kommer det alltså fungera bra.
 
