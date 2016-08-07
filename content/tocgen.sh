@@ -1,4 +1,7 @@
 #!/bin/sh
+# Small script for generating markdown toc
+# Currently looks for header containing phrase "Innehåll"
+# Should be moved to a variable, once adequate sed-skills are aqcuired
 
 for i in $( ls *.md ); do
     # Backup files in case of screw-up
