@@ -455,8 +455,14 @@ nothing to commit, working directory clean
 ```
 
 Eftersom skillnaden mellan brancharna var trivial kunde Git räkna ut hur
-de skulle slås ihop. Låt oss simulera en lite mer komplicerad
-interaktion som kan uppstå när man samarbetar på samma kod.
+de skulle slås ihop.
+
+##### Merge-konflikter
+
+Låt oss simulera en lite mer komplicerad interaktion som kan uppstå när
+man samarbetar på samma kod. Ofta märker man av det när man använder
+`git pull` för att dra hem de senaste ändringarna innan man trycker upp
+sin ändrade version, men här fortsätter vi med våra två branchar:
 
 ``` none
 $ din-favorit-editor matar.txt
