@@ -112,7 +112,7 @@ skaffa [Spacemacs](http://spacemacs.org/).
 Emacs-användare rekommenderas *starkt* att konfigurera om Caps Lock så att den
 byter plats med Ctrl.[^emacs-pedal]
 
-{{< figure src="/images/editorer/emacs.png" title="Emacs i terminalläge" >}}
+{{< figure src="/images/editorer/emacs.gif" title="Emacs kan också göra roliga saker" >}}
 
 
 ### Övriga
