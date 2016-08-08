@@ -11,10 +11,19 @@ files=`ls *.md`
 # This searches for keyword. Note that regex is handled by both sed and awk
 keyword="#*# Innehåll"
 
+# Folder for backups in case of screwup
+bkfolder="../tocbk"
 
+
+
+# Create backup-folder with timestamp
+genbkfolder="${bkfolder}/$(date +%F%T)/"
+mkdir -p $genbkfolder
+
+# Loop over all files
 for i in $files; do
     # Backup files in case of screw-up
-    cp $i ${i}.tocbk
+    cp $i ${genbkfolder}/$i
 
     # 1. Grep all lines starting with `##` (assume headers)
     # 2. Remove line containing keyword
@@ -44,6 +53,7 @@ for i in $files; do
         | awk -v toc="\n${contents}\n" \
             "!found && /$keyword/ {print; print toc; next; found=1 } 1" \
         > ${i}.toc
+
     # Move temporary file to new one (fugly workaround, but `> ${i}` doesn't appear to work)
     mv ${i}.toc $i
 done
