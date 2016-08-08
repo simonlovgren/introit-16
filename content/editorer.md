@@ -33,8 +33,8 @@ gjort en kompromiss och reducerat mindre civila kommentarer till fotnoter.*
 	- [Apple Xcode](#apple-xcode)
 	- [Android Studio](#android-studio)
 	- [Eclipse](#eclipse)
-    - [IntelliJ IDEA](#intellij-idea)
-    - [Egen editor i IDE](#egen-editor-i-ide)
+	- [IntelliJ IDEA](#intellij-idea)
+	- [Egen editor i IDE](#egen-editor-i-ide)
 
 
 ## Fördelar med en editor
