@@ -1,16 +1,14 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # Small script for generating markdown toc.
 # Change variables to suit your needs.
 # Assumes TOC is marked by a header, followed by another header.
 # Note that all text between these is deleted, recovery is possible via backed up files.
 # Backups are made to desired folder
 
-
 # Modify this variable for the files your looking for
 # Format the foldername without slashes
 filename="*.md"
 folder="content"
-
 
 # This searches for keyword. Note that regex is handled by both sed and awk
 keyword="#*# Innehåll"
@@ -19,19 +17,11 @@ keyword="#*# Innehåll"
 bkfolder="./tocbk"
 
 
+generate_toc ()
+{
+    # Get file name as i
+    i=$1
 
-# Make list of files
-files=`ls ${folder}/${filename}`
-
-# Create backup-folder with timestamp
-genbkfolder="${bkfolder}/$(date +%F%T)/${folder}"
-mkdir -p $genbkfolder
-
-# Backup files in case of script screw-up
-cp $files ${genbkfolder}/
-
-# Loop over all files
-for i in $files; do
     # 1. Grep all lines starting with `##` (assume headers)
     # 2. Remove line containing keyword
     # 3. Substitute all h2 with `+`
@@ -63,4 +53,35 @@ for i in $files; do
 
     # Move temporary file to new one (fugly workaround, but `> ${i}` doesn't appear to work)
     mv ${i}.toc $i
-done
+}
+
+
+# Create backup-folder with timestamp
+genbkfolder="${bkfolder}/$(date +%F%T)/${folder}"
+mkdir -p $genbkfolder
+
+# Get first argument
+selectedfile=$1
+
+if [ ! -z $selectedfile ]; then
+
+    if [ -f $folder/$selectedfile.md ]; then
+        generate_toc $folder/$selectedfile.md
+    else
+        echo "Cannot find file: $folder/$selectedfile.md"
+    fi
+
+else
+
+    # Make list of files
+    files=`ls ${folder}/${filename}`
+
+    # Backup files in case of script screw-up
+    cp $files ${genbkfolder}/
+
+    # Loop over all files
+    for i in $files; do
+        generate_toc $i
+    done
+
+fi
