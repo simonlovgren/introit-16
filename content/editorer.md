@@ -1,8 +1,8 @@
 +++
 date = "2016-08-04T11:46:27+02:00"
-menu = "Editorer"
+menu = "editorer"
 module = "editorer"
-title = "Editorer/Infosidor"
+title = "Editorer"
 
 +++
 
@@ -16,7 +16,7 @@ Den typen av data är dock helt irrelevant för kod. Därför är det viktigt at
 gjort en kompromiss och reducerat mindre civila kommentarer till fotnoter.*
 [^footnote-sample]
 
-## Innehåll
+# Innehåll
 
 + [Fördelar med en editor](#fördelar-med-en-editor)
 + [Textbaserade editorer](#textbaserade-editorer)
@@ -29,6 +29,12 @@ gjort en kompromiss och reducerat mindre civila kommentarer till fotnoter.*
 	- [Notepad++](#notepad)
 	- [Valfri DE-editor](#valfri-de-editor)
 + [IDE](#ide)
+	- [Microsoft Visual Studio](#microsoft-visual-studio)
+	- [Apple Xcode](#apple-xcode)
+	- [Android Studio](#android-studio)
+	- [Eclipse](#eclipse)
+    - [IntelliJ IDEA](#intellij-idea)
+    - [Egen editor i IDE](#egen-editor-i-ide)
 
 
 ## Fördelar med en editor
@@ -106,6 +112,7 @@ skaffa [Spacemacs](http://spacemacs.org/).
 Emacs-användare rekommenderas *starkt* att konfigurera om Caps Lock så att den
 byter plats med Ctrl.[^emacs-pedal]
 
+{{< figure src="/images/editorer/emacs.png" title="Emacs i terminalläge" >}}
 
 
 ### Övriga
@@ -119,13 +126,17 @@ förenklar att skriva och *läsa* kod.[^real-programmers]
 ##  Grafiska textredigerare
 
 Det finns även grafiska textredigerare för den moderna människan. Dessa är på
-många sätt enklare att komma igång med.[^wimps]
+många sätt enklare att komma igång med.[^wimps] I och med att de oftast är
+byggda för att vara lätta att använda försvinner många av möjligheterna att
+skräddarsy editorn till smak och tycke.
 
 ### Atom
 
 [Atom](https://atom.io/)[^atom] är open-source och därmed gratis och modifierarbar.
 Den fungerar även på de flesta operativsystem och har stöd för många plugins
 och smarta funktioner.
+
+{{< figure src="/images/editorer/atom_custom.png" title="Atom med PlatformIO installerat" >}}
 
 ### Sublime
 
@@ -134,10 +145,14 @@ och smarta funktioner.
 Den har ett antal funktioner som är hjälpsamma för programmerare och är gratis
 att testa, men kräver en kostnad för att använda under längre tid.
 
+{{< figure src="/images/editorer/sublime.png" title="Sublime Text 3" >}}
+
 ### Notepad++
 
 [Notepad++](https://notepad-plus-plus.org/) är en enkel textredigerare som är
 i grunden gjord för Windows.[^notepad]
+
+{{< figure src="/images/editorer/nppp_dark.png" title="Notepad++" >}}
 
 ### Valfri DE-editor
 
@@ -151,24 +166,52 @@ avancerade funktioner som ingår i andra editorer.
 ## IDE
 
 En IDE (*integrated development environment*) är oftast en hel svit av program
-som gör det enkelt att komma igång med att skriva appar och liknande. Förutom
-att de brukar ha kompilatorer och debug-funktioner inbyggda, brukar det även
-finnas en editor.
+som gör det enkelt att komma igång med att skriva appar och liknande. Dessa är
+oftast byggda för ett specifikt område eller ett specifikt programmeringsspråk.
+Förutom att de innehåller en editor brukar det följa med kompilatorer,
+debug-funktioner och andra specialiserade verktyg för just det område IDE:t
+riktar sig till.
 
+### Microsoft Visual Studio
 [Visual Studio](https://www.visualstudio.com/) är den större Windows-varianten
-och finns tillgänglig gratis för studenter på UU via
-[Dreamspark](http://www.it.uu.se/datordrift/programvara/msdnaa).
+och finns i flera versioner. Visual Studio Enterprise (och andra betalversioner)
+finns gratis för studenter på UU via [Dreamspark](http://www.it.uu.se/datordrift/programvara/msdnaa).
 
+{{< figure src="/images/editorer/msvisualstudio.png" title="Visual Studio Community 2015" >}}
+
+### Apple Xcode
 [Xcode](https://developer.apple.com/xcode/) är Apples primära IDE och är
 hjälpsam för den som vill utveckla snygga appar för Mac OS X och iOS.
 
-[Eclipse](https://eclipse.org/) används för att skriva Java-kod.
+{{< figure src="/images/editorer/xcode.png" title="Apple Xcode" >}}
+
+### Android Studio
+[Android Studio](https://developer.android.com/studio/index.html) är det IDE
+som används vid utveckling av android-appar. Tidigare baserades detta IDE på
+ett Java-IDE kallat Eclipse (se nedan), men nuvarande version är en
+skräddarsydd variant av IntelliJ IDEA (ett annat Java-IDE).
+
+{{< figure src="/images/editorer/androidstudio.png" title="Android Studio" >}}
+
+### Eclipse
+[Eclipse](https://eclipse.org/) används primärt för att skriva Java-kod, men det
+finns versioner som har stöd för utveckling av C/C++.
 [^java]
 
+{{< figure src="/images/editorer/eclipse.png" title="Eclipse" >}}
+
+
+### IntelliJ IDEA
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) är ett annat exempel på Java-IDE,
+som har ett lite annat upplägg än Eclipse.
+
+{{< figure src="/images/editorer/intellij.png" title="IntelliJ IDEA Community" >}}
+
+### Egen editor i IDE
 De flesta IDE:er tillåter att du använder vilken editor som helst, men förlorar
-då fördelarna att ha ett integrerat system.
-Samtidigt kan man gå åt det andra hållet och konfigurera exempelvis Vim eller
-Emacs för att erbjuda i princip samma funktionalitet IDE:er kan erbjuda.
+då fördelarna att ha ett integrerat system. Samtidigt kan man gå åt det andra
+hållet och konfigurera exempelvis Vim eller Emacs för att erbjuda i princip
+samma funktionalitet IDE:er kan erbjuda.
 
 
 [^footnote-sample]: Smidigt, eller hur?
@@ -183,4 +226,4 @@ Emacs för att erbjuda i princip samma funktionalitet IDE:er kan erbjuda.
 [^atom]: https://pbs.twimg.com/media/Bhfbnn3CMAA93mg.png
 [^sublime]: Vilket är varför vi nämner den. Den verkar inte erbjuda något som Atom inte har, medan feature-listan ser ut som en Vim-uppdatering från 90-talet.
 [^notepad]: Ser ut som det också.
-[^java]: Java programmeras på samma sätt som man skulpterar en höstack. Eclipse är tydligen den hammare som passar bäst.
+    [^java]: Java programmeras på samma sätt som man skulpterar en höstack. Eclipse är tydligen den hammare som passar bäst.
