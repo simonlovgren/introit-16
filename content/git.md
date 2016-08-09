@@ -23,7 +23,28 @@ slås ihop. Vi kommer här att visa några exempel på hur man kan arbeta
 med Git för att samarbeta i ett kodprojekt liknande de som ni kommer att
 arbeta i under er utbildning.
 
-### Viktiga principer
+## Innehåll
+
+
++ [Viktiga principer](#viktiga-principer)
++ [En kort kom-igång-guide](#en-kort-kom-igång-guide)
+	+ [Hämta kod med git clone](#hämta-kod-med-git-clone)
+	+ [Visa historik med git log](#visa-historik-med-git-log)
+	+ [Jämföra ändringar med git diff](#jämföra-ändringar-med-git-diff)
+	+ [Starta en egen repository med git init](#starta-en-egen-repository-med-git-init)
+	+ [Lägg till filer med git add](#lägg-till-filer-med-git-add)
+	+ [Registrera ändringar med git stage och git commit](#registrera-ändringar-med-git-stage-och-git-commit)
+	+ [Ångra sig med git reset](#ångra-sig-med-git-reset)
+	+ [Skapa- och byta mellan branches](#skapa-och-byta-mellan-branches)
+		+ [Merge-konflikter](#merge-konflikter)
++ [GitHub](#github)
++ [Hur man brukar arbeta med Git i grupp](#hur-man-brukar-arbeta-med-git-i-grupp)
++ [Git på din egen dator](#git-på-din-egen-dator)
++ [Avancerade funktioner att lära sig på egen hand](#avancerade-funktioner-att-lära-sig-på-egen-hand)
+	+ [Travis och annan automatisering](#travis-och-annan-automatisering)
++ [Läs mer](#läs-mer)
+
+## Viktiga principer
 
 En "git-repository" är en samling av filer och mappar som Git håller
 koll på- och hanterar ändringar i. Varje git-repository har en egen
@@ -94,13 +115,13 @@ kommer Git att göra sitt bästa för att pussla ihop projektet ändå åt er
 (och åtminstone varna om det inte går).
 
 
-### En kort kom-igång-guide
+## En kort kom-igång-guide
 
 Det normala arbetsflödet med git är helt kommandoradsbaserat och utgår
 från programmet `git`. Många editorer har dock stöd för att interagera
 med Git direkt.
 
-#### Hämta kod med git clone
+### Hämta kod med git clone
 
 Man börjar använda git på ett av två sätt. Antingen hämtar man hem kod
 som redan finns genom kommandot `git clone` ("clone" eftersom man
@@ -122,7 +143,7 @@ adress som helst fungerar. Om man inte anger en mapp efter adressen
 kommer git att skapa en mapp där du står som heter samma sak som
 repositoryn (oftast slutet på adressen), i det här fallet `youtube-dl`.
 
-#### Visa historik med git log
+### Visa historik med git log
 
 Nu kan vi ställa oss i mappen som git skapade med `cd youtube-dl` som
 vanligt och börja köra kommandon. Om man t.ex. kör `git log` får man en
@@ -149,7 +170,7 @@ sammanhängande funktioner som lagts till programmet.
 
 Avsluta med `q` och bläddra upp och ned med piltangenterna.
 
-#### Jämföra ändringar med git diff
+### Jämföra ändringar med git diff
 
 Om man vill veta vad som ändrades mellan de båda commitsen kan man
 använda `git diff` och deras namn. Om man inte orkar kopiera hela deras
@@ -166,7 +187,7 @@ skillnaden mellan att jämföra framåt och bakåt!
 
 Avsluta igen med `q` och scrolla upp och ner med piltangenterna.
 
-#### Starta en egen repository med git init
+### Starta en egen repository med git init
 
 För att starta en tom git-repository kör man kommandot `git init` i
 mappen man vill ha den (typiskt mappen man har sin källkod i). Om du
@@ -188,7 +209,7 @@ Din sökväg blir förstås annorlunda beroende på vad din användare heter
 och var du gjorde den tomma mappen.
 
 
-#### Lägg till filer med git add
+### Lägg till filer med git add
 
 Skapa filerna `gastlista.txt` och `matar.txt`, och lägg till några rader
 text i dem. Så här ser mina ut:
@@ -276,7 +297,7 @@ Date:   Thu Aug 4 14:00:28 2016 +0200
 
 ```
 
-#### Registrera ändringar med git stage och git commit
+### Registrera ändringar med git stage och git commit
 
 Låt oss säga att vi lägger till någon i gästlistan:
 
@@ -347,7 +368,7 @@ Date:   Thu Aug 4 14:00:28 2016 +0200
 
 ```
 
-#### Ångra sig med git reset
+### Ångra sig med git reset
 
 Låt oss säga att vi råkade ta bort gästlistan av misstag:
 ``` none
@@ -386,7 +407,7 @@ Det fungerar även om man har redigerat filer och vill återställa
 ändringarna, men det är också farligt eftersom det **kastar bort alla
 ocommitade ändringar**!
 
-#### Skapa- och byta mellan branches
+### Skapa- och byta mellan branches
 
 Vi kan visa vilken branch vi för tillfället är på med hjälp av `git
 branch`:
@@ -453,7 +474,7 @@ nothing to commit, working directory clean
 Eftersom skillnaden mellan brancharna var trivial kunde Git räkna ut hur
 de skulle slås ihop.
 
-##### Merge-konflikter
+#### Merge-konflikter
 
 Låt oss simulera en lite mer komplicerad interaktion som kan uppstå när
 man samarbetar på samma kod. Ofta märker man av det när man använder
