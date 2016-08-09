@@ -226,4 +226,4 @@ samma funktionalitet IDE:er kan erbjuda.
 [^atom]: https://pbs.twimg.com/media/Bhfbnn3CMAA93mg.png
 [^sublime]: Vilket är varför vi nämner den. Den verkar inte erbjuda något som Atom inte har, medan feature-listan ser ut som en Vim-uppdatering från 90-talet.
 [^notepad]: Ser ut som det också.
-    [^java]: Java programmeras på samma sätt som man skulpterar en höstack. Eclipse är tydligen den hammare som passar bäst.
+[^java]: Java programmeras på samma sätt som man skulpterar en höstack. Eclipse är tydligen den hammare som passar bäst.
