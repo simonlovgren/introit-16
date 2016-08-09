@@ -6,10 +6,6 @@ title = "GIT"
 
 +++
 
-# Git
-
-## Vad är Git?
-
 Git är ett revisionshanteringssystem, främst tänkt att användas för
 kod. Det innebär att det är ett verktyg för att samarbeta kring kod,
 spåra ändringar -- och historik. Systemet utvecklades från början av
