@@ -2,18 +2,22 @@
 date = "2016-05-04T09:37:09+02:00"
 menu = "studenttjänster"
 module = "studenttjanster"
-title = "Studenttjänster/Infosidor"
+title = "Studenttjänster"
 
 +++
 
-Uppsala Universitet tillhandahåller ett antal tjänster för dina studier.
+Uppsala universitet tillhandahåller ett antal tjänster för dina studier.
+
+För de flesta tjänster krävs det ett aktiverat studentkonto.
+Detta studentkonto är obligatoriskt under dina studier på Uppsala universitet.
+Även om den kan vara omständlig att få tillgång till, får du åtminstone Wi-Fi!
 
 ### Innehåll
 
 - [Studentportalen](#studentportalen)
-    - [Skaffa konto](#skaffa-konto)
+    - [Skaffa studentkonto](#skaffa-studentkonto)
     - [Logga in](#logga-in)
-    - [Kontoinställningar](#kontoinställningar)
+    - [Studentkontots inställningar](#studentkontots-inställningar)
     - [E-Post](#e-post)
     - [Schema](#schema)
     - [Mina Studier](#mina-studier)
@@ -30,12 +34,13 @@ Uppsala Universitet tillhandahåller ett antal tjänster för dina studier.
 [Studentportalen](https://studentportalen.uu.se) har bland annat
 kursinformation, schema och inlämningssidor.
 
-Ett konto är obligatoriskt under dina studier på Uppsala Universitet.
-Även om den kan vara omständlig att använda, får du åtminstone Wi-Fi!
+För att få tillgång till ett studentkonto på Studentportalen behöver du ett aktiverat
+studentkonto.
 
 
-### Skaffa konto
-Du skaffar ett konto genom att göra en grej, sen får du inloggningsuppgifter
+### Skaffa studentkonto
+**TODO**: Ta reda på hur man faktiskt gör detta
+Du skaffar ett studentkonto genom att göra en grej, sen får du inloggningsuppgifter
 via vanlig post eller genom att besöka IT-tomtarna på campus.
 
 ### Logga in
@@ -46,9 +51,9 @@ och så är du framme!
 {{< figure src="/images/studenttjanster/login.gif" title="Inloggning" >}}
 
 
-### Kontoinställningar
-Genom att klicka på "Min profil" når du dina kontoinställningar.
-Eftersom Uppsala Universitet använder dessa uppgifter för att skicka ut information
+### Studentkontots inställningar
+Genom att klicka på "Min profil" når du ditt studentkontos inställningar.
+Eftersom Uppsala universitet använder dessa uppgifter för att skicka ut information
 till dig, är det viktigt att de stämmer. Verifiera detta och ändra om så
 behövs.
 
@@ -175,7 +180,7 @@ kommer troligen fungera lika bra när du söker jobb om några år.
 
 
 ## Studievägledning
-Studenter på Uppsala Universitet har tillgång till vägledning gällande studier
+Studenter på Uppsala universitet har tillgång till vägledning gällande studier
 och arbetsmöjligheter. Exempelvis kan du boka en tid med studievägledare, för
 att få rekommendationer på lämpliga kurser för den karriär du hoppas på.
 
@@ -188,7 +193,7 @@ gällande datortjänster, rättigheter och särskilt stöd.
 
 ## Trådlöst internet
 ### UpUnet-S
-Det enklaste sättet att nå Uppsala Universitets trådlösa internet är att
+Det enklaste sättet att nå Uppsala universitets trådlösa internet är att
 koppla upp sig till SSID:n (dvs wlan:et som heter) `UpUnet-S`.
 Efter anslutning öppnar du en webbläsare, där du loggar in med samma uppgifter
 som för studentportalen på http://netlogon.uu.se.
@@ -199,10 +204,10 @@ du behöva logga in igen.
 
 
 ### Eduroam
-Eduroam är en internationell tjänst som tillhandahåller Wi-Fi till studenter
-och finns ofta även på exempelvis flygplatser.
+Eduroam är en internationell tjänst som tillhandahåller Wi-Fi till studenter.
+Det [finns ofta](https://www.eduroam.org/where/) på andra universitet och bl a på vissa flygplatser.
 För denna tjänst krävs det att du ordnar **Lösenord B**, vilket görs på
-studentportalen eller via denna [länk](https://akka-anv.uu.se/authsrvpublik/).
+[Studentportalen](#studentkontots-inställningar) eller via denna [länk](https://akka-anv.uu.se/authsrvpublik/).
 Därefter loggar du in med det samt användarnamnet för studentportalen, som följs av
 `@user.uu.se`.
 

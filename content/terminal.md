@@ -6,7 +6,9 @@ title = "Terminal"
 
 +++
 
-Kommandoprompten, eller *terminalen*, är ett elegant gränssnitt för en mer civiliserad ålder.
+Terminalen är ett elegant, textbaserat, gränssnitt[^civilized] som, till skillnad från ett grafiskt
+gränssnitt, styrs via kommandon du skriver in.
+
 
 Med den kan du utan svårighet konfigurera en server på andra sidan jorden i din smartphone, manipulera tusentals filer på sekunder och rädda en dator de flesta skulle säga har *dött*.
 
@@ -14,7 +16,7 @@ Med den kan du utan svårighet konfigurera en server på andra sidan jorden i di
 ## Innehåll
 
 + [Vad *är* det?](#vad-är-det)
-+ [Fördelar med UNIX-terminalen](#fördelar-med-unix-terminalen)
++ [Fördelar med terminalen](#fördelar-med-terminalen)
 + [Grundläggande användning](#grundläggande-användning)
 	- [Öppna en terminalemulator](#öppna-en-terminalemulator)
 	- [Användning av terminalen](#användning-av-terminalen)
@@ -41,11 +43,11 @@ Kort sagt är terminalen ett textbaserat gränssnitt, dvs är ett sätt att anv�
 
 Den kräver, i sig, mycket lite för att fungera men kan ändå användas till allt som inte måste visas med bilder.
 
-Terminalen används med hjälp av ett *shell*, där den vanligaste är *bash* (som står för Bourne Again SHell). Denna finns inbyggd i Mac OS X och numera även Windows 10, tack vare att den är så populär bland utvecklare.
+Terminalen används med hjälp av ett [*skal*](https://en.wikipedia.org/wiki/Unix_shell) (*shell*), där den vanligaste är *bash* (som står för Bourne Again SHell). Denna finns inbyggd i Mac OS X och numera även Windows 10 tack vare att den är så populär bland utvecklare.
 
 
 
-## Fördelar med UNIX-terminalen
+## Fördelar med Terminalen
 
 I korthet är fördelen med terminalen att den helt enkelt **fungerar**. 
 
@@ -54,15 +56,19 @@ Grafiska gränssnitt kräver däremot mycket mer av datorn för att fungera. De 
 
 Vidare är det mycket lättare att skriva program som interagerar via terminalen. I de flesta språk (inklusive de som är gjorda för rent vetenskapliga syften) kan du skriva ut ett värde med endast en rad kod, vilket garanterat kommer att fungera på alla datorer programmet fungerar på.
 
-Med grundläggande kunskaper kommer du ha tillgång till många fler verktyg, samt spara massor av tid och huvudvärk när du vill skapa egna. Större vana låter dig dessutom använda datorer mycket mer effektivt.
+Med grundläggande kunskaper om terminalen kommer du ha tillgång till många fler verktyg, samt spara massor av tid och huvudvärk när du vill skapa egna verktyg och program. Större vana låter dig dessutom använda datorer mycket mer effektivt.
 
 
 
 ## Grundläggande användning
 
-Även vana datoranvändare kan känna sig obekväma med textbaserade gränssnitt. Målet i detta steg är att visa hur grunderna är mycket enkla att komma igång med.
+Även vana datoranvändare kan känna sig obekväma med textbaserade gränssnitt. Målet i detta steg är att visa att grunderna är mycket enkla att komma igång med.
 
-Med detta kommer du även kunna öppna och redigera textfiler på universitets datorer hemifrån!
+Med hjälp av terminalen kan du även enkelt kunna kopiera filer mellan din
+lokala dator och andra datorer uppkopplade till ett nätverk. Till exempel
+kan du ansluta din dator med Uppsala universitets Linuxsystem. Terminalen gör det även
+enkelt att från din lokala dator direkt redigera textfiler på andra datorer
+uppkopplade till ett nätverk, till exempel på Uppsala universitets Linuxsystem. 
 
 
 ### Öppna en terminalemulator
@@ -123,7 +129,7 @@ För att använda `cp`, `mv` och `rm` med hela mappar lägger du till alternativ
 I Linux sparas alla filer i en trädstruktur. Den översta sökvägen är `/`, som kallas för *roten*. Om du exempelvis ansluter ett usb-minne till dator, kan den hamna i *mappen* `/mount/usb/` -- sökvägen kan dock variera mellan olika Linux-versioner.
 
 + Mac OS X, liksom de flesta UNIX-baserade system, bygger på en liknande konvention.
-+ Windows har istället, i de flesta fall, en egen rot för varje ansluten disk -- ett usb-minne skulle alltså få en egen bokstav i stilen `E:\`.
++ Windows har istället, i de flesta fall, en egen rot för varje ansluten disk -- ett usb-minne skulle alltså få en egen bokstav i stilen `E:\ `.
 
 En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existerar under samma namn. Om du ansluter ett usb-minne med filen `rapport.pdf` skulle dess absoluta sökväg exempelvis bli `/mount/usb/rapport.pdf`.
 
@@ -138,7 +144,7 @@ En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existera
 
 ### Komprimerade mappar
 
-I Linux används ofta `tar`för komprimering av mappar. Om du stöter på filer av typen `tar.bz2` och `tar.gz` kan du använda det för att extrahera dem.
+I Linux används ofta `tar` för komprimering av mappar. Om du stöter på filer av typen `tar.bz2` och `tar.gz` kan du använda det för att extrahera dem.
 
 Vanliga flaggor är:
 
@@ -163,6 +169,13 @@ För att hitta filen `dokument.txt` i din hemkatalog skriver du `find ~/ -name d
 {{< figure src="/images/terminal/find.gif" title="Kommandot find låter dig hitta filer." >}}
 
 För att söka efter mappar lägger du till alternativet `-type d`. Om du exempelvis vill hitta alla mappar med namnet "Foo" i mappen `~/Documents` skriver du `find ~/Documents -type d -name Foo`.
+
+Du kan också använda
+[*wildcards*](https://en.wikibooks.org/wiki/A_Quick_Introduction_to_Unix/Wildcards),
+som exempelvis tecknet `*` vilken matchar minst 0 tecken.
+Vill du exempelvis söka efter filer som slutar med `.pdf` i mappen
+`~/Downloads` skriver du
+`find ~/Downloads -name *.pdf`
 
 
 ### Historik
@@ -193,9 +206,13 @@ När program kraschar eller tar för mycket resurser är det bra att hålla koll
 
 En av de mest kraftfulla verkygen i terminalen är `ssh`.
 
-`ssh`, *secure shell*, skapar en krypterad anslutning till en annan dator och låter dig använda den
+`ssh`, *secure shell*, skapar en krypterad anslutning till en annan dator och låter dig använda den var du än är.
 
 För att koppla upp dig till UU:s [Linuxservrar](http://www.it.uu.se/datordrift/maskinpark/linux) skriver du helt enkelt `ssh <användarnamn>@<servernamn>`, varefter den frågar efter *Lösenord A* -- på så sätt kan du arbeta på universitets datorer hemifrån.
+
+Exempelvis kan du använda servern *Arrhenius* genom att skriva
+`ssh abcd1234@arrhenius.it.uu.se`, där du ersätter `abcd1234` med ditt
+studentkontos användarnamn.
 
 
 
@@ -207,9 +224,10 @@ För att koppla upp dig till UU:s [Linuxservrar](http://www.it.uu.se/datordrift/
 
 *Piping* används för att "kedja" in- och utdata mellan program.
 
-Symbolen `|`, som skrivs med `<AltGr>+<` på svenska tangentbord, skrivs mellan kommandon för att utdatan från det föregående används som indata på det senare.
+Symbolen `|` (*pipe*), som skrivs med `<AltGr>+<` på svenska tangentbord, skrivs mellan kommandon för att utdatan från det föregående används som indata på det senare.
 
-Ett mycket användbart exempel är programmet `grep`, vilket filtrerar fram sitt argument ur indatan.
+Ett exempel är programmet `grep`, som kan användas för att
+plocka bort de rader som saknar följande argument.
 Exempelvis kan du skriva `history | grep rm`. Utdatan från `history` skickas då vidare som indata till `grep`, vilket i sin tur skriver ut alla rader med texten `rm`.
 
 Du kan använda pipes i längre kedjor. För att räkna antalet processer som genereras av en webbläsare, exempelvis *Chromium* skriver vi `ps -A | grep chromium | wc -l`
@@ -253,7 +271,15 @@ I terminalen kan du ha flera program igång, enligt vad som kallas för *jobs*.
 
 ## Övriga tips
 
-+ `tab` används för att avsluta ett ord
++ `<Tab>`-tangenten används för att avsluta ett ord
     {{< figure src="/images/terminal/tab.gif" title="Tab-användning" >}}
-+ Du kan använda *wildcards*, dvs symboler som `*` för att matcha ord i argument
+    + Om du exempelvis vill radera en fil med ett långt namn, som
+        `oem-audio-hda-daily-lts-vivid-dkms_0.201606221847-ubuntu14.04.1_all.deb`,
+        räcker det att skriva `rm oem` följt av att trycka `<Tab>` för att
+        komplettera resten av filnamnet.
+    + Kompletteringen är också användbar för att undvika misstag.
++ Wildcards fungerar i de flesta program, inte bara `find`.
     - Exempelvis flyttar kommandot `mv ./*.jpg ~/Pictures` alla filer som slutar med `.jpg` i den aktiva mappen till mappen Pictures i din hemkatalog
+
+
+[^civilized]: [...för en mer civiliserad tidsålder](https://youtu.be/0aRtupiY9Dw)
