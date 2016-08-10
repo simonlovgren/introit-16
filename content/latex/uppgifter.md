@@ -41,7 +41,7 @@ och metoder går att använda.
 + Tillgång till paketen *babel*, *fontenc*, *inputenc*
     + De flesta kompletta LaTeX-distributioner har dessa inbyggda
 
-Inlämning för alla sker via studentportalen. För detta krävs ett studentkonto.
+Inlämning för alla uppgifter sker via studentportalen. För detta krävs ett studentkonto.
 
 
 ## Uppgift
