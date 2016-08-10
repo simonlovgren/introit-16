@@ -294,11 +294,11 @@ header {
 header nav {
   background-color: $default_main;
 }
-header nav.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
+//header nav.fixed {
+//    position: fixed;
+//    width: 100%;
+//    z-index: 1;
+//}
 header nav ul {
   margin: 0;
   padding: 0;
