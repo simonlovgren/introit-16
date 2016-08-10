@@ -28,11 +28,12 @@ För att klara av denna uppgift ska du göra följande:
 
 
 ## Material som krävs
-+ En UNIX-kompatibel terminal
++ En POSIX-kompatibel terminal
     + Information om terminalen i Windows finns i [infosidorna för terminalen](../#öppna-en-terminalemulator)
     + Uppgifterna går alltså även att lösa med *zsh*
-+ Programmen `tar`, `grep`, `cp`, `touch`, `lspci` samt en texteditor, t ex
++ Programmen `tar`, `grep`, `cp`, `lspci` samt en texteditor, t ex
     `nano`. 
+    + Dessa ingår i princip alltid med Linux-distributioner.
 
 ## Uppgift
 
