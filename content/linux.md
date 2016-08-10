@@ -6,7 +6,7 @@ title = "Linux"
 
 +++
 
-Operativsystem är, i kort, ett system som distribuerar datorkraft till olika program. De mest kända idag är Microsoft Windows, Mac OS X och Linux, men det finns många fler.
+Operativsystem är, i korthet, ett system som distribuerar datorkraft till olika program. De mest kända idag är Microsoft [Windows](https://www.microsoft.com/en-us/windows/), [Mac OS X](http://www.apple.com/osx/) och [Linux](https://www.kernel.org/), men det finns många fler.
 Linux bygger på *öppen källkod*, vilket innebär att vem som helst kan (lagligt) se och ändra hur det fungerar. Därför är det oerhört flexibelt och används på allt från mobiltelefoner till superdatorer.
 
 
@@ -29,7 +29,7 @@ Linux bygger på *öppen källkod*, vilket innebär att vem som helst kan (lagli
 
 ## Universitets Linux-datorer
 
-Uppsala Universitet tillhandahåller Linux-terminaler med en populär version av Linux som kallas *Ubuntu*.
+Uppsala universitet tillhandahåller Linux-terminaler med en populär version av Linux som kallas *Ubuntu*.
 
 Kom ihåg att operativsystem och *gränssnitt* är inte samma sak.
 Universitets Linuxdatorer är inställda för att se ut och bete sig likt Windows och Mac OS X -- därför kommer du sannolikt kunna använda dem på samma sätt som de datorer du är van vid.
@@ -43,25 +43,25 @@ Eftersom du delar datorkraft med samtliga andra användare kan systemet därför
 
 ### Ditt konto
 
-Om du har ordnat ett konto på studentportalen har du även tillgång till universitets Linux-datorer.
+Om du har ordnat ett konto på Studentportalen har du även tillgång till universitets Linux-datorer.
 
 #### Inloggning
 
-Du loggar in med ditt användarnamn och *lösenord A*, precis som på studentportalen.
+Du loggar in med ditt användarnamn och *lösenord A*, precis som på Studentportalen.
 
 ####  Hemkatalogen.
 
-Varje student har en personlig hem-mapp kopplat till kontot, där även inställningar för program sparas. 
+Vardera student har en personlig hem-mapp kopplat till kontot, där även inställningar för program sparas. 
 Den är döpt efter ditt användarnamn.
 Detta fungerar på samma sätt som på de flesta plattformar.
 Med andra ord kommer dina inställningar finnas kvar när du loggar in igen.
 
-*Observera att i dagsläget är vardera students lagringskvota ca 250 Megabyte. Med en nedladdningshastighet av 100 Mbit/s skulle det fyllas upp på 20 sekunder. Eftersom detta inkluderar cache-filer och annan tillfällig data från program krävs ständig uppmärksamhet, då program kan sluta fungera utan fritt lagringsutrymme. Moderna webbläsare tenderar att göra detta mycket snabbt.*
+*Observera att i dagsläget är vardera students lagringskvota ca 250 Megabyte. Med en nedladdningshastighet av 100 Mbit/s skulle det fyllas upp på 20 sekunder. Eftersom detta inkluderar [cache](http://askubuntu.com/questions/102046/is-it-okay-to-delete-cache)-filer och annan tillfällig data från program krävs ständig uppmärksamhet, då program kan sluta fungera utan fritt lagringsutrymme. Moderna webbläsare tenderar att göra detta mycket snabbt.*
 
 
 ### Filhantering
 
-Du kan bläddra i din hemkataloggenom att dubbelklicka på mappen *home* på skrivbordet. Då öppnas en grafisk filhanterare som beter sig likt den i Windows och Mac. Du kan dubbelklicka på filer och mappar för att öppna dem. Tänk dock på att program som är gjorda för Windows och Mac inte alltid fungerar på Linux.
+Du kan bläddra i din hemkatalog genom att dubbelklicka på mappen *home* på skrivbordet. Då öppnas en grafisk filhanterare som beter sig likt den i Windows och Mac OS X. Du kan dubbelklicka på filer och mappar för att öppna dem. Tänk dock på att program som är gjorda för Windows och Mac OS X inte alltid fungerar på Linux.
 
 {{< figure src="/images/linux/filhanteraren.png" title="Filhanteraren i Ubuntu" >}}
 
@@ -93,7 +93,7 @@ http://www.it.uu.se/datordrift/faq/thinlinc%20#TipsAndProblems
 
 *Denna del är ej obligatorisk!*
 
-UNIX-system, som Linux och Mac OS, använder den så kallade POSIX-standarden. Denna används i senare kurser inom IT/DV, vilket ger en fördel till studenter som har vana att utveckla på någon av dessa plattformar. Windows-användare bör därmed åtminstone känna till hur man installerar Linux på en dator.
+UNIX-system, som Linux och Mac OS X, använder den så kallade [POSIX-standarden](https://en.wikipedia.org/wiki/POSIX). Denna används i senare kurser inom IT/KandDV, vilket ger en fördel till studenter som har vana att utveckla på någon av dessa plattformar. Windows-användare bör därmed åtminstone känna till hur man installerar Linux på en dator.
 
 Linux är dessutom *kul* och lätt att komma igång med på en vanlig hemdator.
 

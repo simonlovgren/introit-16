@@ -9,27 +9,32 @@ title = "Excel"
 *Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
 De mest kända programmen för detta är:
 
++ [LibreOffice](https://www.libreoffice.org/)
+    - Gratis
+    - Öppen källkod
+    - Fungerar på de flesta plattformar
 + [OpenOffice.org](https://www.openoffice.org)
+    - Gratis
     - Öppen källkod
     - Fungerar på de flesta plattformar
 + [Google Sheets](https://docs.google.com/spreadsheets/)
     - Gratis
-    - Kräver Google-konto   
+    - Kräver Google-konto (även detta är kostnadsfritt)
     - Fungerar via de flesta webbläsare
 + [Microsoft Excel](https://products.office.com/en-us/excel)
     - Online-version via Dropbox eller Office 365
         + Gratis
-        + Kräver konto hos *Microsoft Live*
+        + Kräver konto hos *Microsoft Live* (även detta är kostnadsfritt)
         + Fungerar via de flesta webbläsare
         + **Har ej stöd för trendlinjer**
     - Nedladdad version
         + Betalversion med löpande månadskostnad eller engångskostnad
         + Fungerar endast för Microsoft Windows och Mac OS X
-        + En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i Windows-datasalarna.
-        + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universitet, men detta är för närvarande inte möjligt för studerande i Uppsala Universitet.
+        + En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i [Windows-datasalarna](http://www.polacksbacken.uu.se/Utbildning/Datasalar/).
+        + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universitet, men detta är för närvarande inte möjligt för studerande i Uppsala universitet.
 
 Det mest etablerade av dessa är *Microsoft Excel*, vilket kommer diskuteras på denna sida.
-Du kan använda någon av [Windows-datasalarna](http://www.it.uu.se/datordrift/programvara/mswin) om du inte vill skaffa ett konto hos *Microsoft Live*.
+Du kan använda någon av [Windows-datasalarna](http://www.polacksbacken.uu.se/Utbildning/Datasalar/) om du inte vill skaffa ett konto hos *Microsoft Live*.
 
 
 ### Innehåll
@@ -70,11 +75,14 @@ klicka och dra musen neråt från det nedre högra hörnet.
 ## Funktioner
 
 Excel har stöd för många funktioner av varierande komplexitet.
+De beter sig på ungefär samma sätt som matematiska funktioner och används för
+att utföra beräkningar på den data som finns inskriven i arket.
 
 ### Manuell inmatning
 
 För att visa manuell inmatning använder vi funktionen `SUM`,
 Klicka på rutan du vill ha summan i, skriv därefter (i denna eller rutan strax över arket)
+
 
 ```
 =SUM(A1:B11)
