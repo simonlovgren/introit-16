@@ -13,8 +13,10 @@ $table_color_border: #ddd;
 $codeblock_bg: #f7f7f7;
 
 // -- Sections
-$default_main: #a95e7a;
-$default_dark: #943759;
+//$default_main: #a95e7a;
+//$default_dark: #943759;
+$default_main: #ec5f5f;
+$default_dark: #d04040;
 
 // -- Footer
 $footer_border: #b1a086;
@@ -32,7 +34,8 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
             ("latex", #ab85bd, #a559c9),
             ("matlab", #5b8cbd, #3070b0),
             ("git", #24b0b2, #2b9192),
-            ("exempel", #ec5f5f, #d04040);
+            ("exempel", #ec5f5f, #d04040),
+            ("handledarinfo",#faa540, #f9833d),;
 
 // MIXINS
 @mixin border-radius($radius) {
@@ -231,6 +234,7 @@ figcaption h4 {
 
 /* Logotype */
 .uu-logo {
+    z-index: 10;
     background-color: #990000;
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
@@ -289,6 +293,11 @@ header {
 }
 header nav {
   background-color: $default_main;
+}
+header nav.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 header nav ul {
   margin: 0;
