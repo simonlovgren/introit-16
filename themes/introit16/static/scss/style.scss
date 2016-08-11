@@ -234,7 +234,7 @@ figcaption h4 {
 
 /* Logotype */
 .uu-logo {
-    z-index: 10;
+    z-index: 40;
     background-color: #990000;
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
@@ -289,16 +289,15 @@ figcaption h4 {
 }
 /* Menu bar */
 header {
-  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 30;
 }
 header nav {
-  background-color: $default_main;
+    background-color: $default_main;
 }
-//header nav.fixed {
-//    position: fixed;
-//    width: 100%;
-//    z-index: 1;
-//}
 header nav ul {
   margin: 0;
   padding: 0;
@@ -405,6 +404,11 @@ header nav ul li.active a {
   background-color: #ffffff;
   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
 }
+@media all and (min-width: 1024px) {
+    #content {
+        margin: 4em 0 0 0;
+    }
+}
 /* -- Heading */
 .heading {
   border-bottom: 4px solid $default_main;
@@ -446,6 +450,7 @@ footer small {
   $selector: nth($section, 1);
   /* ------------------------------------- */
   /** #{to_upper_case($selector)} **/
+  
   /* -- Section card */
   .card.#{$selector} .logo {
       background-image: url("../images/icons/#{$selector}.png");
