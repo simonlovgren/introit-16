@@ -290,7 +290,8 @@ figcaption h4 {
   font-size: 5em;
   font-weight: 400;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
+  max-width: 90%;
   border: none;
 }
 .top-flag h2 {
@@ -302,6 +303,18 @@ figcaption h4 {
   margin: 0 auto;
   border: none;
 }
+@media all and (max-width: 740px) {
+    .top-flag .top-container {
+        padding: 50px 0;
+    }
+    .top-flag h1 {
+        font-size: 3.3em;
+     }
+    .top-flag h2 {
+        font-size: 2em;
+    }
+}
+
 /* Menu bar */
 header {
     box-shadow: 0 3px 0 rgba(0,0,0,0.1);
