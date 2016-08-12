@@ -47,7 +47,19 @@
           <!-- main menu -->
           <nav id="main-menu">
               <ul class="nav-menu">
-                  <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+
+                <!-- Interlinking module pages -->
+                {{ if .IsPage }}
+                  {{ $module := (index .Site.Data.modules .Params.module) }}
+                  {{ if not .Section }}
+                    {{ if not $module.noTasks }}
+                      <li class="menu-item"><a href="{{ .Site.BaseURL }}{{ $module.module }}/uppgifter">Uppgifter</a></li>
+                    {{ end }}
+                  {{ else }}
+                    <li class="menu-item"><a href="{{.Site.BaseURL}}{{ $module.module}}">Infosida</a></li>
+                  {{ end }}
+                {{ end }}
               </ul>
             </nav>
         </header>
