@@ -1,2 +1,5 @@
 title = "excel"
+module = "excel"
 tagline = "Manipulera siffror med musen"
+hidden = false
+noTasks = false

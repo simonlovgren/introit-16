@@ -2,32 +2,33 @@
 
 <!-- Actual content -->
 <section id="cards">
-    {{ range $section, $pages := .Site.Sections }}
-      <!-- Exclude root section -->
-      {{ if $section }}
-      {{ if not (index $.Site.Data.modules $section).hidden }}
-        <div class="card {{ lower (title $section) }}">
-          <div class="top"></div>
-          <div class="logo"></div>
-          <div class="content">
-            <div class="title">
-              <h2>{{ (index $.Site.Data.modules $section).title }}</h2>
-            </div>
-            <div class="tagline">
-              <p>
-                {{ (index $.Site.Data.modules $section).tagline }}
-              </p>
-            </div>
-            <div class="buttons">
-              <a href="{{ $section }}" class="btn">Infosidor</a>
-              <a href="{{ $section }}/uppgifter" class="btn">Uppgifter</a>
-            </div>
-          </div>
-        </div>
-      {{ end }}
-      {{ end }}
-    {{ end }}
-    <div class="clr"></div>
+
+  {{ range $module := .Site.Data.modules}}
+  {{ if not $module.hidden }}
+  <div class="card {{ lower ($module.module) }}">
+    <div class="top"></div>
+    <div class="logo"></div>
+    <div class="content">
+      <div class="title">
+        <h2>{{ $module.title }}</h2>
+      </div>
+      <div class="tagline">
+        <p>
+          {{ $module.tagline }}
+        </p>
+      </div>
+      <div class="buttons">
+        <a href="{{ lower ($module.module) }}" class="btn">Infosidor</a>
+        {{ if not $module.noTasks }}
+        <a href="{{ lower ($module.module) }}/uppgifter" class="btn">Uppgifter</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+
+  <div class="clr"></div>
 </section>
 
 {{ partial "footer.html" .}}

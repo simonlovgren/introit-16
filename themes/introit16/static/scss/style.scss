@@ -404,6 +404,11 @@ header nav ul li.active a {
   line-height: 40px;
   text-transform: uppercase;
 }
+@media all and (max-width: 740px) {
+    .card .title h2 {
+        font-size: 30px;
+    }
+}
 .card .tagline p {
   font-family: "Roboto";
   font-weight: 100;
@@ -458,6 +463,16 @@ header nav ul li.active a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+}
+
+@media all and (max-width: 540px) {
+    .heading h1 {
+        font-size: 2em;
+    }
+    .heading .section-icon {
+        width: 3em;
+        height: 3em;
+    }
 }
 /* Footer */
 footer {

@@ -1,2 +1,5 @@
 title = "Terminalen"
+module = "terminal"
 tagline = "Lär dig bli en power-user."
+hidden = false
+noTasks = false
