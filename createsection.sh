@@ -25,7 +25,7 @@ echo -n "This file is for the exercise(s)."
 echo "$TEXT_RESET"
 
 if [ ! -f data/modules/$name.toml ]; then
-  mkdir -p data/modules && sed "s/section_name/$name/g" $ARCHTYPES/default.toml > data/modules/$name.toml
+  mkdir -p data/modules && sed "s/section_name/$name/g" $ARCHTYPES/default.toml | sed "s/module_id/$name/g" > data/modules/$name.toml
   echo "$(pwd)/data/modules/$name.toml created"
 else
   echo "ERROR: $(pwd)/data/modules/$name.toml exists"
