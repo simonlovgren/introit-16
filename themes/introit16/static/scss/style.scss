@@ -185,6 +185,21 @@ figcaption h4 {
   line-height: 100%;
 }
 
+/* -- Figure modidiers */
+@media all and (min-width: 550px) {
+    figure.small img {
+        width: 75%;
+    }
+    figure.medium img {
+        width: 75%;
+    }
+}
+@media all and (min-width: 740px) {
+    figure.small img {
+        width: 50%;
+    }
+}
+
 /* -- Pseudo elements */
 ::selection {
     color: #fff;
@@ -403,6 +418,7 @@ header nav ul li.active a {
   padding: 2em 3em;
   background-color: #ffffff;
   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+  word-wrap: break-word;
 }
 @media all and (min-width: 1024px) {
     #content {
@@ -497,7 +513,7 @@ footer small {
   /* -- Figures */
   .#{$selector} figcaption {
     color: nth($section, 3);
-  }
+  }  
   /* -- Pseudo elements */
   .#{$selector} ::selection {
       background: nth($section,3);
