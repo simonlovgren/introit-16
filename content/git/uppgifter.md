@@ -31,8 +31,14 @@ I denna uppgift finns följande huvudsakliga mål:
 - Hantera merge-konflikter
 
 ## Material som krävs
+Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
+men går även genomföra på egen dator om git finns tillgängligt.
+
+- terminal
+- git
 
 ## Uppgift
+Materialet som tas upp i uppgiften diskuteras i [infosidan för git](../).
 
 ### Del 1: Skapa ett git-repository
 Öppna terminalen och navigera till din hemmapp. Skapa en ny mapp
@@ -44,10 +50,20 @@ Väl inne i mappen, initiera ett nytt git-repo:
 ```
 git init
 ```
+
+När du skapat repot skall du ställa in namn och epost. Det
+är denna information git (och system som github) använder för att
+identifiera vem som utfört specifika ändringar. **Det är viktigt
+att du ställer in detta korrekt så vi kan se att det är du som
+utfört ändringarna i uppgiften**.
+
+Det finns två sätt att göra detta, **lokalt** och **globalt**:
+
 #### Lokal (per repo) konfiguration
-För att vi skall veta vem som utfört ändringar och liknande behöver
-du Konfigurera repot med ditt användarnamn och din e-postadress. Detta
-gör du genom följande kommandon **när du står i ditt repo**.
+Det går konfigurera denna information på en "per repo"-basis, dvs.
+det är möjligt att ställa in olika mailadresser och namn för olika
+repon. För att ställa in detta för ett enskilt repo navigerar du
+till repo-mappen och skriver följande kommandon:
 
 ```none
 $ git config user.name "abcd1234"
@@ -63,10 +79,14 @@ Det går även konfigurera git globalt, vilket gör att dina inställningar
 används för alla nya repon du skapar- samt alla repon du inte ställt in
 redan. För att göra detta används `--global`-flaggan. Såhär ser inställningarna
 ut då:
+
 ```none
 $ git config --global user.name "abcd1234"
 $ git config --global user.email "abcd1234@student.uu.se"
 ```
+
+Detta är t.ex. väldigt bekvämt om man brukar använda samma namn och mailadress
+i de flesta fall.
 
 ### Del 2: Lägg till nya filer
 Nu skall vi lägga till filer i det nya repot. För att ha något att arbeta med
@@ -77,6 +97,9 @@ curl "http://www.it.uu.se/education/course/homepage/introdat/ht16/resources/kurs
 ```
 När kommandot är färdigt bör du ha en fil kallad `kurser.txt` i ditt repo. Du skall nu checka in
 den nya filen och därefter göra en commit med kommentaren "**lade till kurser.txt**".
+
+**Du kan även hämta filen manuellt på denna länk:**  
+{{< extlink link="http://www.it.uu.se/education/course/homepage/introdat/ht16/resources/kurser.txt" title="http://www.it.uu.se/education/course/homepage/introdat/ht16/resources/kurser.txt">}}
 
 ### Del 3: Skapa en ny branch
 Nu skall du skapa en ny branch som skall kallas `mitt-urval` och byta till denna.
