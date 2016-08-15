@@ -1,0 +1,583 @@
+1TT900, Adaptiva system, Adaptive Systems, 6.0 hp
+1RT180, Adaptiva system MN1, Adaptive Systems, 7.5 hp
+1TT401, Algoritmer för parallellmaskiner, Algorithms for Parallel Computers, 6.0 hp
+1TT330, Algoritmer och datastrukturer, Algorithms and Data Structures, 6.0 hp
+1DL113, Algoritmer och datastrukturer 3, Algorithms and Data Structures 3, 7.5 hp
+1TD442, Algoritmer och datastrukturer DV1, Algorithms and Data Structures DV1, 9.0 hp
+1TD440, Algoritmer och datastrukturer DV1, Algorithms and Data Structures DV1, 7.5 hp
+2AD091, Algoritmer och datastrukturer DV2, Algorithms and Data Structures DV2, 6.0 hp
+1DL104, Algoritmer och datastrukturer DV3, Algorithms and Data Structures DV3, 6.0 hp
+1DL210, Algoritmer och datastrukturer I, Algorithms and Data Structures I, 5.0 hp
+1DL231, Algoritmer och datastrukturer II, Algorithms and Data Structures II, 5.0 hp
+1DL024, Algoritmer och datastrukturer II, Algorithms and Data Structures II, 6.0 hp
+1DL230, Algoritmer och datastrukturer II, Algorithms and Data Structures II, 5.0 hp
+1DL481, Algoritmer och datastrukturer III, Algorithms and Data Structures III, 5.0 hp
+1DL030, Algoritmer och datastrukturer III, Algorithms and Data Structures III, 7.5 hp
+1DL026, Algoritmisk problemlösning, Algorithmic Problem Solving, 7.5 hp
+1DL109, Algoritmisk problemlösning DV1, Algorithmic Problem Solving DV1, 7.5 hp
+1TT430, Analys av numeriska metoder, Analysis of Numerical Methods, 7.5 hp
+1TD243, Analys av numeriska metoder, Analysis of Numerical Methods, 5.0 hp
+1TD241, Analys av numeriska metoder MN1, Analysis of Numerical Methods MN1, 7.5 hp
+1TD242, Analys av numeriska metoder NV1, Analysis of Numerical Methods NV1, 7.5 hp
+1MD000, Användarcentrerad systemdesign, User-Centred Systems Design, 5.0 hp
+1MD011, Användarcentrerad systemdesign, User-Centred Systems Design, 7.5 hp
+1IT240, Användarcentrerad systemdesign, User Centered Systems Design, 7.5 hp
+1MD021, Användbarhet i praktiken, Contextual Usability, 15.0 hp
+1TD308, Användning av MATLAB, Use of MATLAB, 7.5 hp
+1TD311, Användning av MATLAB, Using MATLAB, 7.5 hp
+1DL019, Artificiell intelligens, Artificial Intelligence, 7.5 hp
+1DL340, Artificiell intelligens, Artificial Intelligence, 5.0 hp
+1TD131, Artificiell intelligens MN1, Artificial Intelligence MN1, 7.5 hp
+1DL031, Artificiell intelligens med statistiska metoder, Artificial Intelligence Using Statistical Methods, 7.5 hp
+1DT646, Artificiella neuronnät, Artificial Neural Networks, 7.5 hp
+1DT156, Artificiella neuronnät DV1, Artificial Neural Networks DV1, 6.0 hp
+1DL500, Automater och logik i modellering av IT-system, Automata and Logic in IT System Modelling, 5.0 hp
+1DL480, Avancerad algoritmik, Advanced Algorithmics, 10.0 hp
+1DT024, Avancerad datorarkitektur, Advanced Computer Architecture, 10.0 hp
+1IT211, Avancerad datorgrafik och visualisering, Advanced Computer Graphics and Visualization, 6.0 hp
+1TD386, Avancerad datorgrafik och visualisering NV1, Advanced Computer Graphics and Visualization NV1, 7.5 hp
+1TD387, Avancerad datorgrafik och visualisering NV1, Advanced Computer Graphics and Visualisation NV1, 7.5 hp
+1DL450, Avancerad funktionell programmering, Advanced Functional Programming, 5.0 hp
+1MD001, Avancerad interaktionsdesign, Advanced Interaction Design, 5.0 hp
+1DL241, Avancerad programvarudesign, Advanced Software Design, 5.0 hp
+1DT032, Avancerade datavetenskapsstudier i Sverige, Advanced Computer Science Studies in Sweden, 5.0 hp
+1TD050, Avancerade numeriska metoder, Advanced Numerical Methods, 10.0 hp
+1MD020, Avancerade visuella gränssnitt, Advanced Visual Interfaces, 5.0 hp
+1TD185, Beräkningsmetoder i finansiell matematik, Computational Finance, 5.0 hp
+1TD394, Beräkningsvetenskap DV, Scientific Computing DV, 5.0 hp
+1TD393, Beräkningsvetenskap I, Scientific Computing I, 5.0 hp
+1TD754, Beräkningsvetenskap I, Scientific Computing I, 6.0 hp
+1TD766, Beräkningsvetenskap I, Scientific Computing I, 7.5 hp
+1TS044, Beräkningsvetenskap II, Scientific Computing II, 7.5 hp
+1TD755, Beräkningsvetenskap II, Scientific Computing II, 6.0 hp
+1TD395, Beräkningsvetenskap II, Scientific Computing II, 5.0 hp
+1TD397, Beräkningsvetenskap III, Scientific Computing III, 5.0 hp
+1TD399, Beräkningsvetenskap KF, Scientific Computing KF, 5.0 hp
+1TD391, Beräkningsvetenskap NV1, Scientific Computing NV1, 7.5 hp
+1TD392, Beräkningsvetenskap NV1, Scientific Computing NV1, 7.5 hp
+1TD043, Beräkningsvetenskap NV2, Scientific Computing NV2, 7.5 hp
+1TD042, Beräkningsvetenskap NV2, Scientific Computing NV2, 7.5 hp
+1TD333, Beräkningsvetenskap och analys, Scientific Computing and Calculus, 10.0 hp
+1TD044, Beräkningsvetenskap, bryggningskurs, Scientific Computing, Bridging Course, 10.0 hp
+1TD045, Beräkningsvetenskap, bryggningskurs, Scientific Computing, Bridging Course, 5.0 hp
+1DL125, Bevisbart korrekt programvara, Provably correct software, 7.5 hp
+1DL017, Bevisbart korrekt programvara, Provably Correct Software, 7.5 hp
+1DL430, Bevisbart korrekt programvara, Provably Correct Software, 10.0 hp
+1MD022, Bibliografiskt projekt i människa-datorinteraktion, Bibliographical Project in Human-Computer Interaction, 5.0 hp
+1DL124, Databasdesign för ingenjörer, Database Design for Engineers, 7.5 hp
+1DL116, Databasteknik, Database Design, 7.5 hp
+1DL029, Databasteknik, Database Design, 7.5 hp
+1MB025, Databasteknik, Database Design, 9.0 hp
+2AD093, Databasteknik DV1, Database Design DV1, 6.0 hp
+1DL300, Databasteknik I, Database Design I, 5.0 hp
+1DL301, Databasteknik I, Database Design I, 5.0 hp
+1DL400, Databasteknik II, Database Design II, 5.0 hp
+1DT730, Datakommunikation, Computer Networks, 7.5 hp
+1TT821, Datakommunikation, Computer Networks, 4.5 hp
+1TT825, Datakommunikation, Computer Networks, 4.5 hp
+1DT131, Datakommunikation DV1, Computer Networks DV1, 6.0 hp
+1DT014, Datakommunikation I, Computer Networks I, 7.5 hp
+1DT052, Datakommunikation I, Computer Networks I, 5.0 hp
+1DT015, Datakommunikation II, Computer Networks II, 7.5 hp
+1IT131, Datakommunikation II, Advanced Computer Networks, 6.0 hp
+1DT074, Datakommunikation II, Computer Networks II, 10.0 hp
+1IT132, Datakommunikation III, Advanced Computer Networks, second course, 7.5 hp
+1DT010, Datakommunikation III, Advanced Computer NetWorks, Second Course, 7.5 hp
+1DT082, Datakommunikation III, Computer Networks III, 5.0 hp
+1IT130, Datakommunikation IT, Advanced Computer Networks, 4.5 hp
+1DT633, Datakommunikation MN1, Computer Networks MN1, 7.5 hp
+1DT634, Datakommunikation MN2, Computer Networks MN2, 7.5 hp
+1DT102, Datakommunikation och distribuerade system, Computer Networks and Distributed Systems, 10.0 hp
+1DT670, Dataspelsutveckling I, Computer Games Development I, 7.5 hp
+1DT023, Dataspelsutveckling I, Computer Games Development I, 7.5 hp
+1DT671, Dataspelsutveckling II, Computer Games Development II, 7.5 hp
+1DT045, Dataspelsutveckling II, Computer Games Development II, 7.5 hp
+1DL123, Dataspelsutveckling, introduktionskurs, Introduction to Computer Games Development, 7.5 hp
+1MB026, Datastrukturer, Data Structures, 6.0 hp
+1TD191, Datastrukturer MN1, Data Structures MN1, 7.5 hp
+1DL009, Datastrukturer MN1, Data Structures MN1, 7.5 hp
+1TS080, Datastrukturer och databaser, Datastructures and Databases, 7.5 hp
+1DT725, Datasäkerhet, Data Security, 7.5 hp
+2AD209, Datavetenskap (London), Computing Science, 18.0 hp
+1DT001, Datavetenskapens didaktik, Computing Education Research, 7.5 hp
+1DT029, Datavetenskapens didaktik, Computing Education Research, 7.5 hp
+1DT061, Datavetenskapens didaktik, Computing Education Research, 10.0 hp
+1DT025, Datoranvändning i studier och arbetsliv, Use of Computers in Studies and Work Life, 5.0 hp
+1DT720, Datorarkitektur, Computer Architecture, 7.5 hp
+1TT441, Datorarkitektur, Computer Architecture, 6.0 hp
+1TT311, Datorarkitektur, Computer Architecture, 4.5 hp
+1DT093, Datorarkitektur, Computer Architecture, 10.0 hp
+1DT038, Datorarkitektur I, Computer Architecture I, 5.0 hp
+1DT016, Datorarkitektur I, Computer Architecture I, 7.5 hp
+1DT013, Datorarkitektur II, Computer Architecture II, 7.5 hp
+1IT190, Datorarkitektur IT, Computer Architecture IT, 4.5 hp
+1DT631, Datorarkitektur MN1, Computer Architecture MN1, 7.5 hp
+1DT636, Datorarkitektur MN2, Computer Architecture MN2, 7.5 hp
+1DT085, Datorarkitektur och digitalteknik, Computer Architecture and Digital Technology, 10.0 hp
+1TS250, Datorbaserad styrning, Computer Controlled Systems, 7.5 hp
+1TV450, Datorbaserad styrning, Computer Controlled Systems, 9.0 hp
+1RT450, Datorbaserad styrning, Computer Controlled Systems, 9.0 hp
+2AD535, Datorer och UNIX DV1, Introduction to UNIX DV1, 3.0 hp
+1TD317, Datorer och programmering, Computers and Programming, 10.0 hp
+1TD315, Datorer och programmering TDB1, Computers and Programming, First Course, 7.5 hp
+1TD325, Datorer och programmering TDB2, Computers and Programming, Second Course, 7.5 hp
+1TD335, Datorer och programmering TDB3, Computers and Programming, Third Course, 7.5 hp
+1TT180, Datorgrafik, Computer Graphics, 6.0 hp
+1TD388, Datorgrafik, Computer Graphics, 10.0 hp
+1TD620, Datorgrafik DV1, Computer Graphics DV1, 6.0 hp
+1IT200, Datorgrafik II, Computer Graphics II, 6.0 hp
+1TD381, Datorgrafik MN1, Computer Graphics MN1, 7.5 hp
+1TD385, Datorgrafik MN2, Computer Graphics MN2, 7.5 hp
+1TD383, Datorgrafik NV1, Computer Graphics NV1, 7.5 hp
+1TT341, Datoriserad bildanalys, Digital Image Analysis, 4.5 hp
+1TD396, Datoriserad bildanalys I, Computer Assisted Image Analysis I, 5.0 hp
+1TD398, Datoriserad bildanalys II, Computer Assisted Image Analysis II, 10.0 hp
+1TD373, Datoriserad bildanalys MN1, Computer Assisted Image Analysis MN1, 7.5 hp
+1TD374, Datoriserad bildanalys MN2, Computer Assisted Image Analysis MN2, 7.5 hp
+1TD377, Datoriserad bildanalys NV1, Computer Assisted Image Analysis NV1, 7.5 hp
+1TD384, Datoriserad bildanalys NV2, Computer Assisted Image Analysis NV2, 7.5 hp
+1TD265, Datormoln med tillämpningar, Applied Cloud Computing, 10.0 hp
+1EI030, Datorstödd elektronikkonstruktion, Computer Aided Electronic Design, 3.0 hp
+1DT041, Datorstödd elektronikkonstruktion, Computer Aided Electronic Design, 5.0 hp
+1DT030, Datorstödd elektronikkonstruktion, projekt, Computer Aided Electronic Design, 7.5 hp
+1DT076, Datorstödd utbildning, Computer-Supported Collaborative Learning, 7.5 hp
+1DT151, Datorsystem DV1, Computer Systems DV1, 15.0 hp
+1IT050, Datorsystem I, Computer Systems I, 15.0 hp
+1IT070, Datorsystem II, Computer Systems II, 13.5 hp
+1DT832, Datorsystem, projekt EI1, Computer Systems Project, 15.0 hp
+1DT017, Datorsystem, projekt elektronik, Computer Systems Project Electronics, 15.0 hp
+1DT827, Datorteknik EI1, Computer Technology EI1, 22.5 hp
+1MD113, Design och konstruktion av användargränssnitt, Design and Construction of User Interfaces, 7.5 hp
+1MD006, Design och konstruktion av användargränssnitt, Design and Construction of User Interfaces, 7.5 hp
+1RT090, Digital styrning DV1, Digital Control DV1, 6.0 hp
+1DT033, Digitalteknik och datorarkitektur, Digital Technology and Computer Architecture, 5.0 hp
+1DT157, Digitalteknik och datorarkitektur DV1, Digital Technology and Computer Architecture, 7.5 hp
+1DL112, Distribuerad programmeringsmetodik, Methods of Distributed Programming, 7.5 hp
+1DL110, Distribuerad programmeringsmetodik DV1, Methods of Distributed Programming DV1, 6.0 hp
+1TS160, Distribuerade informationssystem, Distributed Information Systems, 7.5 hp
+1DT028, Distribuerade informationssystem, Distributed Information Systems, 7.5 hp
+1DT066, Distribuerade informationssystem, Distributed Information Systems, 5.0 hp
+1DT057, Distribuerade informationssystem, Distributed Information Systems, 10.0 hp
+1DT735, Distribuerade system, Distributed Systems, 7.5 hp
+1TT835, Distribuerade system, Distributed Systems, 4.5 hp
+1DT018, Distribuerade system, Distributed Systems, 7.5 hp
+1DT064, Distribuerade system, Distributed Systems, 5.0 hp
+1DT641, Distribuerade system MN1, Distributed Systems MN1, 7.5 hp
+1DT058, Distribuerade system med projekt, Distributed Systems with Project, 10.0 hp
+1DT084, Distribuerade system med projekt, Distributed Systems with Project, 10.0 hp
+1DT159, Distribuerade system, projekt DV1, Distributed Systems, Project DV1, 22.5 hp
+1TS130, Dynamiska system, n/a, 7.5 hp
+1DL350, Elektronisk handel - utvecklingsprojekt, E-commerce Project, 10.0 hp
+1DL018, Elektronisk handel och säkerhet, Electronic Commerce and Security, 7.5 hp
+1TS210, Elektronisk handel och säkerhet, Electronic Commerce and Security, 7.5 hp
+1ET100, Empirisk modellering, Empirical Modeling, 7.5 hp
+1RT890, Empirisk modellering, Empirical Modelling, 10.0 hp
+1IT960, Examensarbete, Degree Project, 30.0 hp
+1DT340, Examensarbete C i datavetenskap, Degree Project C in Computer Science, 15.0 hp
+1DT440, Examensarbete D i datavetenskap, Degree Project D in Computer Science, 15.0 hp
+1MD440, Examensarbete D i människa-datorinteraktion, Degree Project D in Human-Computer Interaction, 15.0 hp
+1TD908, Examensarbete D i tillämpad beräkningsvetenskap, Degree Project D in Computational Science, 15.0 hp
+1DT341, Examensarbete DV1, Undergraduate Thesis, 15.0 hp
+2AD062, Examensarbete DV1, datalogi, Degree Project DV1, 15.0 hp
+1DT144, Examensarbete DV1, datorteknik, Degree Project DV1, 15.0 hp
+1TD904, Examensarbete DV1, teknisk databehandling, Degree Project DV1, Scientific Computing, 15.0 hp
+1DT342, Examensarbete DV2, Undergraduate Thesis, 15.0 hp
+2AD300, Examensarbete DV2, datalogi, Degree Project DV2, 15.0 hp
+1DT149, Examensarbete DV2, datorteknik, Degree Project DV2, 15.0 hp
+1TD905, Examensarbete DV2, teknisk databehandling, Degree Project DV2, Scientific Computing, 15.0 hp
+1DT343, Examensarbete DV3, Undergraduate Thesis, 30.0 hp
+2AD301, Examensarbete DV3, datalogi, Degree Project DV3, 30.0 hp
+1DT150, Examensarbete DV3, datorteknik, Degree Project DV3, 30.0 hp
+1TD906, Examensarbete DV3, teknisk databehandling, Degree Project DV3, Scientific Computing, 30.0 hp
+1DT550, Examensarbete E i datavetenskap, Degree Project E in Computer Science, 45.0 hp
+1DT540, Examensarbete E i datavetenskap, Degree Project E in Computer Science, 30.0 hp
+1DT560, Examensarbete E i datavetenskap med inriktning mot parallellprogrammering, Degree Project E in Computer Science with Concurrent and Parallel Programming, 30.0 hp
+1DT090, Examensarbete E i inbyggda system, Degree Project E in Embedded Systems, 45.0 hp
+1MD024, Examensarbete E i människa-datorinteraktion, Degree Project E in Human-Computer Interaction, 30.0 hp
+1TD708, Examensarbete E i tillämpad beräkningsvetenskap, Degree Project E in Computational Science, 45.0 hp
+1TD808, Examensarbete E i tillämpad beräkningsvetenskap, Degree Project E in Computational Science, 30.0 hp
+2AD911, Examensarbete MN1, datalogi, Degree Project MN1, 15.0 hp
+1DT901, Examensarbete MN1, datorteknik, Degree Project MN1, 15.0 hp
+1RT901, Examensarbete MN1, reglerteknik, Degree Project MN1, Systems Analysis, 15.0 hp
+1TD901, Examensarbete MN1, teknisk databehandling, Degree Project MN1, Scientific Computing, 15.0 hp
+2AD912, Examensarbete MN2, datalogi, Degree Project MN2, 15.0 hp
+1DT902, Examensarbete MN2, datorteknik, Degree Project MN2, 15.0 hp
+1RT902, Examensarbete MN2, reglerteknik, Degree Project MN2, Systems Analysis, 15.0 hp
+1TD902, Examensarbete MN2, teknisk databehandling, Degree Project MN2, Scientific Computing, 15.0 hp
+2AD913, Examensarbete MN3, datalogi, Degree Project MN3, 30.0 hp
+1DT903, Examensarbete MN3, datorteknik, Degree Project MN3, 30.0 hp
+1RT903, Examensarbete MN3, reglerteknik, Degree Project MN3, Systems Analysis, 30.0 hp
+1TD903, Examensarbete MN3, teknisk databehandling, Degree Project MN3, Scientific Computing, 30.0 hp
+1DT941, Examensarbete NV1, datavetenskap, Undergraduate thesis, 15.0 hp
+1DT942, Examensarbete NV2, datavetenskap, Undergraduate thesis, 15.0 hp
+1DT943, Examensarbete NV3, datavetenskap, Undergraduate thesis, 30.0 hp
+1DT820, Examensarbete T, Degree Project T, 15.0 hp
+1DT830, Examensarbete T2, Undergraduate Thesis T2, 15.0 hp
+1DT831, Examensarbete T3, Undergraduate Thesis T3, 30.0 hp
+1DT087, Examensarbete i inbyggda system, Degree Project in Embedded Systems, 15.0 hp
+1DT068, Examensarbete i inbyggda system, Degree Project in Embedded Systems, 30.0 hp
+1DT960, Examensarbete i informationsteknologi, Degree Project in Computer and Information Engineering, 30.0 hp
+1IT962, Examensarbete med entreprenörsinriktning, Degree Project, 30.0 hp
+1TD188, Finansiella beräkningsmetoder - kalibrering och parameterskattning, Computational Finance: Calibration and Estimation, 5.0 hp
+1TD186, Finansiella beräkningsmetoder - prissättning och värdering, Computational Finance: Pricing and Valuation, 5.0 hp
+1TT411, Finita elementmetoder, Finite Element Methods, 6.0 hp
+1TD253, Finita elementmetoder, Finite Element Methods, 5.0 hp
+1TD254, Finita elementmetoder II, Finite Element Methods II, 5.0 hp
+1TD251, Finita elementmetoder MN1, Finite Element Methods MN1, 7.5 hp
+1TD252, Finita elementmetoder NV1, Finite Element Methods NV1, 7.5 hp
+1TD245, Forskningspraktik i beräkningsvetenskap, Research Training in Scientific Computing, 5.0 hp
+1DL000, Från domäner till krav, From Domains to Requirements, 7.5 hp
+1DL027, Funktionell programmering, Functional Programming, 7.5 hp
+1DL330, Funktionell programmering I, Functional Programming I, 5.0 hp
+2AD200, Funktionell programmering MN1, Functional Programming MN1, 7.5 hp
+1DL580, Fördjupningskurs i concurrency och parallellprogrammering, Project in Concurrent and Parallel Programming, 15.0 hp
+1MB021, Grundläggande datoranvändning, Introduction to Computers, 3.0 hp
+1MD111, Grundläggande människa-datorinteraktion MN1, Introduction to Human Computer Interaction MN1, 7.5 hp
+1MD007, Grundläggande människa-datorinteraktion MN1, Introduction to Human-Computer Interaction MN1, 7.5 hp
+1TS040, Grundläggande programmering, Introductory Programming, 7.5 hp
+1MD002, Gränssnittsprogrammering I, User Interface Programming I, 5.0 hp
+1MD003, Gränssnittsprogrammering II, User Interface Programming II, 5.0 hp
+1MD031, Gränssnittsprogrammering med ett användarperspektiv, Interface Programming with a User Perspective, 5.0 hp
+1MD029, Gränssnittsprogrammering med ett systemperspektiv, Interface Programming with a Systems Perspective, 5.0 hp
+1DT037, Hälsoinformatik, Health Informatics, 7.5 hp
+1DT069, Hälsoinformatik I, Health Informatics I, 7.5 hp
+1DT070, Hälsoinformatik II, Health Informatics II, 7.5 hp
+1TT476, Högprestandaberäkningar med Fortran, High Performance Computing with Fortran, 6.0 hp
+1TD351, Högprestandaberäkningar och programmering, High Performance Computing and Programming, 5.0 hp
+1TT477, Högprestandaberäkningar och programmering I, High Performance Computing and Programming I, 6.0 hp
+1TD369, Högprestandaberäkningar och programmering NV1, High Performance Computing and Programming, 7.5 hp
+1TD379, Högprestandaberäkningar och programmering NV1, High Performance Computing and Programming NV1, 7.5 hp
+1TD062, Högprestandaprogrammering, High Performance Programming, 10.0 hp
+1DT655, Högpresterande datorsystem HPB, High Performance Computer Systems HPB, 7.5 hp
+1IT160, IT i samhället, IT and Society, 15.0 hp
+1DT012, IT i samhället, IT and Society, 15.0 hp
+1MD004, IT, etik och organisation, IT, Ethics and Organisation, 5.0 hp
+1TS230, IT-system och människor i samspel, Information Technology and Users, 7.5 hp
+1MD017, IT-system och människor i samspel, IT Systems and Human Factors, 5.0 hp
+1MD033, Icke-exkluderande design och utvärdering, Non-Excluding Design and Evaluation, 15.0 hp
+1DL220, Imperativ och objektorienterad programmering, Imperative and Object-Oriented Programming, 10.0 hp
+1DL221, Imperativ och objektorienterad programmeringsmetodik, Imperative and Object-Oriented Programming Methodology, 20.0 hp
+1DL126, Imperativ programmering, Imperative programming, 4.5 hp
+1TT901, Inbyggda styrsystem, Embedded Control Systems, 12.0 hp
+1RT910, Inbyggda styrsystem, projekt, Embedded Control Systems, Project, 10.0 hp
+1RT911, Inbyggda styrsystem, projekt, Embedded Control Systems, Project, 15.0 hp
+1DL471, Informationshanteringssystem, Information Management Systems, 10.0 hp
+1DL470, Informationshanteringssystem (LIMS), Laboratory Information Management Systems, 5.0 hp
+1IT012, Informationsteknologi, Information Technology IT, 7.5 hp
+1DT031, Informationsteknologi, Information Technology, 10.0 hp
+1DT006, Informationsteknologi, Information Technology, 7.5 hp
+1IT011, Informationsteknologi, Information Technology, 6.0 hp
+1DT653, Informationsteknologi (datorteknik), Information Technology, 7.5 hp
+8DT011, Informationsteknologi (uppdragsutbildning), Information Technology (Contract education), 15.0 hp
+1MD117, Informationsteknologi och etik, Information Technology and Ethics, 7.5 hp
+1MD008, Informationsteknologi och etik, Information Technology and Ethics, 7.5 hp
+1TD450, Informationsteknologisk baskurs, Information Technology, Basic Course, 7.5 hp
+1DL111, Informationsutvinning, Data Mining, 7.5 hp
+1DL025, Informationsutvinning, Data Mining, 7.5 hp
+1DL105, Informationsutvinning, Data Mining, 6.0 hp
+1DL360, Informationsutvinning I, Data Mining I, 5.0 hp
+1DL460, Informationsutvinning II, Data Mining II, 5.0 hp
+1DL121, Informationsutvinning på Internet, Data Mining and Information Retrieval on the Internet, 7.5 hp
+1IT220, Intelligenta användargränssnitt, Intelligent User Interfaces, 7.5 hp
+1MD032, Intelligenta interaktiva system, Intelligent Interactive Systems, 5.0 hp
+1MD115, Interaktionsdesign, Interaction Design, 7.5 hp
+1MD009, Interaktionsdesign, Interaction Design, 7.5 hp
+1IT210, Interaktiva grafiska system, Interactive Computer Graphics, 7.5 hp
+1MD014, Interaktiva grafiska system, Interactive Computer Graphics, 7.5 hp
+1DT092, Internationell mjukvaruutveckling, projekt, Global Software Product Development, 10.0 hp
+1DT046, Internationell programutveckling, International Software Development, 7.5 hp
+1DT094, Internet of Things, Internet of Things, 5.0 hp
+1TD312, Internetprogrammering, Internet Programming, 7.5 hp
+1DT027, Introduktion i datavetenskap, Introduction Course in Computer Science, 10.0 hp
+1TD780, Introduktion till datoranvändning, Introduction to Computers, 1.5 hp
+1RT485, Introduktion till datorbaserade reglersystem, Introduction to Computer Control Systems, 5.0 hp
+1DT051, Introduktion till informationsteknologi, Information Technology, 10.0 hp
+1DT086, Introduktion till studier i inbyggda system, Introduction to Studies in Embedded Systems, 5.0 hp
+1DL119, Introduktionskurs i datavetenskap, Introduction to Computer Science, 4.5 hp
+8TD292, Java och internetprogrammering, Java and Internet Programming, 15.0 hp
+1MD013, Kognitiv psykologi, Cognitive Psychology, 5.0 hp
+1MD123, Kognitiv psykologi, Cognitive Psychology, 7.5 hp
+1MD010, Kognitiv psykologi, Cognitive Psychology, 7.5 hp
+1DL108, Kolmogorov-komplexitet och tillämpningar, Kolmogorov Complexity and Applications, 7.5 hp
+1DL441, Kombinatorisk optimering med villkorsprogrammering, Combinatorial Optimisation using Constraint Programming, 10.0 hp
+1RT361, Kommunal och industriell avloppsvattenrening, Municipal and Industrial Wastewater Treatment, 5.0 hp
+1DL117, Kompilatorteknik DV1, Compiler Design, 7.5 hp
+2AD520, Kompilatorteknik DV1, Compiler Design DV1, 7.5 hp
+2AD518, Kompilatorteknik DV2, Compiler Technique DV2, 7.5 hp
+1DL321, Kompilatorteknik I, Compiler Design I, 5.0 hp
+1DL021, Kompilatorteknik I, Compiler Design I, 7.5 hp
+1DL320, Kompilatorteknik I, Compiler Design I, 5.0 hp
+1DL016, Kompilatorteknik II, Compiler Design II, 7.5 hp
+1DL520, Kompilatorteknik II, Compiler Design II, 10.0 hp
+1TD231, Kompilatorteknik MN1, Compiler Techniques MN1, 7.5 hp
+1DL420, Kompilatorteknik projekt, Compiler Design Project, 5.0 hp
+1DT710, Kompilatorteori, Compiler Theory, 7.5 hp
+1TS241, Komplexa system i teknik och samhälle - teknik, Complex Systems in Technology and Society - Technology, 7.5 hp
+1IT110, Konstruktion av användargränssnitt, User Interface Design, 4.5 hp
+1MD222, Konstruktion av användargränssnitt II, User Interface Design I, 4.5 hp
+1TT497, Kontinuerliga reglersystem, Continuous Control Systems, 6.0 hp
+1RT110, Kontinuerliga reglersystem MN1, Continuous Control Systems MN1, 7.5 hp
+1DT138, Kryptologi, Cryptography, 6.0 hp
+1DT026, Kryptologi, Cryptography, 7.5 hp
+1DT075, Kryptologi, Cryptology, 5.0 hp
+1DT659, Kryptologi DV1, Cryptography, 7.5 hp
+1DL114, Kvantinformationsteori, Quantum Computing, 7.5 hp
+1DL022, Logikprogrammering, Logic Programming, 7.5 hp
+2AD089, Logikprogrammering DV1, Logic Programming DV1, 6.0 hp
+2AD201, Logikprogrammering MN1, Logic Programming MN1, 7.5 hp
+1DL550, Lågnivå-parallellprogrammering, Low-Level Parallel Programming, 5.0 hp
+1DT022, Maskininlärning, Machine Learning, 7.5 hp
+1DT071, Maskininlärning, Machine Learning, 10.0 hp
+1MD100, Medicinsk informatik, Medical Informatics, 4.5 hp
+1MD012, Medicinsk informatik, Medical Informatics, 5.0 hp
+1MD030, Medicinsk informatik, Medical Informatics, 5.0 hp
+1RT320, Medicinsk signalbehandling, Medical Signal Processing, 7.5 hp
+1RT300, Medicinteknisk introduktionskurs, Medical Engineering, Introductory Course, 7.5 hp
+1DT059, Modellbaserad utveckling av inbyggd programvara, Model-Based Design of Embedded Software, 10.0 hp
+1IT100, Modellbygge och simulering, Modelling and Simulation, 4.5 hp
+1RT142, Modellbygge och simulering MN1, Modelling and Simulation, 7.5 hp
+1MD005, Modeller av människor i komplexa system, Models of Humans in Complex Systems, 5.0 hp
+1RT155, Modellering av dynamiska system, Modelling of Dynamic Systems, 5.0 hp
+1TV470, Modellering och styrning av miljötekniska processer, Modelling and Control of Environmental Processes, 7.5 hp
+1IT062, Människa-datorinteraktion, Human-Computer Interaction, 4.5 hp
+1DT137, Människa-datorinteraktion, Human-Computer Interaction, 4.5 hp
+1MD016, Människa-datorinteraktion, Human-Computer Interaction, 5.0 hp
+1MD018, Människor i komplexa system, Humans in Complex Systems, 5.0 hp
+1DL101, Mönster och strukturer i systemkonstruk-tion, Patterns and Frameworks in System Design, 7.5 hp
+1TD364, Numerisk analys HPB, Numerical Analysis HPB, 7.5 hp
+1TD765, Numerisk analys I, Numerical Analysis I, 7.5 hp
+1TD751, Numerisk analys I, Numerical Analysis I, 6.0 hp
+1TD752, Numerisk analys II, Numerical Analysis II, 6.0 hp
+1TD390, Numerisk analys MN1, Numerical Analysis MN1, 7.5 hp
+1TD041, Numerisk analys MN2, Numerical Analysis MN2, 7.5 hp
+1TD261, Numerisk linjär algebra MN1, Numerical Linear Algebra MN1, 7.5 hp
+1TD263, Numerisk linjär algebra NV1, Numerical Linear Algebra NV1, 7.5 hp
+1TD710, Numeriska metoder DV1, Numerical Methods DV1, 6.0 hp
+1TD403, Numeriska metoder och simulering, Numerical Methods and Simulation, 5.0 hp
+1DL240, Objektorienterad design, Object-Oriented Design, 5.0 hp
+2AD510, Objektorienterad programmering, Object-Oriented Programming, 7.5 hp
+1DL013, Objektorienterad programmering, Object-Oriented Programming, 7.5 hp
+2AD512, Objektorienterad programmering DV1, Object-Oriented Programming DV1, 6.0 hp
+1TD321, Objektorienterad programmering med C++, Object-Oriented Programming Using C++, 10.0 hp
+1TD292, Objektorienterad programmering med C++, Object-Oriented Programming Using C++, 7.5 hp
+1DL100, Objektorienterad programmering med Java, Object-Oriented Programming in Java, 7.5 hp
+1DL028, Objektorienterad programmering med Java, Object-Oriented Programming in Java, 10.0 hp
+1TD375, Objektorienterad vetenskaplig programmering HPB, Object Oriented Scientific Programming HPB, 7.5 hp
+1TT800, Operativsystem, Operating Systems, 4.5 hp
+1TT802, Operativsystem, Operating Systems, 6.0 hp
+1DT020, Operativsystem, Operating Systems, 7.5 hp
+1DT700, Operativsystem, Operating Systems, 7.5 hp
+1DT044, Operativsystem I, Operating Systems I, 5.0 hp
+1DT043, Operativsystem II, Operating Systems II, 7.5 hp
+1DT632, Operativsystem MN1, Operating Systems MN1, 7.5 hp
+1DT040, Operativsystem med projekt, Operating Systems with Project, 15.0 hp
+1DT039, Operativsystem med projekt, Operating Systems with Project, 10.0 hp
+1EI031, Operativsystem och kompilatorer, Operating Systems and Compilers, 7.5 hp
+1DT089, Operativsystem och multicoreprogrammering, Operating Systems and Multicore Programming, 15.0 hp
+1DT096, Operativsystem och processorienterad programmering, Operating Systems and Process-Oriented Programming, 15.0 hp
+1MD101, Operatörer och användargränssnitt vid processtyrning, Human Operators and User Interface Design in Process Control, 6.0 hp
+1TT475, Optimeringsmetoder, Optimization, 6.0 hp
+1TD184, Optimeringsmetoder, Optimisation, 5.0 hp
+1TD181, Optimeringsmetoder MN1, Optimization MN1, 7.5 hp
+1TD182, Optimeringsmetoder MN2, Optimization, Second Course, 7.5 hp
+1TD183, Optimeringsmetoder NV1, Optimisation NV1, 7.5 hp
+1TD070, Parallell och distribuerad programmering, Parallel and Distributed Programming, 5.0 hp
+1TD382, Parallellalgoritmer i vetenskapliga beräkningar, Parallell Algorithms in Computational Science, 7.5 hp
+1DL103, Parallellprogrammering, Parallel Programming, 7.5 hp
+1DT660, Peer-to-Peer system, Peer-to-Peer Computing, 7.5 hp
+1DT047, Peer-to-Peer-system, Peer-to-Peer Computing, 7.5 hp
+1MD025, Perception och visuell design, Perception and Visual Design, 5.0 hp
+1MD028, Perception och visuell design, Perception and Visual Design, 15.0 hp
+1DT635, Processalgebra, Process Algebra, 7.5 hp
+1DT155, Processalgebra DV1, Process Algebra DV1, 6.0 hp
+1DT049, Processorienterad programmering, Process-Oriented Programming, 15.0 hp
+1DT083, Processorienterad programmering, Process-Oriented Programming, 15.0 hp
+1IT020, Programkonstruktion, Program Design, 15.0 hp
+1DL200, Programkonstruktion, Program Design, 10.0 hp
+1IT021, Programkonstruktion I, Program Design I, 9.0 hp
+1IT022, Programkonstruktion II, Program Design II, 7.5 hp
+1DL201, Programkonstruktion och datastrukturer, Program Design and Data Structures, 20.0 hp
+1DT042, Programmering, Programming, 10.0 hp
+1DL560, Programmering av effektiva parallella program, Parallel Programming for Efficiency, 5.0 hp
+1DT056, Programmering av inbyggda system, Programming Embedded Systems, 10.0 hp
+1DT106, Programmering av inbyggda system, Programming Embedded Systems, 5.0 hp
+1DT108, Programmering av inbyggda system, projekt, Programming Embedded Systems, Project, 5.0 hp
+1TD480, Programmering av parallelldatorer, Programming of Parallel Computers, 10.0 hp
+1TD363, Programmering av parallelldatorer HPB, Programming of Parallel Computers, 7.5 hp
+1TT402, Programmering av parallelldatorer I, Programming of Parallel Computers I, 6.0 hp
+1TD378, Programmering av parallelldatorer NV1, Programming of Parallel Computers NV1, 7.5 hp
+1TD368, Programmering av parallelldatorer NV1, Programming of Parallel Computers NV1, 7.5 hp
+1DT048, Programmering för nybörjare, Programming for Beginners, 7.5 hp
+1DT657, Programmering för nybörjare, Programming for Beginners, 7.5 hp
+1TD731, Programmering och beräkningsteknik för naturvetare NV1, Scientific Computing for Natural Sciences, 15.0 hp
+1TD046, Programmering, bryggningskurs, Programming, Bridging Course, 10.0 hp
+1DT661, Programmeringens hantverk, Software Craftsmanship, 7.5 hp
+2AD524, Programmeringsmetodik DV1, Methods of Programming DV1, 9.0 hp
+1DL122, Programmeringsmetodik DV2, Methods of programming DV2, 7.5 hp
+1DL005, Programmeringsmetodik DV2, Methods of Programming DV2, 7.5 hp
+2AD513, Programmeringsmetodik DV2, Methods of Programming DV2, 6.0 hp
+1TD460, Programmeringsteknik EI1, Programming and Computers EI1, 7.5 hp
+1TD753, Programmeringsteknik I, Computer Programming I, 6.0 hp
+1TD433, Programmeringsteknik I, Computer Programming I, 5.0 hp
+1TD770, Programmeringsteknik II, Programming Techniques II, 6.0 hp
+1TD722, Programmeringsteknik II, Computer Programming II, 5.0 hp
+1TD772, Programmeringsteknik II, Programming Techniques II, 7.5 hp
+1TD430, Programmeringsteknik MN1, Computer Programming MN1, 7.5 hp
+1TD720, Programmeringsteknik MN2, Computer Programming MN2, 7.5 hp
+1TD432, Programmeringsteknik NV1, Computer Programming NV1, 7.5 hp
+1TD721, Programmeringsteknik NV2, Computer Programming NV2, 7.5 hp
+1TD431, Programmeringsteknik med Java, Programming with Java, 4.5 hp
+1TD760, Programmeringsteknik och numerisk analys, Computer Programming and Numerical Analysis, 12.0 hp
+1DT648, Programmeringsteori, Programming Theory, 7.5 hp
+1DT034, Programmeringsteori, Programming Theory, 10.0 hp
+1DT007, Programmeringsteori, Programming Theory, 10.0 hp
+1DT153, Programmeringsteori DV1, Programming Theory DV1, 6.0 hp
+1DL540, Programspråksabstraktioner för parallellprogrammering, Language Abstractions for Concurrent and Parallel Programming, 10.0 hp
+2AD530, Programvaruarkitektur DV1, Software Architecture, 7.5 hp
+1TD204, Programvaruarkitektur med Java, Software Architecture with Java, 5.0 hp
+1TD203, Programvaruarkitektur med Java NV1, Software Architecture with Java NV1, 7.5 hp
+1TD202, Programvaruarkitektur med Java NV1, Software Architecture with Java NV1, 7.5 hp
+2AD507, Programvarukonstruktion I, Software Development I, 15.0 hp
+2AD508, Programvarukonstruktion II, Software Development II, 15.0 hp
+1DT649, Programvarumetodik, Software Engineering, 4.5 hp
+1TT892, Programvarumetodik, Software Engineering, 3.0 hp
+1DT656, Programvarumetodik, Software Engineering, 4.5 hp
+1DL102, Programvarusystem projekt DV1, Software Syste Project, 22.5 hp
+2AD517, Programvaruteknik, Software Engineering, 7.5 hp
+1DL250, Programvaruteknik, Software Engineering, 5.0 hp
+1DL004, Programvaruteknik, Software Engineering, 7.5 hp
+2AD064, Programvaruteknik DV1, Software Engineering DV1, 6.0 hp
+1DL260, Programvaruteknik II - värdestyrd programvaruteknik, Software Engineering II: Value-Based Software Engineering, 5.0 hp
+1DT160, Projekt DV, Project DV, 22.5 hp
+1DT011, Projekt DV, Project CS, 22.5 hp
+1DT054, Projekt DV, Project CS, 30.0 hp
+1DT062, Projekt DV, Project CS, 30.0 hp
+1IT170, Projekt IT, Project IT, 30.0 hp
+1DT065, Projekt IT, Project IT, 30.0 hp
+1DT021, Projekt IT, Project IT, 30.0 hp
+1TD316, Projekt i beräkningsteknik, Project in Scientific Computing, 15.0 hp
+1DT104, Projekt i datorsystem, Project in Computer Systems, 15.0 hp
+1MD015, Projekt i människa-datorinteraktion, Project in Human-Computer Interaction, 15.0 hp
+1RT915, Projekt i systemteknik, Project in Systems and Control, 15.0 hp
+1TD307, Projekt i tillämpad beräkningsvetenskap, Project in Computational Science, 15.0 hp
+1TD309, Projekt i tillämpad beräkningsvetenskap, Project in Computational Science, 15.0 hp
+1DT035, Projektarbete i datavetenskap, Project Work in Computer Science, 7.5 hp
+1DT078, Projektarbete i datavetenskap, Project in Computer Science, 5.0 hp
+1DT079, Projektarbete i datavetenskap, Project in Computer Science, 10.0 hp
+1DT662, Projektarbete i datavetenskap NV1, Project Work in Computer Science NV1, 7.5 hp
+1DT036, Projektarbete i informationsteknologi, Project Work in Information Technology, 7.5 hp
+1DT663, Projektarbete i informationsteknologi, Project Work in Information Technology, 7.5 hp
+1DT081, Projektarbete i informationsteknologi, Project in Computer and Information Engineering, 5.0 hp
+1DT088, Projektarbete i informationsteknologi, Project in Computer and Information Engineering, 10.0 hp
+1DT647, Reaktiva system, Reactive Systems, 7.5 hp
+1DT154, Reaktiva system DV1, Reactive Systems DV1, 6.0 hp
+1TT842, Realtidsprogrammering, Real Time Programming, 4.5 hp
+1DT004, Realtidssystem, Real Time Systems, 10.0 hp
+1DT705, Realtidssystem, Real Time Systems, 7.5 hp
+1DT147, Realtidssystem DV1, Real Time Systems DV1, 6.0 hp
+1DT828, Realtidssystem EI1, Real Time Systems EI1, 7.5 hp
+1DT063, Realtidssystem I, Real Time Systems I, 5.0 hp
+1DT008, Realtidssystem MN1, Real Time Systems MN1, 7.5 hp
+1DT643, Realtidssystem MN1, Real Time Systems MN1, 7.5 hp
+1TT491, Reglerteknik, Automatic Control, 6.0 hp
+1MB290, Reglerteknik, Automatic Control, 4.5 hp
+1TV231, Reglerteknik, Automatic Control, 4.5 hp
+1RT491, Reglerteknik, Automatic Control, 6.0 hp
+1RT490, Reglerteknik I, Automatic Control I, 5.0 hp
+1RT495, Reglerteknik II, Automatic Control II, 5.0 hp
+1RT496, Reglerteknik III, Automatic Control III, 5.0 hp
+1TT492, Reglerteknisk design, Control Design, 6.0 hp
+1DL107, Rekursion, duplicering och reproducering, Recursion, Replication and Reproduction, 7.5 hp
+1DT060, Robocup, Robocup, 7.5 hp
+1TT496, Samplade reglersystem, Sampled Control Systems, 6.0 hp
+1RT120, Samplade reglersystem MN1, Sampled Control Systems MN1, 7.5 hp
+1TD314, Scriptprogrammering, Script Programming, 7.5 hp
+1DL310, Semantik för programmeringsspråk, Semantics of Programming Languages, 5.0 hp
+1DL311, Semantik för programmeringsspråk, Semantics of Programming Languages, 5.0 hp
+2AD516, Semantik och principer för programmeringsspråk, Semantics and Principles of Programming Languages, 7.5 hp
+2AD514, Semantik och principer för programmeringsspråk DV1, Semantics and Principles of Programming Languages DV1, 6.0 hp
+1TG020, Simulering och operationsanalys, Simulation and Operations Research, 4.5 hp
+1TV271, Simulering och systemanalys, Simulation and System Engineering, 4.5 hp
+1RT141, Simulering och systemanalys MN1, Simulation and System engineering, 7.5 hp
+1RT310, Simulering och visualisering av människans rörelser, Human Simulation and Visualization, 7.5 hp
+1DT350, Självständigt arbete i informationsteknologi, Independent Project in Information Engineering, 15.0 hp
+1DL931, Självständigt arbete inom system i teknik och samhälle - IT-system, Independent Project in Sociotechnical Systems Engineering - IT Systems, 15.0 hp
+1TD319, Skriptprogrammering, Script Programming, 7.5 hp
+1RT606, Spektral signalbehandling, Spectral Processing of Signals, 6.0 hp
+1RT605, Spektral signalbehandling, Spectral Processing of Signals, 5.0 hp
+1TT606, Spektralanalys, Spectral Analysis, 6.0 hp
+1RT200, Spektralanalys MN1, Spectral Analysis MN1, 7.5 hp
+1DL032, Statistisk maskininlärning, Statistical Machine Learning, 10.0 hp
+1RT700, Statistisk maskininlärning, Statistical Machine Learning, 5.0 hp
+1TD267, Stora datamängder inom vetenskapliga tillämpningar, Large Datasets for Scientific Applications, 5.0 hp
+1TD268, Stora datamängder inom vetenskapliga tillämpningar, Large Datasets for Scientific Applications, 5.0 hp
+1DL410, Storskalig programmering, Large Scale Programming, 10.0 hp
+1DT672, Strategisk hantering av företagssystem, Strategic Enterprise Systems Management, 7.5 hp
+1TS001, System i teknik och samhälle: Introduktion, Systems in Technology and Society: Introduction, 7.5 hp
+1RT316, System- och operationsanalys, Systems Analysis and Operations Research, 5.0 hp
+1TS180, Systemanalys, Systems Analysis, 7.5 hp
+1MB470, Systemanalys, modellering och simulering, Systems Analysis, Modelling and Simulation, 4.5 hp
+1RT885, Systemidentifiering, System Identification, 5.0 hp
+1TT875, Systemidentifiering, System Identification, 6.0 hp
+1RT880, Systemidentifiering, System Identification, 10.0 hp
+1RT875, Systemidentifiering, System Identification, 6.0 hp
+1RT190, Systemidentifiering MN1, System Identification, 7.5 hp
+1DL120, Systemutveckling, Systems Engineering, 7.5 hp
+1DT658, Säkra datorsystem, Secure Computer Systems, 7.5 hp
+1DT009, Säkra datorsystem, Secure Computer Systems, 7.5 hp
+1DT072, Säkra datorsystem I, Secure Computer Systems I, 5.0 hp
+1DT073, Säkra datorsystem II, Secure Computer Systems II, 5.0 hp
+1TD302, Teknisk databehandling DV1, Introduction to Scientific Computing, 15.0 hp
+1TD061, Teknisk orientering, Technology in Society, 3.0 hp
+1TV041, Teknisk orientering åk 1, Technology in Society Year 1, 3.0 hp
+1TT075, Teknisk orientering, introduktionskurs till datoranvändning, Technology in Society, Introduction to Computers, 2.3 hp
+1TD301, Teknisk-vetenskaplig databehandling MN1, Scientific Computing MN1, 15.0 hp
+1TD304, Teknisk-vetenskapliga datorberäkningar NV1, Scientific Computing, advanced course, 15.0 hp
+1TD701, Tekniska beräkningar BMI1, Numerical Methods for Engineers BMI1, 6.0 hp
+1TD700, Tekniska beräkningar EI1, Scientific Calculations EI1, 6.0 hp
+1TD306, Tekniska beräkningar med MATLAB, Scientific Computing with MATLAB, 7.5 hp
+1TD305, Tekniska beräkningar och matematisk programvara TDB1, Computing and Scientific Software for Engineers, 7.5 hp
+1TT470, Tekniskt-vetenskapliga datorberäkningar, Scientific Computing, Advanced Course, 15.0 hp
+1DT650, Teori för datorsystem, Theoretical Foundations of Computer Systems, 15.0 hp
+1TT861, Teori för datorsystem, Theoretical Foundations for Computer Systems, 9.0 hp
+1DT053, Testmetodik, Test Methodology, 5.0 hp
+1DL570, Testning av parallell programvara, Testing Concurrent and Parallel Software, 5.0 hp
+1DL600, Testning och underhållsprogrammering, Software Testing and Maintenance, 10.0 hp
+1IT180, Tillförlitliga system, Reliable Systems, 4.5 hp
+1DT637, Tillförlitliga system MN1, Reliable Systems MN1, 7.5 hp
+1TD246, Tillämpad beräkningsvetenskap, Applied Scientific Computing, 6.0 hp
+1TD248, Tillämpad beräkningsvetenskap, Applied Scientific Computing, 5.0 hp
+1TD247, Tillämpad beräkningsvetenskap NV1, Applied Scientific Computing NV1, 7.5 hp
+1TD560, Tillämpad linjär algebra DV1, Applied Linear Algebra DV1, 6.0 hp
+1RT242, Tillämpad systemanalys, Applied Systems Analysis, 5.0 hp
+1TD056, Tillämpade finita elementmetoder, Applied Finite Element Methods, 5.0 hp
+1DT103, Trådlös kommunikation och inbyggda system, Wireless Communication and Networked Embedded Systems, 10.0 hp
+1DT095, Trådlös kommunikation och inbyggda system, Wireless Communication and Networked Embedded Systems, 5.0 hp
+1DT077, Trådlös kommunikation och inbyggda system, Wireless Communication and Networked Embedded Systems, 10.0 hp
+1MD023, Universell design och utvärdering, Universal Design and Evaluation, 10.0 hp
+1MD027, Universell design och utvärdering, Universal Design and Evaluation, 15.0 hp
+1TS192, Uppsats STS, Thesis Project STS, 15.0 hp
+1TS191, Uppsatsförberedande fördjupningskurs, Theory and Method, 7.5 hp
+1DT002, Uppsatsmetodik, Technical Writing and Presentation Techniques, 5.0 hp
+1RT400, Vattenreningsteknik, WastewaterTreatment, 7.5 hp
+1TV360, Vattenreningsteknik, Waste Water Treatment, 3.0 hp
+1RT410, Vattenreningsteknik, Wastewater Treatment, 7.5 hp
+1TV361, Vattenreningsteknik, Wastewater treatment, 4.5 hp
+1DT019, Verifieringsteknik, Verification Methods, 7.5 hp
+1TD389, Vetenskaplig visualisering, Scientific Visualisation, 5.0 hp
+1TD376, Vetenskaplig visualisering HPB, Scientific Visualisation, 7.5 hp
+1DL449, Villkorsmodellering för kombinatorisk optimering, Constraint Modelling for Combinatorial Optimisation, 5.0 hp
+1DL440, Villkorsprogrammering, Constraint Programming, 10.0 hp
+1DL023, Villkorsteknik för lösning av kombinatoriska problem, Constraint Technology for Solving Combinatorial Problems, 7.5 hp
+1DL118, Villkorsteknik för lösning av kombinatoriska problem, Constraint Technology for Solving Combinatorial Problems, 7.5 hp
+1MD019, Visualisering, Visualisation, 15.0 hp
+1DT055, Webbplatskonstruktion, Website Construction, 7.5 hp
+1TS150, Återkopplade system och reglerteknik, Feedback and automatic control, 7.5 hp
+1TD303, Öppen fördjupningskurs i beräkningsvetenskap, Advanced course on topics in Scientific Computing, 7.5 hp
+1TD318, Öppen fördjupningskurs i beräkningsvetenskap, Advanced Course on Topics in Scientific Computing, 7.5 hp
+1TD322, Öppen fördjupningskurs i beräkningsvetenskap I, Advanced Course on Topics in Scientific Computing I, 5.0 hp
+1TD326, Öppen fördjupningskurs i beräkningsvetenskap II, Advanced Course on Topics in Scientific Computing II, 10.0 hp
+1DT100, Öppen fördjupningskurs i inbyggda system, Advanced Course on Topics in Embedded Systems, 5.0 hp
+1DT101, Öppen fördjupningskurs i inbyggda system, Advanced Course on Topics in Embedded Systems, 10.0 hp
+1RT005, Öppen fördjupningskurs i systemteknik, Advanced Course on Topics in Systems and Control, 5.0 hp
+1RT006, Öppen fördjupningskurs i systemteknik, Advanced Course on Topics in Systems and Control, 10.0 hp
