@@ -185,6 +185,21 @@ figcaption h4 {
   line-height: 100%;
 }
 
+/* -- Figure modidiers */
+@media all and (min-width: 550px) {
+    figure.small img {
+        width: 75%;
+    }
+    figure.medium img {
+        width: 75%;
+    }
+}
+@media all and (min-width: 740px) {
+    figure.small img {
+        width: 50%;
+    }
+}
+
 /* -- Pseudo elements */
 ::selection {
     color: #fff;
@@ -234,7 +249,7 @@ figcaption h4 {
 
 /* Logotype */
 .uu-logo {
-    z-index: 10;
+    z-index: 40;
     background-color: #990000;
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
@@ -275,7 +290,8 @@ figcaption h4 {
   font-size: 5em;
   font-weight: 400;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
+  max-width: 90%;
   border: none;
 }
 .top-flag h2 {
@@ -287,17 +303,28 @@ figcaption h4 {
   margin: 0 auto;
   border: none;
 }
+@media all and (max-width: 740px) {
+    .top-flag .top-container {
+        padding: 50px 0;
+    }
+    .top-flag h1 {
+        font-size: 3.3em;
+     }
+    .top-flag h2 {
+        font-size: 2em;
+    }
+}
+
 /* Menu bar */
 header {
-  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 30;
 }
 header nav {
-  background-color: $default_main;
-}
-header nav.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    background-color: $default_main;
 }
 header nav ul {
   margin: 0;
@@ -377,6 +404,11 @@ header nav ul li.active a {
   line-height: 40px;
   text-transform: uppercase;
 }
+@media all and (max-width: 740px) {
+    .card .title h2 {
+        font-size: 30px;
+    }
+}
 .card .tagline p {
   font-family: "Roboto";
   font-weight: 100;
@@ -404,6 +436,12 @@ header nav ul li.active a {
   padding: 2em 3em;
   background-color: #ffffff;
   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+  word-wrap: break-word;
+}
+@media all and (min-width: 1024px) {
+    #content {
+        margin: 4em 0 0 0;
+    }
 }
 /* -- Heading */
 .heading {
@@ -426,6 +464,16 @@ header nav ul li.active a {
   background-size: contain;
   background-position: right;
 }
+
+@media all and (max-width: 540px) {
+    .heading h1 {
+        font-size: 2em;
+    }
+    .heading .section-icon {
+        width: 3em;
+        height: 3em;
+    }
+}
 /* Footer */
 footer {
   min-height: 4em;
@@ -446,6 +494,7 @@ footer small {
   $selector: nth($section, 1);
   /* ------------------------------------- */
   /** #{to_upper_case($selector)} **/
+  
   /* -- Section card */
   .card.#{$selector} .logo {
       background-image: url("../images/icons/#{$selector}.png");
@@ -492,7 +541,7 @@ footer small {
   /* -- Figures */
   .#{$selector} figcaption {
     color: nth($section, 3);
-  }
+  }  
   /* -- Pseudo elements */
   .#{$selector} ::selection {
       background: nth($section,3);

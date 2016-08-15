@@ -589,17 +589,15 @@ innan vi försökte oss på en merge.
 
 ## GitHub
 
-[GitHub](https://github.com) är en av de största tjänsterna på webben
-för att samarbeta över Git. Flera kurser på Uppsala universitet har
-också använt GitHub för att koordinera grupparbeten. Förutom att
-tillhandahålla remotes för git-repositories så har GitHub också ett
-antal egna funktioner. Att registrera sig är gratis, men för att få ha
-privata repositories (d.v.s. sådana som inte syns för allmänheten) måste
-man betala eller
-[registrera sig med ett studentkonto](https://education.github.com/pack). Tänk
-på att regler kring fusk och plagiat kan göra det _nödvändigt_ att
-använda privata repositories för grupparbeten! Om du är osäker -- fråga
-din lärare!
+{{< extlink link="https://github.com" title="GitHub">}} är en av de
+största tjänsterna på webben för att samarbeta över Git. Flera kurser på
+Uppsala universitet har också använt GitHub för att koordinera
+grupparbeten. Förutom att tillhandahålla remotes för git-repositories så
+har GitHub också ett antal egna funktioner. Att registrera sig är
+gratis, men för att få ha privata repositories (d.v.s. sådana som inte
+syns för allmänheten) måste man betala eller {{< extlink link="https://education.github.com/pack" title="registrera sig med ett studentkonto">}}.Tänk på att regler kring fusk och plagiat kan göra
+det _nödvändigt_ att använda privata repositories för grupparbeten! Om
+du är osäker -- fråga din lärare!
 
 Förutom att GitHub låter dig husera din repository hos sig, visa
 historik och commits för en repository, och annat som redan finns i
@@ -677,7 +675,7 @@ title="Dialogruta på GitHub för att göra en Pull Request för att merga in de
 ## Git på din egen dator
 
 Du kan ladda ner Git för macOS, Windows och GNU/Linux
-[på Gits nedladdningssida](https://git-scm.com/downloads). Där finns
+{{< extlink link="https://git-scm.com/downloads" title="på Gits nedladdningssida">}}. Där finns
 också närmare instruktioner. De flesta GNU/Linux-distributioner har
 också Git i sina pakethanterare. Om du har installerat XCode till macOS
 så får du också Git på köpet.
@@ -698,7 +696,8 @@ egen hand, men som inte tas upp här:
 
 ### Travis och annan automatisering
 
-[Travis](http://travis-ci.org) är en tjänst som erbjuder automatisering
+
+{{< extlink link="http://travis-ci.org" title="Travis">}} är en tjänst som erbjuder automatisering
 för projekt som också använder GitHub. Den är gratis att använda för
 personer med studentkonton på GitHub och för Open Source-projekt (i princip:
 alla med publika repositories). Bland annat kan den användas för att
@@ -707,6 +706,6 @@ Requests.
 
 ## Läs mer
 
-- [Atalassians Git-guider](https://www.atlassian.com/git/)
-- [Den officiella Git-manualen](https://git-scm.com/book/en/v2)
-- [GitHubs officiella manual: Bootcamp (kom-igång-guider)](https://help.github.com/categories/bootcamp/)
+- {{< extlink link="https://www.atlassian.com/git/" title="Atalassians Git-guider">}}
+- {{< extlink link="https://git-scm.com/book/en/v2" title="Den officiella Git-manualen" >}}
+- {{< extlink link="https://help.github.com/categories/bootcamp/" title="GitHubs officiella manual: Bootcamp (kom-igång-guider)" >}}

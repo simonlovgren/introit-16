@@ -1,2 +1,5 @@
 title = "Exempel"
+module = "exempel"
 tagline = "Denna modul är för referens."
+hidden = true
+noTasks = true

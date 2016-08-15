@@ -1,2 +1,5 @@
 title = "linux"
+module = "linux"
 tagline = "Din dator kan bli din igen"
+hidden = false
+noTasks = false
