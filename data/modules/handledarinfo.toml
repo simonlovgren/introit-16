@@ -1,3 +1,4 @@
 title = "Handledarinfo"
 tagline = "Information riktad till handledare."
 hidden = true
+noTasks = true
