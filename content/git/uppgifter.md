@@ -8,6 +8,20 @@ title = "GIT/Uppgifter"
 
 ## Innehåll
 
+
++ [Mål](#mål)
++ [Material som krävs](#material-som-krävs)
++ [Uppgift](#uppgift)
+	+ [Del 1: Skapa ett git-repository](#del-1-skapa-ett-git-repository)
+		+ [Lokal (per repo) konfiguration](#lokal-per-repo-konfiguration)
+		+ [Global konfiguration](#global-konfiguration)
+	+ [Del 2: Lägg till nya filer](#del-2-lägg-till-nya-filer)
+	+ [Del 3: Skapa en ny branch](#del-3-skapa-en-ny-branch)
+	+ [Del 4: Byta gren och modifiera filer](#del-4-byta-gren-och-modifiera-filer)
+	+ [Del 5: Merge & merge-konflikt](#del-5-merge-&-merge-konflikt)
+	+ [Slutgiltigt repo](#slutgiltigt-repo)
++ [Inlämning](#inlämning)
+
 ## Mål
 I denna uppgift finns följande huvudsakliga mål:
 
