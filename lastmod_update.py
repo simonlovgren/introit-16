@@ -1,10 +1,15 @@
 #!/usr/bin/env python
 
 import sys, getopt, os
+import fileinput
+import time
+#from tempfile import mkstemp
+#from shutil import move
 
 # GLOBALS
 recursive = False
 symlinks = False
+utcOffset = "+02:00"
 
 # Filter list of acceptable file extensions
 extensions = [".md"]
@@ -14,30 +19,98 @@ extensions = [".md"]
 ##
 def printHelp(exitLevel):
     print ""
-    print "usage:\tlastmod_update.py [-r] [-s] target"
-    print "\tlastmod_update.py [-r] [-s] target target ... target"
+    print "usage:\tlastmod_update.py [-r] [-s] [-u] target"
+    print "\tlastmod_update.py [-r] [-s] [-u] target target ... target"
     print ""
     print "\t-r\tRecursive mode"
     print "\t-s \tFollow symbolic links"
+    print "\t-u \tUTC Offset (defaults to +02:00)"
     print ""
     sys.exit(exitLevel)
+
+# Insert lastmod-line at liNum
+def insertLine(target, mtime, liNum):
+    # Global
+    global utcOffset
+
+    # Read file to memory
+    data = None
+    with open(target) as file:
+        data = file.readlines()
+
+    # Replace line in memory
+    timestamp = time.strftime('%Y-%m-%dT%H:%M:%S',time.localtime(mtime)) + utcOffset
+    data.insert(liNum, "lastmod = \"" + timestamp + "\"\n")
+    
+    with open(target, 'w') as file:
+        file.writelines(data)
+
+
+# Replace lastmod-line at liNum
+def replaceLine(target, mtime, liNum):
+    # Global
+    global utcOffset
+    
+    # Read file to memory
+    data = None
+    with open(target) as file:
+        data = file.readlines()
+
+    # Replace line in memory
+    timestamp = time.strftime('%Y-%m-%dT%H:%M:%S',time.localtime(mtime)) + utcOffset
+    data[liNum] = "lastmod = \"" + timestamp + "\"\n"
+    
+    with open(target, 'w') as file:
+        file.writelines(data)
 
 ##
 #  Performs the actual updating of the supplied file
 ##
-def updateFile(target, modified):
-    print("TODO: Update file " + os.path.relpath(target))
-    
+def updateFile(target):
     # 1. Extract mtime, ctime och access time
     # 2. Modify file, set lastmod-field
     # 3. reset file mtime, ctime and access time with
     #    stored mtime, ctime and access time to preserve
     #    between script-runs
+
+    print os.path.relpath(target)
+    
+    tmpFile = open(target)
+    configSection = False
+    liNum = 0
+    finput = fileinput.FileInput(target)
+
+    mtime = os.path.getmtime(target)
+    atime = os.path.getatime(target)
+
+    for line in finput:
+        if "+++" in line:
+            if not configSection:
+                configSection = True
+            else:
+                # Setting not present
+                finput.close()
+                tmpFile.close()
+                insertLine(target, mtime, liNum) # Insert line in file
+                os.utime(target, (atime, mtime))
+                return
+        elif "lastmod" in line and configSection:
+            # lastmod exists, update existing line
+            finput.close()
+            tmpFile.close()
+            replaceLine(target, mtime, liNum) # Insert line in file
+            os.utime(target, (atime, mtime))
+            return
+        liNum += 1
+
+    # Fallback closing of file
+    finput.close()
+    tmpFile.close()
     
     
 ##
 #  Checks if file is of correct type, and if so hands over file
-#  and modified timestamp to updateFile
+#  to function updateFile. (Filters found files)
 ##
 def parseFile(target):
     # Globals
@@ -46,7 +119,7 @@ def parseFile(target):
     filename, ext = os.path.splitext(target)
     # If file is of correct extension
     if ext in extensions:
-        updateFile(target, os.path.getmtime(target))
+        updateFile(target)
 
 ##
 #  Takes target and possible subpath, determines if folder or file
@@ -93,11 +166,11 @@ def parseTarget(targets, subpath):
 ##
 def main(argv):
     #Globals
-    global symlinks, recursive
+    global symlinks, recursive, utcOffset
 
     # Extract options and arguments
     try:
-        opts, args = getopt.getopt(argv, "rsh", ["help","follow-symlinks"])
+        opts, args = getopt.getopt(argv, "rshu:", ["help","follow-symlinks", "utc-offset="])
     except Exception:
         printHelp(2)
 
@@ -109,6 +182,8 @@ def main(argv):
             recursive = True
         if opt == "--follow-symlinks" or opt == "-s":
             symlinks = True
+        if opt == "-u" or opt == "--utc-offset":
+            utcOffset = arg
         
     # Check so that we've got a file or folder to update
     if len(args) != 1:
