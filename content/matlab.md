@@ -485,7 +485,7 @@ här: http://se.mathworks.com/help/symbolic/index.html
 ## `Överkurs` Matriser & matrisekvationer
 Matriser och matrisoperationer är något de flesta av er aldrig stött på tidigare och är inget
 vi kommer fokusera på i den här kursen. Eftersom det är en av programmets huvudklasser, samt
-kommer att vara en stor och viktig del i kommande matematikkurser på universitetet så kommer
+kommer att vara en stor och viktig del i kommande matematikkurser på universitetet kommer
 här förenklad genomgång av matriser:
 
 ### Exempel 1
@@ -504,6 +504,5 @@ $$2x\_1+3x\_2 = 10$$
 $$4x\_1+5x\_2 = 12$$
 $$\begin{bmatrix}2 & 3 \\\ 4 & 5 \end{bmatrix} \begin{bmatrix}x\_1 \\\ x\_2 \end{bmatrix} = \begin{bmatrix}10 \\\ 12 \end{bmatrix}$$
 
-MATLAB är ett utmärkt verktyg för att lösa ekvationer av denna typ. Blev du däremot nyfikna
-och vill förbereda er ännu mer för kommande kurser kan du kika lite på
+MATLAB är ett utmärkt verktyg för att lösa ekvationer av denna typ. Om du vill lära dig mer och förberada dig inför kommande kurser kan du kika lite på
 http://sv.wikipedia.org/wiki/Matris.
