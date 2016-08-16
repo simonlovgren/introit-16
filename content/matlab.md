@@ -381,7 +381,7 @@ y2 = [1 4 9 16 25]
 
 % En rad, två kolumner. Nästa graf på första platsen:
 subplot(1,2,1)
-plot(x,y1) % Rita grafen på plats 1
+plot(x,y1, 'g') % Rita grafen på plats 1 och gör linjen grön
 title('Första grafen') % Titel på första grafen
 
 % En rad, två kolumner. Nästa graf på andra platsen:
