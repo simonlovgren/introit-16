@@ -34,7 +34,7 @@ I denna uppgift finns följande huvudsakliga mål:
 Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
 men går även genomföra på egen dator om git finns tillgängligt.
 
-**`OBS!` Det är starkt rekommenderat att du går genom [terminal-modulen](../../terminal) innan du påbörjar Git.**
+**`OBS!` Det är starkt rekommenderat att du går genom [terminal-modulen](/terminal) innan du påbörjar Git.**
 
 Du kommer behöva:
 
