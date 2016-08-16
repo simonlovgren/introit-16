@@ -127,6 +127,8 @@ Man börjar använda git på ett av två sätt. Antingen hämtar man hem kod
 som redan finns genom kommandot `git clone` ("clone" eftersom man
 "klonar" en kopia av koden och dess historik till sin dator):
 
+{{< figure src="/images/git/anim/clone.gif" class="medium" >}}
+
 ```none
 $ git clone https://github.com/rg3/youtube-dl
 Cloning into 'youtube-dl'...
@@ -148,6 +150,8 @@ repositoryn (oftast slutet på adressen), i det här fallet `youtube-dl`.
 Nu kan vi ställa oss i mappen som git skapade med `cd youtube-dl` som
 vanligt och börja köra kommandon. Om man t.ex. kör `git log` får man en
 historik över alla commits med nyast överst, liknande den här:
+
+{{< figure src="/images/git/anim/log.gif" class="medium" >}}
 
 ```none
 commit 1094074c045140e9a91b521b0a933f394a7bba91
@@ -177,8 +181,7 @@ använda `git diff` och deras namn. Om man inte orkar kopiera hela deras
 unika namn räcker det nästan alltid med de första tecknen i dem, så här:
 `git diff 217d5a 1094074`.
 
-{{< figure src="/images/git/git-diff.png" title="git diff mellan två commits" >}}
-
+{{< figure src="/images/git/diff.png" title="git diff mellan två commits" class="medium" >}}
 
 Här ser vi alltså rader som tagits bort (minus) och lagts till
 (plus). På många system är också raderna färgade i rött och grönt som
@@ -198,6 +201,8 @@ på att göra `cd ..` för att inte skapa din nya mapp inuti den gamla.
 Vi tänker oss nu att vi sätter upp en repository med textfiler för en
 fest vi ska planera:
 
+{{< figure src="/images/git/anim/init.gif" class="medium" >}}
+
 ```none
 $ mkdir min-fest
 $ cd min-fest
@@ -208,11 +213,13 @@ Initialized empty Git repository in /Users/albin/min-fest/.git/
 Din sökväg blir förstås annorlunda beroende på vad din användare heter
 och var du gjorde den tomma mappen.
 
-
 ### Lägg till filer med git add
 
 Skapa filerna `gastlista.txt` och `matar.txt`, och lägg till några rader
 text i dem. Så här ser mina ut:
+
+{{< figure src="/images/git/anim/skapa_filer.gif" class="medium" >}}
+
 ```none
 $ cat matar.txt
 1. Sallad
@@ -226,6 +233,8 @@ $ cat gastlista.txt
 ```
 
 Vi kan fråga Git vad den tycker om livet med `git status`:
+
+{{< figure src="/images/git/anim/status.gif" class="medium" >}}
 
 ``` none
 $ git status
@@ -251,6 +260,8 @@ inte finns något stage:at för att committa.
 
 För att lägga till våra nya filer gör vi som Git föreslår:
 
+{{< figure src="/images/git/anim/add.gif" class="medium" >}}
+
 ``` none
 $ git add gastlista.txt matar.txt
 $ git status
@@ -271,6 +282,8 @@ registrerats).
 
 Om vi bara skriver `git commit` så kommer git att öppna vår inställda editor för att skriva ett meddelande. Men eftersom den kan vara lite vad som helst på universitetets datorer föreslår vi att du skickar med ett meddelande direkt på kommandoraden istället:
 
+{{< figure src="/images/git/anim/commit.gif" class="medium" >}}
+
 ``` none
 $ git commit --message "Initial commit"
 [master (root-commit) 74c2b5b] Initial commit
@@ -283,23 +296,11 @@ $ git commit --message "Initial commit"
 Git berättar för oss vilka ändringar den sparar. Om vi nu tittar i
 historiken och `git status` så ser vi att ändringarna är sparade:
 
-``` none
-$ git status
-On branch master
-nothing to commit, working directory clean
-
-$ git log
-commit 74c2b5bedb58e818b6c550b646ff29d13bc5950c
-Author: Albin Stjerna <MAILADRESS BORTTAGEN>
-Date:   Thu Aug 4 14:00:28 2016 +0200
-
-    Initial commit
-
-```
-
 ### Registrera ändringar med git stage och git commit
 
 Låt oss säga att vi lägger till någon i gästlistan:
+
+{{< figure src="/images/git/anim/modify.gif" class="medium" >}}
 
 ``` none
 $ echo "- Joakim von Anka" >> gastlista.txt
@@ -331,6 +332,8 @@ för tillfället finns med de senaste registrerade och committade
 `gastlista.txt` har lagt till en rad för Joakim von Anka.
 
 För att spara de nya ändringarna använder vi `git stage`:
+
+{{< figure src="/images/git/anim/modify_commit.gif" class="medium" >}}
 
 ``` none
 $ git stage gastlista.txt
@@ -388,6 +391,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Då kan vi återställa hela repositoryn som den såg ut vid den senaste
 committen (alltså `HEAD`, om du minns från tidigare):
 
+{{< figure src="/images/git/anim/reset.gif" class="medium" >}}
+
 ``` none
 $ git reset --hard HEAD
 HEAD is now at 57673a6 Lade till en besökare till
@@ -396,7 +401,7 @@ $ git status
 On branch master
 nothing to commit, working directory clean
 
-$ cat gastlista.txt 
+$ cat gastlista.txt
 - Oppfinnarjocke
 - Kalle Anka
 - Störiga mostern
@@ -412,6 +417,8 @@ ocommitade ändringar**!
 Vi kan visa vilken branch vi för tillfället är på med hjälp av `git
 branch`:
 
+{{< figure src="/images/git/branch.png" class="medium" >}}
+
 ``` none
 $ git branch
 * master
@@ -419,6 +426,8 @@ $ git branch
 
 Kanske inte så spännande -- det finns en branch och den är vi på. Vi kan
 skapa en ny med hjälp av `git checkout`:
+
+{{< figure src="/images/git/anim/branch_create.gif" class="medium" >}}
 
 ``` none
 $ git checkout -b better-desserts
@@ -430,6 +439,8 @@ $ git branch
 ```
 
 Nu kan vi lägga till lite fler efterrätter (bara en är trots allt lite snålt!):
+
+{{< figure src="/images/git/anim/branch_edit.gif" class="medium" >}}
 
 ``` none
 $ din-favorit-editor matar.txt
@@ -456,11 +467,13 @@ Låt oss säga att vi är klara med de här ändringarna nu och vill ha
 tillbaka dem till `master`. Då måste vi först byta tillbaka till
 `master` från `better-desserts` och göra en `merge` mellan dem:
 
+{{< figure src="/images/git/anim/branch_merge.gif" class="medium" >}}
+
 ``` none
 $ git checkout master
 Switched to branch 'master'
 
-$ git merge better-desserts 
+$ git merge better-desserts
 Updating 57673a6..29e50b5
 Fast-forward
  matar.txt | 3 +++
@@ -481,6 +494,8 @@ man samarbetar på samma kod. Ofta märker man av det när man använder
 `git pull` för att dra hem de senaste ändringarna innan man trycker upp
 sin ändrade version, men här fortsätter vi med våra två branchar:
 
+{{< figure src="/images/git/anim/mergeconflict_setup.gif" class="medium" >}}
+
 ``` none
 $ din-favorit-editor matar.txt
 $ git diff
@@ -497,7 +512,7 @@ index 3711a8a..d6a2168 100644
 $ git commit -a --message "Ännu mer efterrätt!"
 [master 6b5c412] Ännu mer efterrätt
  1 file changed, 1 insertion(+)
- 
+
 $ git checkout better-desserts
 Switched to branch 'better-desserts'
 
@@ -534,7 +549,7 @@ när vi ska slå ihop dem senare:
 $ git checkout master
 Switched to branch 'master'
 
-$ git merge better-desserts 
+$ git merge better-desserts
 Auto-merging matar.txt
 CONFLICT (content): Merge conflict in matar.txt
 Automatic merge failed; fix conflicts and then commit the result.
@@ -543,6 +558,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 Git berättar för oss att ändringarna i `matar.txt` är inkompatibla och
 måste slås ihop för hand. Om vi öppnar den i valfri editor ser vi det
 här:
+
+{{< figure src="/images/git/anim/mergeconflict_fix.gif" class="medium" >}}
 
 ``` none
 1. Sallad
@@ -586,6 +603,7 @@ Om allt blev jättjobbigt och vi ångrar oss finns alltid möjligheten att
 köra `git merge --abort` för att återställa tillståndet som det var
 innan vi försökte oss på en merge.
 
+{{< figure src="/images/git/anim/mergeconflict_abort.gif" class="medium" >}}
 
 ## GitHub
 
@@ -656,7 +674,7 @@ på olika saker utan att hela tiden kliva varandra på tårna, och det
 finns alltid en senast fungerande version av programmet att jämföra med
 om något går sönder.
 
-{{< figure src="/images/git/git-compare-and-pull-request.png" 
+{{< figure src="/images/git/git-compare-and-pull-request.png"
 title="GitHub är hjälpsam nog att föreslå att jag skickar en Pull Request från branchen jag precis push:ade till." >}}
 
 När en funktion på en branch är klar skickas sedan en Pull Request
@@ -668,7 +686,7 @@ hitta brister i koden. Först när alla är nöjda och övertygade om att
 allt fungerar mergas branchen in i master. En ny branch skapas för nästa
 funktion -- och processen börjar om.
 
-{{< figure src="/images/git/git-create-new-pull-request.png" 
+{{< figure src="/images/git/git-create-new-pull-request.png"
 title="Dialogruta på GitHub för att göra en Pull Request för att merga in den här guiden i resten av materialet." >}}
 
 
