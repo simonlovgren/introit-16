@@ -6,7 +6,7 @@ title = "Latex"
 
 +++
 
-*LaTeX* är ett *typsättningssystem* som används flitigt inom akademia för att skapa textdokument.
+*LaTeX* är ett *typsättningssystem* som används flitigt inom universitet och högskolor för att skapa vetenskapliga artiklar och tekniska rapporter.
 
 Till skillnad från program som Google Docs och Microsoft Word redigerar du dokument i en separat fil, vilket sedan används för att generera en fil redo för publicering.
 
@@ -47,22 +47,27 @@ Det finns ett antal fördelar med att skriva dokument i LaTeX.
 
 ### Fokus på innehåll
 
-Eftersom du skriver materialet helt oberoende av hur det kommer se ut, kan du fokusera på att göra så bra som möjligt. Den estetiska biten, dvs radavstånd, fontstorlekar, etc., är helt abstraherad från detta och kan dessutom återanvändas i framtida rapporter.
+Eftersom du skriver materialet helt oberoende av hur det kommer se ut, kan du fokusera på att göra det så bra som möjligt. Den estetiska biten, dvs radavstånd, fontstorlekar, etc., är helt separerad från detta och kan dessutom återanvändas i framtida rapporter.
 
 ### Konsekvent formatering
 
-När det färdiga dokumentet genereras sker detta enligt dess inställningar. Du kommer alltså slippa problemet med att olika avsnitt skiljer sig i stil, eftersom hela dokumentet följer samma regler.
+För att bestämma hur det färdiga dokumentet ska se ut gör du olika typer av
+inställningar som sedan gäller för hela dokumentet. Du kommer alltså slippa
+problemet med att olika avsnitt skiljer sig i stil, eftersom hela dokumentet
+följer samma regler. 
 
 ### Standarden för vetenskapliga rapporter
 
-LaTeX gör det enkelt att skriva formler, abstrakt och referenser. Grekiska tecken blir inte mer än `$\Lambda$`. Abstrakt stiliseras lika enkelt som att skapa en sektion. Referenser genereras automatiskt med system som bibtex, så att du bara skriver in dina källor en gång samt vilken standard de ska representeras enligt.
+LaTeX, eller snarlika system, är något av en standard inom många tekniska och
+vetenskapliga områden vid framställande av tidningsartiklar, vetenskapliga
+avhandlingar och rapporter.
 
+Med LaTeX är det mycket enkelt att skriva matematiska formler, hantera referenser och få ett enhetligt utseende på det slutliga resultatet.
 
 
 ## Skaffa LaTeX
 
 Du kan antingen köra LaTeX online eller lokalt på din dator.
-
 
 ### Skapa dokument online
 
@@ -71,11 +76,13 @@ I dagsläget används oftast dessa online-redigerare:
 + [Overleaf](https://www.overleaf.com/)
     - Har stöd för editor-syntax, dvs kan bete sig som Emacs och Vim.
     - Stöd för inloggning via Google- och Twitterkonto.
-    - Samarbete är gratis, men dokument kan inte "låsas" utan att betala
+    - Det är gratis att låta flera olika skribenter bidra till ett och samma
+        dokument.
+    - Dokument kan inte "låsas" utan att betala.
 + [ShareLaTeX](https://www.sharelatex.com/)
     - Snyggare gränssnitt än Overleaf
 
-Dessa alternativ är mycket lätta att komma igång med, men är samtidigt mer krävande av datorn. Dessutom verkar de göra slut på batterier i rasande fart.
+Dessa alternativ är mycket lätta att komma igång med, men är samtidigt mer krävande av datorn. Dessutom verkar de göra slut på bärbara datorers batteri i rasande fart.
 
 ### Använda lokalt
 
@@ -103,7 +110,7 @@ Varje dokument som skrivs med LaTeX har en `.tex`-fil, som ofta kallas för `mai
 Beroende på storlek av projektet, kan denna fil antingen innehålla allt material, eller agera som ett skelett där exempelvis inställningar och/eller textavsnitt importeras.
 Bilder och bibliografi brukar placeras separat.
 
-När det slutgiltiga dokumentet genereras brukar många extra filer dyka upp. Dessa kan du normalt sett ignorera. Det rekommenderas att skapa en egen mapp för vardera nytt projekt.
+När det slutgiltiga dokumentet genereras brukar många extra filer dyka upp. Dessa kan du normalt sett ignorera. Det rekommenderas att skapa en egen mapp för varje nytt projekt.
 
 ### Dokumentets struktur
 
@@ -114,8 +121,8 @@ Därefter börjar delen som själva texten står i. Du känner igen detta genom 
 ### Grundläggande syntax
 
 Kommandon i LaTeX följer stilen `\kommando[alternativ,meralternativ]{inställning}`.
-Ovannämnda är `\documentclass` är ett bra exempel.
-För att skriva ett dokument av typen `article` med 11pt fontstorlek, för utskrift på A4, inleder du alltså med följande rad:
+Ovannämnda `\documentclass` är ett bra exempel.
+För att skriva ett dokument av typen `article` med 11pt fontstorlek, för utskrift på A4, inleder du med följande rad:
 
 ```latex
 \documentclass[11pt,a4paper]{article}
@@ -123,23 +130,25 @@ För att skriva ett dokument av typen `article` med 11pt fontstorlek, för utskr
 
 Det finns många andra typer av dokument, som `book`, `report` och liknande, men i de flesta fall fungerar `article` utmärkt.
 
-Delar som använder sig av särskild syntax, som tabeller, beräkningar och till och med hvudtexten, skapas med `\begin{miljö} ... \end{miljö}`. För att exempelvis göra en bit text i en låda skriver du följande:
+Delar som använder sig av särskild syntax, som tabeller, beräkningar och till och med hvudtexten, skapas med `\begin{miljö} ... \end{miljö}`. För att exempelvis centrera en del text skriver du följande:
 
 ```latex
-Denna text är inte i en låda.
+Denna text är inte centrerad.
 
-\begin{boxed}
-Denna text är i en låda.
-\end{boxed}
+\begin{center}
+    Denna text är centrerad.
+\end{center}
 
-Denna text är inte heller i en låda.
+Denna text är inte heller centrerad.
 ```
+
+{{< figure src="/images/latex/latex-centered.png" title="Centrerad text i LaTeX" >}}
 
 
 ## Påbörja ett LaTeX-dokument
 
 Börja med att få upp ett tomt dokument.
-Beroende på vilken tjänst du använder kan det komma med lite text ändå. Om du exempelvis valt Overleaf kommer dokumentet till en början se ut så här:
+Beroende på vilket system du använder kan det komma med lite text ändå. Om du exempelvis valt Overleaf kommer dokumentet till en början se ut så här:
 
 ```latex
 \documentclass{article}
@@ -155,7 +164,7 @@ Om du inte vill skriva detta själv finns ett kopierbart exempel i slutet av avs
 
 ### Preamble
 
-*Preamble* är, som ovan nämnt, dokumentets inställningar. Det finns några praktiska rader som rekommenderas för dokument som skrivs i Sverige.
+*Preamble* är, som ovan nämnt, dokumentets inställningar. Det finns några praktiska inställningar som rekommenderas för dokument som skrivs på det svenska språket avsett för utskrift på formatet A4.
 
 | Kommando  | Förklaring |
 | --------- | ---------- |
@@ -168,7 +177,7 @@ Om du inte vill skriva detta själv finns ett kopierbart exempel i slutet av avs
 
 Om du skriver ett dokument på engelska kan du med fördel hoppa över `\usepackage[swedish]{babel}`, men det kan vara en god idé att behålla de andra paketen för exempelvis namn som "Björn".
 
-Språkvalet ställer in automatiskt genererade ord, som "Innehåll", samt radbrytningar.
+Språkvalet ställer in automatiskt genererade ord, som "Innehåll", samt hur radbrytningar hanteras.
 
 
 ### Dokumentmiljön
@@ -217,7 +226,7 @@ Om du inte vill ha numrerade rubriker lägger du till en stjärna enligt exemple
 
 ### Skapa en titel
 
-Du lägger till kommandona `\title{Dokumentets titel}`, `\author{Författare}` och `\date{Datum}` för titel, författare respektive datum i preamble. Om du hoppar över att skriva datum kommer dagens att användas.
+Du lägger till kommandona `\title{Dokumentets titel}`, `\author{Författare}` och `\date{Datum}` för titel, författare respektive datum i preamble. Om du hoppar över att skriva datum kommer dagens datum att användas.
 
 Därefter skriver du helt enkelt `\maketitle` där du vill ha titeln, förslagsvis direkt efter raden `\begin{document}`.
 
@@ -250,7 +259,7 @@ Tänk på att det kan vara lite överflödigt för kortare texter.
 
 ### Listor
 
-Den enklaste typen av lista gör du med miljön `itemize`, där varje inlägg påbörjas med `\item`
+Den enklaste typen av lista gör du med miljön `itemize`, där varje post i listan påbörjas med `\item`
 
 ```latex
 \begin{itemize}
@@ -320,7 +329,7 @@ Väl i tabellen använder du `&` för att separera kolonner och `\\` för att av
 \end{tabular}
 ```
 
-{{< figure src="/images/latex/tabular.png" title="Du kan även göra fula tabeller i LaTeX" >}}
+{{< figure src="/images/latex/tabular.png" title="Du kan även göra tabeller i LaTeX" >}}
 
 Notera att mellanslag och radbrytningar i den råa texten inte spelar någon roll. Därför kan du anpassa detta för att göra det så läsligt som möjligt för dig själv.
 Lägg även märke till att inställningarna för tabellen skrivs inom måsvingar.
@@ -338,7 +347,10 @@ i preamblen.
 
 I princip all tänkbar formatering som är relevant för matematik går att formatera i LaTeX. Faktum är att det var en av skälen till att det skapades.
 
-I detta avsnitt är målet att visa grunderna, så att du kan förstå vad som pågår när du kollar upp avancerade saker enligt behov. Det täcker även material som krävs för de första kurserna inom de flesta vetenskapliga ämnen.
+I detta avsnitt är målet att visa grunderna, så att du kan förstå vad som pågår när du kollar upp avancerade saker efter behov. 
+Här går vi även kortfattat igenom sådant som är mycket bra att känna till
+för att kunna använda LaTeX för att skiva rapporter eller liknande på många av
+de kurser du kommer att läsa i början av din utbildning. 
 
 Wikibooks har en mycket mer omfattande guide [här](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
@@ -347,7 +359,7 @@ Wikibooks har en mycket mer omfattande guide [här](https://en.wikibooks.org/wik
 Du använder samma tecken som i de flesta datorprogram, dvs `+ - / ^` för att skriva formler. Undantaget är för multiplikation. Du kan använda `\cdot`, t ex `2 \cdot 3` för att skriva $2 \cdot 3$.
 
 + Parenteser skrivs som vanligt, men måsvingar och hakparenteser kräver särskild formatering.
-+ Grekiska tecken skrivs ut med backslash, som de flesta kommandon i LaTeX, t ex `\alpha`. För versaler inleder du kommandot med versal, t ex `\Alpha`.
++ Grekiska tecken skrivs ut med backslash, som de flesta kommandon i LaTeX, t ex ger `\alpha` tecknet $\alpha$. För versaler inleder du kommandot med versal: `\Gamma` ger tecknet $\Gamma$.
 + För att gruppera exempelvis en potens, använder du `{}`. Exempelvis formateras $x^{2c}$ med `x^{2c}`.
 + Du kan även göra subskript med hjälp av `_`. För att visa $x_0$ skriver du alltså `x_0`.
 + Uppställda bråk görs med `\frac{täljare}{nämnare}`. Exempelvis generar du $\frac{a}{b}$ genom att skriva `\frac{a}{b}`
@@ -357,7 +369,7 @@ Du använder samma tecken som i de flesta datorprogram, dvs `+ - / ^` för att s
 
 I löpande text skriver du matetmatisk syntax mellan två `$`. Det är även klokt att använda detta runt variabler och konstanter för att förtydliga att det är dessa du syftar på.
 
-Om du exempelvis vill diskutera $\lambda_{\alpha/2}$ i din text skriver du `$\lambda_{\alpha/2}$`
+Om du exempelvis vill diskutera $\lambda_{\alpha/2}$ i din text skriver du `$\lambda_{\alpha/2}$`.
 
 #### Ekvationer och beräkningar
 
@@ -367,7 +379,7 @@ Du kan även använda miljön `align*`. Du kan då använda samma syntax som gä
 
 
 ```latex
-Funktionen
+En funktion
 
 \[
     f(x) = 6x + 2
@@ -386,14 +398,15 @@ kan beräknas enligt följande
 
 ### Grafik
 
-För att använda grafik och bilder i LaTeX använder du paketet `graphicx`, samt mappen du placerar bilderna i.
+För att använda grafik och bilder i LaTeX använder du paketet `graphicx`
+och ange en eller flera mappar där bilderna lagrats.
 Du gör detta genom att lägga till följande rader i preamble.
 
 ```latex
 \usepackage{graphicx}
 \graphicspath{ {bilder/}{flerbilder/} }
 ```
-`{bilder/}` och {flerbilder/} syftar i detta fall på mapparna `bilder` respektive `flerbilder` som ligger i samma mapp som själva .tex-filen. Du kan självfallet använda vilken mapp du vill, men det är rekommenderat att den åtminstone ligger i samma mapp som dokumentet. Det avslutande snedstrecket är obligatoriskt.
+`{bilder/}` och `{flerbilder/}` syftar i detta fall på mapparna `bilder` respektive `flerbilder` som ligger i samma mapp som själva .tex-filen. Du kan självfallet använda vilken mapp du vill, men det är rekommenderat att den åtminstone ligger i samma mapp som dokumentet. Det avslutande snedstrecket är obligatoriskt.
 
 Om du inte specificerar en mapp för bilderna kommer generatorn leta i samma mapp som .tex-filen.
 
@@ -412,23 +425,24 @@ Se figur \ref{fig:foto1}.
 ```
 
 + Alternativet `h` för miljön specificerar att figuren ska placeras "här".
-+ `\caption` skriver ut figurens index samt en bildtitel.
-+ `\label` gör att du kan referera till bilden med kommandot `\ref`. LaTeX genererar då automatiskt olika index för varje figur, så du inte behöver ändra dessa själv om du exempelvis lägger till en ny bild tidigare i texten.
++ `\caption` skriver ut figurens nummer samt figurtext.
++ `\label` gör att du kan referera till bilden med kommandot `\ref`. LaTeX genererar då automatiskt löpande figurnummer för varje figur, så du inte behöver ändra dessa själv om du exempelvis lägger till en ny bild tidigare i texten.
 
 
 {{< figure src="/images/latex/figure.png" title="Figur i TeX" >}}
 
 ### Referenser
 
-LaTeX har stöd för flera omfattande system för att skriva referenser. Denna sektion visar mest hur mycket arbete som krävs för att använda sig av det i framtida rapporter.
+LaTeX har stöd för flera omfattande system för att hantera referenser. De två
+vanligaste paketen för hantering av referenser är bibtex och biblatex, där den
+senare är lättare att använda.
 
-Referenser skriver du med hjälp av `bibtex` eller `biblatex`, där den senare är lättare att använda.
-
-Du börjar med att lägga till paketet och en fil med referenser i preamble:
+I följande exempel visar vi hur det kan se ut när paketet biblatex används för
+att hantera referenser.
 
 ```latex
 \usepackage{biblatex}
-\graphicspath{referenser.bib}
+\addbibresource{referenser.bib}
 ```
 
 `referenser.bib` skrivs enligt följande syntax:
