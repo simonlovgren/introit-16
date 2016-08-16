@@ -1,5 +1,5 @@
 +++
-date = "2016-07-18T20:33:24+02:00"
+date = "2016-08-15"
 menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare/Arvodering"
