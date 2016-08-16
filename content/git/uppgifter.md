@@ -34,12 +34,17 @@ I denna uppgift finns följande huvudsakliga mål:
 Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
 men går även genomföra på egen dator om git finns tillgängligt.
 
-- terminal
+**`OBS!` Det är starkt rekommenderat att du går genom [terminal-modulen](../../terminal) innan du påbörjar Git.**
+
+Du kommer behöva:
+
+- en terminal
 - git
 
 ## Uppgift
 Materialet som tas upp i uppgiften diskuteras i [infosidan för git](../).
 
+<br/>
 ### Del 1: Skapa ett git-repository
 Öppna terminalen och navigera till din hemmapp. Skapa en ny mapp
 som du döper till `abcd1234_git`, där du ersätter `abcd1234` med
@@ -88,6 +93,7 @@ $ git config --global user.email "abcd1234@student.uu.se"
 Detta är t.ex. väldigt bekvämt om man brukar använda samma namn och mailadress
 i de flesta fall.
 
+<br/>
 ### Del 2: Lägg till nya filer
 Nu skall vi lägga till filer i det nya repot. För att ha något att arbeta med
 skall vi hämta en fil som redan har ett innehåll. Detta görs enkelt genom
@@ -101,8 +107,13 @@ den nya filen och därefter göra en commit med kommentaren "**lade till kurser.
 **Du kan även hämta filen manuellt på denna länk:**  
 {{< extlink link="http://www.it.uu.se/education/course/homepage/introdat/ht16/resources/kurser.txt" title="http://www.it.uu.se/education/course/homepage/introdat/ht16/resources/kurser.txt">}}
 
+<br/>
 ### Del 3: Skapa en ny branch
-Nu skall du skapa en ny branch som skall kallas `mitt-urval` och byta till denna.
+Nu skall du skapa en ny branch som skall kallas `mitt-urval` och byta till denna:
+```none
+git checkout -b <branch-name>
+```
+
 När du bytt till denna nya branch skall du skapa filen `urval.txt`. I denna fil skall
 du lägga till **3 kurser ur kurser.txt**.
 
@@ -110,12 +121,14 @@ du lägga till **3 kurser ur kurser.txt**.
 
 Spara sedan filen, checka in den och committa med meddelandet **"kopierade kurser till urval"**.
 
+<br/>
 ### Del 4: Byta gren och modifiera filer
 Nu skall vi byta tillbaka till `master`. Här skall vi nu skapa filen `urval.txt` på nytt.
 När du gjort det skall du **klippa ut tre kurser ur _kurser.txt_** och lägga till dem i
 `urval.txt`. När du gjort detta skall du checka in både den nya filen och ändringarna i
 *kurser.txt*, för att sedan committa dem med meddelandet **"flyttade kurser till urval"**.
 
+<br/>
 ### Del 5: Merge & merge-konflikt
 Nu skall vi slå samman ändringarna från vår branch `mitt-urval` med vår `master`-branch.
 När du gör detta kommer du märka att en merge-konflikt uppstår då vi lagt till
@@ -126,12 +139,14 @@ kurser.txt då vi bara ändrat denna i en branch*.
 endast en gång var**. När du löst konflikten, checka in ändringarna och committa med
 meddelandet **"löste konflikt"**.
 
+<br/>
 ### Slutgiltigt repo
 När du är färdig med uppgiften bör ditt repo se ut såhär:
 
-```none
+```bash
 .
 ├── abcd1234_git
+    ├── .git         #(vanligtvis dold mapp med all git-data för repot)
     ├── kurser.txt
     └── urval.txt
 ```
@@ -177,8 +192,12 @@ Date:   Mon Aug 15 20:39:56 2016 +0200
 
 
 ## Inlämning
-Komprimera mappen `abcd1234_git` till en zip-fil och döp denna till `abcd1234_git.zip`, där du
+Komprimera mappen `abcd1234_git` till en tar.gz-fil och döp denna till `abcd1234_git.tar.gz`, där du
 ersätter `abcd1234` med användarnamnet för ditt studentkonto.
+
+   + *För att komprimera till gzip och skriva ut alla inkluderade filer och mappar använder du flaggorna `-cvzf`.*
+   + *Mer information om hur du komprimerar mappar hittar du här: [Terminalen/Komprimerade mappar](/terminal/#komprimerade-mappar).*
+
 
 **`OBS!` Det räcker inte att komprimera filerna som finns i mappen, utan hela mappen måste komprimeras.
 Annars tappas git-historiken och git-informationen som används för att kontrollera inlämningsuppgiften.**
