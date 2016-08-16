@@ -1,8 +1,8 @@
 +++
 date = "2016-08-01T13:47:14+02:00"
-menu = "terminal"
-module = "terminal"
-title = "Terminal"
+menu = "terminalen"
+module = "terminalen"
+title = "Terminalen"
 
 +++
 
@@ -39,7 +39,7 @@ Med den kan du utan svårighet konfigurera en server på andra sidan jorden i di
 
 Kort sagt är terminalen ett textbaserat gränssnitt, dvs är ett sätt att använda datorn utan mus, fönster och ikoner.
 
-{{< figure src="/images/terminal/example.gif" title="Spara utdata från program till redigerbar textfil" >}}
+{{< figure src="/images/terminalen/example.gif" title="Spara utdata från program till redigerbar textfil" >}}
 
 Den kräver, i sig, mycket lite för att fungera men kan ändå användas till allt som inte måste visas med bilder.
 
@@ -122,7 +122,7 @@ Det finns ett stort antal kommandon inbyggda i de flesta terminaler.
 
 För att använda `cp`, `mv` och `rm` med hela mappar lägger du till alternativet `-r` (*recursive*): t ex `cp -r Desktop Desktopbk`.
 
-{{< figure src="/images/terminal/terminal-sample.gif" title="Kopiera och redigera filer i terminalen" >}}
+{{< figure src="/images/terminalen/terminal-sample.gif" title="Kopiera och redigera filer i terminalen" >}}
 
 #### Sökvägar
 
@@ -166,7 +166,7 @@ Du använder det genom att skriva `find <mapp> -<sökalternativ> <term>`.
 
 För att hitta filen `dokument.txt` i din hemkatalog skriver du `find ~/ -name dokument.txt`.
 
-{{< figure src="/images/terminal/find.gif" title="Kommandot find låter dig hitta filer." >}}
+{{< figure src="/images/terminalen/find.gif" title="Kommandot find låter dig hitta filer." >}}
 
 För att söka efter mappar lägger du till alternativet `-type d`. Om du exempelvis vill hitta alla mappar med namnet "Foo" i mappen `~/Documents` skriver du `find ~/Documents -type d -name Foo`.
 
@@ -232,7 +232,7 @@ Exempelvis kan du skriva `history | grep rm`. Utdatan från `history` skickas d�
 
 Du kan använda pipes i längre kedjor. För att räkna antalet processer som genereras av en webbläsare, exempelvis *Chromium* skriver vi `ps -A | grep chromium | wc -l`
 
-{{< figure src="/images/terminal/piping.gif" title="Piping kedjar in- och utdata" >}}
+{{< figure src="/images/terminalen/piping.gif" title="Piping kedjar in- och utdata" >}}
 
 + `ps -A` listar alla aktiva processer
 + `grep chromium` filtrerar fram alla rader med ordet "chromium"
@@ -272,7 +272,7 @@ I terminalen kan du ha flera program igång, enligt vad som kallas för *jobs*.
 ## Övriga tips
 
 + `<Tab>`-tangenten används för att avsluta ett ord
-    {{< figure src="/images/terminal/tab.gif" title="Tab-användning" >}}
+    {{< figure src="/images/terminalen/tab.gif" title="Tab-användning" >}}
     + Om du exempelvis vill radera en fil med ett långt namn, som
         `oem-audio-hda-daily-lts-vivid-dkms_0.201606221847-ubuntu14.04.1_all.deb`,
         räcker det att skriva `rm oem` följt av att trycka `<Tab>` för att
