@@ -10,10 +10,11 @@ title = "Editorer"
 Det finns många sätt att spara text digitalt.
 
 När du skriver dokument i en vanlig ordbehandlare, som Microsoft Word och liknande, sparas stora mängder metadata om färg, typsnitt, med mera.
-Den typen av data är dock helt irrelevant för kod. Därför är det viktigt att du använder ett program som hanterar och sparar det du skriver på rätt sätt.
+Den typen av data är dock helt irrelevant när du skriver programkod som skall tolkas av en dator.
+När du skriver programkod är det därför viktigt att du använder ett program som hanterar och sparar det du skriver på rätt sätt.
 
 *Eftersom det pågår [stora konflikter](https://en.wikipedia.org/wiki/Editor_war) mellan användare av olika editorer, har vi
-gjort en kompromiss och reducerat mindre civila kommentarer till fotnoter.*
+gjort en kompromiss och reducerat mindre hövliga kommentarer till fotnoter.*
 [^footnote-sample]
 
 # Innehåll
@@ -39,10 +40,10 @@ gjort en kompromiss och reducerat mindre civila kommentarer till fotnoter.*
 
 ## Fördelar med en editor
 
-En editor är helt enkelt en textredigerare, anpassad för att skriva kod.
+En editor är helt enkelt en textredigerare, anpassad för att skriva programkod.
 
-Det finns många olika att välja mellan, med olika för- och nackdelar.
-Om du exempelvis använder en *IDE*, som *Visual Studio*[^visual-studio] eller *Eclipse*[^eclipse], brukar en sådan ingå.
+Det finns många olika editorer att välja mellan, med olika för- och nackdelar.
+Om du exempelvis använder en [*Integrated Development Environment*](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE), som *Visual Studio*[^visual-studio] eller *Eclipse*[^eclipse], brukar en sådan ingå.
 Du kan även installera en dedikerad editor, som antingen kan vara textbaserad eller gjord för ett grafiskt gränssnitt.
 
 
@@ -55,7 +56,7 @@ Fördelen med detta är främst kompatibilitet. Du kommer kunna använda dig av 
 
 Textbaserade program tenderar också att vara mycket mer stabila, eftersom de är oberoende av de processer och bibliotek som krävs för att rendera grafiska gränssnitt.
 
-Många av dessa har även ålder på sin sida. Emacs lanserades redan på 70-talet och har därmed flera decennier av granskning, optimering, support och plugins.
+Många texteditorer har även åldern på sin sida. Emacs lanserades på 70-talet och har därmed utvecklats, granskats, och optimerats under flera årtionden och har bra dokumentation samt en stor samling plugins.
 Även Vim har funnits sedan 1991 (och är därmed troligen äldre än de flesta som läser denna sida).
 
 
@@ -63,16 +64,22 @@ Många av dessa har även ålder på sin sida. Emacs lanserades redan på 70-tal
 
 [Vim](http://www.vim.org/) är en *modal* editor baserad på Vi, som ingår i de flesta UNIX-system.
 
-Detta innebär att gränssnittet har olika lägen anpassade för att göra olika saker:
+Modal innebär att gränssnittet har olika lägen anpassade för att göra olika saker:
 
-+ *Normal mode* används för att traversera och redigera text
++ *Normal mode* används för att traversera (flytta runt i) och redigera text
 + *Insert mode* används för att skriva in text
 + *Visual mode* används för att markera text
 
 Varje läge är anpassat för sitt specifika syfte, vilket gör dem mer effektiva
 och ergonomiska att använda.
-För att exempelvis spela in ett makro skriver du helt enkelt `q` följt av en
-bokstav/siffra som blir dess *register*. Det kan då repeteras $n$ gånger genom att skriva antal, följt av `@` samt registret. Fingrarna stannar kvar på tangentbordet hela vägen och du gör en bråkdel av arbetet.
+
+I *Normal mode* används exempelvis `w` (*word*) för att stega fram ett ord, `j` och `k` för att byta rader och siffror för att ange antal steg som ska göras. Dessa kan då kombineras för att göra stora saker med få knapptryckningar. `y` (*yank*) används för att kopiera text, så om man skriver `y5w` kommer fem ord kopieras, medan `y8k` kopierar åtta rader.
+
+Det finns många kommandon av varierande komplexitet, vilket leder till en
+ganska höginlärningskurva. Samtidigt är nästan alla lätta att komma åt.
+
+För att exempelvis spela in ett makro (en sekvens av kommandon) skriver du helt enkelt `q` följt av en
+bokstav/siffra som blir dess *register* (dedikerad plats i programmets minne). Det kan då repeteras $n$ gånger genom att skriva antal, följt av `@` samt registret. Fingrarna stannar kvar på tangentbordet hela vägen och du gör en bråkdel av arbetet.
 
 *Känslan* av att använda en modal editor motsvarar ungefär den mellan att spela
 melodier gentemot ackord. Istället för att trycka på flera tangenter
@@ -84,14 +91,22 @@ samtidigt gör du det sekventiellt. Därmed besparar du dig känslan av att skri
 Vidare är Vim den mest resurssnåla textredigeraren. Oavsett hur bra dator du
 har kommer det alltså fungera bra.
 
-Om du använder Vim rekommenderas *starkt* att du konfigurerar om Caps Lock så
-att den byter plats med Escape.
+Om du använder Vim rekommenderas *starkt* att du 
+[konfigurerar om Caps Lock](http://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/)
+så att den byter plats med Escape.
 
-Vim erbjuder dessutom en stor mängd plugins som ändrar allt från färgschema
+Vim erbjuder dessutom en stor mängd [plugins](http://vimawesome.com/) som ändrar allt från färgschema
 till kodkomplettering.
 
 **Nackdelen** med Vim är att det är svårt att lära sig. Modala gränssnitt är
-ännu ovanliga och tar ett tag att bli van vid.[^vim-difficulty]
+ännu ovanliga och tar ett tag att bli van vid. Gränssnittet är också anpassat
+för långsiktig användning. Därmed är många kommandon långt ifrån intuitiva att
+memorera, men desto bekvämare att använda när man väl kan dem.[^vim-difficulty]
+
+För dig som vill lära sig använda Vim rekommenderas [Vim Adventures](http://vim-adventures.com/),
+dess inbyggda hjälpsidor (`:help` i Normal Mode) och programmet
+[vimtutor](http://linuxcommand.org/man_pages/vimtutor1.html)
+
 
 ### Emacs
 
@@ -102,15 +117,16 @@ Genom att använda kortkommandon har Emacs stöd för ett stort antal funktioner
 Exempelvis kan du trycka `<Ctrl>+<Alt>+S` för att göra en sökning med reguljära
 uttryck i texten. 
 
-Emacs använder Lisp, vilket gör det mycket enkelt att skriva egna plugins.
+Emacs använder sig av programmeringsspråket [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)), vilket gör det mycket enkelt att skriva egna plugins.
 Resultatet är ett enormt bibliotek av funktioner, som bland annat inkluderar
 mp3-spelare, webbläsare, mailklienter och vidare.[^emacs-os]
 
 Om du är intresserad av att använda Emacs med Vim-liknande gränssnitt, kan du
 skaffa [Spacemacs](http://spacemacs.org/).
 
-Emacs-användare rekommenderas *starkt* att konfigurera om Caps Lock så att den
-byter plats med Ctrl.[^emacs-pedal]
+Emacs-användare rekommenderas *starkt* att 
+[konfigurera om Caps Lock](http://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/)
+så att den byter plats med Ctrl.[^emacs-pedal]
 
 {{< figure src="/images/editorer/emacs.gif" title="Emacs kan också göra roliga saker" >}}
 
@@ -128,7 +144,7 @@ förenklar att skriva och *läsa* kod.[^real-programmers]
 Det finns även grafiska textredigerare för den moderna människan. Dessa är på
 många sätt enklare att komma igång med.[^wimps] I och med att de oftast är
 byggda för att vara lätta att använda försvinner många av möjligheterna att
-skräddarsy editorn till smak och tycke.
+skräddarsy editorn efter eget tycke och smak.
 
 ### Atom
 
@@ -143,14 +159,14 @@ och smarta funktioner.
 [Sublime](https://www.sublimetext.com/) har blivit populär på senare tid.[^sublime]
 
 Den har ett antal funktioner som är hjälpsamma för programmerare och är gratis
-att testa, men kräver en kostnad för att använda under längre tid.
+att testa, men kostar en mindre summa för att använda under längre tid.
 
 {{< figure src="/images/editorer/sublime.png" title="Sublime Text 3" >}}
 
 ### Notepad++
 
-[Notepad++](https://notepad-plus-plus.org/) är en enkel textredigerare som är
-i grunden gjord för Windows.[^notepad]
+[Notepad++](https://notepad-plus-plus.org/) är en enkel textredigerare som
+i grunden är gjord för Windows.[^notepad]
 
 {{< figure src="/images/editorer/nppp_dark.png" title="Notepad++" >}}
 
@@ -168,8 +184,11 @@ avancerade funktioner som ingår i andra editorer.
 En IDE (*integrated development environment*) är oftast en hel svit av program
 som gör det enkelt att komma igång med att skriva appar och liknande. Dessa är
 oftast byggda för ett specifikt område eller ett specifikt programmeringsspråk.
-Förutom att de innehåller en editor brukar det följa med kompilatorer,
-debug-funktioner och andra specialiserade verktyg för just det område IDE:t
+Förutom att de innehåller en editor brukar det följa med 
+[kompilatorer](https://en.wikipedia.org/wiki/Compiler),
+funktioner för avlusning
+([*debugging*](https://en.wikipedia.org/wiki/Debugging), felsöka kod)
+och andra specialiserade verktyg för just det område IDE:t
 riktar sig till.
 
 ### Microsoft Visual Studio
@@ -212,6 +231,31 @@ De flesta IDE:er tillåter att du använder vilken editor som helst, men förlor
 då fördelarna att ha ett integrerat system. Samtidigt kan man gå åt det andra
 hållet och konfigurera exempelvis Vim eller Emacs för att erbjuda i princip
 samma funktionalitet IDE:er kan erbjuda.
+
+
+## Sammanfattning
+
+Med ett så stort urval kan det verka överväldigande att komma fram till ett
+alternativ som passar just dig.
+
+Tänk på att valet av editor inte är satt i sten. Eftersom nästan alla större
+alternativ är helt gratis att prova på, finns det inget som hindrar dig att
+själv se efter vad som känns bra.
+
+Om du exempelvis blir frustrerad över Emacs användning av specialtangenter, kan du testa
+Vim. Om det, i sin tur, känns alltför komplicerat, kan du testa Atom.
+
+Det finns inte heller hinder för att använda flera olika parallellt. 
+En IDE kan passa bra för särskilda programspråk, medan redigering av
+konfigurationsfiler kan vara mer bekväma med en textbaserad editor.
+Särskilda kurser kan även kräva användning av ett visst program.
+
+Syftet med denna modul är att ge dig en överblick av de vanligaste
+alternativen, så att du får en bild av vilka möjligheter som finns.
+Var inte rädd för att välja ett alternativ, komma fram till att den inte känns bra och
+prova på en annan editor!
+
+
 
 
 [^footnote-sample]: Smidigt, eller hur?
