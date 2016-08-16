@@ -34,7 +34,7 @@ I denna uppgift finns följande huvudsakliga mål:
 Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
 men går även genomföra på egen dator om git finns tillgängligt.
 
-**`OBS!` Det är starkt rekommenderat att du går genom [terminal-modulen](/terminal) innan du påbörjar Git.**
+**`OBS!` Det är starkt rekommenderat att du går genom [terminal-modulen](/terminalen) innan du påbörjar Git.**
 
 Du kommer behöva:
 
@@ -196,7 +196,7 @@ Komprimera mappen `abcd1234_git` till en tar.gz-fil och döp denna till `abcd123
 ersätter `abcd1234` med användarnamnet för ditt studentkonto.
 
    + *För att komprimera till gzip och skriva ut alla inkluderade filer och mappar använder du flaggorna `-cvzf`.*
-   + *Mer information om hur du komprimerar mappar hittar du här: [Terminalen/Komprimerade mappar](/terminal/#komprimerade-mappar).*
+   + *Mer information om hur du komprimerar mappar hittar du här: [Terminalen/Komprimerade mappar](/terminalen/#komprimerade-mappar).*
 
 
 **`OBS!` Det räcker inte att komprimera filerna som finns i mappen, utan hela mappen måste komprimeras.
