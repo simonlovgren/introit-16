@@ -24,25 +24,28 @@ möjligheter som grafiska gränssnitt helt enkelt inte *kan* erbjuda.
 
 ## Innehåll
 
+
 + [Vad *är* det?](#vad-är-det)
-+ [Fördelar med terminalen](#fördelar-med-terminalen)
++ [Fördelar med Terminalen](#fördelar-med-terminalen)
 + [Grundläggande användning](#grundläggande-användning)
-	- [Öppna en terminalemulator](#öppna-en-terminalemulator)
-	- [Användning av terminalen](#användning-av-terminalen)
+	+ [Öppna en terminalemulator](#öppna-en-terminalemulator)
+	+ [Användning av terminalen](#användning-av-terminalen)
 + [Vanliga kommandon](#vanliga-kommandon)
-	- [Grundläggande filhantering](#grundläggande-filhantering)
+	+ [Grundläggande filhantering](#grundläggande-filhantering)
+		+ [Aktuell katalog](#aktuell-katalog)
 		+ [Sökvägar](#sökvägar)
-	- [Komprimerade mappar](#komprimerade-mappar)
-	- [Historik](#historik)
-    - [Hitta filer](#hitta-filer)
-	- [Processhantering](#processhantering)
-	- [Fjärråtkomst via SSH](#fjärråtkomst-via-ssh)
+		+ [Navigering i terminalen](#navigering-i-terminalen)
+	+ [Komprimerade mappar](#komprimerade-mappar)
+	+ [Hitta filer](#hitta-filer)
+	+ [Historik](#historik)
+	+ [Processhantering](#processhantering)
+	+ [Fjärråtkomst via SSH](#fjärråtkomst-via-ssh)
+		+ [Kopiera filer med SCP](#kopiera-filer-med-scp)
 + [In- och utdata](#in-och-utdata)
-	- [Piping](#piping)
-	- [Använda filer](#använda-filer)
+	+ [Piping](#piping)
+	+ [Använda filer](#använda-filer)
 + [Multitasking](#multitasking)
 + [Övriga tips](#övriga-tips)
-
 
 ## Vad *är* det?
 
@@ -300,7 +303,7 @@ Användning påminner på många sätt om `ssh`. Om du har filen `test_file.txt`
 i din hemkatalog på Uppsala Universitets linux-server och vill kopiera den till
 Documents i din hemkatalog på datorn du sitter vid, kan du skriva följande:
 
-```
+``` shell
 scp abcd1234@arrhenius.it.uu.se:~/test_file.txt ~/Documents/
 ```
 
@@ -311,7 +314,7 @@ Du kan även kopiera filen `test_file.txt` till mappen `Documents`
 i hemkatalogen på Uppsala universitets linux-server genom att ändra
 destinationens argument.
 
-```
+``` shell
 scp test_file.txt abcd1234@arrhenius.it.uu.se:~/Documents/
 ```
 
