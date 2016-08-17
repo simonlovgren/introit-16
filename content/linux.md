@@ -14,7 +14,7 @@ Linux bygger på *öppen källkod*, vilket innebär att vem som helst kan (lagli
 ## Innehåll
 
 + [Universitets Linux-datorer](#universitets-linux-datorer)
-	- [Ditt konto](#ditt-konto)
+	- [Ditt Linux-konto](#ditt-linux-konto)
 		+ [Inloggning](#inloggning)
 		+ [Hemkatalogen](#hemkatalogen)
 	- [Filhantering](#filhantering)
@@ -31,32 +31,34 @@ Linux bygger på *öppen källkod*, vilket innebär att vem som helst kan (lagli
 
 Uppsala universitet tillhandahåller Linux-terminaler med en populär version av Linux som kallas *Ubuntu*.
 
-Kom ihåg att operativsystem och *gränssnitt* är inte samma sak.
+Kom ihåg att operativsystem och *gränssnitt* inte är samma sak.
 Universitets Linuxdatorer är inställda för att se ut och bete sig likt Windows och Mac OS X -- därför kommer du sannolikt kunna använda dem på samma sätt som de datorer du är van vid.
 
-I [Linux-datasalarna](http://www.it.uu.se/datordrift/faq/thinlinc) kan du hitta *tunna klienter*, som är svaga datorer anslutna till en mycket mer kraftfull server, på vilken programmen körs. Det fungerar på ungefär samma sätt som *Steam Link* eller *Google Docs*.
+I [Linux-datasalarna](http://www.it.uu.se/datordrift/faq/thinlinc) hittar du *tunna klienter*, som är svaga datorer anslutna till en mycket mer kraftfull server, på vilken programmen körs. Det fungerar på ungefär samma sätt som *Steam Link* eller *Google Docs*.
 Eftersom du delar datorkraft med samtliga andra användare kan systemet därför vara långsamt under hög belastning.
 
-{{< figure src="/images/linux/unix-terminal.jpg" title="UU:s tunna klienter" >}}
+{{< figure src="/images/linux/unix-terminal.jpg" class="small" title="Arbetsplats med tunn klient för arbete med Linux i datorsal vid Uppsala universitet" >}}
 
 
 
-### Ditt konto
+### Ditt Linux-konto
 
-Om du har ordnat ett konto på Studentportalen har du även tillgång till universitets Linux-datorer.
+Om du har aktiverat ditt studentkonto och exempelvis kan logga in på
+studentportalen, har du även tillgång till universitetets Linux-datorer
+där du får ett eget Linux-konto.
 
 #### Inloggning
 
-Du loggar in med ditt användarnamn och *lösenord A*, precis som på Studentportalen.
+Du loggar in med hjälp av ditt studentkonto och *lösenord A*, precis som för Studentportalen.
 
 ####  Hemkatalogen.
 
-Vardera student har en personlig hem-mapp kopplat till kontot, där även inställningar för program sparas. 
-Den är döpt efter ditt användarnamn.
+Varje student har en personlig hem-mapp kopplat till Linux-kontot, där även inställningar för program sparas. 
+Kontot är döpt efter ditt användarnamn.
 Detta fungerar på samma sätt som på de flesta plattformar.
 Med andra ord kommer dina inställningar finnas kvar när du loggar in igen.
 
-*Observera att i dagsläget är vardera students lagringskvota ca 250 Megabyte. Med en nedladdningshastighet av 100 Mbit/s skulle det fyllas upp på 20 sekunder. Eftersom detta inkluderar [cache](http://askubuntu.com/questions/102046/is-it-okay-to-delete-cache)-filer och annan tillfällig data från program krävs ständig uppmärksamhet, då program kan sluta fungera utan fritt lagringsutrymme. Moderna webbläsare tenderar att göra detta mycket snabbt.*
+*Observera att i dagsläget är varje students lagringskvota ca 250 Megabyte. Med en nedladdningshastighet av 100 Mbit/s skulle det fyllas upp på 20 sekunder. Eftersom detta inkluderar [cache](http://askubuntu.com/questions/102046/is-it-okay-to-delete-cache)-filer och annan tillfällig data från program krävs ständig uppmärksamhet, då program kan sluta fungera utan fritt lagringsutrymme. Moderna webbläsare tenderar att göra detta mycket snabbt.*
 
 
 ### Filhantering
