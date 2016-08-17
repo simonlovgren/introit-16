@@ -100,18 +100,18 @@ Denna mapp innehåller samtliga markdown-filer vilka utgör innehållssidorna so
 Strukturen för markdown-filerna för introduktion till datorer 2016 för en *modul* är:
 ```
 content
-├── modulnamn.md            // <-- http://site.com/modulnamn.html
+├── modulnamn.md            // <-- http://site.com/modulnamn/
 └── modulnamn 
-    └── uppgifter.md        // <-- http://site.com/modulnamn/uppgifter.html
+    └── uppgifter.md        // <-- http://site.com/modulnamn/uppgifter/
 ```
 
 **Se sektionen "skapa ny modul" nedan för hur du enkelt kan skapa samtliga filer som krävs.**
 
 #### content/filnamn.md
-Markdownfiler placerade direkt under `content` kommer skapas som HTML-fil direkt under bas-adressen. T.ex. skulle `hello.md` för basadressen `http://mysite.dom/` skapas som `http://mysite.dom/hello.html`.
+Markdownfiler placerade direkt under `content` kommer skapas som HTML-fil direkt under bas-adressen. T.ex. skulle `hello.md` för basadressen `http://mysite.dom/` skapas som `http://mysite.dom/hello/`.
 
 #### content/mappnamn
-Mappar skapade under `content` tolkas som sektioner under vilka man kan lägga ytterligare mappar (för underkategorier) eller markdownfiler för att skapa sidor. T.ex. länkas `content/mysection/world.md` med basurl `http://mysite.dom/` som `http://mysite.dom/mysection/world.html`
+Mappar skapade under `content` tolkas som sektioner under vilka man kan lägga ytterligare mappar (för underkategorier) eller markdownfiler för att skapa sidor. T.ex. länkas `content/mysection/world.md` med basurl `http://mysite.dom/` som `http://mysite.dom/mysection/world/`
 
 ### data
 Mappen `data` tillåter att man skapar datafiler som kan användas vid generering av hemsidan. Denna webbsida använder datafiler för att spara metadata om modulerna för när de skall visas på startsidan. Metadata för en modul sparas under:
