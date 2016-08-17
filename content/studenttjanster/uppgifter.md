@@ -13,7 +13,7 @@ title = "Studenttjänster/Uppgifter"
 + [Mål](#mål)
 + [Material som krävs](#material-som-krävs)
 + [Uppgift](#uppgift)
-	+ [Del 1: ](#del-1-)
+	+ [Del 1: Förbered inlämningsdokument](#del-1-förbered-inlämningsdokument)
 	+ [Del 2: Vidarebefordring av mail](#del-2-vidarebefordring-av-mail)
 	+ [Del 3: Prenumeration på schemat](#del-3-prenumeration-på-schemat)
 	+ [Del 4: Bokning av grupprum](#del-4-bokning-av-grupprum)
@@ -37,7 +37,7 @@ I denna uppgift finns följande huvudsakliga mål:
 ## Uppgift
 Materialet som tas upp i uppgiften diskuteras i [infosidan för studentportalen](../).
 
-### Del 1: 
+### Del 1: Förbered inlämningsdokument
 
 Börja med att skapa en textfil du döper till `abcd1234-studenttjanster.txt`, där du
 ersätter `abcd1234` med ditt användarnamn för studentkontot.
