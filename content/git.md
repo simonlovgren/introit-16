@@ -40,13 +40,13 @@ arbeta i under er utbildning.
 	+ [Merge-konflikter](#merge-konflikter)
 		+ [Ångra en merge](#ångra-en-merge)
 + [Arbeta mot fjärr-repositories](#arbeta-mot-fjärr-repositories)
-		+ [Om repot inte redan är klonat](#om-repot-inte-redan-är-klonat)
-		+ [Om repot redan klonats](#om-repot-redan-klonats)
+	+ [Om repositoryt inte redan är klonat](#om-repositoryt-inte-redan-är-klonat)
+	+ [Om repositoryt redan klonats](#om-repositoryt-redan-klonats)
 	+ [Klonade repositories](#klonade-repositories)
 	+ [Ladda upp lokalt repository till fjärr-repository](#ladda-upp-lokalt-repository-till-fjärr-repository)
 	+ [Vad är `origin`?](#vad-är-origin)
-	+ [`Push` - ladda upp commits till fjärr-repo](#push-ladda-upp-commits-till-fjärr-repo)
-	+ [`Pull` - ladda hem commits från fjärr-repo](#pull-ladda-hem-commits-från-fjärr-repo)
+	+ [`Push` - ladda upp commits till fjärr-repository](#push-ladda-upp-commits-till-fjärr-repository)
+	+ [`Pull` - ladda hem commits från fjärr-repository](#pull-ladda-hem-commits-från-fjärr-repository)
 + [GitHub](#github)
 + [Hur man brukar arbeta med Git i grupp](#hur-man-brukar-arbeta-med-git-i-grupp)
 + [Git på din egen dator](#git-på-din-egen-dator)
@@ -73,9 +73,9 @@ stage:ade _committar_ man dem i klump, vilket betyder att man buntar
 ihop dem tillsammans med ett meddelande om vad för ändringar som har
 gjorts.
 
-När en ändring väl committats sparas den för evigt i repositoryns
+När en ändring väl committats sparas den för evigt i repositoryts
 historia. Även om ändringarna (committen) skulle ångras och rullas
-tillbaka går det att gå tillbaka till just den versionen av repositoryns
+tillbaka går det att gå tillbaka till just den versionen av repositoryts
 historia och se hur saker såg ut då. Detta är mycket användbart vid
 t.ex. avlusning (debugging) av kod, när man ska ta reda på hur en
 bugg introducerats. Det är också mycket svårt att på riktigt råka ta
@@ -155,7 +155,7 @@ adress som helst fungerar **så länge den pekar till ett git-repository**.
 
 #### Klona till specifik mapp
 Om man inte anger en mapp efter adressen kommer git att skapa en mapp där
-du står som heter samma sak som repositoryn (oftast slutet på adressen),
+du står som heter samma sak som repositoryt (oftast slutet på adressen),
 i det här fallet `youtube-dl`. Om du t.ex. skulle vilja klona `youtube-dl`
 till en mapp kallad *min-kopia-av-ytdl* skulle kommandot se ut så här:
 ```none
@@ -424,7 +424,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Då kan vi återställa hela repositoryn som den såg ut vid den senaste
+Då kan vi återställa hela repositoryt som den såg ut vid den senaste
 committen (alltså `HEAD`, om du minns från tidigare):
 
 {{< figure src="/images/git/anim/reset.gif" class="medium" >}}
@@ -652,19 +652,19 @@ innan vi försökte oss på en merge.
 
 ## Arbeta mot fjärr-repositories
 En stor fördel med Git, utöver vad vi redan gått genom, är att man kan
-skapa s.k. fjärr-repositories (remote repositories) mot vilka flera
+skapa s.k. fjärr-repositories (remote repository) mot vilka flera
 personer kan arbeta --- på så vis är det väldigt enkelt att arbeta tillsammans
 i grupp på ett projekt. Ett fjärr-repository kan ses som en server där man
-lagrar sit repo, från vilken man hämtar hem filer/ändringar till sin dator.
+lagrar sit repository, från vilken man hämtar hem filer/ändringar till sin dator.
 Generellt sett följer arbetsprocessen med fjärr-repositories följande:
 
-#### Om repot inte redan är klonat
+#### Om repositoryt inte redan är klonat
 1. Klona ett repository till datorn (lokalt)
 2. Arbeta med ändringar lokalt
 3. Commita ändringar lokalt
 4. Ladda upp commits till fjärr-repository via `push`
 
-#### Om repot redan klonats
+#### Om repositoryt redan klonats
 1. Hämta commits/ändringar från fjärr via `pull`
 2. Arbeta med ändringar lokalt
 3. Commita ändringar lokalt
@@ -676,28 +676,28 @@ exempel är [GitHub](#github) som tas upp senare i modulen. Fjärr-repositories
 
 ### Klonade repositories
 Om man klonar ett repository följer det automatiskt med vilket fjärr-repository
-repot tillhör. I och med detta är det enklaste sättet att få ett repository som
+repositoryt tillhör. I och med detta är det enklaste sättet att få ett repository som
 är förinställt med fjärr-möjlighet att skapa ett repository via valfri tjänst
 (ex. [GitHub](#github)) för att sedan klona det.
 
 ### Ladda upp lokalt repository till fjärr-repository
 Om du har ett lokalt repository du vill ladda upp till ett fjärr-repository
 måste fjärr-repositoryt kopplas till ditt lokala repository. **Först måste du
-se till att du skapat ett nytt fjärr-repo via valfri tjänst** och därefter kan
-du koppla ditt lokala repo till fjärr-repot via:
+se till att du skapat ett nytt fjärr-repository via valfri tjänst** och därefter kan
+du koppla ditt lokala repository till fjärr-repositoryt via:
 
 ```none
-$ git remote-add origin <URL TILL FJÄRR-REPO BORTTAGEN>
+$ git remote-add origin <URL TILL FJÄRR-REPOSITORY BORTTAGEN>
 ```
 
-Detta ställer in fjärr-repo till det repo du angav URL till.
+Detta ställer in fjärr-repository till det repository du angav URL till.
 
 ### Vad är `origin`?
-`origin` är standardnamnet som används för att koppla fjärr-repo. Tekniskt sett
-skulle man kunna döpa fjärr-repon till andra namn, men det är inte rekommenderat
+`origin` är standardnamnet som används för att koppla fjärr-repository. Tekniskt sett
+skulle man kunna döpa fjärr-repositoryn till andra namn, men det är inte rekommenderat
 då origin är "industristandarden".
 
-### `Push` - ladda upp commits till fjärr-repo
+### `Push` - ladda upp commits till fjärr-repository
 `git push` är det kommando som används för att ladda upp commits/ändringar som gjorts-
 och sparats lokalt. Kommandot ser ut som följer:
 ```none
@@ -712,7 +712,7 @@ $ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 280 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To <URL TILL FJÄRR-REPO BORTTAGEN>
+To <URL TILL FJÄRR-REPOSITORY BORTTAGEN>
    44aab50..e1a086f  master -> master
 ```
 
@@ -722,10 +722,10 @@ dess ändringar till fjärr-repositoryt skriver vi:
 $ git push origin min-branch
 
 Total 0 (delta 0), reused 0 (delta 0)
-To <URL TILL FJÄRR-REPO BORTTAGEN>
+To <URL TILL FJÄRR-REPOSITORY BORTTAGEN>
  * [new branch]      min-branch -> min-branch
 ```
-Om branchen *min-branch* inte redan finns i fjärr-repot kommer det automatiskt
+Om branchen *min-branch* inte redan finns i fjärr-repositoryt kommer det automatiskt
 skapas och ändringarna laddas upp, som i exemplet ovan.
 
 **För att vår branch skall komma ihåg vilken fjärr-branch den skall arbeta mot**
@@ -737,7 +737,7 @@ Branch min-branch set up to track remote branch min-branch from origin.
 Everything up-to-date
 ```
 
-därefter behöver vi ej heller skriva vilket fjärr-repo och branch vi vill push:a
+därefter behöver vi ej heller skriva vilket fjärr-repository och branch vi vill push:a
 till, eftersom vi ställt in det för vår branch:
 
 ```none
@@ -746,13 +746,13 @@ $ git push
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 280 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To <URL TILL FJÄRR-REPO BORTTAGEN>
+To <URL TILL FJÄRR-REPOSITORY BORTTAGEN>
    44aab50..e1a086f  min-branch -> min-branch
 ```
 
 
-### `Pull` - ladda hem commits från fjärr-repo
-Om man är flera som arbetar mot samma fjärr-repo eller om man använder fler än
+### `Pull` - ladda hem commits från fjärr-repository
+Om man är flera som arbetar mot samma fjärr-repository eller om man använder fler än
 en dator behöver man hämta ändringar som andra laddat upp. Detta gör man via
 kommandot `git pull origin <branch-name>`.
 
