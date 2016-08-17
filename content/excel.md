@@ -9,34 +9,39 @@ title = "Excel"
 *Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
 De mest kända programmen för detta är:
 
++ [LibreOffice](https://www.libreoffice.org/)
+    - Gratis
+    - Öppen källkod
+    - Fungerar på de flesta plattformar
 + [OpenOffice.org](https://www.openoffice.org)
+    - Gratis
     - Öppen källkod
     - Fungerar på de flesta plattformar
 + [Google Sheets](https://docs.google.com/spreadsheets/)
     - Gratis
-    - Kräver Google-konto   
+    - Kräver Google-konto (även detta är kostnadsfritt)
     - Fungerar via de flesta webbläsare
 + [Microsoft Excel](https://products.office.com/en-us/excel)
     - Online-version via Dropbox eller Office 365
         + Gratis
-        + Kräver konto hos *Microsoft Live*
+        + Kräver konto hos *Microsoft Live* (även detta är kostnadsfritt)
         + Fungerar via de flesta webbläsare
         + **Har ej stöd för trendlinjer**
     - Nedladdad version
         + Betalversion med löpande månadskostnad eller engångskostnad
         + Fungerar endast för Microsoft Windows och Mac OS X
-        + En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i Windows-datasalarna.
-        + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universitet, men detta är för närvarande inte möjligt för studerande i Uppsala Universitet.
+        + En äldre version [finns tillgänglig](http://www.it.uu.se/datordrift/programvara/mswin) i [Windows-datasalarna](http://www.polacksbacken.uu.se/Utbildning/Datasalar/).
+        + Microsoft har börjat tillåta gratis nedladdning av Office för anställda och studenter vid universitet, men detta är för närvarande inte möjligt för studerande i Uppsala universitet.
 
 Det mest etablerade av dessa är *Microsoft Excel*, vilket kommer diskuteras på denna sida.
-Du kan använda någon av [Windows-datasalarna](http://www.it.uu.se/datordrift/programvara/mswin) om du inte vill skaffa ett konto hos *Microsoft Live*.
+Du kan använda någon av [Windows-datasalarna](http://www.polacksbacken.uu.se/Utbildning/Datasalar/) om du inte vill skaffa ett konto hos *Microsoft Live*.
 
 
 ### Innehåll
 
 - [Komma igång](#komma-igång)
 - [Inmatning](#inmatning)
-- [Funktioner](#funktioner)
+- [Formler](#Formler)
     + [Manuell inmatning](#manuell-inmatning)
     + [Grafisk inmatning](#grafisk-inmatning)
     + [Avancerade funktioner](#avancerade-funktioner)
@@ -46,82 +51,137 @@ Du kan använda någon av [Windows-datasalarna](http://www.it.uu.se/datordrift/p
 
 
 
+## Celler
+
+Kalkylprogram använder sig av rutnät, där vardera ruta kallas för *cell*, för
+att lägga in siffror och göra beräkningar med dem.
+
+Rutnätet delas upp i kolonner (*column*, angett av bokstäver) och rader (*row*,
+angett av siffror).
+Varje cell i en kolonn är på olika rader, medan varje cell i en rad är på olika
+kolonner. Därför brukar man ofta beskriva en cells position med hjälp av dess
+rad och kolonn. 
+
+Exempelvis befinner sig cellen `E17` i kolonn `E`, rad `17`.
+
+Man kan även beskriva omfång med hjälp av tecknet `:` (kolon).
+Exempelvis innebär `A1:B11` att omfånget är A1 till och med B11. 
+
 ## Komma igång
 
-Öppna [denna länk](https://office.live.com/start/Excel.aspx) och logga in med ett Microsoft Live-konto.
+Om du är i en av Uppsala universitets datasalar med Windows bör det finnas en
+version av Excel installerad. Du kan då starta den som vanligt, efter att ha
+loggat in med ditt studentkonto.
+
+Du kan även använda ett Microsoft Live-konto för att använda Excel i din
+webbläsare. Notera att denna version saknar stöd för trendlinjer.
+Du kan hitta online-versionen med [denna länk](https://office.live.com/start/Excel.aspx).
 
 Välj *blank page* för att bemötas av följande sida:
 {{< figure src="/images/excel/excel-start.png" title="Excel vid start" >}}
 
-Du kan nu börja skriva in siffror! Spara genom att klicka på *File*, längst upp till vänster.
 
+Du kan nu börja skriva in siffror! Spara genom att klicka på *File*, längst upp till vänster.
 
 
 ## Inmatning
 
 Excel har många *smarta funktioner* för att mata in siffror effektivt.
 Du kan testa detta genom att skriva några tal ( *Enter* tar dig till nästa rad), markera dessa samt
-klicka och dra musen neråt från det nedre högra hörnet.
+klicka och dra musen neråt från det nedre högra hörnet för att skapa en
+talserie baserad på de markerade talen.
 
 {{< figure src="/images/excel/excel-quicknum.gif" title="Snabb inmatning" >}}
 
 
 
-## Funktioner
+## Formler
 
-Excel har stöd för många funktioner av varierande komplexitet.
+I Excel är *formler* ett sätt att utföra beräkningar. Du kan exempelvis använda
+rutan strax ovanför rutnätet, där det står $f_x$ till vänster, för att skriva
+in vad som ska beräknas.
+
+Du kan testa detta genom att markera en tom cell och skriva `3 + 5` i rutan.
+
+Vidare kan formler använda sig av *funktioner*, vilka beter sig på ungefär
+samma sätt som matematiska funktioner: de har *argument*, som ger indata, vilket
+i sin tur ger ett *resultat*. Excel har ett stort antal inbyggda funktioner.
+
+Genom att använda formler och funktioner kan du utföra komplicerade beräkningar
+på kort tid. Det finns ett antal sätt att använda sig av dessa.
+
 
 ### Manuell inmatning
 
-För att visa manuell inmatning använder vi funktionen `SUM`,
-Klicka på rutan du vill ha summan i, skriv därefter (i denna eller rutan strax över arket)
+För att demonstrera manuell inmatning använder vi funktionen `SUM`. Som namnet
+anger beräknar denna funktion summan av ett antal värden.
+
+Innan du fortsätter, se till att du har några värden i omfånget `A1:B11`.
+
+För att excel ska förstå att du vill få resultatet av en funktion i en ruta
+måste du börja formeln med tecknet `=` (likhetstecken), följt av namnet på
+funktionen samt eventuella argument vilka anges inom parenteser.
+
+I detta exempel väljer vi att placera summan i rutan `A12`. Klicka på den och
+skriv följande, efter vilket du trycker `<Enter>`:
 
 ```
 =SUM(A1:B11)
 ```
-Där `A1:B11` innebär att omfånget är A1 till och med A11. Dessa värden representerar kolonn respektive rad.
 
-Om du har siffror under att annat omfång är det bara att ändra dessa. Summan uppdateras automatiskt om du ändrar en siffra i omfånget.
+I detta exempel är alltså funktionens namn `SUM`, medan argumentet är `A1:B11`
 
 {{< figure src="/images/excel/excel-sum.png" title="Beräkna summa" >}}
+
+Resultatet, vilket kommer synas i cellen när du är klar, är summan av talen
+i omfånget `A1:B11`.
+
+Testa att ändra några värden i omfånget `A1:B11` och notera hur summan i rutan
+`A12` automatiskt uppdateras.
 
 
 ### Grafisk inmatning
 
-En enklare metod, som kräver en någorlunda modern version av Excel, går till genom att välja *cell*,
-klicka på *Insert* -> *Function*, välja funktion, därefter markera omfånget som funktionen appliceras på och slutligen
-trycka på *enter*.
+Ett alternativ till manuell inmatning av funktioner är grafisk inmatning.
+Notera att denna metod endast är tillgänglig i någorlunda moderna versioner av
+Excel.
+
+1. Klicka först på en cell.
+2. Klicka därefter på *Insert* -> *Function*
+3. Välj funktionen du vill använda
+4. Markera därefter omfånget som funktionen ska appliceras på
+5. Avsluta med att trycka på *enter*.
 
 {{< figure src="/images/excel/excel-stddev.gif" title="Standardavvikelse" >}}
 
-Även i detta fall ligger siffrorna kvar.
 
-
-### Avancerade funktioner
+### Avancerade formler
 
 Du kan även skriva in mer komplicerade funktioner och formler.
 
 + Aritmetik görs med samma symboler som de flesta datorprogram, dvs `+ - * / ^`, där `^` används för potenser.
-+ Parenteser gäller enligt vanlig matematik.
-+ Funktioner (som SUM, vilken beskrevs ovan) kan läggas in fritt.
-+ Du kan använda celler som variabler, enligt syntaxen ovan.
++ Parenteser gäller enligt reflerna för vanlig matematik.
++ Funktioner (som SUM, vilken beskrevs ovan) kan läggas in och kombineras
+    godtyckligt.
++ Du kan använda celler som variabler: se följande exempel.
 
 {{< figure src="/images/excel/excel-advfunc.png" title="Notera att formeln syns i rutan över kalkylbladet" >}}
 
-I bilden har vi skrivit in `=SUM(B1:B11) + A11 * 3 + LOG(16,2)`.
+I figuren ovan har `=SUM(B1:B11) + A11 * 3 + LOG(16,2)` skrivits in i rutan
+C12.
 
 Vi lägger alltså ihop summan av cellerna B1 till B11, värdet i A11 multiplicerat med 3 och
 logaritmen av 16 i bas 2.
 
-Därmed får vi resultatet av 11 + 11*3 + 4 vilket mycket riktigt blir 48.
+Därmed får vi resultatet av $11 + 11*3 + 4$ vilket mycket riktigt blir 48.
 
 
 
 ## Grafer
 
 En av de viktigaste användningsområdena för kalkylark är att generera grafer.
-Genom att skriva in ett antal värden (siffrorna genererade med [random.org](https://www.random.org)) kan vi markera dessa och välja 
-vilken presentation vi vill ha.
+Genom att skriva in ett antal värden (siffrorna i exemplet nedan genererade med [random.org](https://www.random.org)) kan vi markera dessa och välja 
+vilken grafisk presentation (graf) vi vill ha.
 
 {{< figure src="/images/excel/excel-chart.gif" title="Enklare graf" >}}
 
@@ -138,7 +198,7 @@ exempelvis titel och hur etiketter representeras.
 
 Målet med regressionsanalys är att, utifrån observerade data, skapa en funktion som beskriver den. Ett sätt att illustrera detta med är att använda *trendlinjer*.
 
-När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka *layout* för att nå alternativet *trendline*.
+När du klickat på en lämplig graf dyker verktygen *chart tools* upp i övre raden. Klicka på *layout* för att nå alternativet *trendline*.
 
 {{< figure src="/images/excel/excel-trendline-1.PNG" title="Menyalternativet trendlinje syns längst upp till höger" >}}
 

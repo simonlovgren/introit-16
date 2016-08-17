@@ -1,6 +1,6 @@
 baseurl = "http://www.it.uu.se/education/course/homepage/introdat/ht16/"
 languageCode = "sv-se"
-title = "IntroIT 2016"
+title = "Introduktion till datorer"
 theme="introit16"
 
 # Build settings
@@ -10,7 +10,7 @@ disablerss = true
 
 # Parameters
 [Params]
-quote = "Någon smörig enradare om UU:s datasystem"
+quote = "Uppsala universitet 2016"
 email = "intro@it.uu.se"
 banner = "images/banner.jpg"
 logo = "images/logo.jpg"

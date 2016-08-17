@@ -1,2 +1,5 @@
 title = "editorer"
+module = "editorer"
 tagline = "Koda vacker kod vackert."
+hidden = false
+noTasks = true

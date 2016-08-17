@@ -3,13 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        {{if .IsHome}}
+        <title> {{ .Site.Title }} | {{ .Site.Params.quote}} </title>
+        {{ else }}
         <title> {{ .Title }} | {{ .Site.Title }} </title>
+        {{ end }}
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Icons -->
         <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="shortcut icon" href="http://www.uu.se/digitalAssets/14/14093_1favicon.ico">
         <!-- Place favicon.ico in the root directory -->
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,100,100italic" rel="stylesheet" type="text/css">
@@ -28,24 +32,38 @@
         </div>
 
         <div class="uu-logo">
+          <a href="http://uu.se/" target="_blank"></a>
         </div>
-
+        
         {{if .IsHome}}
         <div class="top-flag">
             <div class="top-container">
               <h1>{{ .Site.Title }}</h1>
-              <h2>Lorem Ipsum</h2>
+              <h2>{{ .Site.Params.quote}}</h2>
             </div>
         </div>
         {{end}}
 
-        <header>
-        	<!-- main menu -->
-        	<nav id="main-menu">
+        <header id="header">
+          <!-- main menu -->
+          <nav id="main-menu">
               <ul class="nav-menu">
-                  <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                <!-- Interlinking module pages -->
+                {{ if .IsPage }}
+                  {{ $module := (index .Site.Data.modules .Params.module) }}
+                  {{ if not .Section }}
+                    {{ if not $module.noTasks }}
+                      <li class="menu-item"><a href="{{ .Site.BaseURL }}{{ $module.module }}/uppgifter">Uppgifter</a></li>
+                    {{ end }}
+                  {{ else }}
+                    <li class="menu-item"><a href="{{.Site.BaseURL}}{{ $module.module}}">Infosida</a></li>
+                  {{ end }}
+                {{ end }}
               </ul>
             </nav>
         </header>
+
         <div class="middle">
           <div class="center">

@@ -1,2 +1,5 @@
 title = "Studenttjänster"
+module = "studenttjanster"
 tagline = "Wi-Fi på campus"
+hidden = false
+noTasks = false

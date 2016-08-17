@@ -1,2 +1,5 @@
 title = "Matlab"
+module = "matlab"
 tagline = "Det ultimata beräkningsverktyget."
+hidden = false
+noTasks = false

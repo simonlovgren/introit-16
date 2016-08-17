@@ -1,0 +1,5 @@
+title = "Git"
+module = "git"
+tagline = "Lär dig att utveckla programvara tillsammans"
+hidden = false
+noTasks = false

@@ -1,2 +1,5 @@
 title = "latex"
+module = "latex"
 tagline = "Typsätt uppsatser som ett proffs"
+hidden = false
+noTasks = false

@@ -1,2 +1,5 @@
 title = "section_name"
+module = "module_id"
 tagline = "Some fancy tagline for the module."
+hidden = false
+noTasks = false
