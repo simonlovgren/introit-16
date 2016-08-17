@@ -10,6 +10,17 @@ title = "Studenttjänster/Uppgifter"
 ## Innehåll
 
 
++ [Mål](#mål)
++ [Material som krävs](#material-som-krävs)
++ [Uppgift](#uppgift)
+	+ [Del 1: ](#del-1-)
+	+ [Del 2: Vidarebefordring av mail](#del-2-vidarebefordring-av-mail)
+	+ [Del 3: Prenumeration på schemat](#del-3-prenumeration-på-schemat)
+	+ [Del 4: Bokning av grupprum](#del-4-bokning-av-grupprum)
+	+ [Del 5: Trådlöst internet](#del-5-trådlöst-internet)
+	+ [Slutgiltigt dokument](#slutgiltigt-dokument)
++ [Inlämning](#inlämning)
+
 ## Mål
 I denna uppgift finns följande huvudsakliga mål:
 
