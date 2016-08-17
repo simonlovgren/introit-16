@@ -213,7 +213,7 @@ Avsluta igen med `q` och scrolla upp och ner med piltangenterna.
 För att starta en tom git-repository kör man kommandot `git init` i
 mappen man vill ha den (typiskt mappen man har sin källkod i). Om du
 börjar helt från början måste du alltså först skapa en mapp att ha ditt
-projekt i. Om du tidigare stod i `youtube-dl`-repon som vi hämtade, tänk
+projekt i. Om du tidigare stod i `youtube-dl`-repositoryn som vi hämtade, tänk
 på att göra `cd ..` för att inte skapa din nya mapp inuti den gamla.
 
 Vi tänker oss nu att vi sätter upp ett repository med textfiler för en
