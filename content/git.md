@@ -49,7 +49,7 @@ arbeta i under er utbildning.
 En "git-repository" är en samling av filer och mappar som Git håller
 koll på- och hanterar ändringar i. Varje git-repository har en egen
 mapp, som kan heta t.ex. `ospp-projekt-grupp-1` eller något liknande,
-egentligen vad som helst. Varje fil i en git-repository kan vara i ett av
+egentligen vad som helst. Varje fil i ett git-repository kan vara i ett av
 tre tillstånd:
 
 1. Inte incheckad
@@ -67,13 +67,13 @@ När en ändring väl committats sparas den för evigt i repositoryns
 historia. Även om ändringarna (committen) skulle ångras och rullas
 tillbaka går det att gå tillbaka till just den versionen av repositoryns
 historia och se hur saker såg ut då. Detta är mycket användbart vid
-t.ex. debugging, när man ska ta reda på hur en bugg introducerats. Det
-är också mycket svårt att på riktigt råka ta bort något från en
-Git-repository när det väl committats.
+t.ex. avlusning (debugging) av kod, när man ska ta reda på hur en
+bugg introducerats. Det är också mycket svårt att på riktigt råka ta
+bort något från ett Git-repository när det väl committats.
 
 Från början är _alla_ filer inte incheckade. Det betyder att Git inte
 bryr sig om ändringar som görs på filerna alls. Det första steget när
-man skapar en ny fil i en git-repository är därför att lägga till och
+man skapar en ny fil i ett git-repository är därför att lägga till och
 stage:a den, så att Git vet att den finns.
 
 Arbetsordningen med Git är alltså:
@@ -82,10 +82,10 @@ Arbetsordningen med Git är alltså:
 2. Stage:a ändringarna för att frysa dem i tiden
 3. Committa dem med ett meddelande som beskriver vad ändringarna gör
 
-{{< figure src="/images/git/git-workflow.gif" title="Snabb inmatning" >}}
+{{< figure src="/images/git/git-workflow.gif" title="Snabb inmatning: man kan stage:a och committa med ett enda kommando" >}}
 
 Git sparar alla ändringarna i en tidslinje som det går att spola framåt
-och bakåt i. Tillståndet som en repository för tillfället står på kallas
+och bakåt i. Tillståndet som ett repository för tillfället står på kallas
 för _HEAD_ (som i "läshuvud"). Men det går också att gå i sidled och ha
 alternativa tidslinjer (precis som i science fiction). Det kallas för
 _branches_ eftersom de grenar ut historiken i ett träd. Vi kommer att gå
@@ -141,9 +141,16 @@ Checking connectivity... done.
 ```
 
 Här användes adressen till programmet `youtube-dl`:s källkod, men vilken
-adress som helst fungerar. Om man inte anger en mapp efter adressen
-kommer git att skapa en mapp där du står som heter samma sak som
-repositoryn (oftast slutet på adressen), i det här fallet `youtube-dl`.
+adress som helst fungerar **så länge den pekar till ett git-repository**.
+
+#### Klona till specifik mapp
+Om man inte anger en mapp efter adressen kommer git att skapa en mapp där
+du står som heter samma sak som repositoryn (oftast slutet på adressen),
+i det här fallet `youtube-dl`. Om du t.ex. skulle vilja klona `youtube-dl`
+till en mapp kallad *min-kopia-av-ytdl* skulle kommandot se ut så här:
+```none
+$ git clone https://github.com/rg3/youtube-dl min-kopia-av-ytdl
+```
 
 ### Visa historik med git log
 
@@ -167,10 +174,11 @@ Date:   Thu Aug 4 09:37:27 2016 +0100
     [vodplatform] Add new extractor
 ```
 
-Här kan vi alltså se två commits med sin unika nyckel
-(`1094074c045140e9a91b521b0a933f394a7bba91`), vem som checkat in den,
-när, och hur ändringarna beskrevs. Notera att båda ändringarna är
-sammanhängande funktioner som lagts till programmet.
+Här kan vi alltså se två commits. Varje commit har en unik nyckel
+(ex. `1094074c045140e9a91b521b0a933f394a7bba91`) som identifierar
+commiten, vem som checkat in den (*Author*), när den checkades in (*Date*),
+och den kommentar som lämnades vid incheckning. Notera att båda
+ändringarna är sammanhängande funktioner som lagts till programmet.
 
 Avsluta med `q` och bläddra upp och ned med piltangenterna.
 
@@ -198,7 +206,7 @@ börjar helt från början måste du alltså först skapa en mapp att ha ditt
 projekt i. Om du tidigare stod i `youtube-dl`-repon som vi hämtade, tänk
 på att göra `cd ..` för att inte skapa din nya mapp inuti den gamla.
 
-Vi tänker oss nu att vi sätter upp en repository med textfiler för en
+Vi tänker oss nu att vi sätter upp ett repository med textfiler för en
 fest vi ska planera:
 
 {{< figure src="/images/git/anim/init.gif" class="medium" >}}
@@ -251,7 +259,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Här får vi massor av information. Den berättar att vi är på branchen
+Här får vi massor av information. Git berättar att vi är på branchen
 master (som skapades automatiskt och just nu är den enda branchen vi
 har), att det inte finns någon tidigare historik loggad ("Initial
 commit"), och att det finns två oincheckade filer som git inte har koll
@@ -296,11 +304,29 @@ $ git commit --message "Initial commit"
 Git berättar för oss vilka ändringar den sparar. Om vi nu tittar i
 historiken och `git status` så ser vi att ändringarna är sparade:
 
+``` none
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+$ git log
+commit 74c2b5bedb58e818b6c550b646ff29d13bc5950c
+Author: Albin Stjerna <MAILADRESS BORTTAGEN>
+Date:   Thu Aug 4 14:00:28 2016 +0200
+
+    Initial commit
+
+```
+
 ### Registrera ändringar med git stage och git commit
 
 Låt oss säga att vi lägger till någon i gästlistan:
 
 {{< figure src="/images/git/anim/modify.gif" class="medium" >}}
+
+*`echo` är ett kommando som skriver ut texten vi ger, i detta fall "- Joakim von Anka", till
+terminalen. På så vis kan vi utnyttja {{< extlink link="/terminalen/#använda-filer" title="piping till filer" >}} för att enkelt
+skriva till en fil.*
 
 ``` none
 $ echo "- Joakim von Anka" >> gastlista.txt
@@ -487,12 +513,19 @@ nothing to commit, working directory clean
 Eftersom skillnaden mellan brancharna var trivial kunde Git räkna ut hur
 de skulle slås ihop.
 
-#### Merge-konflikter
+### Merge-konflikter
+
+Merge-konflikter är något som du troligtvis kommer stöta på en hel del.
+Till en början kan de verka skrämmande och komplicerade, men har man väl
+förstått hur dessa fungerar kan man lösa de flesta konflikter utan större
+svårigheter.
 
 Låt oss simulera en lite mer komplicerad interaktion som kan uppstå när
-man samarbetar på samma kod. Ofta märker man av det när man använder
-`git pull` för att dra hem de senaste ändringarna innan man trycker upp
-sin ändrade version, men här fortsätter vi med våra två branchar:
+man samarbetar på samma kod. Ofta märker man av det när man arbetar mot
+fjärr-repositories med flera personer och använder `git pull` för att dra
+hem de senaste ändringarna (mer om detta i sektionen [Arbeta mot fjärr-repositories](#arbeta-mot-fjärr-repositories)).
+
+Här fortsätter vi dock med våra två branchar:
 
 {{< figure src="/images/git/anim/mergeconflict_setup.gif" class="medium" >}}
 
@@ -559,8 +592,6 @@ Git berättar för oss att ändringarna i `matar.txt` är inkompatibla och
 måste slås ihop för hand. Om vi öppnar den i valfri editor ser vi det
 här:
 
-{{< figure src="/images/git/anim/mergeconflict_fix.gif" class="medium" >}}
-
 ``` none
 1. Sallad
 2. Grillad tofu med potatis
@@ -599,26 +630,156 @@ $ git commit -a --message "Fix merge conflict"
 [master 0fc4b75] Fix merge conflict
 ```
 
+{{< figure src="/images/git/anim/mergeconflict_fix.gif" class="medium" title="Löser en merge-konflikt" >}}
+
+
+#### Ångra en merge
 Om allt blev jättjobbigt och vi ångrar oss finns alltid möjligheten att
 köra `git merge --abort` för att återställa tillståndet som det var
 innan vi försökte oss på en merge.
 
 {{< figure src="/images/git/anim/mergeconflict_abort.gif" class="medium" >}}
 
+## Arbeta mot fjärr-repositories
+En stor fördel med Git, utöver vad vi redan gått genom, är att man kan
+skapa s.k. fjärr-repositories (remote repositories) mot vilka flera
+personer kan arbeta --- på så vis är det väldigt enkelt att arbeta tillsammans
+i grupp på ett projekt. Ett fjärr-repository kan ses som en server där man
+lagrar sit repo, från vilken man hämtar hem filer/ändringar till sin dator.
+Generellt sett följer arbetsprocessen med fjärr-repositories följande:
+
+#### Om repot inte redan är klonat
+1. Klona ett repository till datorn (lokalt)
+2. Arbeta med ändringar lokalt
+3. Commita ändringar lokalt
+4. Ladda upp commits till fjärr-repository via `push`
+
+#### Om repot redan klonats
+1. Hämta commits/ändringar från fjärr via `pull`
+2. Arbeta med ändringar lokalt
+3. Commita ändringar lokalt
+4. Ladda upp commits till fjärr-repository via `push`
+
+Det finns ett flertal verktyg för att skapa- och hantera fjärr-repositories,
+exempel är [GitHub](#github) som tas upp senare i modulen. Fjärr-repositories
+är med andra ord inget man kan skapa via kommandon i git.
+
+### Klonade repositories
+Om man klonar ett repository följer det automatiskt med vilket fjärr-repository
+repot tillhör. I och med detta är det enklaste sättet att få ett repository som
+är förinställt med fjärr-möjlighet att skapa ett repository via valfri tjänst
+(ex. [GitHub](#github)) för att sedan klona det.
+
+### Ladda upp lokalt repository till fjärr-repository
+Om du har ett lokalt repository du vill ladda upp till ett fjärr-repository
+måste fjärr-repositoryt kopplas till ditt lokala repository. **Först måste du
+se till att du skapat ett nytt fjärr-repo via valfri tjänst** och därefter kan
+du koppla ditt lokala repo till fjärr-repot via:
+
+```none
+$ git remote-add origin <URL TILL FJÄRR-REPO BORTTAGEN>
+```
+
+Detta ställer in fjärr-repo till det repo du angav URL till.
+
+### Vad är `origin`?
+`origin` är standardnamnet som används för att koppla fjärr-repo. Tekniskt sett
+skulle man kunna döpa fjärr-repon till andra namn, men det är inte rekommenderat
+då origin är "industristandarden".
+
+### `Push` - ladda upp commits till fjärr-repo
+`git push` är det kommando som används för att ladda upp commits/ändringar som gjorts-
+och sparats lokalt. Kommandot ser ut som följer:
+```none
+$ git push origin <branch-name>
+```
+där *branch-name* är namnet på den branch vi vill ladda upp ändringar för. Om
+vi arbetar i branchen *master* och vill ladda upp ändringar för denna skriver
+vi:
+```none
+$ git push origin master
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 280 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To <URL TILL FJÄRR-REPO BORTTAGEN>
+   44aab50..e1a086f  master -> master
+```
+
+Om vi däremot är inne i en annan branch, låt säga *min-branch* och vill ladda upp
+dess ändringar till fjärr-repositoryt skriver vi:
+```none
+$ git push origin min-branch
+
+Total 0 (delta 0), reused 0 (delta 0)
+To <URL TILL FJÄRR-REPO BORTTAGEN>
+ * [new branch]      min-branch -> min-branch
+```
+Om branchen *min-branch* inte redan finns i fjärr-repot kommer det automatiskt
+skapas och ändringarna laddas upp, som i exemplet ovan.
+
+**För att vår branch skall komma ihåg vilken fjärr-branch den skall arbeta mot**
+kan vi ställa in detta genom att lägga till `-u`-flaggan när vi pushar:
+```none
+$ git push -u origin min-branch
+
+Branch min-branch set up to track remote branch min-branch from origin.
+Everything up-to-date
+```
+
+därefter behöver vi ej heller skriva vilket fjärr-repo och branch vi vill push:a
+till, eftersom vi ställt in det för vår branch:
+
+```none
+$ git push
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 280 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To <URL TILL FJÄRR-REPO BORTTAGEN>
+   44aab50..e1a086f  min-branch -> min-branch
+```
+
+
+### `Pull` - ladda hem commits från fjärr-repo
+Om man är flera som arbetar mot samma fjärr-repo eller om man använder fler än
+en dator behöver man hämta ändringar som andra laddat upp. Detta gör man via
+kommandot `git pull origin <branch-name>`.
+
+```none
+$ git pull origin master
+
+Updating e1a086f..c3c96b6
+Fast-forward
+ enfil.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+```
+
+Om vi är i branch _master_ **eller** har ställt in att vår branch vet vilken
+fjärr-branch den skall arbeta mot behöver vi bara skriva `git pull`:
+```none
+$ git pull
+
+Updating e1a086f..c3c96b6
+Fast-forward
+ enfil.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+```
+
 ## GitHub
 
 {{< extlink link="https://github.com" title="GitHub">}} är en av de
 största tjänsterna på webben för att samarbeta över Git. Flera kurser på
-Uppsala universitet har också använt GitHub för att koordinera
+Uppsala universitet använder GitHub för att koordinera
 grupparbeten. Förutom att tillhandahålla remotes för git-repositories så
 har GitHub också ett antal egna funktioner. Att registrera sig är
 gratis, men för att få ha privata repositories (d.v.s. sådana som inte
-syns för allmänheten) måste man betala eller {{< extlink link="https://education.github.com/pack" title="registrera sig med ett studentkonto">}}.Tänk på att regler kring fusk och plagiat kan göra
+syns för allmänheten) måste man betala eller {{< extlink link="https://education.github.com/pack" title="registrera sig med ett studentkonto">}}. Tänk på att regler kring fusk och plagiat kan göra
 det _nödvändigt_ att använda privata repositories för grupparbeten! Om
 du är osäker -- fråga din lärare!
 
 Förutom att GitHub låter dig husera din repository hos sig, visa
-historik och commits för en repository, och annat som redan finns i
+historik och commits för ett repository, och annat som redan finns i
 kommandoradsklienten så erbjuder de också två funktioner som saknas i
 kommandorads-Git: _forks_ och _pull requests_. Det finns också stöd för
 att hantera kommentarer, buggrapporter, med mera, men vi kommer inte att
@@ -654,10 +815,10 @@ editor, programfiler och så vidare ska _inte_ `git add`:as! Annars
 kommer kommer konstiga merge-konflikter att dyka upp när alla i gruppen
 har kompilerat varsitt lite olika program. En tumregel är: har en
 människa skrivit filen bör den versionshanteras, annars inte (undantag:
-bilder, eventuella uppgiftfiler ni kanske vill ha nära tillhands men
+bilder, eventuella filer ni kanske vill ha nära tillhands men
 inte ändra på).
 
-På små projekt med få personer och lite kod brukar det gå bra att bara
+För små projekt med få personer och lite kod brukar det gå bra att bara
 utveckla direkt mot `master`-branchen och synkronisera mot samma
 repository på t.ex. GitHub. När projekten blir lite större (i antal
 personer speciellt) börjar lite mer avancerade metoder krävas.
@@ -674,12 +835,15 @@ på olika saker utan att hela tiden kliva varandra på tårna, och det
 finns alltid en senast fungerande version av programmet att jämföra med
 om något går sönder.
 
+När en funktion på en branch är klar skickas sedan en Pull Request
+(detta förutsätter förstås att GitHub används) mot `master` från
+branchen. Ofta brukar GitHub säga till om det går skapa en pull-request
+från ex. nyligen uppskickade committs eller liknande.
+
 {{< figure src="/images/git/git-compare-and-pull-request.png"
 title="GitHub är hjälpsam nog att föreslå att jag skickar en Pull Request från branchen jag precis push:ade till." >}}
 
-När en funktion på en branch är klar skickas sedan en Pull Request
-(detta förutsätter förstås att GitHub används) mot `master` från
-branchen. Någon annan än den/de som utvecklat funktionen får då ansvaret
+Någon annan än den/de som utvecklat funktionen får då ansvaret
 att gå igenom alla ändringar (som dessutom går att se med hjälp av både
 GitHubs verktyg och `git diff` som vi tittade på tidigare) och försöka
 hitta brister i koden. Först när alla är nöjda och övertygade om att
