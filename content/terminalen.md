@@ -131,6 +131,7 @@ Det finns ett stort antal kommandon inbyggda i de flesta terminaler.
 + `rm`, *remove*, följt av önskad fil, raderar den
     - *Notera att det inte går att återställa filer som raderas!*
 + `mkdir`, *make directory*, följt av ett namn, skapar en ny mapp
++ `cat`, följt av filnamn, skriver ut filens innehåll till terminalen. Bra att använda vid [piping](#piping).
 + `nano`, följt av filnamn, öppnar filen (eller skapar en ny om den inte existerar) i en enkel textredigerare
 + `less`, följt av filnamn, öppnar en textläsare som bl a låter dig söka och
     hantera stora mängder text.
