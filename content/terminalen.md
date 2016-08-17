@@ -9,8 +9,17 @@ title = "Terminalen"
 Terminalen är ett elegant, textbaserat, gränssnitt[^civilized] som, till skillnad från ett grafiskt
 gränssnitt, styrs via kommandon du skriver in.
 
+Med hjälp av terminalen kan du utan svårighet konfigurera en server på andra sidan jorden från din smartphone, manipulera tusentals filer på sekunder och rädda en dator de flesta skulle säga har *dött*.
 
-Med den kan du utan svårighet konfigurera en server på andra sidan jorden i din smartphone, manipulera tusentals filer på sekunder och rädda en dator de flesta skulle säga har *dött*.
+Terminalen är, jämfört med grafiska gränssnitt, *enkel*: det kräver mycket
+lite hårdvara och resurser för att fungera, samt är relativt okomplicerad att
+skapa gränssnitt för.
+Terminalen låter dig därför enkelt använda och till och med exekvera egen kod på
+allt från chip i storleken av tumnaglar till superdatorer.
+När hårddiskar, grafikenheter och hela operativsystem slutar fungera är det
+fortfarande möjligt att använda datorn med terminalgränssnitt. Trots att
+terminalen kan verka svår att komma igång med ger den dig därmed många
+möjligheter som grafiska gränssnitt helt enkelt inte *kan* erbjuda.
 
 
 ## Innehåll
@@ -41,9 +50,9 @@ Kort sagt är terminalen ett textbaserat gränssnitt, dvs är ett sätt att anv�
 
 {{< figure src="/images/terminalen/example.gif" title="Spara utdata från program till redigerbar textfil" >}}
 
-Den kräver, i sig, mycket lite för att fungera men kan ändå användas till allt som inte måste visas med bilder.
+Terminalen kräver, i sig, mycket lite för att fungera men kan ändå användas till allt som inte måste visas med bilder.
 
-Terminalen används med hjälp av ett [*skal*](https://en.wikipedia.org/wiki/Unix_shell) (*shell*), där den vanligaste är *bash* (som står för Bourne Again SHell). Denna finns inbyggd i Mac OS X och numera även Windows 10 tack vare att den är så populär bland utvecklare.
+Terminalen används med hjälp av ett [*skal*](https://en.wikipedia.org/wiki/Unix_shell) (*shell*), där det vanligaste är *bash* (som står för Bourne Again SHell). Bash finns inbyggd i nästan alla Linux-distributioner (inklusive Uppsala Universitets Ubuntu-version), Mac OS X och numera även Windows 10 tack vare att den är så populär bland utvecklare.
 
 
 
@@ -54,9 +63,9 @@ I korthet är fördelen med terminalen att den helt enkelt **fungerar**.
 Om en dator över huvudtaget startar är sannolikheten stor att den går att styra via någon typ av terminal.
 Grafiska gränssnitt kräver däremot mycket mer av datorn för att fungera. De bygger nämligen på komplexa system som interagerar mellan varandra på bekostnad av stabilitet, säkerhet, resurser och portabilitet (dvs körbarhet på olika datorer).
 
-Vidare är det mycket lättare att skriva program som interagerar via terminalen. I de flesta språk (inklusive de som är gjorda för rent vetenskapliga syften) kan du skriva ut ett värde med endast en rad kod, vilket garanterat kommer att fungera på alla datorer programmet fungerar på.
+Vidare är det mycket lättare att skriva program som interagerar via terminalen. I de flesta språk (inklusive de som är gjorda för rent vetenskapliga syften) kan du skriva ut ett värde till terminalen med endast en rad kod, vilket garanterat kommer att fungera på alla datorer programmet fungerar på.
 
-Med grundläggande kunskaper om terminalen kommer du ha tillgång till många fler verktyg, samt spara massor av tid och huvudvärk när du vill skapa egna verktyg och program. Större vana låter dig dessutom använda datorer mycket mer effektivt.
+Med grundläggande kunskaper om terminalen kommer du ha tillgång till många fler verktyg, samt spara massor av tid och huvudvärk när du vill skapa egna verktyg och program. Större vana med att arbeta i terminalen låter dig dessutom använda datorer mycket mer effektivt.
 
 
 
@@ -64,11 +73,11 @@ Med grundläggande kunskaper om terminalen kommer du ha tillgång till många fl
 
 Även vana datoranvändare kan känna sig obekväma med textbaserade gränssnitt. Målet i detta steg är att visa att grunderna är mycket enkla att komma igång med.
 
-Med hjälp av terminalen kan du även enkelt kunna kopiera filer mellan din
-lokala dator och andra datorer uppkopplade till ett nätverk. Till exempel
-kan du ansluta din dator med Uppsala universitets Linuxsystem. Terminalen gör det även
-enkelt att från din lokala dator direkt redigera textfiler på andra datorer
-uppkopplade till ett nätverk, till exempel på Uppsala universitets Linuxsystem. 
+Med hjälp av terminalen kan du enkelt
+
++ Kopiera filer mellan din lokala dator och andra datorer uppkopplade till ett nätverk.
++ Ansluta din dator med Uppsala universitets Linuxsystem.
++ Redigera textfiler på andra datorer uppkopplade till ett nätverk, till exempel på Uppsala universitets Linuxsystem. 
 
 
 ### Öppna en terminalemulator
@@ -88,7 +97,7 @@ På Ubuntu-versionen som används i universitets datorer kan du trycka `<Ctrl>+<
 Terminalen öppnas med hem-mappen aktiv.
 
 Du använder den helt enkelt genom att skriva ett kommando och trycka `<Enter>`.
-Det finns ett stort antal program där de flesta fungerar enligt syntaxen `<kommando> --<flagga> <argument>`.
+De flesta kommandon i terminalen fungerar enligt följande mall (*syntax*) `<kommando> --<flagga> <argument>`.
 
 Programmet `ls` är ett bra, icke-destruktivt exempel:
 
@@ -115,14 +124,28 @@ Det finns ett stort antal kommandon inbyggda i de flesta terminaler.
 + `cd`, *change directory*, följt av mappen du vill byta till, byter mapp
 + `cp`, *copy*, följt av källa och destination, kopierar en fil
 + `mv`, *move*, följt av källa och destination, flyttar en fil
+    - *Notera att detta skriver över en fil med samma namn*
 + `rm`, *remove*, följt av önskad fil, raderar den
     - *Notera att det inte går att återställa filer som raderas!*
 + `mkdir`, *make directory*, följt av ett namn, skapar en ny mapp
 + `nano`, följt av filnamn, öppnar filen (eller skapar en ny om den inte existerar) i en enkel textredigerare
++ `less`, följt av filnamn, öppnar en textläsare som bl a låter dig söka och
+    hantera stora mängder text.
 
 För att använda `cp`, `mv` och `rm` med hela mappar lägger du till alternativet `-r` (*recursive*): t ex `cp -r Desktop Desktopbk`.
 
 {{< figure src="/images/terminalen/terminal-sample.gif" title="Kopiera och redigera filer i terminalen" >}}
+
+#### Aktuell katalog
+
+Aktuell katalog (*working directory*) syftar på den mapp du "befinner dig" i.
+När du öppnar ett nytt terminalfönster är den konventionellt sett hemkatalogen.
+
+Om du *byter mapp* med cd, kommer den aktuella katalogen ändras. Skriver du
+exempelvis `cd /env/` blir den aktuella katalogen `/env/`.
+
+Kommandot `pwd` (*print working directory*) skriver ut den aktuella katalogen som en *absolut sökväg*.
+
 
 #### Sökvägar
 
@@ -131,15 +154,66 @@ I Linux sparas alla filer i en trädstruktur. Den översta sökvägen är `/`, s
 + Mac OS X, liksom de flesta UNIX-baserade system, bygger på en liknande konvention.
 + Windows har istället, i de flesta fall, en egen rot för varje ansluten disk -- ett usb-minne skulle alltså få en egen bokstav i stilen `E:\ `.
 
-En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existerar under samma namn. Om du ansluter ett usb-minne med filen `rapport.pdf` skulle dess absoluta sökväg exempelvis bli `/mount/usb/rapport.pdf`.
+En *absolut sökväg* inkluderar roten och stämmer så länge mapparna existerar under samma namn.
+Om du exempelvis har filen `textfil.txt` som ligger i mappen hemkatalogen för
+användaren `abcd1234`, är den absoluta sökvägen `/home/abcd1234/textfil.txt`.
 
-*Relativa sökvägar* beror istället på, exempelvis, ditt konto eller mappen du är i.
+{{< figure src="/images/terminalen/file_tree.png" title="Exempel på trädstruktur med absoluta sökvägar" >}}
 
-+ `./` syftar på den nuvarande mappen. För att exekvera `script.sh` som ligger i mappen du är i, kan du skriva `./script.sh`
-+ `../` syftar på mappen över den aktiva. Om du befinner dig i `/mount/usb` är alltså `../` synonymt med `/mount/`
+*Relativa sökvägar* beror istället på, exempelvis, ditt konto eller den
+aktuella katalogen (*working directory*).
+
+{{< figure src="/images/terminalen/relative_path_home.png" title="Exempel på relativa sökvägar: två sätt att nå hemmappen" >}}
+
++ `./` syftar på den aktuella katalogen. För att exekvera `script.sh` i den aktuella katalogen, kan du skriva `./script.sh`. Sökvägarna `./Desktop/` och `Desktop/` är synonyma.
++ `../` syftar på mappen över den aktuella katalogen. Om den aktuella katalogen är `/mount/usb`, är `../` synonymt med `/mount/`.
 + `~/` (*tilde*) syftar på din hem-mapp och är synonym med `/home/<användarnamn>`.
-    - Skrivbordsmappen för den aktiva användaren är därmed `~/Desktop`
-    - I Mac OS X motsvaras denna av `/Users/<användarnamn>`
+    - Skrivbordsmappen för den aktiva användaren är därmed `~/Desktop`.
+    - I Mac OS X motsvaras denna av `/Users/<användarnamn>`.
+    - För användaren `abcd1234` är sökvägen `/home/abcd1234/textfil.txt`
+        synonym med `~/textfil.txt`.
+
+{{< figure src="/images/terminalen/relative_path.png" title="Exempel på relativa sökvägar: trädstruktur i relation till hemkatalogen" >}}
+
+Sökvägar till mappar kan alltid avslutas med `/`, medan namn på filer aldrig gör
+det.
+De flesta program accepterar sökvägar till mappar som slutar och inte slutar med `/`,
+men det finns undantag. Om ett kommando inte fungerar kan det därför bero på
+det.
+
+
+#### Navigering i terminalen
+
+Du kan testa navigering i terminalen med hjälp av följande exempel:
+
+1. Öppna ett terminalfönster och skriv `cd ~`.
+1. Skriv kommandot `pwd`. Terminalen bör visa `/home/<användarnamn>`,
+   exempelvis `/home/abcd1234` om du är inloggad med användarnamnet `abcd1234`.
+    + Hemkatalogerna i Mac OS X ligger i mappen `/Users/` istället för `/home/`
+1. Skriv kommandot `mkdir test_folder`
+1. Skriv `ls`. Filerna och mapparna ska inkludera `test_folder`.
+1. Skriv `cd test_folder`.
+1. Testa kommandot `pwd` och notera hur den ändrats till
+   `/home/<användarnamn>/test_folder`.
+1. Skriv `nano test_file.txt` för att skapa och redigera en fil. Skriv några
+   rader text. Spara filen samt avsluta programmet genom att trycka `<Ctrl>+O`.
+1. Skriv `ls`. Nu bör endast `test_file.txt` visas.
+1. Skriv `cat test_file.txt`. Terminalen visar innehållet som du just skrivit.
+1. Skriv `cd ..` för att återgå till katalogen ovanför. Verifiera gärna med
+   `pwd`.
+1. Skriv `cat ./test_folder/test_file.txt` för att se innehållet i textfilen
+   igen.
+1. Skriv `mv test_folder/test_file.txt ./` för att flytta filen
+   till din hemkatalog.
+1. Skriv `ls`. Utskriften bör visa både `test_folder` och `test_file.txt`.
+1. Skriv `cd ~/test_folder`, verifiera gärna med `pwd`.
+1. Skriv `ls`. Mappen bör vara tom och därför inte ge någon utskrift.
+1. Skriv `cat ../test_file.txt`. Filen bör skrivas ut, eftersom den befinner
+   sig i mappen ovanför.
+1. Skriv `rm ../test_file.txt` för att radera filen.
+1. Återgå till hemmappen.
+1. Radera `test_folder` med kommandot `rmdir test_folder`.
+
 
 
 ### Komprimerade mappar
@@ -214,21 +288,52 @@ Exempelvis kan du använda servern *Arrhenius* genom att skriva
 `ssh abcd1234@arrhenius.it.uu.se`, där du ersätter `abcd1234` med ditt
 studentkontos användarnamn.
 
+#### Kopiera filer med SCP
+
+Du kan även kopiera filer via `ssh` med hjälp av `scp` (*secure copy*).
+
+Den fungerar på ungefär samma sätt som `cp`, men du kan även kopiera till och
+från fjärranslutna enheter. Argumentet skrivs i det fallet
+`<användarnamn>@<servernamn>:<sökväg>`.
+
+Användning påminner på många sätt om `ssh`. Om du har filen `test_file.txt`
+i din hemkatalog på Uppsala Universitets linux-server och vill kopiera den till
+Documents i din hemkatalog på datorn du sitter vid, kan du skriva följande:
+
+```
+scp abcd1234@arrhenius.it.uu.se:~/test_file.txt ~/Documents/
+```
+
+Där `abcd1234` ska ersättas med namnet för ditt studentkonto.
+Notera att den frågar efter lösenord på samma sätt som `ssh`.
+
+Du kan även kopiera filen `test_file.txt` till mappen `Documents`
+i hemkatalogen på Uppsala universitets linux-server genom att ändra
+destinationens argument.
+
+```
+scp test_file.txt abcd1234@arrhenius.it.uu.se:~/Documents/
+```
+
+Notera att `test_file.txt` här antas vara i den aktuella katalogen.
+
 
 
 ## In- och utdata
 
-*Indata* är de värden som skickas in till program medan *utdata* är det som skickas ut. Exempelvis är utdatat från kommandot `ls` de filer som finns i den nuvarande mappen.
+*Indata* är de värden som skickas in till program medan *utdata* är det som skickas ut. Exempelvis är utdatat från kommandot `ls` namnen på de filer och mappar som finns i den nuvarande mappen.
 
 ### Piping
 
-*Piping* används för att "kedja" in- och utdata mellan program.
+*Piping* används för att koppla samman utdata från ett kommando till indata för
+ett annat kommando i en kedja (kallad *pipeline*).
 
-Symbolen `|` (*pipe*), som skrivs med `<AltGr>+<` på svenska tangentbord, skrivs mellan kommandon för att utdatan från det föregående används som indata på det senare.
+Symbolen `|` (*pipe*), som skrivs med `<AltGr>+<` på svenska tangentbord, skrivs mellan kommandon för att utdatan från det föregående ska användas som indata till det senare.
 
-Ett exempel är programmet `grep`, som kan användas för att
-plocka bort de rader som saknar följande argument.
-Exempelvis kan du skriva `history | grep rm`. Utdatan från `history` skickas då vidare som indata till `grep`, vilket i sin tur skriver ut alla rader med texten `rm`.
+Ett exempel på en enkel pipeline är hur programmet `grep`, som kan användas för att
+filtrera textrader,
+kan kopplas ihop med kommandot `history` genom att skriva `history | grep rm`
+Utdatan från `history` skickas då vidare som indata till `grep`, vilken i sin tur filtrerar *bort* alla rader *utan* texten `rm`.
 
 Du kan använda pipes i längre kedjor. För att räkna antalet processer som genereras av en webbläsare, exempelvis *Chromium* skriver vi `ps -A | grep chromium | wc -l`
 
@@ -278,6 +383,12 @@ I terminalen kan du ha flera program igång, enligt vad som kallas för *jobs*.
         räcker det att skriva `rm oem` följt av att trycka `<Tab>` för att
         komplettera resten av filnamnet.
     + Kompletteringen är också användbar för att undvika misstag.
+    + Om det finns flera matchningar, exempelvis för `cd Do<Tab>` om du både
+        har `Documents` och `Downloads` i samma katalog, kan du trycka på
+        `<Tab>` upprepade gånger för att växla mellan dem.
+        + Vissa skal kräver att du trycker två gånger för att få den första
+            matchningen av flera. Då händer alltså ingenting om du trycker
+            `<Tab>` en gång.
 + Wildcards fungerar i de flesta program, inte bara `find`.
     - Exempelvis flyttar kommandot `mv ./*.jpg ~/Pictures` alla filer som slutar med `.jpg` i den aktiva mappen till mappen Pictures i din hemkatalog
 
