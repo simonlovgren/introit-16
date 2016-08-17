@@ -2,7 +2,7 @@
 date = "2016-08-01T13:47:14+02:00"
 menu = "terminalen"
 module = "terminalen"
-title = "Terminal/Uppgifter"
+title = "Terminalen/Uppgifter"
 
 +++
 
@@ -42,6 +42,10 @@ För att klara av denna uppgift ska du göra följande:
 1. Använd `mkdir` för att skapa en mapp med namnet `terminal_uppgift_abcd1234`,
    där `abcd1234` ska ersättas med användarnamnet för ditt studentkonto.
 2. Skapa mappen `deluppgift_1` under denna mapp.
+    + Du kan byta till mappen `terminal_uppgift_abcd1234` med `cd` och skapa
+        mappen därefter.
+    + Du kan även skriva `terminal_uppgift_abcd1234/deluppgift_1` som argument.
+    + Tab-komplettering gör denna del mycket smidigare!
 3. Använd `cd` för att gå in i mappen `deluppgift_1`.
 
 Katalogstrukturen ska nu se ut så här:
@@ -87,10 +91,13 @@ Katalogstrukturen ska nu se ut så här:
 
 ### Del 3: Använda omdirigering
 
-1. Ladda ner filen [`jobbig_textfil.txt`](../jobbig_textfil.txt). och lägg den i mappen
+1. Ladda ner filen `jobbig_textfil.txt` [från denna länk](../jobbig_textfil.txt). och lägg den i mappen
    `deluppgift_2`
-    + Du kan använda kommandot `curl` och klistra in länken för att göra detta
-        direkt i terminalen.
+    + Du kan använda kommandot `curl` för att göra detta
+        direkt i terminalen: `curl <url-länk>` laddar ner filen i den angivna länken.
+    + De flesta terminalemulatorer låter dig klistra in text med
+        `<Ctrl>+<Shift>+V`, `<Shift>+<Insert>` eller klick med musens
+        mittenknapp.
 2. Använd pipes (`|`) och `grep` för att få fram raden (eller raderna) som innehåller `Hitta mig`, givet kommandot `cat textfil.txt`
     + Grep förstår citattecken
 3. Upprepa kommandot ovan, men addera fil-output för att *lägga till* (`>>`) raden i `hittad_rad.txt`.
