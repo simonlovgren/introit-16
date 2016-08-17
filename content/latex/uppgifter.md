@@ -4,6 +4,7 @@ menu = "latex"
 module = "latex"
 title = "Latex/Uppgifter"
 
+lastmod = "2016-08-16T22:16:14+02:00"
 +++
 
 ## Innehåll

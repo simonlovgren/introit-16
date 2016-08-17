@@ -4,6 +4,7 @@ menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster"
 
+lastmod = "2016-08-17T12:01:51+02:00"
 +++
 
 Uppsala universitet tillhandahåller ett antal tjänster som är nödvändiga för

@@ -4,6 +4,7 @@ menu = "git"
 module = "git"
 title = "GIT/Uppgifter"
 
+lastmod = "2016-08-17T12:01:51+02:00"
 +++
 
 ## Innehåll

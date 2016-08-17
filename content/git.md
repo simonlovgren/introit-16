@@ -4,6 +4,7 @@ menu = "git"
 module = "git"
 title = "GIT"
 
+lastmod = "2016-08-17T17:33:23+02:00"
 +++
 
 Git är ett revisionshanteringssystem, främst tänkt att användas för

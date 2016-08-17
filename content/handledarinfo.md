@@ -4,6 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare"
 
+lastmod = "2016-08-16T22:16:14+02:00"
 +++
 
 I denna sektion finns allt internt material som riktar sig till dig som handledare.

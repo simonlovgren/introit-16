@@ -4,6 +4,7 @@ menu = "excel"
 module = "excel"
 title = "Excel"
 
+lastmod = "2016-08-17T12:01:51+02:00"
 +++
 
 *Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.

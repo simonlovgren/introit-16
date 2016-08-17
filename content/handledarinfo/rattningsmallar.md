@@ -4,6 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare/Rättningsmallar"
 
+lastmod = "2016-08-16T22:16:14+02:00"
 +++
 
 - [Excel](excel)

@@ -4,6 +4,7 @@ menu = "terminalen"
 module = "terminalen"
 title = "Terminalen"
 
+lastmod = "2016-08-17T12:35:38+02:00"
 +++
 
 Terminalen är ett elegant, textbaserat, gränssnitt[^civilized] som, till skillnad från ett grafiskt
