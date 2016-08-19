@@ -74,6 +74,21 @@ h2 {
   margin-top: 1.5em;
   border-bottom: 1px solid #ddd;
 }
+/* Offset anchor links */
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+    display: block;
+    content: " ";
+    margin-top: -65px;
+    height: 65px;
+    visibility: hidden;
+}
+
+
 kbd,
 code {
   padding: 2px 4px;
@@ -370,7 +385,7 @@ header nav ul li.active a {
 .card {
   width: 45%;
   width: 380px;
-  margin: 0 1.5% 5% 1.5%;
+  margin: 0 1.5% 35px 1.5%;
   float: left;
   position: relative;
   color: #aaa;
