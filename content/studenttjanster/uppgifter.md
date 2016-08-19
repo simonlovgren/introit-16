@@ -3,8 +3,8 @@ date = "2016-05-04T09:37:09+02:00"
 menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster/Uppgifter"
-
-lastmod = "2016-08-18"
+ 
+lastmod = "2016-08-18T14:32:05+02:00"
 +++
 
 ## Innehåll
@@ -43,7 +43,7 @@ Innan du sätter igång med uppgifterna är det viktigt att du genomför följan
 
 ### Information om studenttjänster
 
-Öppna sidan med [information om Uppsala universitets olika studenttjänster](../) i ett
+Öppna sidan med {{< extlink link="../" title="information om studenttjänster" >}} i ett
 nytt fönster eller i en ny flik i din webbläsare. Om du inte redan gjort det, börja
 med att läsa igenom denna sida. Gå sedan tillbaka till sidan vid behov när
 du löser uppgifterna nedan.
@@ -123,6 +123,3 @@ svar till frågorna på del 1 till del 4.
 Kontrollera att textfilen heter `abcd1234-studenttjanster.txt` där du ersätter
 `abcd1234` med användarnamnet för ditt studentkonto. Ladda därefter upp filen
 i Studentportalen.
-
-<!--  LocalWords:  prenumera prenumererar
- -->
