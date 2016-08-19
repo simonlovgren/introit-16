@@ -11,7 +11,7 @@ lastmod = "2016-08-17T15:38:51+02:00"
 
 
 + [Mål](#mål)
-+ [Material som krävs](#material-som-krävs)
++ [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
 	+ [Del 1: Skapa mappar](#del-1-skapa-mappar)
 	+ [Del 2: Skapa, kopiera och döp om en textfil](#del-2-skapa-kopiera-och-döp-om-en-textfil)
@@ -20,23 +20,36 @@ lastmod = "2016-08-17T15:38:51+02:00"
 + [Inlämning](#inlämning)
 
 ## Mål
-För att klara av denna uppgift ska du göra följande:
 
-+ Skapa en mapp
-+ Skapa, kopiera och döpa om en textfil
-+ Dirigera om in-/utmatning med hjälp av omdirigering (*I/O-redirection*)
-+ Komprimera en mapp med till en fil
+Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du från terminalen:
+
++ skapar en mapp
++ skapar, kopierar och döper om en textfil
++ dirigerar om in-/utmatning med hjälp av omdirigering (*I/O-redirection*)
++ komprimera en mapp till ett filarkiv.
 
 
-## Material som krävs
-+ En POSIX-kompatibel terminal
+## Detta behöver du
+
+Allt du behöver för att genomföra uppgiften finns redan installerat på
+universitetets Linux-system. 
+
+Om du väljer att utföra uppgiften på något annat sätt, till exempel på en privat
+dator med Linux, behöver du tillgång till följande:
+
++ En POSIX-kompatibel terminal.
     + Information om terminalen i Windows finns i [infosidorna för terminalen](../#öppna-en-terminalemulator)
     + Uppgifterna går alltså även att lösa med *zsh*
 + Programmen `tar`, `grep`, `cp`, `curl` samt en texteditor, t ex
     `nano`. 
     + Dessa ingår i princip alltid med Linux-distributioner samt Mac OS X.
 
+Inlämning sker via Studentportalen. För detta krävs ett studentkonto.
+
+
 ## Uppgift
+
+Materialet som tas upp i uppgiften diskuteras på [sidan med information om terminalen](../).
 
 ### Del 1: Skapa mappar
 
@@ -45,7 +58,8 @@ För att klara av denna uppgift ska du göra följande:
 2. Skapa mappen `deluppgift_1` under denna mapp.
     + Du kan byta till mappen `terminal_uppgift_abcd1234` med `cd` och skapa
         mappen därefter.
-    + Du kan även skriva `terminal_uppgift_abcd1234/deluppgift_1` som argument.
+    + Du kan även skriva `terminal_uppgift_abcd1234/deluppgift_1` som argument
+      till kommandot `mkdir`.
     + Tab-komplettering gör denna del mycket smidigare!
 3. Använd `cd` för att gå in i mappen `deluppgift_1`.
 
@@ -61,10 +75,9 @@ Katalogstrukturen ska nu se ut så här:
 denna output när du står i mappen ovanför `terminal_uppgift_abcd1234`*
 
 
-
 ### Del 2: Skapa, kopiera och döp om en textfil
 
-1. Skapa filen `textfil.txt` med raden `En textfil`.
+1. Skapa filen `textfil.txt` med raden `En textfil` som enda innehåll.
     + Du kan exempelvis använda `nano`, men vilken editor som helst ska fungera
         för detta.
     + Du kan även dubbelkolla att den skapade textfilen blev rätt med kommandot
@@ -84,7 +97,7 @@ Katalogstrukturen ska nu se ut så här:
 .
 └── terminal_uppgift_abcd1234
     ├── deluppgift_1
-    │   └── textfil.txt
+    │   └── textfil.txt
     └── deluppgift_2
         └── hittad_rad.txt
 ```
@@ -130,7 +143,10 @@ terminal_uppgift_abcd1234/deluppgift_2/
 terminal_uppgift_abcd1234/deluppgift_2/hittad_rad.txt
 ```
 
+Kontrollera vilka filer arkivet innehåller med hjälp av kommandot `tar` och
+flaggorna `f` och `t`, dvs skriv `tar -tf abcd1234_terminal.tar.gz` i terminalen
+och tryck enter. 
 
 ## Inlämning
 
-Ladda upp tar-filen du skapade i uppgiften till studentportalen.
+Ladda upp tar-filen du skapade i uppgiften till Studentportalen.
