@@ -11,7 +11,7 @@ lastmod = "2016-08-16T22:16:14+02:00"
 
 
 + [Mål](#mål)
-+ [Material som krävs](#material-som-krävs)
++ [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
 	+ [Del 1: skapa ett grundläggande dokument](#del-1-skapa-ett-grundläggande-dokument)
 	+ [Del 2: Ladda in paket](#del-2-ladda-in-paket)
@@ -23,31 +23,32 @@ lastmod = "2016-08-16T22:16:14+02:00"
 
 ## Mål
 
-I denna uppgift finns följande huvudsakliga mål:
+Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du:
+ 
+- skapar ett LaTeX-dokument som går att rendera (till exempel visa som PDF)
+- lägger till paket i preamble
+- använder grundläggande kommandon för att generera en titel
+- använder miljöer (*environments*)
+- felsöker och lagar icke-fungerande LaTex-kod.
 
-1. Skapa ett LaTeX-dokument som går att rendera
-2. Lägga till paket i preamble
-3. Använda grundläggande kommandon för att generera en titel
-4. Använda miljöer (*environments*)
-5. Felsöka och laga icke-fungerande kod
 
+## Detta behöver du 
 
-## Material som krävs
+Det är starkt rekommenderat att du använder {{< extlink
+link="https://www.overleaf.com" title="Overleaf" >}} men om du föredrar någon
+annan metod behöver du:
+ 
++ en LaTeX-kompatibel editor
++ möjlighet att rendera PDF-filer
++ tillgång till paketen *babel*, *fontenc*, *inputenc*.
+    + De flesta kompletta LaTeX-distributioner har dessa inbyggda.
 
-Uppgiften är testad och går att genomföra med Overleaf, men även andra program
-och metoder går att använda. 
-
-+ En LaTeX-kompatibel editor
-+ Möjlighet att rendera PDF-filer
-+ Tillgång till paketen *babel*, *fontenc*, *inputenc*
-    + De flesta kompletta LaTeX-distributioner har dessa inbyggda
-
-Inlämning för alla uppgifter sker via studentportalen. För detta krävs ett studentkonto.
+Inlämning för alla uppgifter sker via Studentportalen. För detta krävs ett studentkonto.
 
 
 ## Uppgift
 
-Materialet som tas upp i uppgiften diskuteras i [infosidorna för latex](../)
+Materialet som tas upp i uppgiften diskuteras på [infosidorna för latex](../)
 
 ### Del 1: skapa ett grundläggande dokument
 
@@ -132,7 +133,7 @@ Ledning:
 ### Slutgiltigt dokument
 
 PDF:en ska nu ha en sida med titel, raden "text", en numrerad lista och en
-tabell. Du kan använda bilden som referens.
+tabell. Du kan använda bilden nedan som referens.
 
 {{< figure src="/images/latex/latex-uppgift-klar.png" title="Färdig sida" >}}
 
@@ -141,4 +142,4 @@ tabell. Du kan använda bilden som referens.
 
 Döp om den slutgiltiga PDF:en till `abcd1234-latex.pdf`, där du ersätter
 `abcd1234` med  användarnamnet för ditt studentkonto.
-Ladda upp filen i studentportalen.
+Ladda upp filen i Studentportalen.

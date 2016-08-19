@@ -75,11 +75,11 @@ Nu är du reda att lösa uppgifterna nedan.
 <br/>
 ### Del 1: Vidarebeforda e-post
 
-Det första du skall göra är att vidarebefordra all e-post som skickas till din student
-adress (fornman.efternman.1234@student.uu.se) vid Uppsala universitet till din
-privata e-postadress du brukar använda. Detta är ytterst viktigt då information
-från Uppsala universitet endast skickas till din studentadress, till exempel
-information om inställda föreläsningar, kommande tentor och liknande.
+Det första du skall göra är att vidarebefordra all e-post som skickas till din
+studentadress (fornman.efternman.1234@student.uu.se) vid Uppsala universitet
+till din privata e-postadress du brukar använda. Detta är ytterst viktigt då
+information från Uppsala universitet endast skickas till din studentadress, till
+exempel information om inställda föreläsningar, kommande tentor och liknande.
 
 Följ instruktionerna på [infosidan](../#e-post) för att göra detta.
 
