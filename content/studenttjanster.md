@@ -4,7 +4,7 @@ menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-19T11:01:54+02:00"
 +++
 
 Uppsala universitet tillhandahåller ett antal tjänster som är nödvändiga för
@@ -84,6 +84,7 @@ förutsatt att du redan klickat på "Min profil".
 
 Universitets anställda kommer använda denna för att skicka information till
 dig. Dessutom kan du använda denna address för att verifiera att du är student.
+Du kan hitta mer information här: {{< extlink link="http://www.uu.se/student/it-for-studenter/e-post/" title="http://www.uu.se/student/it-for-studenter/e-post/">}}.
 
 ##### Avstickare: Kommunikation med lärare
 När du skriver e-post till en lärare eller anställd på universitet är det några
