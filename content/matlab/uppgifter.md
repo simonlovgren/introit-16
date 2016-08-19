@@ -12,7 +12,7 @@ lastmod = "2016-08-16T22:16:14+02:00"
 
  
 + [Mål](#mål)
-+ [Material som krävs](#material-som-krävs)
++ [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
 	+ [Del 1: Skapa ett nytt MATLAB-script/program](#del-1-skapa-ett-nytt-matlab-script-program)
 	+ [Del 2: Generera listor med tal](#del-2-generera-listor-med-tal)
@@ -23,26 +23,28 @@ lastmod = "2016-08-16T22:16:14+02:00"
 + [Inlämning](#inlämning)
 
 ## Mål
+Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du:
 
-I denna uppgift finns följande huvudsakliga mål:
-
-1. Spara ett MATLAB-program till fil och köra det
-2. Generera listor av tal
-3. Använda enklare ekvationer/matematiska operander
-4. Använda enklare funktioner för att skapa nya värdelistor
-5. Visa resultat av funktioner i form av grafer
+- sparar ett MATLAB-program till fil och kör det
+- genererar listor av tal
+- använder enklare ekvationer/matematiska operationer
+- använder enklare funktioner för att skapa nya värdelistor
+- visar resultat av funktioner i form av grafer.
 
 
-## Material som krävs
+## Detta behöver du
+
+För att genomföra uppgiften behöver du tillgång till följande program:
 
 + MATLAB
+  + Finns installerat på PC-datorerna i salarna på Polacksbacken och Ångström.
 
-Inlämning för alla uppgifter sker via studentportalen. För detta krävs ett studentkonto.
+Inlämning sker via Studentportalen. För detta krävs ett studentkonto.
 
 
 ## Uppgift
 
-Materialet som tas upp i uppgiften diskuteras i [infosidorna för MATLAB](../)
+Materialet som tas upp i uppgiften diskuteras på [infosidorna för MATLAB](../)
 
 ### Del 1: Skapa ett nytt MATLAB-script/program
 Börja med att skapa ett nytt MATLAB-program. Klistra in följande kod:
@@ -57,10 +59,14 @@ där du ersätter `abcd1234` med användarnamnet för ditt studentkonto.
 Byt sedan nuvarande arbetsmapp till skrivbordet, annars kan du inte köra ditt
 sparade program. Detta gör du lättast via [Sökfältet / Sökväg till arbetsmappen](../#sökfältet-sökväg-till-arbetsmappen).
 
-Testa nu att köra programmet genom att skriva `abcd1234-matlab`, där du såklart byter `abcd1234` med användarnamnet för ditt studentkonto, i kommandofönstret. Om programmet skriver ut `Jag fungerar!` i kommandofönstret kan du gå vidare till nästa del. Får du inte utskriften, kontrollera att:
-- Du har valt rätt arbetsmapp i [sökfältet](../#sökfältet-sökväg-till-arbetsmappen)
-- Programmet du sparat syns i [arbetsmapp-fönstret](../#arbetsmapp)
-- Programfilen inte är tom
+Testa nu att köra programmet genom att skriva `abcd1234-matlab`, där du såklart
+byter `abcd1234` med användarnamnet för ditt studentkonto, i kommandofönstret.
+Om programmet skriver ut `Jag fungerar!` i kommandofönstret kan du gå vidare
+till nästa del. Får du inte utskriften, kontrollera att:
+
+- du har valt rätt arbetsmapp i [sökfältet](../#sökfältet-sökväg-till-arbetsmappen)
+- programmet du sparat syns i [arbetsmapp-fönstret](../#arbetsmapp)
+- programfilen inte är tom.
 
 ### Del 2: Generera listor med tal
 För denna uppgift vill vi ha en lista med tal vi kan utgå från. Då det är jobbigt att skriva alla dessa för hand vill vi använda snabbversionen för att skapa en lista av många tal. Se sektionen [Tal och Listor / Listor](../#listor) i informationsmaterialet.
@@ -79,18 +85,19 @@ Om du skrivit rätt kommer talen i den nya listan se ut såhär:
 `x2 = [0, 0.3491, 0.6981, ..., 5.9341, 6.2832]`
 
 ### Del 4: Använda enklare funktioner
-Nu vill vi skapa tre uppsättningar data för våra värden i `x2`. Till detta
+Nu vill vi skapa tre uppsättningar data för våra värden i `x2`. För detta
 använder vi funktionen `sin` (sinus). I nästa steg kommer vi rita grafer för dessa
-tre uppsättningar. För att vi skall se skillnad på dessa kommer vi förskjuta graferna:
+tre uppsättningar. 
+
+För att vi skall se skillnad på de tre dataserierna kommer vi förskjuta
+graferna. Lägg till detta i ditt program för att skapa de tre uppsättningarna
+värden vi kommer använda i nästa steg.
 
 ``` matlab
 y1 = sin(x2);
 y2 = sin(2*x2);
 y3 = sin(3*x2);
 ```
-
-lägg till detta i ditt program för att skapa de tre uppsättningarna värden vi kommer
-använda i nästa steg.
 
 ### Del 5: Visa resultatet i form av grafer
 Vi skall nu rita ut våra värden i form av grafer. Information om hur detta fungerar
@@ -118,4 +125,4 @@ och den färdiga grafen skall då visas.
 Se till att den slutgiltiga filen heter `abcd1234-matlab.m`, där du ersätter
 `abcd1234` med  användarnamnet för ditt studentkonto.
 
-Ladda upp filen i studentportalen.
+Ladda upp filen i Studentportalen.
