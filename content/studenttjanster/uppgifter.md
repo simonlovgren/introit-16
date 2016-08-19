@@ -15,7 +15,7 @@ lastmod = "2016-08-18T14:32:05+02:00"
     + [Förbered dokument för inlämning](#förbered-dokument-för-inlämning)
 + [Uppgifter](#uppgifter)
 	+ [Del 1: Vidarebefordra e-post](#del-1-vidarebeforda-e-post)
-	+ [Del 2: Prenumera på schemat](#del-2-prenumera-på-schemat)
+	+ [Del 2: Prenumerera på schemat](#del-2-prenumerera-på-schemat)
 	+ [Del 3: Boka grupprum](#del-3-boka-grupprum)
 	+ [Del 4: Trådlöst internet (Wi-Fi)](#del-4-trådlöst-internet-wi-fi)
 	+ [Slutgiltigt dokument](#slutgiltigt-dokument)
@@ -88,7 +88,7 @@ webbläsaren och klistra in den efter `e-post:` i textdokumentet.
 
 
 <br/>
-### Del 2: Prenumera på schemat
+### Del 2: Prenumerera på schemat
 I Studentportalen kan du hitta ditt schema som innehåller samtilga kurser du är
 registrerad på. I detta steg skall du skapa en URL för prenumeration på ditt schema.
 Information om detta hittar du på modulens [infosida](../#schema).
