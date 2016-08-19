@@ -18,7 +18,7 @@ lastmod = "2016-08-19T12:31:15+02:00"
 	+ [Del 2: Lägg till nya filer](#del-2-lägg-till-nya-filer)
 	+ [Del 3: Skapa en ny branch](#del-3-skapa-en-ny-branch)
 	+ [Del 4: Byta gren och modifiera filer](#del-4-byta-gren-och-modifiera-filer)
-	+ [Del 5: Merge & merge-konflikt](#del-5-merge-&-merge-konflikt)
+	+ [Del 5: Merge & merge-konflikt](#del-5-merge-merge-konflikt)
 	+ [Slutgiltigt repo](#slutgiltigt-repo)
 + [Inlämning](#inlämning)
 
