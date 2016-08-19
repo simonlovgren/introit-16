@@ -105,7 +105,8 @@ Katalogstrukturen ska nu se ut så här:
 
 ### Del 3: Använda omdirigering
 
-1. Ladda ner filen `jobbig_textfil.txt` [från denna länk](../jobbig_textfil.txt). och lägg den i mappen
+1. Ladda ner filen `jobbig_textfil.txt` {{< extlink title="från denna länk"
+link="/resources/jobbig_textfil.txt" >}}. och lägg den i mappen
    `deluppgift_2`
     + Du kan använda kommandot `curl` för att göra detta
         direkt i terminalen: `curl -o  <filnamn att spara till> <url-länk>` laddar ner filen i den angivna länken och sparar som det angivna filnamnet.
