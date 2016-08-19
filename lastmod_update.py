@@ -10,6 +10,7 @@ import time
 recursive = False
 symlinks = False
 utcOffset = "+02:00"
+quietMode = False
 
 # Filter list of acceptable file extensions
 extensions = [".md"]
@@ -25,6 +26,7 @@ def printHelp(exitLevel):
     print "\t-r\tRecursive mode"
     print "\t-s \tFollow symbolic links"
     print "\t-u \tUTC Offset (defaults to +02:00)"
+    print "\t-q \tQuiet mode (No printout of affected files)"
     print ""
     sys.exit(exitLevel)
 
@@ -73,7 +75,10 @@ def updateFile(target):
     #    stored mtime, ctime and access time to preserve
     #    between script-runs
 
-    print os.path.relpath(target)
+    global quietMode
+
+    if not quietMode:
+        print os.path.relpath(target)
     
     tmpFile = open(target)
     configSection = False
@@ -130,15 +135,13 @@ def parseFile(target):
 ##
 def parseTarget(targets, subpath):
     #Globals
-    global symlinks, recursive
+    global symlinks, recursive, quietMode
 
     for target in targets:
         if not subpath:
             # Get absolute path to target
             target = os.path.abspath(target)
         else:
-            #print("subpath given:",subpath)
-            #raw_input("continue?")
             target = os.path.abspath(subpath + os.sep + target)
             
         # Get info on target
@@ -149,8 +152,6 @@ def parseTarget(targets, subpath):
         # if folder, check if symlink and if so allowed, check if recursive flag and not initial target
         if isfolder and not (islink and not symlinks) and (recursive or not subpath):
             if not target.startswith('.'):
-                #print("folder, going to: ", target)
-                #raw_input("continue?")
                 parseTarget(os.listdir(target), target)
             
         elif isfile:
@@ -158,7 +159,7 @@ def parseTarget(targets, subpath):
                 parseFile(target)
 
         else:
-            if not isfolder and not islink:
+            if not isfolder and not islink and not quietMode:
                 print(target + "\t\tdoes not exist")
 ##
 #  Main function. Parses options and arguments,
@@ -166,11 +167,11 @@ def parseTarget(targets, subpath):
 ##
 def main(argv):
     #Globals
-    global symlinks, recursive, utcOffset
+    global symlinks, recursive, utcOffset, quietMode
 
     # Extract options and arguments
     try:
-        opts, args = getopt.getopt(argv, "rshu:", ["help","follow-symlinks", "utc-offset="])
+        opts, args = getopt.getopt(argv, "rshu:q", ["help","follow-symlinks", "utc-offset="])
     except Exception:
         printHelp(2)
 
@@ -184,6 +185,9 @@ def main(argv):
             symlinks = True
         if opt == "-u" or opt == "--utc-offset":
             utcOffset = arg
+        if opt == "-q":
+            quietMode = True
+
         
     # Check so that we've got a file or folder to update
     if len(args) != 1:

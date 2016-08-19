@@ -1,6 +1,6 @@
-.PHONY: all, html, css, clean, section, server, draft_server
+.PHONY: all, html, css, clean, section, server, draft_server, lastmod
 
-all: css html
+all: css lastmod html
 
 html:
 	hugo
@@ -10,6 +10,9 @@ css:
 
 section:
 	@./createsection.sh
+
+lastmod:
+	@./lastmod_update.py -rq content
 
 server: css
 	hugo server
