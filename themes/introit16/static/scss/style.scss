@@ -74,17 +74,18 @@ h2 {
   margin-top: 1.5em;
   border-bottom: 1px solid #ddd;
 }
-/* Offset anchor links */
-h1:before,
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
+
+/* Offset anchor links on h-tags in content */
+#content h1:before,
+#content h2:before,
+#content h3:before,
+#content h4:before,
+#content h5:before,
+#content h6:before {
     display: block;
     content: " ";
-    margin-top: -65px;
-    height: 65px;
+    margin-top: -75px;
+    height: 75px;
     visibility: hidden;
 }
 
