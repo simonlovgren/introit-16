@@ -32,10 +32,10 @@ obligatoriska.**
 
 | Modul           | Handledningstillfälle |                              |                                         |
 | --------------- | --------------------- | ---------------------------- | --------------------------------------- |
-| Studenttjänster |                       | {{< extlink title="infosida" link="/studenttjanster" >}} | {{< extlink title="uppgifter" link="/studenttjanster/uppgifter" >}} |
-| Excel           |                       | {{< extlink title="infosida" link="/excel" >}}           | {{< extlink title="uppgifter" link="/excel/uppgifter" >}}           |
-| Latex           |                       | {{< extlink title="infosida" link="/latex" >}}           | {{< extlink title="uppgifter" link="/latex/uppgifter" >}}           |
-| Matlab          |                       | {{< extlink title="infosida" link="/matlab" >}}          | {{< extlink title="uppgifter" link="/matlab/uppgifter" >}}          |
+| Studenttjänster | 1                     | {{< extlink title="infosida" link="/studenttjanster" >}} | {{< extlink title="uppgifter" link="/studenttjanster/uppgifter" >}} |
+| Excel           | 2                     | {{< extlink title="infosida" link="/excel" >}}           | {{< extlink title="uppgifter" link="/excel/uppgifter" >}}           |
+| Latex           | 3                     | {{< extlink title="infosida" link="/latex" >}}           | {{< extlink title="uppgifter" link="/latex/uppgifter" >}}           |
+| Matlab          | 4                     | {{< extlink title="infosida" link="/matlab" >}}          | {{< extlink title="uppgifter" link="/matlab/uppgifter" >}}          |
 
 ## Handledare
 För kontakt med era handledare kan ni skicka mail till [ES-2016@introduktion-till-datorer.it.uu.se](mailto:ES-2016@introduktion-till-datorer.it.uu.se).

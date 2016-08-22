@@ -15,8 +15,17 @@ skall lämnas in. När du blivit godkänd på uppgifterna är du också klar med
 detta kursmoment.
 
 **`OBS!` Vilka moduler just du skall läsa och skicka in uppgifter för beror på
-vilket program du tillhör. Se programspecifik information på kursens sida i
-{{< extlink link="https://studentportalen.uu.se" title="Studentportalen">}}.**
+vilket program du tillhör. Se din programspecifika sida för mer information:**
+
+- [E/EI](/programsida/e-ei)
+- [ES](/programsida/es)
+- [F](/programsida/f)
+- [IT/KandDV](/programsida/it-kanddv)
+- [KandMa](/programsida/kandma)
+- [MI](/programsida/mi)
+- [Q](/programsida/q)
+- [STS](/programsida/sts)
+- [W](/programsida/w)
 
 ## Handlending
 Handledning ges av handledare vid schemalagda tillfällen i datorsal. Handledarna
