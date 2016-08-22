@@ -300,6 +300,16 @@ figcaption h4 {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
+
+  -webkit-transition: background-color 150ms linear;
+  -moz-transition: background-color 150ms linear;
+  -o-transition: background-color 150ms linear;
+  -ms-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+
+}
+.top-flag a:hover .top-container {
+    background: rgba(0,0,0,0.9);
 }
 .top-flag h1 {
   font-size: 5em;

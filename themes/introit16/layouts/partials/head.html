@@ -37,10 +37,12 @@
         
         {{if .IsHome}}
         <div class="top-flag">
+          <a href="{{ .Site.BaseURL }}/om">
             <div class="top-container">
               <h1>{{ .Site.Title }}</h1>
               <h2>{{ .Site.Params.quote}}</h2>
             </div>
+          </a>
         </div>
         {{end}}
 
@@ -50,6 +52,10 @@
               <ul class="nav-menu">
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                {{ if .IsHome }}
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Programsidor</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om Kursen</a></li>
+                {{ end }}
                 <!-- Interlinking module pages -->
                 {{ if .IsPage }}
                   {{ $module := (index .Site.Data.modules .Params.module) }}
@@ -64,6 +70,5 @@
               </ul>
             </nav>
         </header>
-
         <div class="middle">
           <div class="center">
