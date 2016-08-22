@@ -4,14 +4,13 @@ menu = "git"
 module = "git"
 title = "GIT/Uppgifter"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-19T12:31:15+02:00"
 +++
 
 ## Innehåll
 
-
 + [Mål](#mål)
-+ [Material som krävs](#material-som-krävs)
++ [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
 	+ [Del 1: Skapa ett git-repository](#del-1-skapa-ett-git-repository)
 		+ [Lokal (per repo) konfiguration](#lokal-per-repo-konfiguration)
@@ -19,19 +18,19 @@ lastmod = "2016-08-17T12:01:51+02:00"
 	+ [Del 2: Lägg till nya filer](#del-2-lägg-till-nya-filer)
 	+ [Del 3: Skapa en ny branch](#del-3-skapa-en-ny-branch)
 	+ [Del 4: Byta gren och modifiera filer](#del-4-byta-gren-och-modifiera-filer)
-	+ [Del 5: Merge & merge-konflikt](#del-5-merge-&-merge-konflikt)
+	+ [Del 5: Merge & merge-konflikt](#del-5-merge-merge-konflikt)
 	+ [Slutgiltigt repo](#slutgiltigt-repo)
 + [Inlämning](#inlämning)
 
 ## Mål
-I denna uppgift finns följande huvudsakliga mål:
+Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du:
 
-- Skapa ett nytt git-repository
-- Lägga till och committa filer
-- Skapa nya grenar
-- Hantera merge-konflikter
+- skapar ett nytt git-repository
+- lägger till och committa filer
+- skapar nya grenar
+- hanterar merge-konflikter
 
-## Material som krävs
+## Detta behöver du 
 Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
 men går även genomföra på egen dator om git finns tillgängligt.
 
@@ -43,7 +42,7 @@ Du kommer behöva:
 - git
 
 ## Uppgift
-Materialet som tas upp i uppgiften diskuteras i [infosidan för git](../).
+Materialet som tas upp i uppgiften diskuteras på [infosidan för git](../).
 
 <br/>
 ### Del 1: Skapa ett git-repository
@@ -57,7 +56,7 @@ Väl inne i mappen, initiera ett nytt git-repo:
 git init
 ```
 
-När du skapat repot skall du ställa in namn och epost. Det
+När du skapat repot skall du ställa in namn och e-post. Det
 är denna information git (och system som github) använder för att
 identifiera vem som utfört specifika ändringar. **Det är viktigt
 att du ställer in detta korrekt så vi kan se att det är du som
@@ -77,7 +76,7 @@ $ git config user.email "abcd1234@student.uu.se"
 ```
 Även här ersätter du `abcd1234` med användarnamnet för ditt studentkonto.
 
-*På detta sätt har du ställt in det användardamnet- och epostadressen för
+*På detta sätt har du ställt in det användardamnet- och e-postadressen för
 endast detta repo.*
 
 #### Global konfiguration
@@ -196,11 +195,11 @@ Date:   Mon Aug 15 20:39:56 2016 +0200
 Komprimera mappen `abcd1234_git` till en tar.gz-fil och döp denna till `abcd1234_git.tar.gz`, där du
 ersätter `abcd1234` med användarnamnet för ditt studentkonto.
 
-   + *För att komprimera till gzip och skriva ut alla inkluderade filer och mappar använder du flaggorna `-cvzf`.*
-   + *Mer information om hur du komprimerar mappar hittar du här: [Terminalen/Komprimerade mappar](/terminalen/#komprimerade-mappar).*
+   + *För att komprimera till gzip och skriva ut alla inkluderade filer och mappar använder du kommandot `tar` tillsammans med flaggorna `-cvzf`.*
+   + *Mer information om hur du komprimerar mappar med kommandot `tar` hittar du här: [Terminalen/Komprimerade mappar](/terminalen/#komprimerade-mappar).*
 
 
 **`OBS!` Det räcker inte att komprimera filerna som finns i mappen, utan hela mappen måste komprimeras.
 Annars tappas git-historiken och git-informationen som används för att kontrollera inlämningsuppgiften.**
 
-Ladda upp filen i studentportalen.
+Ladda upp filen i Studentportalen.
