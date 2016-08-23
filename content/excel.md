@@ -4,7 +4,7 @@ menu = "excel"
 module = "excel"
 title = "Excel"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-23T10:48:17+02:00"
 +++
 
 *Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
@@ -55,18 +55,28 @@ Du kan använda någon av [Windows-datasalarna](http://www.polacksbacken.uu.se/U
 ## Celler
 
 Kalkylprogram använder sig av rutnät, där vardera ruta kallas för *cell*, för
-att lägga in siffror och göra beräkningar med dem.
+att lägga in tal och göra beräkningar med dem. Rutnätet delas upp i __kolonner__
+(*column*, anges med bokstäver) och __rader__ (*row*, anges med siffror).
 
-Rutnätet delas upp i kolonner (*column*, angett av bokstäver) och rader (*row*,
-angett av siffror).
-Varje cell i en kolonn är på olika rader, medan varje cell i en rad är på olika
-kolonner. Därför brukar man ofta beskriva en cells position med hjälp av dess
-rad och kolonn. 
+Varje cell i en rad är på olika kolonner. 
 
-Exempelvis befinner sig cellen `E17` i kolonn `E`, rad `17`.
+{{< figure src="/images/excel/excel-row-3.png" title="Rad 3 i rutnätet" >}}
 
-Man kan även beskriva omfång med hjälp av tecknet `:` (kolon).
-Exempelvis innebär `A1:B11` att omfånget är A1 till och med B11. 
+Varje cell i en kolonn är på olika rader. 
+
+{{< figure src="/images/excel/excel-column-c.png" title="Kolonn C i rutnätet" >}}
+
+För att referera till en specifik cell anges rad och kolonn separerade av
+tecknet `:` (kolon).
+
+{{< figure src="/images/excel/excel-cell-position-example.png" 
+    title="I rutnätet befinner sig cell C3 i kolonn C, rad 3" >}}
+ 
+För att beteckna ett antal närliggande celler används __omfång__. Ett omfång utgör
+en rektangel av celler i rutnätet. Ett omfång definieras genom att ange cellerna i två
+motstående hörn i rektangeln separerade av tecknet `:` (kolon).
+
+{{< figure src="/images/excel/excel-range-example.png" title="Omfånget A1:C3" >}}
 
 ## Komma igång
 
