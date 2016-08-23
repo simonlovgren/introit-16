@@ -28,13 +28,16 @@ Följande personer har lagts till i Fronter med rättigheter att hantera rättni
 | Oskar   | Ahlberg             | osah3299@student.uu.se               |
 | Simon   | Lövgren             | Simon.Lovgren.4625@student.uu.se     |
 
-## Logga in i Fronter 
+## Logga in i Fronter första gången
 
 Logga in på {{< extlink link="https://fronter.com/slu/" title="Fronter" >}} med
-det användarnamn som finns angivet i tabellen ovan och lösenordet `123`, vilket måste bytas vid första inloggningen.
+det användarnamn som finns angivet i tabellen ovan och lösenordet `123`, vilket
+måste bytas vid första inloggningen.
+
 
 ## Rätta och ge återkoppling på inlämnade uppgifter
 
+0. Logga in i Fronter. TODO - direktlänk till kursens sida i Fronter. 
 1. Gå in in i inlämningsmappen. Här kan ni se alla studenter och deras inlämningar.
 2. Bredvid varje students inlämning finns en liten pil. Klicka på den så dyker en meny upp. Klicka på Öppna för att öppna filen. 
 3. Klicka på Kommentar för att underkänna/godkänna/ge studenten feedback. Feedback kan bara ses av den berörda studenten. Obs! Viktigt att fylla i status som Klar när studenten är godkänd!!
