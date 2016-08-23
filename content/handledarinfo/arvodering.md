@@ -25,7 +25,7 @@ På grund av regler och rutiner för hur arvoden betalas ut kan Universitetet in
 Timlönen för handledare är reglerad till *145 kr per timme* (exklusive semesterersättning). För varje pass måste du fylla i ett datum och en start- och sluttid som resulterar i en tid om *3 timmar och 5 minuter* vilket motsvarar *3.08 timmar (decimaltid)*. Till detta tillkommer semesterersättning med 12 %. På detta sätt kommer du för varje rapporterat pass arvoderas med 3.08*145*1.12 = 500.19 kr.
 
 ### Sjukdom eller annan frånvaro
-Om du inte kan närvara på ett inplanerat pass på grund av sjukdom eller annan anledning skall detta skyndsamt rapporteras till [projektledare@introduktion-till-datorer.it.uu.se](mailto:projektledare@introduktion-till-datorer.it.uu.se) så att en ersättare kan kallas in.
+Om du inte kan närvara på ett inplanerat pass på grund av sjukdom eller annan anledning skall detta skyndsamt rapporteras till [projektledare-introduktion-till-datorer@it.uu.se](mailto:projektledare-introduktion-till-datorer@it.uu.se) så att en ersättare kan kallas in.
 
 Om du missar ett pass på grund av sjukdom eller annan anledning skall du inte rapportera tid för detta pass och du kommer inte heller att få arvode utbetalt för missade pass.
 
@@ -35,7 +35,7 @@ Om du i samråd med projektledaren hoppar in och arbetar fler pass, till exempel
 ### Blankett för rapportering av arbetad tid
 **För att du skall få ut ditt arvode måste:**
 
-+ denna blankett fyllas i månadsvis, senast i samband med månadsskiftet.  
++ [denna blankett](https://drive.google.com/file/d/0B4pHXkpbjKnaOVh2dDNwZ0h1UTg/view) fyllas i månadsvis, senast i samband med månadsskiftet.  
 + blanketten fyllas i med **MS Excel**.
 
 **Arbetad tid skall endast registreras inom normal kontorstid:**
@@ -58,7 +58,7 @@ Om du i samråd med projektledaren hoppar in och arbetar fler pass, till exempel
 | Önskad statteprocent (*minst 30 %*) | *Om du vill betala mer skatt än de reglerade 30 % måste det anges. Om du vet att du riskerar kvarskatt kan det vara en bra idé att begära att lite mer än 30% skatt dras.* |
 
 ### Skicka in blanketten
-I slutet av varje månad måste du skicka in ifylld blankett till [projektledare@introduktion-till-datorer.it.uu.se](mailto:projektledare@introduktion-till-datorer.it.uu.se).
+I slutet av varje månad måste du skicka in ifylld blankett till [projektledare-introduktion-till-datorer@it.uu.se](mailto:projektledare-introduktion-till-datorer@it.uu.se).
 
 ### Projektledaren
 Projektledaren för Introduktion till datorer 2016 granskar i slutet av varje månad inskickade blanketter och skickar dessa som ett Zip-arkiv till samordnaren för Introduktion till datorer 2016 (Karl Marklund).
