@@ -107,9 +107,7 @@ a {
   text-decoration: none;
   color: $default_dark;
 }
-a:hover {
- text-decoration: underline;
-}
+
 a.btn {
 	padding: 10px 14px;
 	font-size: 90%;
@@ -449,6 +447,9 @@ header nav ul li.active a {
   background-color: #ffffff;
   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
   word-wrap: break-word;
+}
+#content a:hover {
+ text-decoration: underline;
 }
 #content a.btn:hover {
  text-decoration: none;
