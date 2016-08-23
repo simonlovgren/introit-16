@@ -39,4 +39,4 @@ obligatoriska.**
 | Matlab          | 3                      | {{< extlink title="infosida" link="/matlab" >}}          | {{< extlink title="uppgifter" link="/matlab/uppgifter" >}}          |
 
 ## Handledare
-För kontakt med era handledare kan ni skicka mail till [E/EI-2016@introduktion-till-datorer.it.uu.se](mailto:E/EI-2016@introduktion-till-datorer.it.uu.se).
+För kontakt med era handledare kan ni skicka mail till [E-EI-2016-introduktion-till-datorer@it.uu.se](mailto:E-EI-2016-introduktion-till-datorer@it.uu.se).

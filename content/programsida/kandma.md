@@ -36,4 +36,4 @@ obligatoriska.**
 | Matlab          | 3                     | {{< extlink title="infosida" link="/matlab" >}}          | {{< extlink title="uppgifter" link="/matlab/uppgifter" >}}          |
 
 ## Handledare
-För kontakt med era handledare kan ni skicka mail till [KandMa-2016@introduktion-till-datorer.it.uu.se](mailto:KandMa-2016@introduktion-till-datorer.it.uu.se).
+För kontakt med era handledare kan ni skicka mail till [KandMa-2016-introduktion-till-datorer@it.uu.se](mailto:KandMa-2016-introduktion-till-datorer@it.uu.se).

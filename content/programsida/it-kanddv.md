@@ -45,4 +45,4 @@ obligatoriska.**
 | Git             | 5                     | {{< extlink title="infosida" link="/git" >}}             | {{< extlink title="uppgifter" link="/git/uppgifter" >}}             |
 
 ## Handledare
-För kontakt med era handledare kan ni skicka mail till [IT/KandDv-2016@introduktion-till-datorer.it.uu.se](mailto:IT/KandDv-2016@introduktion-till-datorer.it.uu.se).
+För kontakt med era handledare kan ni skicka mail till [IT-KandDv-2016-introduktion-till-datorer@it.uu.se](mailto:IT-KandDv-2016-introduktion-till-datorer@it.uu.se).
