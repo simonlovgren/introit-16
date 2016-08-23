@@ -31,14 +31,19 @@ Följande personer har lagts till i Fronter med rättigheter att hantera rättni
 ## Logga in i Fronter första gången
 
 Logga in på {{< extlink link="https://fronter.com/slu/" title="Fronter" >}} med
-det användarnamn som finns angivet i tabellen ovan och lösenordet `123`, vilket
-måste bytas vid första inloggningen.
+det användarnamn som är angivet i tabellen ovan och det lösenord du fått från
+projektledare Simon Lövgren.
 
+TODO: Instruktioner om hur det går till att byta lösenord. 
 
 ## Rätta och ge återkoppling på inlämnade uppgifter
 
-0. Logga in i Fronter. TODO - direktlänk till kursens sida i Fronter. 
+0. Logga in i Fronter. TODO - direktlänk till kursens sida i Fronter.
 1. Gå in in i inlämningsmappen. Här kan ni se alla studenter och deras inlämningar.
-2. Bredvid varje students inlämning finns en liten pil. Klicka på den så dyker en meny upp. Klicka på Öppna för att öppna filen. 
-3. Klicka på Kommentar för att underkänna/godkänna/ge studenten feedback. Feedback kan bara ses av den berörda studenten. Obs! Viktigt att fylla i status som Klar när studenten är godkänd!!
+2. Bredvid varje students inlämning finns en liten pil. Klicka på den så dyker
+   en meny upp. Klicka på Öppna för att öppna filen.
+3. Klicka på Kommentar för att underkänna/godkänna/ge studenten återkoppling.
+   Återkoppling kan bara ses av den berörda studenten. Obs! Viktigt att fylla i
+   status som Klar när studenten är godkänd!
 
+    
