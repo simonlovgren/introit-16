@@ -35,7 +35,7 @@ Om du i samråd med projektledaren hoppar in och arbetar fler pass, till exempel
 ### Blankett för rapportering av arbetad tid
 **För att du skall få ut ditt arvode måste:**
 
-+ denna blankett fyllas i månadsvis, senast i samband med månadsskiftet.  
++ [denna blankett](https://drive.google.com/file/d/0B4pHXkpbjKnaOVh2dDNwZ0h1UTg/view) fyllas i månadsvis, senast i samband med månadsskiftet.  
 + blanketten fyllas i med **MS Excel**.
 
 **Arbetad tid skall endast registreras inom normal kontorstid:**
