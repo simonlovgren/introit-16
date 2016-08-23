@@ -107,12 +107,18 @@ a {
   text-decoration: none;
   color: $default_dark;
 }
+a:hover {
+ text-decoration: underline;
+}
 a.btn {
 	padding: 10px 14px;
 	font-size: 90%;
 	color: #fff;
 	background-color: $default_dark;
 	@include border-radius(3px);
+}
+a.btn:hover {
+ text-decoration: none;
 }
 /* -- Tables */
 table {
