@@ -7,7 +7,8 @@ title = "Excel"
 lastmod = "2016-08-23T10:48:17+02:00"
 +++
 
-*Kalkylark* används för att sammanställa och manipulera siffror i form av beräkningar och statistik.
+*Kalkylark* används för att sammanställa och manipulera {{< extlink
+link="https://sv.wikipedia.org/wiki/Tal" title="tal" >}} i form av beräkningar och statistik.
 De mest kända programmen för detta är:
 
 + [LibreOffice](https://www.libreoffice.org/)
@@ -56,7 +57,8 @@ Du kan använda någon av [Windows-datasalarna](http://www.polacksbacken.uu.se/U
 
 Kalkylprogram använder sig av rutnät, där vardera ruta kallas för *cell*, för
 att lägga in tal och göra beräkningar med dem. Rutnätet delas upp i __kolonner__
-(*column*, anges med bokstäver) och __rader__ (*row*, anges med siffror).
+(*column*, anges med bokstäver) och __rader__ (*row*, anges med {{< extlink
+link="https://sv.wikipedia.org/wiki/Siffra" title="siffror" >}}).
 
 Varje cell i en rad är på olika kolonner. 
 
