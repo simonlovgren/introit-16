@@ -61,6 +61,7 @@
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
                 <!-- Interlinking module pages -->
                 {{ if .IsPage }}
+                <li class="menu-item"><a href="#top" title="Till toppen av sidan">Till toppen</a></li>
                   {{ $module := (index .Site.Data.modules .Params.module) }}
                   {{ if not .Section }}
                     {{ if not $module.noTasks }}
