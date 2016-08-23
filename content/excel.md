@@ -41,6 +41,7 @@ Du kan använda någon av [Windows-datasalarna](http://www.polacksbacken.uu.se/U
 
 ### Innehåll
 
+- [Celler](#celler)
 - [Komma igång](#komma-igång)
 - [Inmatning](#inmatning)
 - [Formler](#Formler)
@@ -68,8 +69,8 @@ Varje cell i en kolonn är på olika rader.
 
 {{< figure src="/images/excel/excel-column-c.png" title="Kolonn C i rutnätet" >}}
 
-För att referera till en specifik cell anges rad och kolonn separerade av
-tecknet `:` (kolon).
+För att referera till en specifik cell anges först rad direkt följd av
+kolonn. På detta sätt refererar `C3` till cellen på rad `C` och kolonn `3` i rutnätet. 
 
 {{< figure src="/images/excel/excel-cell-position-example.png" 
     title="I rutnätet befinner sig cell C3 i kolonn C, rad 3" >}}
