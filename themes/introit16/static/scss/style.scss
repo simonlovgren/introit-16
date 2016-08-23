@@ -123,6 +123,7 @@ a {
   text-decoration: none;
   color: $default_dark;
 }
+
 a.btn {
 	padding: 10px 14px;
 	font-size: 90%;
@@ -130,6 +131,7 @@ a.btn {
 	background-color: $default_dark;
 	@include border-radius(3px);
 }
+
 /* -- Tables */
 table {
 	margin: 2em 0;
@@ -443,6 +445,9 @@ header nav ul li.active a {
     font-size: 1.1em;
     font-weight: 100;
 }
+.card a.btn:hover {
+  text-decoration: none;
+}
 
 /* Content */
 .middle{
@@ -458,6 +463,12 @@ header nav ul li.active a {
   background-color: #ffffff;
   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
   word-wrap: break-word;
+}
+#content a:hover {
+ text-decoration: underline;
+}
+#content a.btn:hover {
+ text-decoration: none;
 }
 @media all and (min-width: 1024px) {
     #content {
