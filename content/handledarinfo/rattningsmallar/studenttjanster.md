@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:06:43+02:00"
-menu = "studenttjänster"
+menu = "handledarinfo"
 module = "studenttjanster"
 title = "Rättning Studenttjänster"
 

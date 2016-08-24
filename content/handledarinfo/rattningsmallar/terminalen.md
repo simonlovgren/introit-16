@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:06:57+02:00"
-menu = "terminal"
+menu = "handledarinfo"
 module = "terminal"
 title = "Rättning Terminalen"
 

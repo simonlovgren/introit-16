@@ -59,7 +59,9 @@
           <nav id="main-menu">
               <ul class="nav-menu">
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+                {{ if or .IsHome (eq .Params.menu "handledarinfo") }}
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                {{ end }}
                 {{ if .IsHome }}
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Programsidor</a></li>
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om Kursen</a></li>
@@ -72,7 +74,7 @@
                     {{ if not $module.noTasks }}
                       <li class="menu-item"><a href="{{ .Site.BaseURL }}{{ $module.module }}/uppgifter">Uppgifter</a></li>
                     {{ end }}
-                  {{ else }}
+                  {{ else if not $module.noTasks }}
                     <li class="menu-item"><a href="{{.Site.BaseURL}}{{ $module.module}}">Infosida</a></li>
                   {{ end }}
                 {{ end }}
