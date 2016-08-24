@@ -12,8 +12,8 @@ lastmod = "2016-08-24T12:49:15+02:00"
 + [Mål](#mål)
 + [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
-    + [Del 1: Klona ett befintligt git-reposityr](#del-1-klona-ett-befintligt-git-repository)
-	+ [Del 2: Skapa ett nytt git-repository](#del-2-skapa-ett-nytt-git-repository)
+    + [Del 1: Klona ett befintligt git-reposityr](#del-1-klona-ett-befintligt-git-repo)
+	+ [Del 2: Skapa ett nytt git-repo](#del-2-skapa-ett-nytt-git-repo)
 		+ [Lokal (per repo) konfiguration](#lokal-per-repo-konfiguration)
 		+ [Global konfiguration](#global-konfiguration)
 	+ [Del 3: Lägg till nya filer](#del-3-lägg-till-nya-filer)
@@ -30,11 +30,11 @@ Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du 
 - skapa ett nytt git-repository
 - lägga till och committa filer
 - skapa nya grenar
-- hantera merge-konflikter
+- hantera merge-konflikter.
 
 ## Detta behöver du 
 Uppgiften är testad och går utföra på Uppsala universitets linuxsystem,
-men går även genomföra på egen dator om git finns tillgängligt.
+men går även genomföra på egen dator om Git finns tillgängligt.
 
 **`OBS!` Det är starkt rekommenderat att du går genom
 [terminal-modulen](/terminalen) innan du påbörjar Git.**
@@ -47,34 +47,37 @@ Du kommer behöva:
 
 ## Uppgift
 
-Materialet som tas upp i uppgiften diskuteras på [infosidan för git](../).
+Materialet som tas upp i uppgiften diskuteras på [infosidan för Git](../).
 
-### Del 1: Klona ett befintligt git-repository
+Ett git-repository är en katalog som hanteras av Git. För enkelhets skull kommer
+*git-repo* fortsättningsvis att användas synonymt med *git-repository*. 
+
+### Del 1: Klona ett befintligt git-repo
 
 På många kurser kommer du utgå från befintliga filer för att lösa olika typer av
 uppgifter. Ett vanligt sätt att hantera detta, speciellt på
 programmeringskurser, är att dessa filer finns tillgängliga i publikt
-git-repository och att du hämtar hem dem genom att klona detta repository. 
+git-repo och att du hämtar hem dem genom att klona detta repo. 
 
-De filer du skall hämta hem denna gång finns på följande publika repository på
+De filer du skall hämta hem denna gång finns på följande publika repo på
 GitHub:
 
 - {{< extlink link="https://github.com/uu-it-teaching/introduktion-till-datorer-2016-git-uppgift" 
      title="https://github.com/uu-it-teaching/introduktion-till-datorer-2016-git-uppgift" >}}
 
 Om du klickar på länken ovan bör en ny flik eller ett nytt fönster öppnas och du
-kan där bland annat se vilka filer som ingår i detta repository. Sidan som
-öppnas bör se ut ungefär som på bilden nedan.  
+kan där bland annat se vilka filer som ingår i detta repo. Sidan som
+öppnas bör se ut ungefär som på bilden nedan. 
 
-{{< figure src="/images/git/git-GitHub-repository.png" 
-title="Publikt repository på GitHub med filer du behöver för att lösa denna uppgift" >}}
+{{< figure src="/images/git/git-GitHub-repo.png" 
+title="Publikt repo på GitHub med filer du behöver för att lösa denna uppgift" >}}
 
 Du kan direkt i din webläsare kika på innehållet i filerna. Prova till exempel
 att klicka på filen `dikt.txt` och se vad den innehåller.
 
-Istället för att ladda ner filerna en och en skall du klona hela repositoryt.
+Istället för att ladda ner filerna en och en skall du klona hela repot.
 Öppna terminalen och navigera till din hem-mapp. Väl inne i mappen, klona
-repositoryt genom att köra kommandot `git clone
+repot genom att köra kommandot `git clone
 https://github.com/uu-it-teaching/introduktion-till-datorer-2016-git-uppgift.git`.
 
 I terminalen bör du nu se något liknande detta: 
@@ -114,10 +117,10 @@ kurser.txt
 strunt.txt
 ```
 
-Du har nu lyckats klona repositoryt och vi kommer återkomma till filerna i detta
-repository längre fram. 
+Du har nu lyckats klona repot och vi kommer återkomma till filerna i detta
+repo längre fram. 
 
-### Del 2: Skapa ett nytt git-repository
+### Del 2: Skapa ett nytt git-repo
 
 Öppna terminalen och navigera till din hem-mapp. Skapa en ny mapp
 som du döper till `abcd1234_git`, där du ersätter `abcd1234` med
@@ -170,18 +173,18 @@ i de flesta fall.
 
 ### Del 3: Lägg till nya filer
 
-Du skall nu lägga till filer i ditt nya repository.
+Du skall nu lägga till filer i ditt nya repo.
 
 I ditt nya repositoy, skapa en ny textfil med namn `introduktionskurs.txt`. I denna fil
 skall du kopiera in blocket med information om din utbildnings introduktionskurs
 som du hittar i filen `introduktionskurser.txt` som redan skall finnas
-repositoryt `introduktion-till-datorer-2016-git-uppgift` som du redan skapat
-(klonat) i [del 1](#del-1-klona-ett-befintligt-git-repository).
+repot `introduktion-till-datorer-2016-git-uppgift` som du redan skapat
+(klonat) i [del 1](#del-1-klona-ett-befintligt-git-repo).
 
 
 Du skall även lägga till en kopia av filen `kurser.txt` som du redan laddat ner
-när du klonade ett befintligt repositoryt i
-[del 1](#del-1-klona-ett-befintligt-git-repository). Detta kan du göra direkt
+när du klonade ett befintligt repot i
+[del 1](#del-1-klona-ett-befintligt-git-repo). Detta kan du göra direkt
 från terminalen genom att:
 
 - Navigera till din hem-mapp. 
@@ -191,9 +194,9 @@ från terminalen genom att:
 
 
 Kontrollera att du har filerna `introduktionskurs.txt` och `kurser.txt` i ditt nya
-repository. 
+repo. 
 
-För att se status för repositoryt, kör kommandot `git status` i terminalen. Git
+För att se status för repot, kör kommandot `git status` i terminalen. Git
 berättar nu följnade: 
 
 ```shell
