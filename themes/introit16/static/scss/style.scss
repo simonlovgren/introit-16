@@ -35,7 +35,17 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
             ("matlab", #5b8cbd, #3070b0),
             ("git", #24b0b2, #2b9192),
             ("exempel", #ec5f5f, #d04040),
-            ("handledarinfo",#faa540, #f9833d),;
+            ("handledarinfo", #faa540, #f9833d),
+            // programsidor
+            ("programsida-e-ei", #ec5f5f, #d04040),
+            ("programsida-es", #0fc9b5, #0ab4a2),
+            ("programsida-f", #fab440, #f6a132),
+            ("programsida-it-kanddv", #DE2E47, #DA1834),
+            ("programsida-kandma", #ec5f5f, #d04040),
+            ("programsida-mi", #ec5f5f, #d04040),
+            ("programsida-q", #a43fbd, #7b0d96),
+            ("programsida-sts", #9e5dc9, #6d3493),
+            ("programsida-w", #4a85ba, #23629b);
 
 // MIXINS
 @mixin border-radius($radius) {
@@ -308,6 +318,16 @@ figcaption h4 {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
+
+  -webkit-transition: background-color 150ms linear;
+  -moz-transition: background-color 150ms linear;
+  -o-transition: background-color 150ms linear;
+  -ms-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+
+}
+.top-flag a:hover .top-container {
+    background: rgba(0,0,0,0.9);
 }
 .top-flag h1 {
   font-size: 5em;
