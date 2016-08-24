@@ -276,7 +276,7 @@ figcaption h4 {
     .uu-logo {
         position: absolute;
         top: 0;
-        left: 50px;
+        right: 50px;
         background-position: 50%;
         background-size: 80%;
         width: 80px;
@@ -346,6 +346,52 @@ header {
     top: 0px;
     z-index: 30;
 }
+
+#section-indicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 24px;
+    line-height: 66px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 100;
+}
+#section-indicator a:link,
+#section-indicator a:visited,
+#section-indicator a:hover,
+#section-indicator a:active
+{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+}
+#section-indicator .icon {
+    @include border-radius(50px);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+#section-indicator .text {
+    float: left;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+@media all and (max-width: 1100px) {
+    #section-indicator .text {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+
 header nav {
     background-color: $default_main;
 }
@@ -470,11 +516,7 @@ header nav ul li.active a {
 #content a.btn:hover {
  text-decoration: none;
 }
-@media all and (min-width: 1024px) {
-    #content {
-        margin: 4em 0 0 0;
-    }
-}
+
 /* -- Heading */
 .heading {
   border-bottom: 4px solid $default_main;
@@ -527,6 +569,11 @@ footer small {
   /* ------------------------------------- */
   /** #{to_upper_case($selector)} **/
   
+  /* Menubar */
+  .#{$selector} #section-indicator .icon {
+    background-image: url("../images/icons/#{$selector}.png");
+  }
+
   /* -- Section card */
   .card.#{$selector} .logo {
       background-image: url("../images/icons/#{$selector}.png");

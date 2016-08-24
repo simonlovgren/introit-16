@@ -23,7 +23,7 @@
     <!-- Class of body will determine color-scheme and icon -->
     <!-- studentservice | linux | linux-plus | latex | matlab | excel | ssh | git -->
     <body {{if .Params.module}}class="{{.Params.module}}"{{end}}>
-
+      <a id="top"></a>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -45,6 +45,15 @@
         {{end}}
 
         <header id="header">
+          {{ if .IsPage }}
+          <div id="section-indicator">
+            <a href="#top" title="Till toppen av sidan">
+              <div class="icon"></div>
+              <p class="text">{{ .Title }}</p>
+              <div class="clr"></div>
+            </a>
+          </div>
+          {{ end }}
           <!-- main menu -->
           <nav id="main-menu">
               <ul class="nav-menu">
@@ -52,6 +61,7 @@
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
                 <!-- Interlinking module pages -->
                 {{ if .IsPage }}
+                <li class="menu-item"><a href="#top" title="Till toppen av sidan">Till toppen</a></li>
                   {{ $module := (index .Site.Data.modules .Params.module) }}
                   {{ if not .Section }}
                     {{ if not $module.noTasks }}
