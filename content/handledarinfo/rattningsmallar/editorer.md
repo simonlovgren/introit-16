@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:07:17+02:00"
-menu = "editorer"
+menu = "handledarinfo"
 module = "editorer"
 title = "Rättning Editorer"
 

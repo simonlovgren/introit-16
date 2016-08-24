@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:07:04+02:00"
-menu = "latex"
+menu = "handledarinfo"
 module = "latex"
 title = "Rättning Latex"
 

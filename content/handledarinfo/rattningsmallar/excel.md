@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:06:20+02:00"
-menu = "excel"
+menu = "handledarinfo"
 module = "excel"
 title = "Rättning Excel"
 

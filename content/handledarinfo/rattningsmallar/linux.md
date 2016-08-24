@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T13:06:50+02:00"
-menu = "linux"
+menu = "handledarinfo"
 module = "linux"
 title = "Rättning Linux"
 

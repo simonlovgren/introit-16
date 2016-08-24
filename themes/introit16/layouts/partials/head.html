@@ -22,8 +22,7 @@
     </head>
     <!-- Class of body will determine color-scheme and icon -->
     <!-- studentservice | linux | linux-plus | latex | matlab | excel | ssh | git -->
-    <body {{if .Params.module}}class="{{.Params.module}}"{{end}}>
-
+    <body id="top" {{if .Params.module}}class="{{.Params.module}}"{{end}}>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -37,33 +36,50 @@
         
         {{if .IsHome}}
         <div class="top-flag">
+          <a href="{{ .Site.BaseURL }}/om">
             <div class="top-container">
               <h1>{{ .Site.Title }}</h1>
               <h2>{{ .Site.Params.quote}}</h2>
             </div>
+          </a>
         </div>
         {{end}}
 
         <header id="header">
+          {{ if .IsPage }}
+          <div id="section-indicator">
+            <a href="#top" title="Till toppen av sidan">
+              <div class="icon"></div>
+              <p class="text">{{ .Title }}</p>
+              <div class="clr"></div>
+            </a>
+          </div>
+          {{ end }}
           <!-- main menu -->
           <nav id="main-menu">
               <ul class="nav-menu">
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
+                {{ if or .IsHome (eq .Params.menu "handledarinfo") }}
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                {{ end }}
+                {{ if .IsHome }}
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Programsidor</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om Kursen</a></li>
+                {{ end }}
                 <!-- Interlinking module pages -->
                 {{ if .IsPage }}
+                <li class="menu-item"><a href="#top" title="Till toppen av sidan">Till toppen</a></li>
                   {{ $module := (index .Site.Data.modules .Params.module) }}
                   {{ if not .Section }}
                     {{ if not $module.noTasks }}
                       <li class="menu-item"><a href="{{ .Site.BaseURL }}{{ $module.module }}/uppgifter">Uppgifter</a></li>
                     {{ end }}
-                  {{ else }}
+                  {{ else if not $module.noTasks }}
                     <li class="menu-item"><a href="{{.Site.BaseURL}}{{ $module.module}}">Infosida</a></li>
                   {{ end }}
                 {{ end }}
               </ul>
             </nav>
         </header>
-
         <div class="middle">
           <div class="center">
