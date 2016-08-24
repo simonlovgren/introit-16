@@ -1,4 +1,8 @@
-.PHONY: all, html, css, clean, section, server, draft_server, lastmod
+UPLOAD_HOST=arrhenius.it.uu.se
+UPLOAD_FOLDER=/it/www/htdocs/it/education/course/homepage/introdat/ht16/
+SSH_KEY=~/.ssh/id_uu
+
+.PHONY: all, html, css, clean, section, server, draft_server, lastmod, upload
 
 all: css lastmod html
 
@@ -19,6 +23,9 @@ server: css
 
 draft_server: css
 	hugo server --buildDrafts
+
+upload:
+	@./upload.sh $(UPLOAD_HOST) $(UPLOAD_FOLDER) $(SSH_KEY)
 
 clean:
 	@rm -r public
