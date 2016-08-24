@@ -12,7 +12,7 @@ lastmod = "2016-08-24T12:49:15+02:00"
 + [Mål](#mål)
 + [Detta behöver du](#detta-behöver-du)
 + [Uppgift](#uppgift)
-    + [Del 1: Klona ett befintligt git-reposityr](#del-1-klona-ett-befintligt-git-repo)
+    + [Del 1: Klona ett befintligt git-repository](#del-1-klona-ett-befintligt-git-repo)
 	+ [Del 2: Skapa ett nytt git-repo](#del-2-skapa-ett-nytt-git-repo)
 		+ [Lokal (per repo) konfiguration](#lokal-per-repo-konfiguration)
 		+ [Global konfiguration](#global-konfiguration)
