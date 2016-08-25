@@ -1,7 +1,7 @@
 +++
 date = "2016-08-19T11:30:31+02:00"
 menu = "main"
-module = ""
+module = "default"
 title = "Introduktion till datorer 2016"
 
 +++
