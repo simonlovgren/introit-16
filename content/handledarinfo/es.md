@@ -4,7 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Särskillda rutiner för ES"
 
-lastmod = "2016-08-23T14:19:17+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 

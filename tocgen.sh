@@ -42,7 +42,6 @@ generate_toc ()
             | sed ':a; s/(#\([^ ][^ ]*\)[/ ]/(#\1-/g; ta' \
             | sed ':a; s/(#\([^ ][^ ]*\)--\+/(#\1-/g; ta' \
             | sed 's/(#[^ ][^ ]*/&)/g' `
-
     # Remove all lines between keyword and first following line starting with `#`
     # Place toc after line containing keyword
     # Write to temporary file

@@ -4,7 +4,7 @@ menu = "linux"
 module = "linux"
 title = "Linux"
 
-lastmod = "2016-08-17T14:05:51+02:00"
+lastmod = "2016-08-18T12:54:33+02:00"
 +++
 
 Operativsystem är, i korthet, ett system som distribuerar datorkraft till olika program. De mest kända idag är Microsoft [Windows](https://www.microsoft.com/en-us/windows/), [Mac OS X](http://www.apple.com/osx/) och [Linux](https://www.kernel.org/), men det finns många fler.

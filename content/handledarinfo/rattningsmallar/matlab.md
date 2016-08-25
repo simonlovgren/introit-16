@@ -4,7 +4,7 @@ menu = "handledarinfo"
 module = "matlab"
 title = "Rättning MATLAB"
 
-lastmod = "2016-08-24T14:52:57+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 MATLAB-uppgiften går ut på att skapa ett matlabprogram som rutar upp en

@@ -4,6 +4,7 @@ menu = "main"
 module = "default"
 title = "Introduktion till datorer 2016"
 
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 Introduktion till datorer (också känt som dataproppen) är en del av ditt
