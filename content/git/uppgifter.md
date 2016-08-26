@@ -4,7 +4,7 @@ menu = "git"
 module = "git"
 title = "GIT/Uppgifter"
 
-lastmod = "2016-08-26T16:29:38+02:00"
+lastmod = "2016-08-26T16:29:12+02:00"
 +++
 
 ## Innehåll
@@ -69,7 +69,7 @@ Om du klickar på länken ovan bör en ny flik eller ett nytt fönster öppnas o
 kan där bland annat se vilka filer som ingår i detta repo. Sidan som
 öppnas bör se ut ungefär som på bilden nedan. 
 
-{{< figure src="/images/git/git-GitHub-repo.png" 
+{{< figure src="/images/git/git-GitHub-repository.png" 
 title="Publikt repo på GitHub med filer du behöver för att lösa denna uppgift" >}}
 
 Du kan direkt i din webläsare kika på innehållet i filerna. Prova till exempel
