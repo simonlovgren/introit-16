@@ -28,10 +28,10 @@ vilket program du tillhör. Se din programspecifika sida för mer information:**
 - [STS](/programsida/sts)
 - [W](/programsida/w)
 
-## Handlending
+## Handledning
 Handledning ges av handledare vid schemalagda tillfällen i datorsal. Handledarna
 är där för din förståelses skull, så våga fråga. **Närvaro är inte
-obligatoriskt.** Däremot är det obligatoriskt att lämna in uppgifterna i tid.
+obligatorisk.** Däremot är det obligatoriskt att lämna in uppgifterna i tid.
 *Deadline för ditt program hittar du i studentportalen.*
 
 ## Registrering
