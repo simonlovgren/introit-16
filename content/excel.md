@@ -4,7 +4,7 @@ menu = "excel"
 module = "excel"
 title = "Excel"
 
-lastmod = "2016-08-23T10:48:17+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 *Kalkylark* används för att sammanställa och manipulera {{< extlink

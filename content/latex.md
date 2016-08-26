@@ -4,7 +4,7 @@ menu = "latex"
 module = "latex"
 title = "Latex"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-18T12:54:33+02:00"
 +++
 
 *LaTeX* är ett *typsättningssystem* som används flitigt inom universitet och högskolor för att skapa vetenskapliga artiklar och tekniska rapporter.

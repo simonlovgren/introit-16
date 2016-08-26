@@ -4,7 +4,7 @@ menu = "editorer"
 module = "editorer"
 title = "Editorer"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-18T12:54:33+02:00"
 +++
 
 

@@ -4,7 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Kontaktinformation"
 
-lastmod = "2016-08-16T22:16:14+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 Här finns kontaktinformation till ansvariga samt alla handledare.
