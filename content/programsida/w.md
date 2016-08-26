@@ -4,6 +4,7 @@ menu = "programsida"
 module = "programsida-w"
 title = "W"
 
+lastmod = "2016-08-24T13:33:29+02:00"
 +++
 
 Här kan du läsa information om vad som gäller för just ditt program rörande
