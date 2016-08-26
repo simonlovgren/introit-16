@@ -4,6 +4,7 @@ menu = "main"
 module = ""
 title = "Introduktion till datorer 2016"
 
+lastmod = "2016-08-24T13:33:29+02:00"
 +++
 
 Introduktion till datorer (också känt som dataproppen) är en del av ditt
@@ -31,12 +32,12 @@ vilket program du tillhör. Se din programspecifika sida för mer information:**
 Handledning ges av handledare vid schemalagda tillfällen i datorsal. Handledarna
 är där för din förståelses skull, så våga fråga. **Närvaro är inte
 obligatoriskt.** Däremot är det obligatoriskt att lämna in uppgifterna i tid.
-*Deadline för ditt program hittar du i studentportalen.*
+*Deadline för ditt program hittar du i Studentportalen.*
 
 ## Registrering
 Innan ditt första pass med handledning bör du se till att du är registrerad på
-din introduktionskurs. **Om du inte är registrerad kommer du inte de
-obligatoriska inlämningarna i studentportalen.** Om du inte redan är registrerad
+din introduktionskurs. **Om du inte är registrerad kommer du inte kunna lämna in de
+obligatoriska uppgifterna i studentportalen.** Om du inte redan är registrerad
 skall du vända dig till din handledare för att få hjälp.
 
 ## Passerkort
