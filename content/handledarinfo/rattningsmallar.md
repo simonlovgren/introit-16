@@ -4,9 +4,16 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare/Rättningsmallar"
 
-lastmod = "2016-08-16T22:16:14+02:00"
+lastmod = "2016-08-24T22:16:14+02:00"
 +++
+**Generellt sett gäller att om eleven visar att de förstått uppgiften och klarat
+använda verktyget på det sätt uppgiften förmedlar spelar detaljer inte någon
+roll.**
 
+*T.ex. behöver inte titlarna på graferna i matlab-uppgiften vara exakta,
+bara de vet hur de skapar titlar för grafer.*
+
+### Rättningsmallar
 - [Excel](excel)
 - [Studenttjänster](studenttjanster)
 - [Linux](linux)

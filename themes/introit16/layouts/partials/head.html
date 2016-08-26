@@ -47,6 +47,7 @@
 
         <header id="header">
           {{ if .IsPage }}
+          {{ if (index .Site.Data.modules .Params.module) }}
           <div id="section-indicator">
             <a href="#top" title="Till toppen av sidan">
               <div class="icon"></div>
@@ -55,29 +56,33 @@
             </a>
           </div>
           {{ end }}
+          {{ end }}
           <!-- main menu -->
           <nav id="main-menu">
-              <ul class="nav-menu">
+            <ul class="nav-menu">
+                {{ if not .IsHome }}
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
-                {{ if or .IsHome (eq .Params.menu "handledarinfo") }}
-                <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
                 {{ end }}
                 {{ if .IsHome }}
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Programsidor</a></li>
-                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om Kursen</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om introduktion till datorer</a></li>
                 {{ end }}
+                
                 <!-- Interlinking module pages -->
                 {{ if .IsPage }}
                 <li class="menu-item"><a href="#top" title="Till toppen av sidan">Till toppen</a></li>
                   {{ $module := (index .Site.Data.modules .Params.module) }}
-                  {{ if not .Section }}
+                  {{ if and $module (not .Section) }}
                     {{ if not $module.noTasks }}
                       <li class="menu-item"><a href="{{ .Site.BaseURL }}{{ $module.module }}/uppgifter">Uppgifter</a></li>
                     {{ end }}
-                  {{ else if not $module.noTasks }}
+                  {{ else if and $module (not $module.noTasks) }}
                     <li class="menu-item"><a href="{{.Site.BaseURL}}{{ $module.module}}">Infosida</a></li>
                   {{ end }}
                 {{ end }}
+                {{ if or .IsHome (eq .Params.menu "handledarinfo") }}
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                {{ end }}    
               </ul>
             </nav>
         </header>
