@@ -4,7 +4,7 @@ menu = "programsida"
 module = "programsida-e-ei"
 title = "E/EI"
 
-lastmod = "2016-08-24T13:33:29+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 Här kan du läsa information om vad som gäller för just ditt program rörande
@@ -31,7 +31,7 @@ handleds på ett av de schemalagda passen. Har du frågor om ett moment är det
 därför startkt rekommenderat att du närvarar på detta tillfälle.
 
 **Närvaro på passen är ej obligatorisk, men inlämningsuppgifterna är
-obligatoriska.**
+bligatoriska.**
 
 | Modul           | Handledningstillfälle |                              |                                         |
 | --------------- | --------------------- | ---------------------------- | --------------------------------------- |

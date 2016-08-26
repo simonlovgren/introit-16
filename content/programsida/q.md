@@ -4,7 +4,7 @@ menu = "programsida"
 module = "programsida-q"
 title = "Q"
 
-lastmod = "2016-08-24T13:33:29+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 Här kan du läsa information om vad som gäller för just ditt program rörande

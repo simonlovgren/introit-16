@@ -4,7 +4,7 @@ menu = "excel"
 module = "excel"
 title = "Excel/Uppgifter"
 
-lastmod = "2016-08-19T10:24:13+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 ## Innehåll
