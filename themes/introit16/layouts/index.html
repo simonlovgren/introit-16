@@ -2,7 +2,6 @@
 
 <!-- Actual content -->
 <section id="cards">
-
   {{ range $module := .Site.Data.modules}}
   {{ if not $module.hidden }}
   <div class="card {{ lower ($module.module) }}">

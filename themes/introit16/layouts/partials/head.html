@@ -17,8 +17,8 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,100,100italic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/reset.css">
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
     </head>
     <!-- Class of body will determine color-scheme and icon -->
     <!-- studentservice | linux | linux-plus | latex | matlab | excel | ssh | git -->
@@ -36,7 +36,7 @@
         
         {{if .IsHome}}
         <div class="top-flag">
-          <a href="{{ .Site.BaseURL }}/om">
+          <a href="{{ .Site.BaseURL }}om">
             <div class="top-container">
               <h1>{{ .Site.Title }}</h1>
               <h2>{{ .Site.Params.quote}}</h2>
@@ -45,6 +45,33 @@
         </div>
         {{end}}
 
+        {{ if .IsHome }}
+        <div id="frontmessage">
+          <div class="center">
+            <p><b>Introduktion till datorer</b> (också känt som dataproppen) är en del av
+              ditt programs introduktionskurs. Till skillnad från matteproppen ger
+              introduktion till datorer högskolepoäng. Momentet är indelat i olika
+              moduler och för varje modul finns en uppgift som skall lämnas in. När
+              du blivit godkänd på uppgifterna är du också klar med detta kursmoment.</p>
+
+            <p>Vilka moduler som ingår för just ditt program framgår på någon av
+              programsidorna för<br/>
+              <a href="{{ .Site.BaseURL }}programsida/e-ei">E/EI</a>,
+              <a href="{{ .Site.BaseURL }}programsida/es">ES</a>,
+              <a href="{{ .Site.BaseURL }}programsida/f">F</a>,
+              <a href="{{ .Site.BaseURL }}programsida/it-kanddv">IT/KandDv</a>,
+              <a href="{{ .Site.BaseURL }}programsida/kandma">KandMa</a>,
+              <a href="{{ .Site.BaseURL }}programsida/mi">MI</a>,
+              <a href="{{ .Site.BaseURL }}programsida/q">Q</a>,
+              <a href="{{ .Site.BaseURL }}programsida/sts">STS</a>, eller
+              <a href="{{ .Site.BaseURL }}programsida/w">W</a>.</p>
+
+            <p><b>Läs mer om Introduktion till datorer <a href="{{ .Site.BaseURL }}om">här</a>.</b></p>
+            </div>
+        </div>
+        {{ end }}
+
+        
         <header id="header">
           {{ if .IsPage }}
           {{ if (index .Site.Data.modules .Params.module) }}
@@ -64,8 +91,8 @@
                 <li class="menu-item"><a href="{{ .Site.BaseURL }}">Alla moduler</a></li>
                 {{ end }}
                 {{ if .IsHome }}
-                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Programsidor</a></li>
-                <li class="menu-item"><a href="{{ .Site.BaseURL }}/om">Om introduktion till datorer</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}om">Programsidor</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}om">Om introduktion till datorer</a></li>
                 {{ end }}
                 
                 <!-- Interlinking module pages -->
@@ -81,7 +108,7 @@
                   {{ end }}
                 {{ end }}
                 {{ if or .IsHome (eq .Params.menu "handledarinfo") }}
-                <li class="menu-item"><a href="{{ .Site.BaseURL }}/handledarinfo">För handledare</a></li>
+                <li class="menu-item"><a href="{{ .Site.BaseURL }}handledarinfo">För handledare</a></li>
                 {{ end }}    
               </ul>
             </nav>
