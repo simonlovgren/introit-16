@@ -4,7 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare/Rättningsmallar"
 
-lastmod = "2016-08-24T22:16:14+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 **Generellt sett gäller att om eleven visar att de förstått uppgiften och klarat
 använda verktyget på det sätt uppgiften förmedlar spelar detaljer inte någon

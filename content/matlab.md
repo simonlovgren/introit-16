@@ -4,7 +4,7 @@ menu = "matlab"
 module = "matlab"
 title = "Matlab"
 
-lastmod = "2016-08-17T12:01:51+02:00"
+lastmod = "2016-08-18T12:54:33+02:00"
 +++
 MATLAB är ett datorprogram och programspråk som är skapat av företaget MathWorks.
 Programmet används framförallt till tekniska- och matematiska uträkningar och

@@ -4,7 +4,7 @@ menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster/Uppgifter"
  
-lastmod = "2016-08-18T14:32:05+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 ## Innehåll

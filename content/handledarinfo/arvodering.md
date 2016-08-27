@@ -4,7 +4,7 @@ menu = "handledarinfo"
 module = "handledarinfo"
 title = "Handledare/Arvodering"
 
-lastmod = "2016-08-16T22:16:14+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 Här hittar du rutiner för utbetalning av ditt arvode som handledare. Dessa rutiner är anpassade efter Uppsala universitets regler för utbetalning av arvoden.

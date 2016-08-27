@@ -4,7 +4,7 @@ menu = "linux"
 module = "linux"
 title = "Linux/Uppgifter"
 
-lastmod = "2016-08-18T13:36:07+02:00"
+lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 
