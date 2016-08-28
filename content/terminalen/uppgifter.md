@@ -4,7 +4,7 @@ menu = "terminalen"
 module = "terminalen"
 title = "Terminalen/Uppgifter"
 
-lastmod = "2016-08-25T13:52:12+02:00"
+lastmod = "2016-08-28T14:13:36+02:00"
 +++
 
 ## Innehåll
@@ -114,7 +114,8 @@ link="/resources/jobbig_textfil.txt" >}}. och lägg den i mappen
         `<Ctrl>+<Shift>+V`, `<Shift>+<Insert>` eller klick med musens
         mittenknapp.
 2. Använd pipes (`|`) och `grep` för att få fram raden (eller raderna) som innehåller `Hitta mig`, givet kommandot `cat textfil.txt`
-    + Grep förstår citattecken
+    + Använd `grep` med citattecken för att enkelt få med mellanslag.
+    + Kom ihåg att se efter stora och små bokstäver.
 3. Upprepa kommandot ovan, men addera fil-output för att *lägga till* (`>>`) raden i `hittad_rad.txt`.
 4. Använd `rm` för att radera `jobbig_textfil.txt`.
 
