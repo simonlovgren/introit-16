@@ -16,7 +16,7 @@ lastmod = "2016-08-25T13:52:12+02:00"
 	+ [Information om studenttjänster](#information-om-studenttjänster)
 	+ [Förbered dokument för inlämning](#förbered-dokument-för-inlämning)
 + [Uppgifter](#uppgifter)
-	+ [Del 1: Vidarebeforda e-post](#del-1-vidarebeforda-e-post)
+	+ [Del 1: Vidarebefordra e-post](#del-1-vidarebefordra-e-post)
 	+ [Del 2: Prenumerera på schemat](#del-2-prenumerera-på-schemat)
 	+ [Del 3: Boka grupprum](#del-3-boka-grupprum)
 	+ [Del 4: Trådlöst internet (Wi-Fi)](#del-4-trådlöst-internet-wi-fi)
@@ -80,10 +80,10 @@ när du är klar med uppgiften skall denna fil lämnas in i Studentportalen.
 Nu är du reda att lösa uppgifterna nedan. 
 
 <br/>
-### Del 1: Vidarebeforda e-post
+### Del 1: Vidarebefordra e-post
 
 Det första du skall göra är att vidarebefordra all e-post som skickas till din
-studentadress (fornman.efternamn.1234@student.uu.se) vid Uppsala universitet
+studentadress (fornamn.efternamn.1234@student.uu.se) vid Uppsala universitet
 till din privata e-postadress du brukar använda. Detta är ytterst viktigt då
 information från Uppsala universitet endast skickas till din studentadress, till
 exempel information om inställda föreläsningar, kommande tentor och liknande.
@@ -124,7 +124,7 @@ inloggning med **Lösenord B**.
 <br/>
 ### Del 5: Nybörjarenkäten
 
-Öppna enkäten på [denna länk](http://tur.it.uu.se/index.php/survey/index/sid/824868/lang/sv)
+Öppna enkäten på {{< extlink link="http://tur.it.uu.se/index.php/survey/index/sid/824868/lang/sv" title="denna länk" >}}.
 Fyll i ämnet (rubriken) för den första frågan i enkäten efter `enkät:` i textdokumentet.
 Svaret är en av följande:
 
