@@ -4,7 +4,7 @@ menu = "git"
 module = "git"
 title = "GIT/Uppgifter"
 
-lastmod = "2016-08-26T16:29:12+02:00"
+lastmod = "2016-08-26T16:50:52+02:00"
 +++
 
 ## Innehåll
@@ -77,8 +77,11 @@ att klicka på filen `dikt.txt` och se vad den innehåller.
 
 Istället för att ladda ner filerna en och en skall du klona hela repot.
 Öppna terminalen och navigera till din hem-mapp. Väl inne i mappen, klona
-repot genom att köra kommandot `git clone
-https://github.com/uu-it-teaching/introduktion-till-datorer-2016-git-uppgift.git`.
+repot genom att köra kommandot:
+
+```shell
+git clone https://github.com/uu-it-teaching/introduktion-till-datorer-2016-git-uppgift.git
+```
 
 I terminalen bör du nu se något liknande detta: 
 
@@ -122,7 +125,7 @@ repo längre fram.
 
 ### Del 2: Skapa ett nytt git-repo
 
-Öppna terminalen och navigera till din hem-mapp. Skapa en ny mapp
+Navigera till din hem-mapp i terminalen. Skapa en ny mapp
 som du döper till `abcd1234_git`, där du ersätter `abcd1234` med
 användarnamnet för ditt studentkonto. Navigera därefter till
 denna mapp.
@@ -235,7 +238,7 @@ Changes to be committed:
 ```
 
 Git känner nu till filerna och du kan spara nuvarande versioner av dessa med kommandot `git
-commiti -m "Initial commit"` där du kan byta ut meddelandet *Initial commit*
+commit -m "Initial commit"` där du kan byta ut meddelandet *Initial commit*
 till något annat om du så önskar. I terminalen bör du nu se något liknande: 
 
 ```shell
@@ -293,6 +296,8 @@ När du är färdig med uppgiften bör ditt repo se ut såhär:
 .
 ├── abcd1234_git
     ├── .git         #(vanligtvis dold mapp med all git-data för repot)
+    ├── introduktionskurs.txt
+    ├── introduktionskurser.txt
     ├── kurser.txt
     └── urval.txt
 ```
