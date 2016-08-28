@@ -8,16 +8,19 @@ lastmod = "2016-08-25T13:52:12+02:00"
 +++
 
 ## Innehåll
+
+
 + [Mål](#mål)
 + [Detta behöver du](#detta-behöver-du)
 + [Förberedelser](#förberedelser)
-    + [Information om studenttjänster](#information-om-studenttjänster)
-    + [Förbered dokument för inlämning](#förbered-dokument-för-inlämning)
+	+ [Information om studenttjänster](#information-om-studenttjänster)
+	+ [Förbered dokument för inlämning](#förbered-dokument-för-inlämning)
 + [Uppgifter](#uppgifter)
-	+ [Del 1: Vidarebefordra e-post](#del-1-vidarebeforda-e-post)
+	+ [Del 1: Vidarebeforda e-post](#del-1-vidarebeforda-e-post)
 	+ [Del 2: Prenumerera på schemat](#del-2-prenumerera-på-schemat)
 	+ [Del 3: Boka grupprum](#del-3-boka-grupprum)
 	+ [Del 4: Trådlöst internet (Wi-Fi)](#del-4-trådlöst-internet-wi-fi)
+	+ [Del 5: Nybörjarenkäten](#del-5-nybörjarenkäten)
 	+ [Slutgiltigt dokument](#slutgiltigt-dokument)
 + [Lämna in](#lämna-in)
 
@@ -30,6 +33,7 @@ Efter att du blivit godkänd på denna uppgift kommer du att känna till hur du:
 - hittar och prenumererar på ditt schema
 - bokar grupprum
 - kommer åt universitetets trådlösa internet.
+- Tittat på en frivillig enkät
 
 ## Detta behöver du
 För att genomföra uppgifterna behöver du ha tillgång till följande program:
@@ -48,20 +52,23 @@ nytt fönster eller i en ny flik i din webbläsare. Om du inte redan gjort det, 
 med att läsa igenom denna sida. Gå sedan tillbaka till sidan vid behov när
 du löser uppgifterna nedan.
 
+
 ### Förbered dokument för inlämning
 
-Börja med att skapa en textfil du döper till `abcd1234-studenttjanster.txt`, där du
+Börja med att skapa en textfil du döper till `abcd1234_studenttjanster.txt`, där du
 ersätter `abcd1234` med ditt användarnamn för studentkontot.
 
 Klistra därefter in följande i textfilen:
 ```none
-e-post: 
+e-post:
 
 schema:
 
 grupprum:
 
 wi-fi:
+
+enkät:
 ```
 
 Denna lista kommer du använda för att fylla i svaren på deluppgifterna nedan, och
@@ -101,7 +108,7 @@ klistra in efter `schema:` i textdokumentet.
 Vid bokning av grupprum är det vissa förbestämda värden som skall matas in
 för att kunna utföra sökning och bokning av lediga grupprum --- ett av dessa är kundnumret.
 
-Skriv ned vilket kundnummer som skall användas vid bokning av grupprum efter `grupprum`
+Skriv ned vilket kundnummer som skall användas vid bokning av grupprum efter `grupprum:`
 i textdokumentet.
 
 <br/>
@@ -111,15 +118,33 @@ trådläsa nätet finns förutom i anslutning till de flesta av universitets lok
 även även på de flesta (om inte alla) studentnationer här i Uppsala. Det finns
 två olika trådlösa nätverk du kan kan koppla upp dig mot.
 
-Efter `wi-fi` i textdokumentet, skriv namnet på det trådlösa nätverk som kräver
+Efter `wi-fi:` i textdokumentet, skriv namnet på det trådlösa nätverk som kräver
 inloggning med **Lösenord B**.
 
 <br/>
+### Del 5: Nybörjarenkäten
+
+Öppna enkäten på [denna länk](http://tur.it.uu.se/index.php/survey/index/sid/824868/lang/sv)
+Fyll i ämnet (rubriken) för den första frågan i enkäten efter `enkät:` i textdokumentet.
+Svaret är en av följande:
+
++ `Informationskällor`
++ `Avslutande kommentarer`
++ `Bakgrundsinformation`
++ `Programval`
++ `Tankar kring lärande`
++ `Aktiviteter`
++ `Om studier och lärande`
+
+Notera att det är frivilligt att fylla i enkäten.
+Att fylla i den är dock till stor hjälp för Uppsala universitet
+
+<br/>
 ### Slutgiltigt dokument
-I textfilen skall du nu ha en numrerad lista från 1 till 4 där du har skrivit in
-svar till frågorna på del 1 till del 4.
+I textfilen skall du nu ha
+svar till frågorna på del 1 till del 5.
 
 ## Lämna in
-Kontrollera att textfilen heter `abcd1234-studenttjanster.txt` där du ersätter
+Kontrollera att textfilen heter `abcd1234_studenttjanster.txt` där du ersätter
 `abcd1234` med användarnamnet för ditt studentkonto. Ladda därefter upp filen
 i Studentportalen.
