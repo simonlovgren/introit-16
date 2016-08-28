@@ -1,4 +1,4 @@
-baseurl = "//www.it.uu.se/education/course/homepage/introdat/ht16/"
+baseurl = "https://www.it.uu.se/education/course/homepage/introdat/ht16/"
 languageCode = "sv-se"
 title = "Introduktion till datorer"
 theme="introit16"
