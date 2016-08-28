@@ -4,7 +4,7 @@
 // GENERAL SETTINGS
 $text_color: #444;
 $background_color: #d6c9b6; // Technically only visible at footer
-$middle_color: #f5f5f5; // Backround of middle section of page
+$middle_color: #f5f5f5; // Background of middle section of page
 
 $table_color_even: #f8f8f8;
 $table_color_odd: #fff;
@@ -53,6 +53,14 @@ $sections:  ("studenttjanster", #ec5f5f, #d04040),
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+
+@mixin linear-transition($time) {
+    -webkit-transition: background-color $time linear, color $time linear;
+    -moz-transition: background-color $time linear, color $time linear;
+    -o-transition: background-color $time linear, color $time linear;
+    -ms-transition: background-color $time linear, color $time linear;
+    transition: background-color $time linear, color $time linear;
 }
 
 /**
@@ -130,16 +138,26 @@ hr {
 }
 /* -- Links */
 a {
-  text-decoration: none;
-  color: $default_dark;
+    color: $default_dark;
+    text-decoration: none;
+    @include linear-transition(150ms);
+}
+a:hover {
+    text-decoration: none;
+    color: $default_main;
 }
 
 a.btn {
-	padding: 10px 14px;
-	font-size: 90%;
-	color: #fff;
-	background-color: $default_dark;
-	@include border-radius(3px);
+    padding: 10px 14px;
+    font-size: 90%;
+    color: #fff;
+    text-decoration: none;
+    background-color: $default_dark;
+    @include border-radius(3px);
+    @include linear-transition(150ms);
+}
+a.btn:hover {
+    background-color: $default_main;
 }
 
 /* -- Tables */
@@ -319,11 +337,7 @@ figcaption h4 {
   text-align: center;
   color: #ffffff;
 
-  -webkit-transition: background-color 150ms linear;
-  -moz-transition: background-color 150ms linear;
-  -o-transition: background-color 150ms linear;
-  -ms-transition: background-color 150ms linear;
-  transition: background-color 150ms linear;
+  @include linear-transition(150ms);
 
 }
 .top-flag a:hover .top-container {
@@ -433,23 +447,36 @@ header nav ul li a:visited {
   padding: 10px 25px;
   margin: 10px;
   border-radius: 3px;
-  -webkit-transition: background-color 150ms linear;
-  -moz-transition: background-color 150ms linear;
-  -o-transition: background-color 150ms linear;
-  -ms-transition: background-color 150ms linear;
-  transition: background-color 150ms linear;
+  @include linear-transition(150ms);
 }
 header nav ul li a:hover,
 header nav ul li a:active,
 header nav ul li.active a {
   background: $default_dark;
 }
+
+/* Front message */
+#frontmessage {
+    background-color: #fff;
+    margin: 0px;
+    padding: 1em;
+    border-top: 3px solid #ec5f5f;
+}
+#frontmessage a:hover {
+    text-decoration: underline;
+}
+#frontmessage a.btn:hover {
+    text-decoration: none;
+}
+
+
 /* Module cards */
 #cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+    padding: 2em 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 .card {
   width: 45%;
