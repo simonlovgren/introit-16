@@ -264,7 +264,7 @@ git checkout -b <branch-name>
 ```
 
 När du bytt till denna nya branch skall du skapa filen `urval.txt`. I denna fil skall
-du lägga till **3 kurser ur kurser.txt**.
+du lägga till **`2st` kurser ur kurser.txt**.
 
 **`OBS!` ta ej bort kurserna ur kurser.txt, kopiera dem.**
 
@@ -273,7 +273,7 @@ Spara sedan filen, checka in den och committa med meddelandet **"kopierade kurse
 <br/>
 ### Del 5: Byta gren och modifiera filer
 Nu skall vi byta tillbaka till `master`. Här skall vi nu skapa filen `urval.txt` på nytt.
-När du gjort det skall du **klippa ut tre kurser ur _kurser.txt_** och lägga till dem i
+När du gjort det skall du **klippa ut `3st` kurser ur _kurser.txt_** och lägga till dem i
 `urval.txt`. När du gjort detta skall du checka in både den nya filen och ändringarna i
 *kurser.txt*, för att sedan committa dem med meddelandet **"flyttade kurser till urval"**.
 
