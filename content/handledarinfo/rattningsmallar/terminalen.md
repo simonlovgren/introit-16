@@ -10,12 +10,13 @@ lastmod = "2016-08-25T13:52:12+02:00"
 Uppgiften går ut på att skapa och hantera mappar och filer i terminalen, samt
 använda pipes och enklare kommandon.
 
-En korrekt fil finns [här](../abcd1234_terminal.tar.gz).
+En korrekt fil finns [här](/handledarinfo/rattningsmallar/abcd1234_terminal.tar.gz).
+
 
 
 ### Automatisk rättning:
 
-För snabb rättning kan du använda [detta script](../terminal_corr.sh)
+För snabb rättning kan du använda [detta script](/handledarinfo/rattningsmallar/terminal_corr.sh)
 Den används med studentkontonamnet som argument, eg. `./terminal_corr.sh abcd1234`.
 Glöm inte att använda `chmod +x ./terminal_corr.sh` för att kunna köra scriptet!
 
