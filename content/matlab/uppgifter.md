@@ -53,7 +53,7 @@ Börja med att skapa ett nytt MATLAB-program. Klistra in följande kod:
 disp('Jag fungerar!')
 ```
 
-Spara sedan programmet till skrivbordet och döp filen till `abcd1234-matlab.m`,
+Spara sedan programmet till skrivbordet och döp filen till `abcd1234_matlab.m`,
 där du ersätter `abcd1234` med användarnamnet för ditt studentkonto.
 
 Byt sedan nuvarande arbetsmapp till skrivbordet, annars kan du inte köra ditt
@@ -122,7 +122,7 @@ och den färdiga grafen skall då visas.
 
 ## Inlämning
 
-Se till att den slutgiltiga filen heter `abcd1234-matlab.m`, där du ersätter
+Se till att den slutgiltiga filen heter `abcd1234_matlab.m`, där du ersätter
 `abcd1234` med  användarnamnet för ditt studentkonto.
 
 Ladda upp filen i Studentportalen.
