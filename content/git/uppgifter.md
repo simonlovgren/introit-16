@@ -4,7 +4,7 @@ menu = "git"
 module = "git"
 title = "GIT/Uppgifter"
 
-lastmod = "2016-08-26T16:50:52+02:00"
+lastmod = "2016-08-29T12:28:32+02:00"
 +++
 
 ## Innehåll
@@ -294,7 +294,7 @@ När du är färdig med uppgiften bör ditt repo se ut såhär:
 
 ```shell
 .
-├── abcd1234_git
+└── abcd1234_git
     ├── .git         #(vanligtvis dold mapp med all git-data för repot)
     ├── introduktionskurs.txt
     ├── introduktionskurser.txt
@@ -338,7 +338,7 @@ commit 78ec16cf653f2ee67e3bf9b19745b0b5c873c32f
 Author: abcd1234 <abcd1234@student.uu.se>
 Date:   Mon Aug 15 20:39:56 2016 +0200
 
-    lade till kurser.txt
+    initial commit (eller valfritt meddelande)
 ```
 
 
