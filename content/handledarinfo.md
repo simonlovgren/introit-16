@@ -13,3 +13,8 @@ I denna sektion finns allt internt material som riktar sig till dig som handleda
 - [Arvodering](arvodering)
 - [Rättningsmallar](rattningsmallar)
 - [Kontaktinformation](kontakt)
+
+## Föreläsningsmaterial
+Föreläsningsmaterial finns samlat i en google-drive mapp ni hittar här:  
+{{< extlink title="Föreläsningsmaterial - Introduktion till Datorer 2016"
+link="https://drive.google.com/folderview?id=0B8YL_pb6e0tKaHZIY0VoY19jX1E&usp=sharing">}}
