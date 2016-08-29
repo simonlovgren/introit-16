@@ -4,13 +4,13 @@ menu = "main"
 module = "default"
 title = "Introduktion till datorer 2016"
 
-lastmod = "2016-08-29T11:55:41+02:00"
+lastmod = "2016-08-29T13:23:28+02:00"
 +++
 
 Introduktion till datorer (också känt som dataproppen) är en del av ditt
-programs introduktionskurs. Till skillnad från <a
-href="http://recce.utn.se/sv/vi-ar-mottagningen/proppar"
-target="_blank">matteproppen</a> ger introduktion till datorer högskolepoäng.
+programs introduktionskurs. Till skillnad från {{< extlink
+link="http://recce.utn.se/sv/vi-ar-mottagningen/proppar" title="matteproppen"
+>}} ger introduktion till datorer högskolepoäng.
 
 Momentet är indelat i olika moduler och för varje modul finns en uppgift som
 skall lämnas in. När du blivit godkänd på uppgifterna är du också klar med
