@@ -21,8 +21,10 @@ Målet går ut på att skapa en textfil med svar från modulen.
 
 
 Referenssvaren är följande.
-Notera att url:erna är mycket långa, här har de kortats ner så att slutet blev
+Notera att url:erna är *mycket* långa, här har de kortats ner så att slutet blev
 ersatt med `.*`.
+Det är möjligt att länkarna skiljer sig under andra konfigurationer. Så länge
+de verkar överrensstämma någorlunda kan du ge studenten godkänt.
 
 ```none
 e-post:  https://studentportalen.uu.se/portal/authsec/portal/uusp/profile/account-settings/StudentProfileAccountForwards.*
