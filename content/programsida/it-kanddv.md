@@ -4,7 +4,7 @@ menu = "programsida"
 module = "programsida-it-kanddv"
 title = "IT/KandDV"
 
-lastmod = "2016-08-25T13:52:12+02:00"
+lastmod = "2016-08-26T16:39:13+02:00"
 +++
 
 Här kan du läsa information om vad som gäller för just ditt program rörande

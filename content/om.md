@@ -36,8 +36,8 @@ obligatorisk.** Däremot är det obligatoriskt att lämna in uppgifterna i tid.
 
 ## Registrering
 Innan ditt första pass med handledning bör du se till att du är registrerad på
-din introduktionskurs. **Om du inte är registrerad kommer du inte de
-obligatoriska inlämningarna i studentportalen.** Om du inte redan är registrerad
+din introduktionskurs. **Om du inte är registrerad kommer du inte kunna lämna in de
+obligatoriska uppgifterna i studentportalen.** Om du inte redan är registrerad
 skall du vända dig till din handledare för att få hjälp.
 
 ## Passerkort
