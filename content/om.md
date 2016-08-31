@@ -41,18 +41,16 @@ din introduktionskurs. **Om du inte är registrerad kommer du inte kunna lämna 
 obligatoriska uppgifterna i studentportalen.** Om du inte redan är registrerad
 skall du vända dig till din handledare för att få hjälp.
 
-## Passerkort
-För att komma in i datasalar, seminarierum och föreläsningsalar behöver du
-{{< extlink link="http://www.polacksbacken.uu.se/Student/Passerkort/"
-title="passerkort">}}. Om du inte fått något sådant eller det inte fungerar
-kontaktar du
-{{< extlink link="http://www.polacksbacken.uu.se/Student/Passerkort/"
-title="nyckel- och passerkortsutlämningen">}} på
-{{< extlink link="http://www.polacksbacken.uu.se/Hitta/"
-title="Ångströmlaboratoriet" >}} (som ligger mitt emot Café
-Ångström).
+## Campuskort
+För att komma in i datasalar, seminarierum och föreläsningsalar behöver du ett
+{{< extlink link="https://mp.uu.se/web/info/stod/sakerhet/campuskort/hur-far-jag-ett-campuskort"
+title="Campuskort">}}. Campuskorten delas ut vid receptionen i [hus 3 på ITC
+(pollacks)](#aktivera-ditt-studentkonto). Om du inte fått något sådant eller
+det inte fungerar, kontakta receptionen i
+[hus 3 på ITC (pollacks)](#aktivera-ditt-studentkonto).
 
-Telefon: **018-471 58 91**
+Vid tekniska problem kontaktar du [servicedesk](mailto:servicedesk@uu.se?subject=Campuskort).
+Telefon: **018-471 44 00**
 
 ## Studentkonto
 Som student vid Uppsala universitet behöver du ett Studentkonto. Du får då en
