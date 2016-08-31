@@ -106,8 +106,12 @@ I Studentportalen kan du hitta ditt schema som innehåller samtilga kurser du ä
 registrerad på. I detta steg skall du skapa en URL för prenumeration på ditt schema.
 Information om detta hittar du på modulens [infosida](../#schema).
 
-Du skall exportera ditt schema till iCal-format. Kopiera den URL som genereras och
-klistra in efter `schema:` i textdokumentet.
+Du skall exportera ditt schema till iCal-format. Kopiera den URL som genereras 
+(se bild nedan vilken URL som menas) och klistra in efter `schema:` i
+textdokumentet.
+
+{{< figure src="/images/studenttjanster/uppgift-icalsave.png" title="URL för prenumeration av schema" >}}
+
 
 <br/>
 ### Del 3: Boka grupprum
