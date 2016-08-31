@@ -4,7 +4,7 @@ menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster/Uppgifter"
  
-lastmod = "2016-08-30T11:17:38+02:00"
+lastmod = "2016-08-31T12:21:15+02:00"
 +++
 
 ## Innehåll
@@ -96,6 +96,9 @@ Följ instruktionerna på [infosidan](../#e-post) för att göra detta.
 När du är färdig med att vidarebefordra din studentadress, kopiera sökvägen i
 webbläsaren och klistra in den efter `e-post:` i textdokumentet.
 
+*__Har du redan vidarebefordrat din e-post__ navigerar du till
+vidarebefordringssidan och kopierar och därefter direkt kopierar sökvägen i
+webbläsaren för att klistra in den efter `e-post:` i textdokumentet.*
 
 <br/>
 ### Del 2: Prenumerera på schemat
@@ -127,9 +130,8 @@ inloggning med **Lösenord B**.
 <br/>
 ### Del 5: Nybörjarenkäten
 
-Öppna enkäten på {{< extlink link="http://tur.it.uu.se/index.php/survey/index/sid/824868/lang/sv" title="denna länk" >}}.
-Fyll i ämnet (rubriken) för den första frågan i enkäten efter `enkät:` i textdokumentet.
-Svaret är en av följande:
+Öppna enkäten på {{< extlink link="http://tur.it.uu.se/index.php/survey/index/sid/824868/lang/sv" title="denna länk" >}}.  
+Den första frågesidan har en av dessa rubriker:
 
 + `Informationskällor`
 + `Avslutande kommentarer`
@@ -139,8 +141,10 @@ Svaret är en av följande:
 + `Aktiviteter`
 + `Om studier och lärande`
 
-Notera att det är frivilligt att fylla i enkäten.
-Att fylla i den är dock till stor hjälp för Uppsala universitet
+Fyll i ämnet (rubriken) för den första frågesidan i enkäten efter `enkät:` i textdokumentet.
+
+*Notera att det är frivilligt att fylla i enkäten.
+Att fylla i den är dock till stor hjälp för Uppsala universitet*
 
 <br/>
 ### Slutgiltigt dokument
