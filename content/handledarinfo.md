@@ -12,6 +12,7 @@ I denna sektion finns allt internt material som riktar sig till dig som handleda
 ## Innehållsförteckning
 - [Arvodering](arvodering)
 - [Rättningsmallar](rattningsmallar)
+- [Rättning i Studentportalen](rattning)
 - [Kontaktinformation](kontakt)
 
 ## Föreläsningsmaterial
