@@ -4,7 +4,7 @@ menu = "studenttjänster"
 module = "studenttjanster"
 title = "Studenttjänster/Uppgifter"
  
-lastmod = "2016-08-25T13:52:12+02:00"
+lastmod = "2016-08-30T11:17:38+02:00"
 +++
 
 ## Innehåll
@@ -59,6 +59,9 @@ Börja med att skapa en textfil du döper till `abcd1234_studenttjanster.txt`, d
 ersätter `abcd1234` med ditt användarnamn för studentkontot.
 
 Klistra därefter in följande i textfilen:
+
+**`OBS!` Dokumentet skall vara en textfil (.txt) och <u>inte .pdf, .docx, eller
+annat</u>. Använd Notepad eller liknande verktyg!**
 ```none
 e-post:
 
