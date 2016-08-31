@@ -187,9 +187,10 @@ Inför din första utskrift behöver du ett PayEx-konto. Det finns olika sätt a
 fylla på det, men för belopp under 100 kronor rekommenderas banköverföring vilket kan ta upp
 till 3 arbetsdagar. Därmed är det en god idé att sätta upp detta i god tid.
 
-Notera att Korint är planerat att ersättas år 2017. I dagsläget är det oklart
-hur kvarvarande medel på ett PayEx-konto kommer att hanteras vid byte av
-system.
+Notera att Korint är planerat att ersättas år 2017. Kvarvarande medel på ett PayEx-konto
+går ta ut, dock  mot en avgift. Det är därmed rekommenderat att inte sätta in mer pengar än
+du hinner förbruka.
+
 Om du är osäker på om du vill ansluta dig till Korint i väntan på det nya
 systemet kan du överväga att köpa en egen skrivare (billiga laserskrivare med svartvit
 utskrift tenderar att vara särskilt prisvärda i längden)
