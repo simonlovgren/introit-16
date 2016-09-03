@@ -35,7 +35,7 @@ har behörigheten lärarassistent aktiverad. Du bör se ut ungefär så här:
 
 {{< figure src="/images/handledarinfo/rattning/kurslista.png" title="Lista över kurser">}}
 
-För att klicka in på kursen (kurstillfälletsfd sida) klickar du helt enkelt på kursens
+För att klicka in på kursen (kurstillfällets sida) klickar du helt enkelt på kursens
 **benämning** längst till vänster i tabellen.
 
 
