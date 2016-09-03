@@ -82,7 +82,30 @@ klickar du på spara.
 
 {{< figure src="/images/handledarinfo/rattning/rattningsalternativ.png" title="Alternativen i statusmenyn">}}
 
+
+Vid rättning av inlämnade uppgifter behöver inte check-boxen längst till vänster
+markeras för att ändringar skall sparas. 
+
 <br/>
+
+### Ange status för valda studenter
+
+Det är möjligt att ange samma status för flera studenter på en och samma gång
+genom att först kryssa i rutan i kolumnen längst till vänster för en eller flera
+studenter i tabellen. 
+
+Ovanför tabellen hittar du rubriken **Ange status för valda studenter** samt en
+drop-down meny för att ange status för markerade studenter. Klicka sedan på
+knappen **Uppdatera** för att uppdatera status och sedan på knappen **Spara**
+för att spara dina ändringar av status. 
+
+### Ladda ned filer och skicka e-post till markerade studenter
+
+Direkt ovanför och direkt under tabellen hittar du knapparna **Ladda ner filer för markerade
+studenter** och **Skicka e-post till markerade studenter**. Markera en eller
+flera studenter genom att kryssa i rutan i kolumnen längst till vänster. Tryck
+sedan på någon av knapparna.
+
 ### `VIKTIGT!` Arbetsordning för rättning
 Vid rättning av en students inlämning är det viktigt att status sätts på följande sätt:
 
