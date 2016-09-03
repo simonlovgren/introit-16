@@ -35,7 +35,7 @@ har behörigheten lärarassistent aktiverad. Du bör se ut ungefär så här:
 
 {{< figure src="/images/handledarinfo/rattning/kurslista.png" title="Lista över kurser">}}
 
-För att klicka in på kursen (kurstillfälletsfd sida) klickar du helt enkelt på kursens
+För att klicka in på kursen (kurstillfällets sida) klickar du helt enkelt på kursens
 **benämning** längst till vänster i tabellen.
 
 
@@ -88,7 +88,6 @@ Vid rättning av inlämnade uppgifter behöver inte check-boxen längst till vä
 markeras för att ändringar skall sparas. 
 
 <br/>
-
 ### Ange status för valda studenter
 
 Det är möjligt att ange samma status för flera studenter på en och samma gång
@@ -100,6 +99,7 @@ drop-down meny för att ange status för markerade studenter. Klicka sedan på
 knappen **Uppdatera** för att uppdatera status och sedan på knappen **Spara**
 direkt ovanför eller direkt under tabellen för att spara dina ändringar av status. 
 
+<br/>
 ### Ladda ned filer och skicka e-post till markerade studenter
 
 Direkt ovanför och direkt under tabellen hittar du knapparna **Ladda ner filer för markerade
@@ -107,6 +107,7 @@ studenter** och **Skicka e-post till markerade studenter**. Markera en eller
 flera studenter genom att kryssa i rutan i kolumnen längst till vänster. Tryck
 sedan på någon av knapparna.
 
+<br/>
 ### `VIKTIGT!` Arbetsordning för rättning
 Vid rättning av en students inlämning är det viktigt att status sätts på följande sätt:
 
