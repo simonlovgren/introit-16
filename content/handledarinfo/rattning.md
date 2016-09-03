@@ -78,7 +78,8 @@ läsas av lärarassistenter.
 ### Status
 Drop-down menyn för status innehåller ett antal statusalternativ. För att
 uppdatera status för en student ändrar du status i dropdown-menyn och därefter
-klickar du på spara.
+klickar du på knappen **Spara** som du hittar direkt ovanför eller direkt under
+tabellen.
 
 {{< figure src="/images/handledarinfo/rattning/rattningsalternativ.png" title="Alternativen i statusmenyn">}}
 
@@ -97,7 +98,7 @@ studenter i tabellen.
 Ovanför tabellen hittar du rubriken **Ange status för valda studenter** samt en
 drop-down meny för att ange status för markerade studenter. Klicka sedan på
 knappen **Uppdatera** för att uppdatera status och sedan på knappen **Spara**
-för att spara dina ändringar av status. 
+direkt ovanför eller direkt under tabellen för att spara dina ändringar av status. 
 
 ### Ladda ned filer och skicka e-post till markerade studenter
 
