@@ -4,7 +4,7 @@ menu = "main"
 module = "default"
 title = "Introduktion till datorer 2016"
 
-lastmod = "2016-08-30T10:21:09+02:00"
+lastmod = "2016-09-04T08:36:17+02:00"
 +++
 
 Introduktion till datorer (också känt som dataproppen) är en del av ditt
@@ -50,11 +50,11 @@ link="https://fronter.com/slu/" title="Fronter" >}}.
 På kursens sida i Studentportalen hittar du en meny i vänster kant [^sp-menu]. I denna meny
 finns ett avsnitt som heter **Introduktion till datorer**.
 
-{{< figure
+{{< figure width="400px"
 src="/images/om/SP_meny_Introduktion_till_datorer_Studenttjanster_Excel_Matlab.png"
 title="Exempel på avsnittet om Introduktion till datorer i menyn på kursens sida i Studentportalen" >}}
 
-Överst i avsnittet om Introduktion till datorer finn en länk till
+Överst i avsnittet om Introduktion till datorer finns länken **Uppgifter** till
 [startsidan](/) för den publika publika webbplatsen om Introduktion till
 datorer, dvs startsidan för den webbplats du besöker just nu. På denna webbplats
 hittar du all information om momentet Introduktion till datorer och de uppgifter
@@ -62,8 +62,8 @@ som hör till detta moment.
 
 I avsnittet om Introduktion till datorer hittar du även länkar till sidor för
 inlämning av de uppgifter som är obligatoriskt för ditt program. På bilden ovan
-återfinns länkar till inlämning av uppgifterna Studenttjänster, Excel och
-Matlab. Notera att detta endast är ett exempel på hur menyn kan se ut. För ditt
+återfinns länkar till inlämning av uppgifterna **Studenttjänster**, **Excel** och
+**Matlab**. Notera att detta endast är ett exempel på hur menyn kan se ut. För ditt
 program kan det se lite annorlunda ut då det skiljer sig lite åt mellan
 programmen gällande vilka uppgifter som är obligatoriska att lämna in. 
 
