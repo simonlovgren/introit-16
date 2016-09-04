@@ -50,7 +50,7 @@ link="https://fronter.com/slu/" title="Fronter" >}}.
 På kursens sida i Studentportalen hittar du en meny i vänster kant [^sp-menu]. I denna meny
 finns ett avsnitt som heter **Introduktion till datorer**.
 
-{{< figure width="400px"
+{{< figure class="small"
 src="/images/om/SP_meny_Introduktion_till_datorer_Studenttjanster_Excel_Matlab.png"
 title="Exempel på avsnittet om Introduktion till datorer i menyn på kursens sida i Studentportalen" >}}
 
