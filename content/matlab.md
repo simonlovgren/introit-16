@@ -66,7 +66,7 @@ Dessa delas in i tre huvudklasser:
 | Data              | 'save filnamn' och `load filnamn` | *sparar* resp. *läser in* alla variabler i filen *filnamn*. |
 
 ## Hur ser MATLAB ut?
-MATLAB har ett antal olika sektione dedikerade till olika uppgifter. De främst
+MATLAB har ett antal olika sektioner dedikerade till olika uppgifter. De främst
 förekommande beskrivs nedan och vardera sektion som omnämns finns utmarkerad i
 bilden nedan.
 
