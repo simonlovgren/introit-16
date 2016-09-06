@@ -113,7 +113,7 @@ link="/resources/jobbig_textfil.txt" >}}. och lägg den i mappen
     + De flesta terminalemulatorer låter dig klistra in text med
         `<Ctrl>+<Shift>+V`, `<Shift>+<Insert>` eller klick med musens
         mittenknapp.
-2. Använd pipes (`|`) och `grep` för att få fram raden (eller raderna) som innehåller `Hitta mig`, givet kommandot `cat textfil.txt`
+2. Använd pipes (`|`) och `grep` för att få fram raden (eller raderna) som innehåller `Hitta mig`, givet kommandot `cat jobbig_textfil.txt`
     + Använd `grep` med citattecken för att enkelt få med mellanslag.
     + Kom ihåg att se efter stora och små bokstäver.
 3. Upprepa kommandot ovan, men addera fil-output för att *lägga till* (`>>`) raden i `hittad_rad.txt`.
