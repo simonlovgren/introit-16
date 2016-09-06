@@ -35,7 +35,7 @@ I denna uppgift ska du göra en graf.
 Denna uppgift går ut på att skapa en graf.
 
 Du börjar med att skriva ditt användarnamn för studentkontot i cell A1.
-Fyll därefter i B1:C11 med värden enligt citatet nedan.
+Fyll därefter i B1:D11 med värden enligt citatet nedan.
 
 ``` excel
 x	Fib	2^x
