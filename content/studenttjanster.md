@@ -240,5 +240,5 @@ Planerar du att använda trådlöst internet på Campus ofta är det en klar fö
 
 För ytterligare säkerhet rekommenderas installation för certifikat. Information
 om hur du går tillväga hittar du här:
-https://mp.uu.se/sv/web/info/stod/it-telefoni/internet/eduroam
+http://www.uu.se/student/it-for-studenter/tradl%C3%B6sa-natverk-guider/
 
