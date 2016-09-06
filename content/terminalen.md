@@ -201,7 +201,11 @@ Du kan testa navigering i terminalen med hjälp av följande exempel:
 1. Testa kommandot `pwd` och notera hur den ändrats till
    `/home/<användarnamn>/test_folder`.
 1. Skriv `nano test_file.txt` för att skapa och redigera en fil. Skriv några
-   rader text. Spara filen samt avsluta programmet genom att trycka `<Ctrl>+O`.
+   rader text. Spara filen samt avsluta programmet genom att trycka `<Ctrl>+O`
+   (dvs bokstaven 'O', inte siffran 0).
+    + nano, liksom många andra editorer, skapar en tillfällig fil där data som
+        ännu inte sparats lagras. Den raderas när du sparar eller avslutar
+        programmet.
 1. Skriv `ls`. Nu bör endast `test_file.txt` visas.
 1. Skriv `cat test_file.txt`. Terminalen visar innehållet som du just skrivit.
 1. Skriv `cd ..` för att återgå till katalogen ovanför. Verifiera gärna med
