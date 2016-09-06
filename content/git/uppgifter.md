@@ -54,7 +54,7 @@ Ett git-repository är en katalog som hanteras av Git. För enkelhets skull komm
 
 ***
 `OBS"` **Det är viktigt att samtliga delar av uppgiften utförs i korrekt ordning,
-annars kommer inlämningen inte stämma  och kan resultera i komplettering!**
+annars kommer inlämningen inte stämma och kommer troligt resultera i komplettering!**
 ***
 ### Del 1: Klona ett befintligt git-repo
 
