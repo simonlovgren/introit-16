@@ -13,6 +13,7 @@ I denna sektion finns allt internt material som riktar sig till dig som handleda
 - [Arvodering](arvodering)
 - [Rättningsmallar](rattningsmallar)
 - [Rättning i Studentportalen](rattning)
+- [Rättning i Fronter (ES)](es)
 - [Kontaktinformation](kontakt)
 
 ## Föreläsningsmaterial
