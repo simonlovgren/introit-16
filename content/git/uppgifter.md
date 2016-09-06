@@ -52,6 +52,10 @@ Materialet som tas upp i uppgiften diskuteras på [infosidan för Git](../).
 Ett git-repository är en katalog som hanteras av Git. För enkelhets skull kommer
 *git-repo* fortsättningsvis att användas synonymt med *git-repository*. 
 
+***
+`OBS"` **Det är viktigt att samtliga delar av uppgiften utförs i korrekt ordning,
+annars kommer inlämningen inte stämma och kommer troligt resultera i komplettering!**
+***
 ### Del 1: Klona ett befintligt git-repo
 
 På många kurser kommer du utgå från befintliga filer för att lösa olika typer av
