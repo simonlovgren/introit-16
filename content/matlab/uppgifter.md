@@ -59,7 +59,7 @@ där du ersätter `abcd1234` med användarnamnet för ditt studentkonto.
 Byt sedan nuvarande arbetsmapp till skrivbordet, annars kan du inte köra ditt
 sparade program. Detta gör du lättast via [Sökfältet / Sökväg till arbetsmappen](../#sökfältet-sökväg-till-arbetsmappen).
 
-Testa nu att köra programmet genom att skriva `abcd1234-matlab`, där du såklart
+Testa nu att köra programmet genom att skriva `abcd1234_matlab`, där du såklart
 byter `abcd1234` med användarnamnet för ditt studentkonto, i kommandofönstret.
 Om programmet skriver ut `Jag fungerar!` i kommandofönstret kan du gå vidare
 till nästa del. Får du inte utskriften, kontrollera att:
