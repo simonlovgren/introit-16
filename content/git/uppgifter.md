@@ -53,7 +53,7 @@ Ett git-repository är en katalog som hanteras av Git. För enkelhets skull komm
 *git-repo* fortsättningsvis att användas synonymt med *git-repository*. 
 
 ***
-`OBS"` **Det är viktigt att samtliga delar av uppgiften utförs i korrekt ordning,
+`OBS!` **Det är viktigt att samtliga delar av uppgiften utförs i korrekt ordning,
 annars kommer inlämningen inte stämma och kommer troligt resultera i komplettering!**
 ***
 ### Del 1: Klona ett befintligt git-repo
@@ -182,7 +182,7 @@ i de flesta fall.
 
 Du skall nu lägga till filer i ditt nya repo.
 
-I ditt nya repositoy, skapa en ny textfil med namn `introduktionskurs.txt`. I denna fil
+I ditt nya repository, skapa en ny textfil med namn `introduktionskurs.txt`. I denna fil
 skall du kopiera in blocket med information om din utbildnings introduktionskurs
 som du hittar i filen `introduktionskurser.txt` som redan skall finnas
 repot `introduktion-till-datorer-2016-git-uppgift` som du redan skapat
@@ -301,7 +301,6 @@ När du är färdig med uppgiften bör ditt repo se ut såhär:
 └── abcd1234_git
     ├── .git         #(vanligtvis dold mapp med all git-data för repot)
     ├── introduktionskurs.txt
-    ├── introduktionskurser.txt
     ├── kurser.txt
     └── urval.txt
 ```
