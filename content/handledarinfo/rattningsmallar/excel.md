@@ -18,7 +18,7 @@ värden.
 2. Filen ska gå att öppna i någon modern version av excel.
     + Notera att även om det inte går at redigera/skapa samma grafer i Office
         365 som i desktopversionen, så går det fortfarande att *se* dem.
-3. Cellerna B1:C11 ska innehålla värdena i tabellen som visas [längre ned](#given-tabell)
+3. Cellerna B1:D11 ska innehålla värdena i tabellen som visas [längre ned](#given-tabell)
     + Notera att det helt enkelt är värdena för fibonacci och $x^2$, så det
         borde vara lätt att snabbt känna igen fel
 4. **Grafen:** (referensbild finns [längre ned](#referensgraf) på denna sida)
