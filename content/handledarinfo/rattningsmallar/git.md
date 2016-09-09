@@ -10,6 +10,8 @@ lastmod = "2016-08-25T13:52:12+02:00"
 Git-uppgiften går ut på att skapa ett git-repo, lägga till filer och committa
 dessa samt hantera en merge-konflikt.
 
+**Exempelfil för korrekt inlämning finns att hämta hem här: [abcd1234_git.tar.gz](/handledarinfo/rattningsmallar/abcd1234_git.tar.gz).**
+
 ### För att eleven skall bli godkänd krävs
 *Mer detaljerad information om punkterna finns efter listan, tillsammans med en
 beskrivning hur en kontroll kan utföras.*
