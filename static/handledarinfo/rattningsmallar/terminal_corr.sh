@@ -39,7 +39,7 @@ extract_archive ()
         echo "Attempting to extract $tar_file"
 
         if [ -f $tar_file ]; then
-            `tar -xjf $tar_file`
+            `tar -xzf $tar_file`
             if [ ! -d "$folder0_name" ]; then
                 echo "[X] $folder0_name was not in archive $tar_file, exiting.."
                 exit
