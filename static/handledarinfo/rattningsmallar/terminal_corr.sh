@@ -39,7 +39,7 @@ extract_archive ()
         echo "Attempting to extract $tar_file"
 
         if [ -f $tar_file ]; then
-            `tar -xjf $tar_file`
+            `tar -xzf $tar_file`
             if [ ! -d "$folder0_name" ]; then
                 echo "[X] $folder0_name was not in archive $tar_file, exiting.."
                 exit
@@ -61,10 +61,10 @@ check_folders ()
         echo "[X] $folder0_name not found, exiting.."
         exit
     else
-        if [[ -d "$folder1" ]] && [[ -d "$folder2" ]]; then
+        if [ -d "$folder1" ] && [ -d "$folder2" ]; then
             echo "[O] All required folders exist"
         else
-            if [[ ! -d "$folder1" ]] && [[ ! -d "$folder2" ]]; then
+            if [ ! -d "$folder1" ] && [ ! -d "$folder2" ]; then
                 echo "[X] both $folder1_name and $folder2_name are missing from $folder0_name"
             elif [ ! -d "$folder1" ]; then
                 echo "[X] $folder1_name is not in $folder0_name"
@@ -80,10 +80,10 @@ check_folders ()
 # Check if files exists
 check_files_exist ()
 {
-    if [[ -f $file1 ]] && [[ -f $file2 ]]; then
+    if [ -f $file1 ] && [ -f $file2 ]; then
         echo "[O] $file1_name and $file2_name exist!"
 
-        if [[ $(ls $folder2) = ${file2_name} ]]; then
+        if [ $(ls $folder2) = ${file2_name} ]; then
             echo "[O] only $file2_name exists in $folder2_name"
         else
             echo "[X] $folder2_name contains additional files"
@@ -106,14 +106,14 @@ check_files_exist ()
 # Check contents of files
 check_files_content ()
 {
-    if [[ $(head -1 $file2) = $(head -1 $file1) ]]; then
+    if [ "$(head -1 $file2)" = "$(head -1 $file1)" ]; then
         echo "[O] $file1_name and $file2_name have the same first line"
     else
         echo "[X] $file1_name and $file2_name have different first lines"
         issues=$(($issues + 1))
     fi
 
-    if [[ $(tail -1 $file2) = ${correct_line} ]]; then
+    if [ "$(tail -1 $file2)" = "${correct_line}" ]; then
         echo "[O] $file2_name has the correct last line"
     else
         echo "[X] $file2_name has the wrong last line, exiting"
