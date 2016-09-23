@@ -53,11 +53,12 @@ Om du i samråd med projektledaren hoppar in och arbetar fler pass, till exempel
 | Timlön                              | *145 kr/timme*                                  |
 | Fr.o.m. tid och T.o.m. tid          | *För varje pass anger du start och sluttid motsvarande 3 timmar och 5 minuter. Till exempel 10:00 - 13:05.* |
 | Önskad statteprocent (*minst 30 %*) | *Om du vill betala mer skatt än de reglerade 30 % måste det anges. Om du vet att du riskerar kvarskatt kan det vara en bra idé att begära att lite mer än 30% skatt dras.* |
+| Arbetsledare/kontaktperson          | *Karl Marklund*                                 |
 
 <!-- | Institution                         | *Institutionen för informationsteknologi*       |
 | Avdelning                           | *Avdelningen för datalogi (DoCS)*               |
 | Orgenhetsnummer                     | *10602*                                         |
-| Arbetsledare/kontaktperson          | *Karl Marklund*                                 | -->
+-->
 
 ### Skicka in blanketten
 I slutet av varje månad måste du skicka in ifylld blankett till [projektledare-introduktion-till-datorer@it.uu.se](mailto:projektledare-introduktion-till-datorer@it.uu.se).
