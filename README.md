@@ -11,6 +11,9 @@ Hemsidan är byggd med den statiska webbside-generatorn [Hugo](https://gohugo.io
 - **Unix**-system (*Det medföljer bash-script för att enkelt skapa nya sektioner bl.a.*)
 - GNU **Make** (*För att lätt bygga systemet via ett kommando*)
 
+## Skapa en ny modul (sektion)
+För hur man skapar en ny modul (sektion), **[SE HÄR](devinfo)**.
+
 ## Makeregler
 Det finns ett fåtal makeregler, men främst används de tre förstnämnda.
 ```bash
@@ -50,9 +53,6 @@ Bygger CSS-filen från SASS och lägger denna under `/themes/introit/css/style.c
 make html
 ```
 Bygger webbsidan till mappen `public`.
-
-## Skapa en ny modul (sektion)
-För hur man skapar en ny moful (sektion), **[SE HÄR](devinfo)**.
 
 ## Fil- och Mappstruktur
 Nedan följer fil- och mappstrukturen för hugo-projektet.
