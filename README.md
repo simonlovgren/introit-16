@@ -1,3 +1,7 @@
+# DETTA REPO HAR OFFICIELLT FLYTTATS: [uu-it-teaching/introduktion-till-datorer-2017](https://github.com/uu-it-teaching/introduktion-till-datorer-2017)
+
+***
+
 # Introduktion till datorer 2016
 Detta repo innehåller källkod för info/uppgiftssidan för Uppsala universitets *Introduktion till datorer 2016*.  
 Hemsidan är byggd med den statiska webbside-generatorn [Hugo](https://gohugo.io/).
